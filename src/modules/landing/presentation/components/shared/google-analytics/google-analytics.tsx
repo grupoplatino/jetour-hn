@@ -2,12 +2,15 @@
 
 import Script from "next/script";
 
-import * as gtag from "@/modules/landing/presentation/utils/gtag-helper/landing-gtag-helper";
+import * as gtag from "../../../utils/gtag-helper/landing-gtag-helper";
 
 const GoogleAnalyticsLanding = () => {
   return (
     <>
-      <Script src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`} strategy="afterInteractive" />
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
+        strategy="afterInteractive"
+      />
       <Script
         dangerouslySetInnerHTML={{
           __html: `
