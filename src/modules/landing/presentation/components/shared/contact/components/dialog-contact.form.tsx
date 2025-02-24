@@ -5,10 +5,18 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 
 import { Button } from "@/components/ui/button";
-import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
+import {
+  Form,
+  FormControl,
+  FormDescription,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { toast } from "@/components/ui/use-toast";
+import { toast } from "sonner";
 import newCustomerContactAction from "@/modules/landing/presentation/actions/send-main-contact-email.action";
 
 // Esquema de validación con zod
@@ -24,7 +32,11 @@ export const dialogContactFormSchema = z.object({
   }),
 });
 
-export function ContactDialogForm({ setIsOpen }: { setIsOpen: (value: boolean) => void }) {
+export function ContactDialogForm({
+  setIsOpen,
+}: {
+  setIsOpen: (value: boolean) => void;
+}) {
   const form = useForm<z.infer<typeof dialogContactFormSchema>>({
     resolver: zodResolver(dialogContactFormSchema),
     defaultValues: {
@@ -45,24 +57,24 @@ export function ContactDialogForm({ setIsOpen }: { setIsOpen: (value: boolean) =
     if (!result?.error) {
       form.reset();
 
-      toast({
-        title: "Mensaje enviado:",
+      toast.success("Mensaje enviado:", {
         description: "Tu mensaje ha sido enviado con éxito.",
       });
 
       setIsOpen(false);
     } else {
-      toast({
-        title: "Error al enviar mensaje:",
+      toast.error("Error al enviar mensaje:", {
         description: "Ha ocurrido un error al enviar tu mensaje.",
-        variant: "destructive",
       });
     }
   }
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 flex flex-col">
+      <form
+        onSubmit={form.handleSubmit(onSubmit)}
+        className="space-y-6 flex flex-col"
+      >
         <FormField
           control={form.control}
           name="name"
