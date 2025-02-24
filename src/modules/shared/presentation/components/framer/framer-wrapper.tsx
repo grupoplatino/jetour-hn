@@ -1,20 +1,24 @@
 "use client";
 
-import React, { ReactHTML } from "react";
+import React from "react";
 import { HTMLMotionProps, motion } from "framer-motion";
-import dynamic from "next/dynamic";
 
-export type TagNameType = keyof ReactHTML;
+export type TagNameType = keyof JSX.IntrinsicElements;
 
-export type MotionComponentProps<TagName extends TagNameType> = HTMLMotionProps<TagName>;
+export type MotionComponentProps<TagName extends TagNameType> =
+  HTMLMotionProps<TagName>;
 
-export interface FramerProps<TagName extends keyof ReactHTML> {
+export interface FramerProps<TagName extends keyof JSX.IntrinsicElements> {
   as: TagName;
   children?: React.ReactNode;
   props?: MotionComponentProps<TagName>;
 }
 
-function Framer<TagName extends keyof ReactHTML>({ as, children, ...props }: FramerProps<TagName>) {
+function Framer<TagName extends keyof JSX.IntrinsicElements>({
+  as,
+  children,
+  ...props
+}: FramerProps<TagName>) {
   const MotionComponent = motion[as as keyof typeof motion];
 
   return <MotionComponent {...props}>{children}</MotionComponent>;
