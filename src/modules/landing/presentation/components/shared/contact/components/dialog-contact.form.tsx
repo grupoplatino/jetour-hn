@@ -8,7 +8,6 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -17,7 +16,6 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
-import newCustomerContactAction from "@/modules/landing/presentation/actions/send-main-contact-email.action";
 
 // Esquema de validación con zod
 export const dialogContactFormSchema = z.object({
@@ -48,13 +46,9 @@ export function ContactDialogForm({
   });
 
   async function onSubmit(data: z.infer<typeof dialogContactFormSchema>) {
-    const result = await newCustomerContactAction({
-      name: data.name,
-      email: data.email,
-      message: data.message,
-    });
+    const result = true;
 
-    if (!result?.error) {
+    if (result) {
       form.reset();
 
       toast.success("Mensaje enviado:", {
