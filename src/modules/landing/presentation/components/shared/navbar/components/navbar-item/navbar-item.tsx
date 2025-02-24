@@ -10,7 +10,9 @@ interface NavbarItemProps {
   navBarItem: (typeof NAVBARITEMS)[0];
 }
 export default function NavbarItem({ navBarItem, className }: NavbarItemProps) {
-  const setMobileMenu = useLandingNavStore((state) => state.setIsOpenMobileMenu);
+  const setMobileMenu = useLandingNavStore(
+    (state) => state.setIsOpenMobileMenu
+  );
   const pathName = usePathname();
   return (
     <Link

@@ -1,14 +1,9 @@
-import Button from "@ui/button/button";
 import BrandLogo from "@landing/presentation/components/shared/brand-logo/brand-logo";
 import { ModeToggle } from "@landing/presentation/components/shared/theme-switcher/theme-swticher";
 import { cn } from "@/lib/utils";
-import { ButtonVariants } from "@/modules/shared/presentation/components/ui/button/button-variants.enum";
 import NavbarItem from "@/modules/landing/presentation/components/shared/navbar/components/navbar-item/navbar-item";
 import LandingContainer from "../landing-container/landing-container";
-import { Sheet, SheetContent, SheetHeader, SheetTrigger } from "@/components/ui/sheet";
-
-import Icon, { AppIcons } from "@/modules/shared/presentation/components/icons/main-icon/main-icon";
-import { NAVBARITEMS } from "../../../constants/nav-bar-items.constant";
+import { NAVBARITEMS } from "@/modules/landing/presentation/constants/nav-bar-items.constant";
 import MobileNavbar from "./components/mobile-menu/mobile-navbar";
 import { ContactDialog } from "../contact/first-contact-dialog";
 
@@ -19,9 +14,12 @@ interface LandingNavbarProps {
 export default function LandingNavbar(props: LandingNavbarProps) {
   return (
     <LandingContainer
-      className={cn("flex w-full justify-between gap-y-3 relative flex-wrap lg:flex-nowrap items-center pt-3", {
-        [`${props.className}`]: !!props.className,
-      })}
+      className={cn(
+        "flex w-full justify-between gap-y-3 relative flex-wrap lg:flex-nowrap items-center pt-3",
+        {
+          [`${props.className}`]: !!props.className,
+        }
+      )}
     >
       <BrandLogo mode="horizontal" />
       <nav className="flex-grow justify-center md:flex hidden">
@@ -30,7 +28,10 @@ export default function LandingNavbar(props: LandingNavbarProps) {
       <div className="flex items-center gap-x-4">
         <ModeToggle />
         <MobileNavbar />
-        <ContactDialog className="hidden md:flex" buttonText="Contacto"></ContactDialog>
+        <ContactDialog
+          className="hidden md:flex"
+          buttonText="Contacto"
+        ></ContactDialog>
       </div>
     </LandingContainer>
   );
