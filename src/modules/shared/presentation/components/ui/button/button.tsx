@@ -6,7 +6,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariants;
   children: React.ReactNode;
   onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
-  size?: ButtonSizes;
+  size?: ButtonSizes.DEFAULT;
 }
 
 export default function Button(props: ButtonProps) {
