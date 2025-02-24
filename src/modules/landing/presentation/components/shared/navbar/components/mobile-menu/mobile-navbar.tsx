@@ -1,15 +1,26 @@
 "use client";
 
-import { SheetTrigger, SheetContent, SheetHeader, Sheet, SheetTitle, SheetDescription } from "@/components/ui/sheet";
+import {
+  SheetTrigger,
+  SheetContent,
+  SheetHeader,
+  Sheet,
+  SheetTitle,
+  SheetDescription,
+} from "@/components/ui/sheet";
 import { NAVBARITEMS } from "@/modules/landing/presentation/constants/nav-bar-items.constant";
-import Icon, { AppIcons } from "@/modules/shared/presentation/components/icons/main-icon/main-icon";
+import Icon, {
+  AppIcons,
+} from "@/modules/shared/presentation/components/icons/main-icon/main-icon";
 import BrandLogo from "../../../brand-logo/brand-logo";
 import { LandingNavBarItems } from "../../landing-navbar";
 import { useLandingNavStore } from "@/modules/landing/presentation/stores/nav-bar.store";
 
 export default function MobileNavbar() {
   const isOpen = useLandingNavStore((state) => state.isOpenMobileMenu);
-  const setMobileMenu = useLandingNavStore((state) => state.setIsOpenMobileMenu);
+  const setMobileMenu = useLandingNavStore(
+    (state) => state.setIsOpenMobileMenu
+  );
 
   return (
     <Sheet onOpenChange={setMobileMenu} open={isOpen}>
@@ -25,7 +36,10 @@ export default function MobileNavbar() {
         </SheetHeader>
 
         <div className="w-full flex justify-center mt-5">
-          <LandingNavBarItems className="flex flex-col gap-y-4" items={NAVBARITEMS} />
+          <LandingNavBarItems
+            className="flex flex-col gap-y-4"
+            items={NAVBARITEMS}
+          />
         </div>
       </SheetContent>
     </Sheet>
