@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import Image from "next/image";
@@ -48,7 +49,7 @@ export default function LandingPage() {
     );
   };
 
-  const carData = vehicleData[2];
+  const carData = vehicleData[2] as any;
 
   return (
     <>
