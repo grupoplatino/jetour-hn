@@ -14,8 +14,8 @@ const BenchmarkRow = ({ children, top }: BenchmarkRowProps) => {
   return (
     <div
       className={clsx(
-        "w-full flex flex-row justify-around text-xl absolute",
-        top ? "top-28" : "bottom-5"
+        "w-full flex lg:flex-row flex-col gap-5 items-center justify-around text-xl absolute",
+        top ? "top-28" : window.innerWidth >= 1024 ? "bottom-5" : "bottom-24"
       )}
     >
       {children}
@@ -23,10 +23,16 @@ const BenchmarkRow = ({ children, top }: BenchmarkRowProps) => {
   );
 };
 
-const CarColorSection = ({ children }: { children: ReactNode }) => {
+const CarColorSection = ({
+  customClass,
+  children,
+}: {
+  customClass?: string;
+  children: ReactNode;
+}) => {
   return (
     <div
-      className="flex flex-row gap-5 absolute left-[50%] top-[85%]"
+      className={`flex flex-row gap-5 absolute left-[50%] lg:top-[85%] md:top-[70%] top-[62%] ${customClass}`}
       style={{ transform: "translate(-50%, -50%)" }}
     >
       {children}

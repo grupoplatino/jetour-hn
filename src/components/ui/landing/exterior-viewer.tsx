@@ -20,7 +20,7 @@ const ExteriorViewer = ({
   setSelectedColor,
 }: ExteriorViewerProps) => {
   return (
-    <div className=" w-[60%] h-full mt-5">
+    <div className="w-full lg:w-[60%] h-full mt-5">
       <ReactImageTurntable
         className={clsx(
           " w-full h-full mt-5 ",
@@ -35,7 +35,7 @@ const ExteriorViewer = ({
           setIsGrabbing(false);
         }}
       />
-      <CarColorSection>
+      <CarColorSection customClass="top-[90%] md:top-[85%] md:flex grid grid-cols-4">
         {carColors.map((color, index: number) => (
           <CarColor
             key={index}

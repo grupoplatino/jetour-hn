@@ -6,8 +6,8 @@ interface CarGallerySection {
 
 const CarGallerySection = ({ images }: CarGallerySection) => {
   return (
-    <section className="relative h-screen w-full flex justify-center items-center px-[8rem] pb-12 pt-28 ">
-      <div className="grid grid-cols-2 grid-rows-2 gap-2 w-full h-full">
+    <section className="relative h-screen w-full flex justify-center items-center px-5 lg:px-[8rem] pb-12 pt-28 ">
+      <div className="grid md:grid-cols-2 grid-rows-2 gap-2 w-full h-full">
         {images.map((image, index) => (
           <Image
             key={index}

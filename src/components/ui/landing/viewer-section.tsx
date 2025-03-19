@@ -79,13 +79,13 @@ export default function Viewer3D({ carData }: Viewer3DProps) {
 
   return (
     <section className="relative h-screen w-full flex flex-col justify-start py-28 items-center">
-      <div className="px-32 w-full flex flex-row justify-between">
-        <h1 className="font-bold text-5xl">VISUALIZADOR 3D</h1>
+      <div className="px-32 w-full flex flex-col items-center lg:flex-row lg:justify-between">
+        <h1 className="font-bold text-5xl text-center">VISUALIZADOR 3D</h1>
         <div className="flex flex-row items-center gap-10">
           <h1
             className={clsx(
               "font-bold cursor-pointer",
-              exteriorView ? "text-5xl" : "text-3xl"
+              exteriorView ? "lg:text-5xl text-3xl" : "lg:text-3xl text-xl"
             )}
             style={{ color: exteriorView ? carData.primaryColor : "#6b7280" }}
             onClick={() => {
@@ -97,7 +97,7 @@ export default function Viewer3D({ carData }: Viewer3DProps) {
           <h1
             className={clsx(
               "font-bold cursor-pointer",
-              exteriorView ? "text-3xl" : "text-5xl"
+              exteriorView ? "lg:text-3xl text-xl" : "lg:text-5xl text-3xl"
             )}
             onClick={() => {
               setExteriorView(false);

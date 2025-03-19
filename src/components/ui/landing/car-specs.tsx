@@ -68,8 +68,8 @@ const CarSpects = ({
           <tbody>
             {Object.entries(specs).map(([keyframes, value], index) => (
               <tr key={index} className="text-white font-bold text-lg">
-                <td className="w-[50%] p-1">{keyframes}</td>
-                <td className="w-[50%] p-1">{value}</td>
+                <td className="md:w-[50%] p-1">{keyframes}</td>
+                <td className="md:w-[50%] p-1">{value}</td>
               </tr>
             ))}
           </tbody>

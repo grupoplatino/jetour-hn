@@ -7,7 +7,7 @@ interface InformativeCardProps {
 
 const InformativeCard = ({ image, text }: InformativeCardProps) => {
   return (
-    <div className="flex flex-col gap-3 justify-between items-center w-[250px] h-[380px]">
+    <div className="flex flex-col gap-3 justify-between items-center lg:w-[250px] h-[380px]">
       <Image
         className="object-cover w-full min-h-[400px]"
         src={image}
