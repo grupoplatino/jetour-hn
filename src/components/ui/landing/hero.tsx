@@ -10,12 +10,7 @@ const HeroSection = ({ image, title, subtitle }: HeroSectionProps) => {
       className="relative h-screen w-full bg-cover bg-no-repeat"
       style={{
         backgroundImage: `url("${image}")`,
-        backgroundPosition:
-          window.innerWidth >= 1024
-            ? "center"
-            : window.innerWidth >= 768
-            ? "-25rem"
-            : "-23rem",
+        backgroundPosition: window?.innerWidth >= 1024 ? 'center' : window?.innerWidth >= 768 ? '-25rem' : '-23rem'
       }}
     >
       <div className="absolute top-[65%] left-[10%] font-bold text-white">
