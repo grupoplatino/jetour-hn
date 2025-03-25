@@ -6,7 +6,7 @@ import clsx from "clsx";
 import { usePrimaryColor } from "./color-context";
 import { Menu, X, ChevronDown } from "lucide-react";
 
-function NavBar() {
+function NavBar({ disableTransparent }: { disableTransparent?: boolean }) {
   const [toggledNav, setToggledNav] = useState<boolean>(false);
   const [dropdownOpen, setDropdownOpen] = useState<boolean>(false);
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -28,8 +28,11 @@ function NavBar() {
   return (
     <nav
       className={clsx(
-        "transition flex flex-col fixed w-full bg-none z-40",
-        scrollPosition > 0 && "bg-customBlack text-white"
+        "transition flex flex-col fixed w-full z-40",
+        scrollPosition > 0 && !disableTransparent
+          ? "bg-customBlack text-white"
+          : "bg-dashing",
+        disableTransparent && "bg-customBlack text-white"
       )}
       style={{ color: primaryColor }}
     >
