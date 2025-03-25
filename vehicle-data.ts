@@ -4,7 +4,7 @@ const vehicleData = [
     hero: {
       title: "DASHING",
       subTitle: "Experimenta la tecnología de Vanguardia",
-      backgroundImage: "/img/DASHING/Dashing Jetour.jpg",
+      backgroundImage: "/img/DASHING/Dashing Jetour.webp",
     },
     carBenchmarks: {
       "Caballos de Fuerza Máx.": "197",
