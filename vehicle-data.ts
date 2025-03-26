@@ -2,9 +2,9 @@ const vehicleData = [
   {
     primaryColor: '#00a3b4',
     hero: {
-      title: 'DASHING',
-      subTitle: 'Experimenta la tecnología de Vanguardia',
-      backgroundImage: '/img/DASHING/Dashing Jetour.webp'
+      title: "DASHING",
+      subTitle: "Experimenta la tecnología de Vanguardia",
+      backgroundImage: "/img/DASHING/Dashing Jetour.webp",
     },
     carBenchmarks: {
       'Caballos de Fuerza Máx.': '197',
