@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import clsx from "clsx";
 import { usePrimaryColor } from "./color-context";
+import Image from "next/image";
 import { Menu, X, ChevronDown } from "lucide-react";
 
 function NavBar({ disableTransparent }: { disableTransparent?: boolean }) {
@@ -37,9 +38,19 @@ function NavBar({ disableTransparent }: { disableTransparent?: boolean }) {
       style={{ color: primaryColor }}
     >
       <section className="flex flex-row px-16 py-2 justify-between items-center">
-        <figure className="flex flex-col items-center text-white">
-          <h1 className="text-xl font-bold">JETOUR</h1>
-          <p className="text-md font-normal">--Drive Your Future--</p>
+        <figure className="flex flex-row items-center gap-10 text-white">
+          <Image
+            src="/img/JetourLogo.png"
+            alt="Logo Jetour"
+            width={200}
+            height={200}
+          />
+          <Image
+            src="/img/AutosAliados.png"
+            alt="Logo Auto Aliados"
+            width={200}
+            height={200}
+          />
         </figure>
 
         {/* Desktop Navigation */}
