@@ -2,7 +2,7 @@ const vehicleData = [
   {
     primaryColor: "#00a3b4",
     hero: {
-      title: "DASHING",
+      logo: "/img/DASHING/Logo.png",
       subTitle: "Experimenta la tecnología de Vanguardia",
       backgroundImage: "/img/DASHING/Dashing Jetour.webp",
     },
@@ -12,7 +12,7 @@ const vehicleData = [
       "Velocidad Máxima (KM/H)": "180",
       "Distancia entre ejes (mm)": "2720",
       "Desplazamiento (ML)": "1598",
-      "Consumo de Combustible (L/100KM)": "8.33",
+      // "Consumo de Combustible (L/100KM)": "8.33",
     },
     carModels: [
       "/img/DASHING/JETOUR_blanco_cam360_out.0003.png",
@@ -33,6 +33,7 @@ const vehicleData = [
       {
         title: "Minimalismo y Tecnología",
         image: "/img/DASHING/15.8 in. Digital screen.jpg",
+        text: "El estilo interior minimalista de la Dashing destaca por su pantalla LCD de control central.",
       },
     ],
     cropedWideImages: [
@@ -148,7 +149,7 @@ const vehicleData = [
   {
     primaryColor: "#f28b2d",
     hero: {
-      title: "X50",
+      logo: "/img/X50/Logo.png",
       subTitle: "DISFRUTA EL VIAJE DE TU VIDA",
       backgroundImage: "/img/X50/X50 Jetour.png",
     },
@@ -158,7 +159,7 @@ const vehicleData = [
       "Velocidad Máxima (KM/H)": "180",
       "Distancia entre ejes (mm)": "2601",
       "Desplazamiento (ML)": "1499",
-      "Consumo de Combustible (L/100KM)": "5.8",
+      // "Consumo de Combustible (L/100KM)": "5.8",
     },
     carModels: [
       "/img/X50/x50-360HEI_00005.png",
@@ -288,7 +289,7 @@ const vehicleData = [
   {
     primaryColor: "#f28b2d",
     hero: {
-      title: "T2 JETOUR",
+      logo: "/img/T2/Logo.png",
       subTitle: "AVETURAS SIN LÍMITES",
       backgroundImage: "/img/T2/T2 Jetour.jpg",
     },
@@ -298,7 +299,7 @@ const vehicleData = [
       "Velocidad Máxima (KM/H)": "197",
       "Distancia entre ejes (mm)": "2800",
       "Desplazamiento (ML)": "1998",
-      "Consumo de Combustible (L/100KM)": "9.3",
+      // "Consumo de Combustible (L/100KM)": "9.3",
     },
     carModels: [
       "/img/T2/car black 0022.png",
@@ -452,7 +453,7 @@ const vehicleData = [
   {
     primaryColor: "#00a3b4",
     hero: {
-      title: "X70 PLUS",
+      logo: "/img/X70 Plus/Logo.png",
       subTitle: "INNOVACIÓN Y AMPLITUD REDEFINIDAS",
       backgroundImage: "/img/X70 Plus/X70 Jetour.jpg",
     },
@@ -462,7 +463,7 @@ const vehicleData = [
       "Velocidad Máxima (KM/H)": "180",
       "Distancia entre ejes (mm)": "2745",
       "Desplazamiento (ML)": "1598",
-      "Consumo de Combustible (L/100KM)": "7.5",
+      // "Consumo de Combustible (L/100KM)": "7.5",
     },
     carModels: [
       "/img/X70 Plus/45 degree front left angle Black.png",

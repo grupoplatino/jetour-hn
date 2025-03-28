@@ -42,14 +42,14 @@ function NavBar({ disableTransparent }: { disableTransparent?: boolean }) {
           <Image
             src="/img/JetourLogo.png"
             alt="Logo Jetour"
-            width={200}
-            height={200}
+            width={150}
+            height={150}
           />
           <Image
             src="/img/AutosAliados.png"
             alt="Logo Auto Aliados"
-            width={200}
-            height={200}
+            width={150}
+            height={150}
           />
         </figure>
 

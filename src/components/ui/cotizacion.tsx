@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import { usePrimaryColor } from "./color-context";
 import clsx from "clsx";
+import Image from "next/image";
 
 const Input = ({
   customClass,
@@ -106,6 +107,13 @@ export default function ContactForm() {
           Enviar
         </button>
       </div>
+      <Image
+        src="/img/Certificado.png"
+        width={200}
+        height={200}
+        alt="Certificado"
+        className="absolute bottom-2 left-2"
+      />
     </section>
   );
 }
