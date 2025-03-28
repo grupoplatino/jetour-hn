@@ -28,6 +28,7 @@ import ColorContext from "@/components/ui/color-context";
 import { SlicedWideImage } from "@/components/ui/landing/sliced-wide-image";
 import { Footer } from "@/components/ui/footer";
 import { useParams } from "next/navigation";
+import { BookDrive } from "@/components/ui/book-drive";
 
 export default function LandingPage() {
   const CarPlaceholder = ({
@@ -63,12 +64,22 @@ export default function LandingPage() {
 
   return (
     <>
+      <BookDrive color="#00a3b4" fixed />
+      <Image
+        src="/img/WhatsappLogo.png"
+        height={100}
+        width={100}
+        alt="whatsapp"
+        className="fixed bottom-12 right-12 object-contain z-50"
+      />
       <ColorContext.Provider value={carData.primaryColor}>
-        <NavBar />
+        <NavBar disableTransparent />
       </ColorContext.Provider>
       <HeroSection
         image={carData.hero.backgroundImage}
-        title={carData.hero.title}
+        logo={carData.hero.logo}
+        logoWidth={300}
+        logoHeight={300}
         subtitle={carData.hero.subTitle}
       />
 
@@ -129,6 +140,7 @@ export default function LandingPage() {
               key={index}
               title={sectionData.title}
               image={sectionData.image}
+              text={sectionData.text}
             />
           </ColorContext.Provider>
         );

@@ -1,31 +1,21 @@
 import Image from "next/image";
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 import clsx from "clsx";
 
 const PageSection = ({
-  title,
-  subtitle,
   imgSrc,
   videoSrc,
   page,
+  children,
 }: {
-  title: string;
-  subtitle: string;
   imgSrc: string;
   videoSrc: string;
   page: number;
+  children: ReactNode;
 }) => (
   <>
     {/* Text Content */}
-    <div
-      className={clsx(
-        "text-white absolute top-[10rem] transform -translate-x-1/2 z-20 text-left",
-        page === 1 ? "left-[15rem]" : "left-[20rem]"
-      )}
-    >
-      <h1 className="text-5xl font-bold">{title}</h1>
-      <p className="text-3xl max-w-[35rem] mx-auto">{subtitle}</p>
-    </div>
+    {children}
 
     {/* Left Image */}
     <div
@@ -80,7 +70,7 @@ const VideoHero = () => {
   return (
     <section className="relative w-full h-screen">
       {/* Page Selector */}
-      <div className="absolute bottom-20 right-10 z-20 flex flex-row gap-5 justify-center items-center font-bold select-none">
+      <div className="absolute bottom-8 right-10 z-20 flex flex-row gap-5 justify-center items-center font-bold select-none">
         {[1, 2].map((num) => (
           <p
             key={num}
@@ -88,8 +78,8 @@ const VideoHero = () => {
             className={clsx(
               "hover:cursor-pointer transition-all",
               page === num
-                ? "text-white text-[4rem]"
-                : "text-gray-400 text-[3rem]"
+                ? "text-white text-[3rem]"
+                : "text-gray-400 text-[2rem]"
             )}
           >
             0{num}
@@ -99,20 +89,40 @@ const VideoHero = () => {
 
       {page === 1 ? (
         <PageSection
-          title="T2"
-          subtitle="PIENSA EN LA AVENTURA"
           imgSrc="/img/T2/Approach and departure angles.jpg"
           videoSrc="/video/Video-T2/Dubai night tour.mp4"
           page={1}
-        />
+        >
+          <figure className="absolute z-10 top-44 left-8 flex flex-col justify-start">
+            <Image
+              src="/img/T2/Logo.png"
+              width={200}
+              height={200}
+              alt="Logo T2"
+            />
+            <h1 className="ml-12 text-3xl font-bold text-white">
+              PIENSA EN LA AVENTURA
+            </h1>
+          </figure>
+        </PageSection>
       ) : (
         <PageSection
-          title="DASHING"
-          subtitle="DISEÑADA PARA SATISFACER A LOS MÁS EXIGENTES."
           imgSrc="/img/DASHING/3.jpg"
           videoSrc="/video/Video-Dashing/Product CG Video.MP4"
           page={2}
-        />
+        >
+          <figure className="absolute z-10 top-28 left-8 flex flex-col justify-start">
+            <Image
+              src="/img/DASHING/Logo.png"
+              width={400}
+              height={400}
+              alt="Logo DASHING"
+            />
+            <h1 className="ml-8 -mt-16 text-2xl font-bold w-[23rem] text-white">
+              DISEÑADA PARA SATISFACER A LOS MÁS EXIGENTES
+            </h1>
+          </figure>
+        </PageSection>
       )}
     </section>
   );

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { BookDrive } from "./book-drive";
 
 const CarSelector = () => {
   return (
@@ -14,7 +15,7 @@ const CarSelector = () => {
             width={400}
             height={400}
             alt="T2"
-            className="w-full h-full"
+            className="w-full h-full object-contain"
           />
           <h1 className="font-bold text-4xl">T2</h1>
         </Link>
@@ -24,7 +25,7 @@ const CarSelector = () => {
             width={400}
             height={400}
             alt="Dashing"
-            className="w-full h-full"
+            className="w-full h-full object-contain"
           />
           <h1 className="font-bold text-4xl">DASHING</h1>
         </Link>
@@ -34,7 +35,7 @@ const CarSelector = () => {
             width={400}
             height={400}
             alt="X70 Plus"
-            className="w-full h-full"
+            className="w-full h-full object-contain"
           />
           <h1 className="font-bold text-4xl">X70 Plus</h1>
         </Link>
@@ -44,21 +45,12 @@ const CarSelector = () => {
             width={400}
             height={400}
             alt="Car Placeholder"
-            className="w-full h-full"
+            className="w-full h-full object-contain"
           />
           <h1 className="font-bold text-4xl">X50</h1>
         </Link>
       </div>
-      <div className="flex flex-row gap-2 w-full md:w-auto md:absolute md:right-[-2.25rem] lg:right-0 md:scale-75 lg:scale-100">
-        <div className="bg-[#f28b2d] w-2 h-12 -skew-x-[20deg] md:-skew-x-12"></div>
-        <div className="bg-[#f28b2d] w-2 h-12 -skew-x-[20deg] md:-skew-x-12"></div>
-        <div
-          className="ml-[-8px] md:ml-[-3px] w-full bg-[#f28b2d] flex flex-row justify-center items-center px-8"
-          style={{ clipPath: "polygon(3.5% 0%, 100% 0%, 100% 100%, 0% 100%)" }}
-        >
-          <p className="font-bold">AGENDA TU TEST DRIVE</p>
-        </div>
-      </div>
+      <BookDrive color="#f28b2d" />
     </section>
   );
 };

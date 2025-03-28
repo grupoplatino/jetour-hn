@@ -4,9 +4,10 @@ import { usePrimaryColor } from "../color-context";
 interface WideImageProps {
   title: string;
   image: string;
+  text: string;
 }
 
-const WideImage = ({ title, image }: WideImageProps) => {
+const WideImage = ({ title, image, text }: WideImageProps) => {
   const primaryColor = usePrimaryColor();
 
   return (
@@ -25,6 +26,9 @@ const WideImage = ({ title, image }: WideImageProps) => {
         >
           {title}
         </h1>
+        <p className="absolute right-4 top-4 w-[27rem] text-right text-white font-bold text-lg">
+          {text}
+        </p>
       </figure>
     </section>
   );
