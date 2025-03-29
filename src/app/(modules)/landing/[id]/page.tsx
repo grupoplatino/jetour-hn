@@ -186,11 +186,18 @@ export default function LandingPage() {
       <CarGallerySection images={carData.carGallery} />
 
       <SpecsSection>
-        {Object.entries(carData.carSpecs).map(([key, value], index) => (
-          <ColorContext.Provider key={index} value={carData.primaryColor}>
-            <CarSpects key={index} title={key} specs={value as any} />
-          </ColorContext.Provider>
-        ))}
+        {({ activeTitle, toggleSpecs }) =>
+          Object.entries(carData.carSpecs).map(([key, value], index) => (
+            <ColorContext.Provider key={index} value={carData.primaryColor}>
+              <CarSpects
+                title={key}
+                specs={value as any}
+                activeTitle={activeTitle}
+                toggleSpecs={toggleSpecs}
+              />
+            </ColorContext.Provider>
+          ))
+        }
       </SpecsSection>
 
       <Viewer3D carData={carData} />
