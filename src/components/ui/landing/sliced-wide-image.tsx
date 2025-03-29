@@ -1,14 +1,25 @@
 import Image from "next/image";
 import { ReactNode } from "react";
 import { usePrimaryColor } from "../color-context";
+import { Download } from "lucide-react";
 
 interface SlicedWideImageProps {
   images: string[];
   title: string;
+  model: string;
+  color: string;
   children?: ReactNode;
+  brochure?: boolean;
 }
 
-const SlicedWideImage = ({ images, title, children }: SlicedWideImageProps) => {
+const SlicedWideImage = ({
+  images,
+  title,
+  model,
+  color,
+  children,
+  brochure,
+}: SlicedWideImageProps) => {
   const primaryColor = usePrimaryColor();
 
   return (
@@ -23,7 +34,7 @@ const SlicedWideImage = ({ images, title, children }: SlicedWideImageProps) => {
         >
           <Image
             className="w-full h-full object-cover"
-            style={{ objectPosition: "center" }}
+            style={{ objectPosition: "-30rem" }}
             src={images[0]}
             width={800}
             height={500}
@@ -40,7 +51,7 @@ const SlicedWideImage = ({ images, title, children }: SlicedWideImageProps) => {
         >
           <Image
             className="w-full h-full object-cover"
-            style={{ objectPosition: "center" }}
+            style={{ objectPosition: "30rem" }}
             src={images[1]}
             width={800}
             height={500}
@@ -58,6 +69,16 @@ const SlicedWideImage = ({ images, title, children }: SlicedWideImageProps) => {
         <div className="absolute text-right z-10 top-[-7rem] lg:left-[3rem] lg:w-[40rem] md:w-[20rem] md:left-[0rem] left-[2rem] w-32  ">
           {children}
         </div>
+
+        {brochure && (
+          <div
+            className="flex flex-row gap-4 items-center absolute bottom-5 right-5 font-bold text-2xl"
+            style={{ color: color }}
+          >
+            <Download />
+            <h1 className="font-bold">Brochure {model}</h1>
+          </div>
+        )}
       </figure>
     </section>
   );

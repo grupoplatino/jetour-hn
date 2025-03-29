@@ -1,6 +1,9 @@
 import clsx from "clsx";
+import { usePrimaryColor } from "./color-context";
 
-const BookDrive = ({ color, fixed }: { color: string; fixed?: boolean }) => {
+const BookDrive = ({ fixed }: { fixed?: boolean }) => {
+  const primaryColor = usePrimaryColor();
+
   return (
     <div
       className={clsx(
@@ -12,16 +15,16 @@ const BookDrive = ({ color, fixed }: { color: string; fixed?: boolean }) => {
     >
       <div
         className={`w-2 h-12 -skew-x-[20deg] md:-skew-x-12`}
-        style={{ backgroundColor: color }}
+        style={{ backgroundColor: primaryColor }}
       ></div>
       <div
         className={`w-2 h-12 -skew-x-[20deg] md:-skew-x-12`}
-        style={{ backgroundColor: color }}
+        style={{ backgroundColor: primaryColor }}
       ></div>
       <div
         className="ml-[-8px] md:ml-[-3px] w-full flex flex-row justify-center items-center px-8"
         style={{
-          backgroundColor: color,
+          backgroundColor: primaryColor,
           clipPath: "polygon(3.5% 0%, 100% 0%, 100% 100%, 0% 100%)",
         }}
       >

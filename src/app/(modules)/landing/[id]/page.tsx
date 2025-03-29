@@ -64,7 +64,9 @@ export default function LandingPage() {
 
   return (
     <>
-      <BookDrive color="#00a3b4" fixed />
+      <ColorContext.Provider value={carData.primaryColor}>
+        <BookDrive fixed />
+      </ColorContext.Provider>
       <Image
         src="/img/WhatsappLogo.png"
         height={100}
@@ -156,6 +158,9 @@ export default function LandingPage() {
             <SlicedWideImage
               title={sectionData.title}
               images={sectionData.images}
+              model={id?.toUpperCase() ?? ""}
+              color={sectionData.color}
+              brochure={sectionData.brochure}
             >
               <p className={`${sectionData.text.class}`}>
                 {sectionData.text.text}

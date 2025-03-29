@@ -48,6 +48,8 @@ const vehicleData = [
           class:
             "absolute top-32 left-60 text-right text-white font-bold w-[38rem]",
         },
+        brochure: true,
+        color: "#00a3b4",
       },
     ],
     informativeGallery: {
@@ -182,6 +184,8 @@ const vehicleData = [
           text: "El x50 se destaca por su interior, al igual que por sus dimensiones exteriores, con un dise;o estilizado y detalles de alta calidad. Un espacio muy bien aprovechado, ideal para tí quien piensas en la seguridad y es amante a la tecnología.",
           class: "text-white",
         },
+        brochure: false,
+        color: "#ffffff",
       },
       {
         title: "Disfruta de sus detalles",
@@ -193,6 +197,8 @@ const vehicleData = [
           text: "El Jetour X50 ofrece comodidad con asientos revestidos en cuero cintético, y una amplia fila de asientos. Este auto es perfecto para salir y disfrutar del día y la noche, junto a tu familia o amigos.",
           class: "text-white",
         },
+        brochure: true,
+        color: "#ffffff",
       },
     ],
     informativeGallery: {
@@ -330,6 +336,8 @@ const vehicleData = [
           class:
             "absolute top-32 left-60 text-right text-black font-bold w-[38rem]",
         },
+        brochure: false,
+        color: "#ffffff",
       },
       {
         title: "ESTILO POR FUERA Y POR DENTRO",
@@ -342,6 +350,8 @@ const vehicleData = [
           class:
             "absolute top-32 left-60 text-right text-white font-bold w-[38rem]",
         },
+        brochure: true,
+        color: "#ffffff",
       },
     ],
     informativeGallery: {
@@ -492,6 +502,8 @@ const vehicleData = [
           class:
             "absolute top-32 left-60 text-right text-white font-bold w-[38rem]",
         },
+        brochure: false,
+        color: "#00a3b4",
       },
       {
         title: "TECNOLOGÍA ESPACIAL",
@@ -504,6 +516,8 @@ const vehicleData = [
           class:
             "absolute top-32 left-60 text-right text-white font-bold w-[38rem]",
         },
+        brochure: false,
+        color: "#00a3b4",
       },
     ],
     informativeGallery: {
