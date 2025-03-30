@@ -64,7 +64,9 @@ export default function LandingPage() {
 
   return (
     <>
-      <BookDrive color="#00a3b4" fixed />
+      <ColorContext.Provider value={carData.primaryColor}>
+        <BookDrive fixed />
+      </ColorContext.Provider>
       <Image
         src="/img/WhatsappLogo.png"
         height={100}
@@ -156,6 +158,9 @@ export default function LandingPage() {
             <SlicedWideImage
               title={sectionData.title}
               images={sectionData.images}
+              model={id?.toUpperCase() ?? ""}
+              color={sectionData.color}
+              brochure={sectionData.brochure}
             >
               <p className={`${sectionData.text.class}`}>
                 {sectionData.text.text}
@@ -181,11 +186,18 @@ export default function LandingPage() {
       <CarGallerySection images={carData.carGallery} />
 
       <SpecsSection>
-        {Object.entries(carData.carSpecs).map(([key, value], index) => (
-          <ColorContext.Provider key={index} value={carData.primaryColor}>
-            <CarSpects key={index} title={key} specs={value as any} />
-          </ColorContext.Provider>
-        ))}
+        {({ activeTitle, toggleSpecs }) =>
+          Object.entries(carData.carSpecs).map(([key, value], index) => (
+            <ColorContext.Provider key={index} value={carData.primaryColor}>
+              <CarSpects
+                title={key}
+                specs={value as any}
+                activeTitle={activeTitle}
+                toggleSpecs={toggleSpecs}
+              />
+            </ColorContext.Provider>
+          ))
+        }
       </SpecsSection>
 
       <Viewer3D carData={carData} />

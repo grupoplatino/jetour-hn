@@ -21,12 +21,9 @@ const vehicleData = [
     ],
     carColors: [
       { class: "bg-[#1d1d1b]", hex: "#1d1d1b", folderName: "black" },
-      { class: "bg-[#304b6f]", hex: "#304b6f", folderName: "blue" },
-      { class: "bg-[#414858]", hex: "#414858", folderName: "gray" },
-      { class: "bg-[#8a1319]", hex: "#8a1319", folderName: "red" },
-      { class: "bg-[#a0a7ad]", hex: "#a0a7ad", folderName: "technologyGray" },
-      { class: "bg-[#103324]", hex: "#103324", folderName: "green" },
       { class: "border border-2", hex: "#ffffff", folderName: "white" },
+      { class: "bg-[#304b6f]", hex: "#366da6", folderName: "blue" },
+      { class: "bg-[#394050]", hex: "#394050", folderName: "gray" },
     ],
     video: "/video/Video-Dashing/Product CG Video.MP4",
     wideImages: [
@@ -48,6 +45,8 @@ const vehicleData = [
           class:
             "absolute top-32 left-60 text-right text-white font-bold w-[38rem]",
         },
+        brochure: true,
+        color: "#00a3b4",
       },
     ],
     informativeGallery: {
@@ -167,9 +166,6 @@ const vehicleData = [
     ],
     carColors: [
       { class: "bg-[#1d1d1b]", hex: "#1d1d1b", folderName: "black" },
-      { class: "bg-[#d0e0ed]", hex: "#d0e0ed", folderName: "blue" },
-      { class: "bg-[#747b84]", hex: "#747b84", folderName: "phantomGray" },
-      { class: "bg-[#bfc2c5]", hex: "#bfc2c5", folderName: "silver" },
       { class: "border border-2", hex: "#ffffff", folderName: "white" },
     ],
     video: "/video/Video-X50/No subtitle.mp4",
@@ -180,8 +176,11 @@ const vehicleData = [
         images: ["/img/X50/HAI_6221.jpg", "/img/X50/c (5).jpg"],
         text: {
           text: "El x50 se destaca por su interior, al igual que por sus dimensiones exteriores, con un dise;o estilizado y detalles de alta calidad. Un espacio muy bien aprovechado, ideal para tí quien piensas en la seguridad y es amante a la tecnología.",
-          class: "text-white",
+          class:
+            "absolute top-32 left-60 text-right text-white font-bold w-[38rem]",
         },
+        brochure: false,
+        color: "#ffffff",
       },
       {
         title: "Disfruta de sus detalles",
@@ -191,8 +190,11 @@ const vehicleData = [
         ],
         text: {
           text: "El Jetour X50 ofrece comodidad con asientos revestidos en cuero cintético, y una amplia fila de asientos. Este auto es perfecto para salir y disfrutar del día y la noche, junto a tu familia o amigos.",
-          class: "text-white",
+          class:
+            "absolute top-32 left-60 text-right text-white font-bold w-[38rem]",
         },
+        brochure: true,
+        color: "#ffffff",
       },
     ],
     informativeGallery: {
@@ -307,14 +309,11 @@ const vehicleData = [
       "/img/T2/car.0022.png",
     ],
     carColors: [
-      { class: "bg-[#030304]", hex: "#030304", folderName: "nightBlack" },
-      { class: "bg-[#747b89]", hex: "#747b89", folderName: "highwayGrey" },
-      { class: "bg-[#d3e31c]", hex: "#d3e31c", folderName: "limeGreen" },
-      { class: "bg-[#97a8bd]", hex: "#97a8bd", folderName: "mistyCyan" },
-      { class: "bg-[#d8cbb1]", hex: "#d8cbb1", folderName: "sand" },
-      { class: "bg-[#a1aab6]", hex: "#a1aab6", folderName: "silverSnow" },
-      { class: "bg-[#ff734b]", hex: "#ff734b", folderName: "sunOrange" },
       { class: "border border-2", hex: "#ffffff", folderName: "white" },
+      { class: "bg-[#030304]", hex: "#030304", folderName: "nightBlack" },
+      { class: "bg-[#d8cbb1]", hex: "#d8cbb1", folderName: "sand" },
+      { class: "bg-[#747b89]", hex: "#747b89", folderName: "highwayGrey" },
+      { class: "bg-[#97a8bd]", hex: "#97a8bd", folderName: "mistyCyan" },
     ],
     video: "/video/Video-T2/Dubai night tour.mp4",
     wideImages: [],
@@ -330,6 +329,8 @@ const vehicleData = [
           class:
             "absolute top-32 left-60 text-right text-black font-bold w-[38rem]",
         },
+        brochure: false,
+        color: "#ffffff",
       },
       {
         title: "ESTILO POR FUERA Y POR DENTRO",
@@ -342,6 +343,8 @@ const vehicleData = [
           class:
             "absolute top-32 left-60 text-right text-white font-bold w-[38rem]",
         },
+        brochure: true,
+        color: "#ffffff",
       },
     ],
     informativeGallery: {
@@ -471,12 +474,12 @@ const vehicleData = [
       "/img/X70 Plus/X70 Plus 45 degree White.png",
     ],
     carColors: [
-      { class: "bg-[#1d1d1b]", hex: "#1d1d1b", folderName: "black" },
-      { class: "bg-[#394358]", hex: "#394358", folderName: "grey" },
       { class: "bg-[#304b6f]", hex: "#304b6f", folderName: "deepBlue" },
-      { class: "bg-[#f11b1b]", hex: "#f11b1b", folderName: "red" },
-      { class: "bg-[#462140]", hex: "#462140", folderName: "purple" },
+      { class: "bg-[#1d1d1b]", hex: "#1d1d1b", folderName: "black" },
       { class: "border border-2", hex: "#ffffff", folderName: "white" },
+      // { class: "bg-[#394358]", hex: "#394358", folderName: "grey" },
+      // { class: "bg-[#f11b1b]", hex: "#f11b1b", folderName: "red" },
+      // { class: "bg-[#462140]", hex: "#462140", folderName: "purple" },
     ],
     video: "/video/Videos-X70-Plus-Web/Video X70 Plus.m4v",
     wideImages: [],
@@ -492,6 +495,8 @@ const vehicleData = [
           class:
             "absolute top-32 left-60 text-right text-white font-bold w-[38rem]",
         },
+        brochure: false,
+        color: "#00a3b4",
       },
       {
         title: "TECNOLOGÍA ESPACIAL",
@@ -504,6 +509,8 @@ const vehicleData = [
           class:
             "absolute top-32 left-60 text-right text-white font-bold w-[38rem]",
         },
+        brochure: false,
+        color: "#00a3b4",
       },
     ],
     informativeGallery: {

@@ -6,53 +6,48 @@ import { usePrimaryColor } from "../color-context";
 const CarSpects = ({
   title,
   specs,
+  activeTitle,
+  toggleSpecs,
 }: {
   title: string;
   specs: Record<string, string>;
+  activeTitle: string | null;
+  toggleSpecs: (title: string) => void;
 }) => {
   const [mouseOver, setMouseOver] = useState(false);
-  const [showData, setShowData] = useState(false);
-
   const primaryColor = usePrimaryColor();
+  const isActive = activeTitle === title;
 
   return (
     <div
       className={clsx(
         "group transition-all flex flex-col w-full px-4 py-6 rounded-2xl",
-        {
-          "bg-transparent": !mouseOver && !showData,
-        }
+        { "bg-transparent": !mouseOver && !isActive }
       )}
       style={{
-        backgroundColor: mouseOver || showData ? primaryColor : "transparent",
+        backgroundColor: mouseOver || isActive ? primaryColor : "transparent",
       }}
-      onMouseOver={() => {
-        setMouseOver(true);
-      }}
-      onMouseOut={() => {
-        setMouseOver(false);
-      }}
-      onClick={() => {
-        setShowData(!showData);
-      }}
+      onMouseOver={() => setMouseOver(true)}
+      onMouseOut={() => setMouseOver(false)}
+      onClick={() => toggleSpecs(title)}
     >
       <div className="flex flex-row justify-between">
         <p
           className={clsx(
             "transition-all group-hover:text-white text-xl font-bold",
-            showData ? "text-white" : "text-black"
+            isActive ? "text-white" : "text-black"
           )}
         >
           {title}
         </p>
         <PlayIcon
           style={{
-            fill: mouseOver || showData ? "white" : primaryColor, // Simplified fill logic
-            color: mouseOver || showData ? "white" : primaryColor, // Simplified color logic
+            fill: mouseOver || isActive ? "white" : primaryColor,
+            color: mouseOver || isActive ? "white" : primaryColor,
           }}
           className={clsx(
-            "transition transform", // Ensure transition and transform are applied for smooth effect
-            mouseOver || showData ? "rotate-90" : "rotate-180", // Apply rotate-90 when either condition is true
+            "transition transform",
+            isActive ? "rotate-90" : "rotate-180",
             "group-hover:rotate-90"
           )}
         />
@@ -61,7 +56,7 @@ const CarSpects = ({
       <div
         className={clsx(
           "overflow-hidden transition-max-height duration-300 ease-in-out",
-          showData ? "max-h-screen" : "max-h-0"
+          isActive ? "max-h-screen" : "max-h-0"
         )}
       >
         <table className="w-full table-auto">

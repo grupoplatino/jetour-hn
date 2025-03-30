@@ -9,6 +9,9 @@ const VideoPlayer = ({ video }: VideoPlayer) => {
         src={video}
         typeof="video/mp4"
         controls
+        muted
+        loop
+        autoPlay
         className="w-[70%] h-[70%] mt-20 object-cover"
       ></video>
     </section>
