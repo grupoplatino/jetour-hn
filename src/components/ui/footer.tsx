@@ -6,13 +6,24 @@ import {
   LucideYoutube,
   Youtube,
 } from "lucide-react";
+import Image from "next/image";
 
 const Footer = () => {
   return (
     <footer className="min-h-64 bg-gray-500 flex flex-col py-8 px-6 gap-16 lg:flex-row justify-around items-center font-bold">
       <div>
-        <h1 className="text-3xl font-bold">JETOUR</h1>
-        <h1 className="text-3xl font-bold">AUTOS ALIADOS</h1>
+        <Image
+          src="/img/JetourLogoBlack.png"
+          alt="Logo Jetour"
+          width={200}
+          height={200}
+        />
+        <Image
+          src="/img/AutoAliadosBlack.png"
+          alt="Logo Auto Aliados"
+          width={200}
+          height={200}
+        />
       </div>
       <div className="grid grid-cols-3">
         <p>Vehicles</p>

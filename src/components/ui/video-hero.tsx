@@ -4,12 +4,14 @@ import clsx from "clsx";
 
 const PageSection = ({
   imgSrc,
-  videoSrc,
+  firstVideoSrc,
+  secondVideoSrc,
   page,
   children,
 }: {
   imgSrc: string;
-  videoSrc: string;
+  firstVideoSrc: string;
+  secondVideoSrc: string;
   page: number;
   children: ReactNode;
 }) => (
@@ -42,7 +44,7 @@ const PageSection = ({
         loop
         muted
         className="absolute top-0 left-0 w-full h-full object-cover"
-        src={videoSrc}
+        src={firstVideoSrc}
         typeof="video/mp4"
       ></video>
     </div>
@@ -57,7 +59,7 @@ const PageSection = ({
         loop
         muted
         className="absolute top-0 left-0 w-full h-full object-cover"
-        src={videoSrc}
+        src={secondVideoSrc}
         typeof="video/mp4"
       ></video>
     </div>
@@ -89,8 +91,9 @@ const VideoHero = () => {
 
       {page === 1 ? (
         <PageSection
-          imgSrc="/img/T2/Approach and departure angles.jpg"
-          videoSrc="/video/Video-T2/Dubai night tour.mp4"
+          imgSrc="/img/landing/T2/Fashion Blocks 2.jpg"
+          firstVideoSrc="/img/landing/T2/T2 TVC-30s-4K.mp4"
+          secondVideoSrc="/img/landing/T2/9x16-40s.mp4"
           page={1}
         >
           <figure className="absolute z-10 top-44 left-8 flex flex-col justify-start">
@@ -108,12 +111,13 @@ const VideoHero = () => {
       ) : (
         <PageSection
           imgSrc="/img/DASHING/3.jpg"
-          videoSrc="/video/Video-Dashing/Product CG Video.MP4"
+          firstVideoSrc="/img/landing/DASHING/Product CG Video.MP4"
+          secondVideoSrc="/img/landing/DASHING/Jetour Jx65 Showroom 高清 无字幕.mp4"
           page={2}
         >
           <figure className="absolute z-10 top-28 left-8 flex flex-col justify-start">
             <Image
-              src="/img/DASHING/Logo.png"
+              src="/img/Dashing/Logo.png"
               width={400}
               height={400}
               alt="Logo DASHING"
