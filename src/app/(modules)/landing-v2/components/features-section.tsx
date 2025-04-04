@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { StaticImageData } from 'next/image';
-import { carThemes } from '../page';
+import { carThemes } from '../data/theme-definitions';
 
 interface Feature {
   image: StaticImageData | string;

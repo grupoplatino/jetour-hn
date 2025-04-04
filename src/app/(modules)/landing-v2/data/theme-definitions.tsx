@@ -1,5 +1,3 @@
-// themes.ts
-
 export const carThemes = {
   orange: {
     colors: {
@@ -7,7 +5,7 @@ export const carThemes = {
       secondary: '#FFA866',
       text: '#FFFFFF',
       background: '#1D1D1B',
-      testDriveText: 'black', // Color del texto para el botón de test drive
+      testDriveText: 'black', // Color del texto para el botón de test drive,
       sectionText: '#FFFFFF' // Color del texto para la sección
     }
   },
@@ -23,4 +21,5 @@ export const carThemes = {
   }
 };
 
-export type ThemeKey = keyof typeof carThemes;
+// Tipo para el tema
+export type CarThemeKey = keyof typeof carThemes;

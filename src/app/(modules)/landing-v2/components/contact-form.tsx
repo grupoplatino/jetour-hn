@@ -1,13 +1,12 @@
 import { StaticImageData } from 'next/image';
 import Image from 'next/image';
-import { carThemes } from '../page';
-import { ThemeKey } from '../data/theme-definitions';
+import { CarThemeKey, carThemes } from '../data/theme-definitions';
 import CotizacionForm from './contact-form-client';
 import certificateImage from '@root/public/img/Certificado.jpg';
 
 interface CotizacionProps {
   backgroundImage?: StaticImageData | string;
-  themeKey: ThemeKey;
+  themeKey: CarThemeKey;
 }
 
 export default function ContactForm({ backgroundImage = '/img/Fondo Cotización.jpg', themeKey }: CotizacionProps) {

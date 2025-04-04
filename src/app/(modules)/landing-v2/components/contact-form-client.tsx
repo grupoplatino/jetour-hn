@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { carThemes, ThemeKey } from '../data/theme-definitions';
+import { carThemes, CarThemeKey } from '../data/theme-definitions';
 
 // Esquema de validación
 const formSchema = z.object({
@@ -27,7 +27,7 @@ const carModels = [
 ];
 
 interface CotizacionFormProps {
-  themeKey: ThemeKey;
+  themeKey: CarThemeKey;
 }
 
 export default function CotizacionForm({ themeKey }: CotizacionFormProps) {

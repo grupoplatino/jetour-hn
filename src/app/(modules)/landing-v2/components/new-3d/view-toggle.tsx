@@ -2,7 +2,7 @@
 import React from 'react';
 import { ViewMode } from './types';
 import clsx from 'clsx';
-import { carThemes } from '../../page';
+import { carThemes } from '../../data/theme-definitions';
 
 interface ViewToggleProps {
   currentView: ViewMode;

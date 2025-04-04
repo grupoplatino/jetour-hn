@@ -1,12 +1,12 @@
 // car-feature-stats.tsx
 
-import { CarTheme, carThemes } from '../page';
+import { CarThemeKey, carThemes } from '../data/theme-definitions';
 
 interface CarFeatureStatsProps {
   name: string;
   value: string | number;
   position: 'topleft' | 'topright' | 'topcenter' | 'bottomleft' | 'bottomright' | 'bottomcenter';
-  carTheme: CarTheme;
+  carTheme: CarThemeKey;
 }
 
 export function CarFeatureStats({ name, value, position, carTheme }: CarFeatureStatsProps) {

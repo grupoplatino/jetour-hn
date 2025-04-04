@@ -2,7 +2,7 @@
 import { StaticImageData } from 'next/image';
 import { CarFeatureStats } from './car-feature-stats';
 import { CarColorSelector } from './car-color-selector';
-import { CarTheme } from '../page';
+import { CarThemeKey } from '../data/theme-definitions';
 
 // Definición de tipos
 export interface CarFeature {
@@ -21,7 +21,7 @@ export interface CarColorModel {
 interface CarFeaturesShowcaseProps {
   carModels: CarColorModel[];
   features: CarFeature[];
-  carTheme: CarTheme;
+  carTheme: CarThemeKey;
 }
 
 // Este es el componente principal renderizado por el servidor

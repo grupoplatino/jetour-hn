@@ -1,13 +1,12 @@
 'use client';
 
 import { useState } from 'react';
-import { carThemes } from '../page';
-import { ThemeKey } from '../data/theme-definitions';
 import CarSpects from './car-specs';
+import { CarThemeKey, carThemes } from '../data/theme-definitions';
 
 interface SpecsSectionContentProps {
   specs: Record<string, Record<string, string>>;
-  themeKey: ThemeKey;
+  themeKey: CarThemeKey;
 }
 
 export const SpecsSectionContent = ({ specs, themeKey }: SpecsSectionContentProps) => {

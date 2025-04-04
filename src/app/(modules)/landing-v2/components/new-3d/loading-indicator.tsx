@@ -1,6 +1,6 @@
 // src/components/VehicleVisualizer/LoadingIndicator.tsx
 import React from 'react';
-import { carThemes } from '../../page';
+import { carThemes } from '../../data/theme-definitions';
 
 interface LoadingIndicatorProps {
   progress: number;
