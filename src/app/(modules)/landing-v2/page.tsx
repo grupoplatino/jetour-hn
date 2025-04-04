@@ -35,6 +35,51 @@ import CarGallerySection from './components/car-gallery-section';
 import { SpecsSection } from './components/specs-section';
 import { CarSpects } from './components/car-specs';
 import { t2SpecsData } from './data/t2-specs-data';
+import Viewer3D from './components/3d-viewer-server';
+import ContactForm from './components/contact-form';
+
+const carData = {
+  primaryColor: '#f28b2d', // Color naranja para T2
+  ThreeSixtyView: {
+    default: {
+      color: 'nightBlack', // Color por defecto
+      path: '/img/T2/T2 360_/Night Black/T2-EXT-'
+    },
+    interior: '/img/X70 Plus/X70PLUS_360/INT/X70PLUS-INT.png', // Imagen de placeholder
+    exterior: {
+      white: {
+        imageCount: 36,
+        path: '/img/T2/T2 360_/White/T2-EXT-',
+        hexColor: '#FFFFFF',
+        colorName: 'Blanco'
+      },
+      nightBlack: {
+        imageCount: 36,
+        path: '/img/T2/T2 360_/Night Black/T2-EXT-',
+        hexColor: '#181818',
+        colorName: 'Negro Noche'
+      },
+      sand: {
+        imageCount: 36,
+        path: '/img/T2/T2 360_/Sand/T2-EXT-',
+        hexColor: '#d8cbb1',
+        colorName: 'Arena'
+      },
+      highwayGrey: {
+        imageCount: 36,
+        path: '/img/T2/T2 360_/Highway Grey/T2-EXT-',
+        hexColor: '#747b89',
+        colorName: 'Gris Carretera'
+      },
+      mistyCyan: {
+        imageCount: 36,
+        path: '/img/T2/T2 360_/Misty Cyan/T2-EXT-',
+        hexColor: '#97a8bd',
+        colorName: 'Azul Niebla'
+      }
+    }
+  }
+};
 
 // Definimos los temas de colores para cada modelo de vehículo
 export const carThemes = {
@@ -241,6 +286,10 @@ export default function LandingPage() {
       <CarGallerySection images={[t2SkeletonImage, t2TopSkeletonImage, t2SecondSeatsRowImage, t2ProximityImage]} />
 
       <SpecsSection specs={t2SpecsData} themeKey="orange" />
+
+      <Viewer3D carData={carData} />
+
+      <ContactForm themeKey="orange" />
     </>
   );
 }
