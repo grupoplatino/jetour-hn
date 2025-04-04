@@ -22,6 +22,7 @@ import screenT2 from '@root/public/img/T2/15.6_high-resolution color touchscreen
 import CarFeaturesShowcase, { CarColorModel, CarFeature } from './components/car-features-show-case';
 import { VideoSection } from './components/car-video-section';
 import { SplitImageSection } from './components/split-image-section';
+import { FeaturesSection } from './components/features-section';
 
 // Definimos los temas de colores para cada modelo de vehículo
 export const carThemes = {
@@ -202,6 +203,25 @@ export default function LandingPage() {
         carTheme="orange"
         carModelName="T2"
         brochureUrl="https://www.jetour.com.co/brochure/T2.pdf"
+      />
+
+      <FeaturesSection
+        carTheme="orange"
+        features={[
+          {
+            image: t2ImageSection,
+            label: 'MODELADO TRIDIMENSIONAL MULTINIVEL'
+          },
+          {
+            image: t2ImageSection2,
+            label: 'PANTALLA CENTRAL DE 15.6'
+          },
+          {
+            image: screenT2,
+            label: 'DISTANCIA ENTRE EJES SÚPER LARGA'
+          }
+        ]}
+        title="COMODIDAD DESDE DONDE LA VEAS"
       />
     </>
   );
