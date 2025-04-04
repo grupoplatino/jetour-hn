@@ -81,3 +81,59 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/* car-animations.css */
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-33%) scale(0.75);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-100%) scale(0.6);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(33%) scale(0.75);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(33%) scale(0.75);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(100%) scale(0.6);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(-33%) scale(0.75);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomCenter {
+  0% {
+    transform: translateX(0) scale(1);
+  }
+  50% {
+    transform: translateY(5%) scale(0.9);
+  }
+  100% {
+    transform: translateX(0) scale(1);
+  }
+}
+
+.animate-slide-left {
+  animation: slideLeft 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.animate-slide-right {
+  animation: slideRight 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.animate-zoom-center {
+  animation: zoomCenter 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
