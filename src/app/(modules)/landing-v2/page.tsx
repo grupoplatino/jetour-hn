@@ -13,6 +13,7 @@ import t2BlackImage from '@root/public/img/T2/car black 0022 (1).webp';
 import t2WhiteImage from '@root/public/img/T2/car white 0022.webp';
 import t2NeutralImage from '@root/public/img/T2/car.0022.webp';
 import CarFeaturesShowcase, { CarColorModel, CarFeature } from './components/car-features-show-case';
+import { VideoSection } from './components/car-video-section';
 
 // Definimos los temas de colores para cada modelo de vehículo
 export const carThemes = {
@@ -172,6 +173,7 @@ export default function LandingPage() {
       <CarHero backgroundImageUrl={t2Image.src} backgroundImage={t2Image} carLogo={t2Logo} tagline="AVENTURAS SIN LÍMITES" carTheme="orange" />
       {/* Añade el componente de características del carro */}
       <CarFeaturesShowcase carModels={t2Models} features={t2Features} carTheme="orange" />
+      <VideoSection videoUrl="/video/Video-T2/Dubai Night Tour.mp4" thumbnailUrl="/img/T2/T2 Jetour.jpg" />
     </>
   );
 }
