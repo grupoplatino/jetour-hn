@@ -34,8 +34,8 @@ export default function CarFeaturesShowcase({ carModels, features, carTheme }: C
   const bottomFeatures = features.filter((f) => f.position === 'bottomleft' || f.position === 'bottomright' || f.position === 'bottomcenter');
 
   return (
-    <section className="relative w-full py-16 overflow-hidden">
-      <div className="grid grid-cols-3 gap-4 mb-8 px-4">
+    <section className="relative w-full py-4 overflow-hidden">
+      <div className="flex justify-around gap-4 mb-16 px-4 w-full">
         {topFeatures.map((feature, index) => (
           <CarFeatureStats key={index} name={feature.name} value={feature.value} position={feature.position} carTheme={carTheme} />
         ))}
@@ -43,7 +43,7 @@ export default function CarFeaturesShowcase({ carModels, features, carTheme }: C
 
       <CarColorSelector carModels={carModels} carTheme={carTheme} />
 
-      <div className="grid grid-cols-3 gap-4 mt-8 px-4">
+      <div className="flex justify-around gap-4 mt-16 px-4 w-ful">
         {bottomFeatures.map((feature, index) => (
           <CarFeatureStats key={index} name={feature.name} value={feature.value} position={feature.position} carTheme={carTheme} />
         ))}

@@ -23,7 +23,7 @@ export function CarFeatureStats({ name, value, position, carTheme }: CarFeatureS
   };
 
   return (
-    <div className={`flex flex-col ${positionClasses[position]}`}>
+    <div className={`flex items-center gap-2 ${positionClasses[position]}`}>
       <h3 className="text-sm font-semibold uppercase">{name}</h3>
       <span className="text-6xl font-bold" style={{ color: theme.primary }}>
         {value}
