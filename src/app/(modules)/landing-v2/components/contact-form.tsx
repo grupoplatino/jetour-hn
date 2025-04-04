@@ -3,7 +3,6 @@ import Image from 'next/image';
 import { carThemes } from '../page';
 import { ThemeKey } from '../data/theme-definitions';
 import CotizacionForm from './contact-form-client';
-
 import certificateImage from '@root/public/img/Certificado.jpg';
 
 interface CotizacionProps {
@@ -17,21 +16,33 @@ export default function ContactForm({ backgroundImage = '/img/Fondo Cotización.
 
   return (
     <section
-      className="relative h-screen w-full bg-cover bg-no-repeat min-h-fit"
+      className="relative w-full bg-cover bg-no-repeat py-20 min-h-screen flex items-center"
       style={{
         backgroundImage: `url("${backgroundImage}")`,
         color: textColor
       }}
     >
-      <div className="absolute flex flex-col gap-y-6 lg:right-12 md:right-44 right-[1rem] top-32 w-[22rem] min-h-fit h-full">
-        <h1 className="text-5xl font-bold">SOLICITA TU COTIZACIÓN</h1>
+      <div className="container mx-auto px-4">
+        <div className="grid md:grid-cols-2 gap-8">
+          {/* Columna izquierda - puede contener información adicional o estar vacía para dar espacio */}
+          <div className="hidden md:flex md:items-end md:justify-start relative">
+            {/* Badge de garantía */}
+            <div className="absolute bottom-4 left-4">
+              <Image src={certificateImage} width={180} height={240} alt="Certificado de Garantía" className="w-auto h-auto" />
+            </div>
+          </div>
 
-        <CotizacionForm themeKey={themeKey} />
-      </div>
+          {/* Columna derecha - formulario */}
+          <div className="bg-black/30 p-8 rounded-lg backdrop-blur-sm md:ml-auto w-full max-w-lg">
+            <h1 className="text-4xl md:text-5xl font-bold mb-8">SOLICITA TU COTIZACIÓN</h1>
+            <CotizacionForm themeKey={themeKey} />
+          </div>
+        </div>
 
-      {/* Badge de garantía */}
-      <div className="absolute bottom-8 left-8">
-        <Image src={certificateImage} width={150} height={200} alt="Certificado de Garantía" className="w-auto h-auto" />
+        {/* Badge de garantía en móvil */}
+        <div className="md:hidden absolute bottom-4 left-4">
+          <Image src={certificateImage} width={120} height={160} alt="Certificado de Garantía" className="w-auto h-auto" />
+        </div>
       </div>
     </section>
   );

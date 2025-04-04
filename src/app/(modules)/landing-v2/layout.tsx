@@ -8,7 +8,7 @@ export default function LandingLayout({
 }>) {
   return (
     <LandingProviders>
-      <main suppressHydrationWarning={true} className="md:gap-y-0 flex flex-col w-full max-w-full grow">
+      <main suppressHydrationWarning={true} className="md:gap-y-0 flex flex-col w-full max-w-full grow h-fit">
         {children}
       </main>
     </LandingProviders>

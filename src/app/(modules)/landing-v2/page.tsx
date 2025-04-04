@@ -242,7 +242,6 @@ export default function LandingPage() {
       <WhatsAppButton />
       <TestDriveButton carTheme={carTheme} />
       <CarHero backgroundImageUrl={t2Image.src} backgroundImage={t2Image} carLogo={t2Logo} tagline="AVENTURAS SIN LÍMITES" carTheme="orange" />
-      {/* Añade el componente de características del carro */}
       <CarFeaturesShowcase carModels={t2Models} features={t2Features} carTheme="orange" />
       <VideoSection videoUrl="/video/Video-T2/Dubai Night Tour.mp4" thumbnailUrl="/img/T2/T2 Jetour.jpg" />
 
@@ -289,8 +288,6 @@ export default function LandingPage() {
       <CarGallerySection images={[t2SkeletonImage, t2TopSkeletonImage, t2SecondSeatsRowImage, t2ProximityImage]} />
 
       <SpecsSection specs={t2SpecsData} themeKey="orange" />
-
-      {/* <Viewer3D carData={carData} /> */}
 
       <section className="p-16">
         <VehicleVisualizer

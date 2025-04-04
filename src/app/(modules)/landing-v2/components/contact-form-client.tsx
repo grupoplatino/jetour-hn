@@ -30,16 +30,7 @@ interface CotizacionFormProps {
   themeKey: ThemeKey;
 }
 
-/*************  ✨ Windsurf Command ⭐  *************/
-/**
- * Formulario de contacto que se utiliza en la landing page de cada
- * modelo de vehículo. Recibe como prop el tema actual (llave de
- * `carThemes`) y utiliza colores y estilos de ese tema.
- *
- * @param themeKey - La llave del tema a utilizar (e.g. "orange" o
- *                   "turquoise")
- */
-/*******  29026a9d-9505-4272-881f-255a4579dd62  *******/ export default function CotizacionForm({ themeKey }: CotizacionFormProps) {
+export default function CotizacionForm({ themeKey }: CotizacionFormProps) {
   const theme = carThemes[themeKey];
   const primaryColor = theme.colors.primary;
 
@@ -100,47 +91,50 @@ interface CotizacionFormProps {
     registerOptions?: any;
     error?: string;
   }) => (
-    <div className="flex flex-col gap-2">
-      <label className="font-bold" htmlFor={name}>
+    <div className="flex flex-col gap-1 mb-4">
+      <label className="font-bold text-sm md:text-base" htmlFor={name}>
         {label}:
       </label>
       <input
-        className={`bg-white px-2 py-1 text-black ${error ? 'border-2 border-red-500' : 'opacity-50'}`}
+        className={`bg-white bg-opacity-80 px-3 py-2 text-black rounded ${error ? 'border-2 border-red-500' : 'border border-gray-300'}`}
         id={name}
         type={type}
         {...register(name, registerOptions)}
       />
-      {error && <p className="text-xs text-red-300">{error}</p>}
+      {/* Reservar espacio para mensaje de error */}
+      <div className="min-h-6">{error && <p className="text-xs text-red-300">{error}</p>}</div>
     </div>
   );
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4">
-      <div className="grid grid-cols-2 gap-4">
+    <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4">
         <InputField label="Nombre" name="name" error={errors.name?.message} />
         <InputField label="Apellido" name="lastName" error={errors.lastName?.message} />
         <InputField label="Correo electrónico" name="email" type="email" error={errors.email?.message} />
         <InputField label="No. de Teléfono" name="phone" type="tel" error={errors.phone?.message} />
 
-        <div className="flex flex-col gap-2 col-span-2">
-          <label className="font-bold" htmlFor="message">
+        <div className="flex flex-col gap-1 mb-4 col-span-1 md:col-span-2">
+          <label className="font-bold text-sm md:text-base" htmlFor="message">
             Mensaje:
           </label>
           <textarea
-            className={`bg-white px-2 py-1 text-black ${errors.message ? 'border-2 border-red-500' : 'opacity-50'}`}
+            className={`bg-white bg-opacity-80 px-3 py-2 text-black rounded resize-none ${
+              errors.message ? 'border-2 border-red-500' : 'border border-gray-300'
+            }`}
             id="message"
             rows={3}
             {...register('message')}
           />
-          {errors.message && <p className="text-xs text-red-300">{errors.message.message}</p>}
+          <div className="min-h-6">{errors.message && <p className="text-xs text-red-300">{errors.message.message}</p>}</div>
         </div>
 
-        <div className="flex flex-col gap-2 col-span-2">
-          <label className="font-bold" htmlFor="carModel">
+        <div className="flex flex-col gap-1 mb-4 col-span-1 md:col-span-2">
+          <label className="font-bold text-sm md:text-base" htmlFor="carModel">
             Modelo de vehículo:
           </label>
           <select
-            className={`bg-white px-2 py-1 text-black ${errors.carModel ? 'border-2 border-red-500' : 'opacity-50'}`}
+            className={`bg-white bg-opacity-80 px-3 py-2 text-black rounded ${errors.carModel ? 'border-2 border-red-500' : 'border border-gray-300'}`}
             id="carModel"
             {...register('carModel')}
           >
@@ -151,18 +145,21 @@ interface CotizacionFormProps {
               </option>
             ))}
           </select>
-          {errors.carModel && <p className="text-xs text-red-300">{errors.carModel.message}</p>}
+          <div className="min-h-6">{errors.carModel && <p className="text-xs text-red-300">{errors.carModel.message}</p>}</div>
         </div>
       </div>
 
-      {submitSuccess && (
-        <div className="bg-green-600 text-white px-3 py-2 rounded mt-2">¡Mensaje enviado con éxito! Nos pondremos en contacto contigo a la brevedad.</div>
-      )}
+      {/* Contenedor con altura fija para mensaje de éxito */}
+      <div className="h-12 mb-4">
+        {submitSuccess && (
+          <div className="bg-green-600 text-white px-4 py-3 rounded">¡Mensaje enviado con éxito! Nos pondremos en contacto contigo pronto.</div>
+        )}
+      </div>
 
       <button
         type="submit"
         disabled={isSubmitting}
-        className="uppercase px-4 py-2 rounded-lg font-medium mt-4 transition-all hover:opacity-90 disabled:opacity-50"
+        className="uppercase px-6 py-3 rounded-lg font-medium transition-all hover:brightness-110 disabled:opacity-50 w-full md:w-auto md:self-end text-white"
         style={{ backgroundColor: primaryColor }}
       >
         {isSubmitting ? 'Enviando...' : 'Enviar'}
