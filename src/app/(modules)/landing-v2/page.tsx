@@ -12,8 +12,13 @@ import clsx from 'clsx';
 import t2BlackImage from '@root/public/img/T2/car black 0022 (1).webp';
 import t2WhiteImage from '@root/public/img/T2/car white 0022.webp';
 import t2NeutralImage from '@root/public/img/T2/car.0022.webp';
+
+import t2ImageSection from '@root/public/img/T2/Approach and departure angles.webp'; // Cambia esto por la ruta correcta de tu imagen
+import t2ImageSection2 from '@root/public/img/T2/Magic Electric Door.webp'; // Cambia esto por la ruta correcta de tu imagen
+
 import CarFeaturesShowcase, { CarColorModel, CarFeature } from './components/car-features-show-case';
 import { VideoSection } from './components/car-video-section';
+import { SplitImageSection } from './components/split-image-section';
 
 // Definimos los temas de colores para cada modelo de vehículo
 export const carThemes = {
@@ -23,7 +28,8 @@ export const carThemes = {
       secondary: '#FFA866',
       text: '#FFFFFF',
       background: '#1D1D1B',
-      testDriveText: 'black' // Color del texto para el botón de test drive
+      testDriveText: 'black', // Color del texto para el botón de test drive,
+      sectionText: '#FFFFFF' // Color del texto para la sección
     }
   },
   turquoise: {
@@ -32,7 +38,8 @@ export const carThemes = {
       secondary: '#66D8E3',
       text: '#FFFFFF',
       background: '#1D1D1B',
-      testDriveText: '#FFFFFF'
+      testDriveText: '#FFFFFF',
+      sectionText: '#FFFFFF' // Color del texto para la sección
     }
   }
 };
@@ -174,6 +181,14 @@ export default function LandingPage() {
       {/* Añade el componente de características del carro */}
       <CarFeaturesShowcase carModels={t2Models} features={t2Features} carTheme="orange" />
       <VideoSection videoUrl="/video/Video-T2/Dubai Night Tour.mp4" thumbnailUrl="/img/T2/T2 Jetour.jpg" />
+
+      <SplitImageSection
+        image1={t2ImageSection}
+        image2={t2ImageSection2}
+        sectionTitle="T2 FUE CREADA PARA LA AVENTURA"
+        sectionText="Tiene un sistema de tracción en las 4 ruedas que la hace perfecta para cualquier terreno, cuenta con 7 modos de conducción que te permitirán personalizar la conducción."
+        carTheme="orange"
+      />
     </>
   );
 }
