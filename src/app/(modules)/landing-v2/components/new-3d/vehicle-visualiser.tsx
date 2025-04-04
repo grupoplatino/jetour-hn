@@ -1,10 +1,10 @@
 'use client';
 import React, { useState, useMemo } from 'react';
 import { VehicleVisualizerProps, ViewMode, VehicleColor } from './types';
-import { carThemes } from '../../page';
 import ViewToggle from './view-toggle';
 import ExteriorView from './exterior-view';
 import InteriorView from './interior-view';
+import { carThemes } from '../../data/theme-definitions';
 
 const VehicleVisualizer: React.FC<VehicleVisualizerProps> = ({
   title = 'VISUALIZADOR 3D',
