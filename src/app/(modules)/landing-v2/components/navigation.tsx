@@ -90,7 +90,7 @@ export function Navbar({ disableTransparent = false, primaryColor = '#00a3b4' }:
                   {dropdownOpen && (
                     <div className="absolute top-full left-0 mt-2 w-48 bg-black text-white shadow-lg rounded-lg flex flex-col z-50">
                       {link.dropdownItems?.map((item, idx) => (
-                        <Link href={item.href} key={idx} className="p-2 hover:bg-gray-700" onClick={() => setDropdownOpen(false)}>
+                        <Link href={item.href} key={idx} className="p-2 hover:bg-gray-700 font-medium" onClick={() => setDropdownOpen(false)}>
                           {item.label}
                         </Link>
                       ))}
@@ -98,7 +98,7 @@ export function Navbar({ disableTransparent = false, primaryColor = '#00a3b4' }:
                   )}
                 </>
               ) : (
-                <Link href={link.href} className="hover:text-gray-300">
+                <Link href={link.href} className="hover:text-gray-300 font-medium">
                   {link.label}
                 </Link>
               )}

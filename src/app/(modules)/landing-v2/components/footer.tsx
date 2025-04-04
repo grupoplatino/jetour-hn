@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -5,6 +6,9 @@ import { Instagram, Facebook, Youtube, MessageCircle } from 'lucide-react';
 
 import jetourLogoBlack from '@root/public/img/JetourLogoBlack.png';
 import autoAliadosBlack from '@root/public/img/AutoAliadosBlack.png';
+import { useParams } from 'next/navigation';
+import { getVehicleById } from '../data/vehicles-constant';
+import { carThemes } from '../data/theme-definitions';
 
 interface FooterProps {
   primaryColor?: string;
@@ -13,10 +17,16 @@ interface FooterProps {
 export function Footer({ primaryColor = '#00a3b4' }: FooterProps) {
   const currentYear = new Date().getFullYear();
 
+  const params = useParams();
+
+  const carData = getVehicleById(params.id as string);
+
+  const carTheme = carData ? carThemes?.[carData.theme]?.colors : null;
+
   return (
     <footer className="relative w-full">
       {/* Línea superior con el color primario */}
-      <div className="w-full h-1" style={{ backgroundColor: primaryColor }}></div>
+      <div className="w-full h-1" style={{ backgroundColor: carTheme ? carTheme.primary : primaryColor }}></div>
 
       {/* Contenido principal del footer */}
       <div className="bg-gray-100 text-gray-800">
@@ -38,22 +48,22 @@ export function Footer({ primaryColor = '#00a3b4' }: FooterProps) {
               <h3 className="text-lg font-bold mb-4">Vehículos</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/landing/dashing" className="hover:text-gray-600 transition-colors">
+                  <Link href="/landing-v2/dashing" className="hover:text-gray-600 transition-colors">
                     Dashing
                   </Link>
                 </li>
                 <li>
-                  <Link href="/landing/t2" className="hover:text-gray-600 transition-colors">
+                  <Link href="/landing-v2/t2" className="hover:text-gray-600 transition-colors">
                     T2
                   </Link>
                 </li>
                 <li>
-                  <Link href="/landing/x50" className="hover:text-gray-600 transition-colors">
+                  <Link href="/landing-v2/x50" className="hover:text-gray-600 transition-colors">
                     X50
                   </Link>
                 </li>
                 <li>
-                  <Link href="/landing/x70" className="hover:text-gray-600 transition-colors">
+                  <Link href="/landing-v2/x70" className="hover:text-gray-600 transition-colors">
                     X70 Plus
                   </Link>
                 </li>
@@ -147,23 +157,23 @@ export function Footer({ primaryColor = '#00a3b4' }: FooterProps) {
       </div>
 
       {/* Copyright y links legales */}
-      <div className="bg-gray-800 text-white py-4">
+      <div className="text-white py-4" style={{ backgroundColor: carTheme ? carTheme.primary : primaryColor }}>
         <div className="container mx-auto px-4 md:px-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-sm mb-4 md:mb-0">© {currentYear} JETOUR Auto. Todos los derechos reservados.</div>
 
           <div className="flex gap-6 text-sm">
-            <Link href="/politica-de-privacidad" className="hover:text-gray-300 transition-colors">
+            <Link href="/landing-v2/politica-de-privacidad" className="hover:text-gray-300 transition-colors">
               Política de Privacidad
             </Link>
-            <Link href="/cookies" className="hover:text-gray-300 transition-colors">
+            <Link href="/landing-v2/cookies" className="hover:text-gray-300 transition-colors">
               Cookies
             </Link>
-            <Link href="/terminos-y-condiciones" className="hover:text-gray-300 transition-colors">
+            <Link href="/landing-v2/terminos-y-condiciones" className="hover:text-gray-300 transition-colors">
               Términos y Condiciones
             </Link>
           </div>
 
-          <div className="mt-4 md:mt-0 text-xs text-gray-400">Diseñado por Gamero Studio</div>
+          <div className="mt-4 md:mt-0 text-xs">Diseñado por Gamero Studio</div>
         </div>
       </div>
     </footer>
