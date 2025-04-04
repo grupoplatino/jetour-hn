@@ -1,6 +1,7 @@
 import '@/app/globals.css';
 import LandingProviders from '@landing/presentation/providers/landing-provider/landing-provider';
 import { Navbar } from './components/navigation';
+import { Footer } from './components/footer';
 
 export default function LandingLayout({
   children
@@ -13,6 +14,7 @@ export default function LandingLayout({
       <main suppressHydrationWarning={true} className="md:gap-y-0 flex flex-col w-full max-w-full grow h-fit">
         {children}
       </main>
+      <Footer />
     </LandingProviders>
   );
 }
