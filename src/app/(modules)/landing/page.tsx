@@ -1,19 +1,17 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-"use client";
+'use client';
 
-import Image from "next/image";
-import { NavBar } from "@/components/ui/navbar";
+import { NavBar } from '@/components/ui/navbar';
 
-import ColorContext from "@/components/ui/color-context";
-import { Footer } from "@/components/ui/footer";
-import { useParams } from "next/navigation";
-import { CarSelector } from "@/components/ui/carSelector";
-import { VideoHero } from "@/components/ui/video-hero";
+import ColorContext from '@/components/ui/color-context';
+import { Footer } from '@/components/ui/footer';
+import { CarSelector } from '@/components/ui/carSelector';
+import { VideoHero } from '@/components/ui/video-hero';
 
 export default function LandingPage() {
   return (
     <>
-      <ColorContext.Provider value={"#000000"}>
+      <ColorContext.Provider value={'#000000'}>
         <NavBar disableTransparent />
       </ColorContext.Provider>
       <VideoHero />
