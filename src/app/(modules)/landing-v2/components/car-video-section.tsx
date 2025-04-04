@@ -3,7 +3,7 @@ interface VideoSectionProps {
   thumbnailUrl: string;
 }
 
-export function VideoSection({ videoUrl }: VideoSectionProps) {
+export default function VideoSection({ videoUrl }: VideoSectionProps) {
   return (
     <section className="relative w-full min-h-[500px] flex justify-center items-center overflow-hidden py-16">
       <div className="max-w-full max-h-full">

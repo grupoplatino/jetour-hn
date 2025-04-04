@@ -12,7 +12,7 @@ interface SplitImageSectionProps {
   brochureUrl?: string;
 }
 
-export function SplitImageSection({ image1, image2, sectionTitle, sectionText, carTheme, carModelName, brochureUrl }: SplitImageSectionProps) {
+export default function SplitImageSection({ image1, image2, sectionTitle, sectionText, carTheme, carModelName, brochureUrl }: SplitImageSectionProps) {
   const theme = carThemes[carTheme];
 
   return (

@@ -13,7 +13,7 @@ interface FeaturesSectionProps {
   carTheme: keyof typeof carThemes;
 }
 
-export function FeaturesSection({ title, features, carTheme }: FeaturesSectionProps) {
+export default function FeaturesSection({ title, features, carTheme }: FeaturesSectionProps) {
   const theme = carThemes[carTheme];
 
   return (

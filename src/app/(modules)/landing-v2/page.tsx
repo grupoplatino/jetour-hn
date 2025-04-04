@@ -26,19 +26,19 @@ import t2TopSkeletonImage from '@root/public/img/T2/Matrix protected roof.webp';
 import t2SecondSeatsRowImage from '@root/public/img/T2/Second row seats faced down.webp'; // Cambia esto por la ruta correcta de tu imagen
 import t2ProximityImage from '@root/public/img/T2/Forward-collision warning system copia.webp'; // Cambia esto por la ruta correcta de tu imagen
 
-import CarFeaturesShowcase, { CarColorModel, CarFeature } from './components/car-features-show-case';
-import { VideoSection } from './components/car-video-section';
-import { SplitImageSection } from './components/split-image-section';
-import { FeaturesSection } from './components/features-section';
-import SinglePictureSection from './components/single-picture-section';
-import CarGallerySection from './components/car-gallery-section';
-import { SpecsSection } from './components/specs-section';
-import { CarSpects } from './components/car-specs';
+import { CarColorModel, CarFeature } from './components/car-features-show-case';
 import { t2SpecsData } from './data/t2-specs-data';
-import ContactForm from './components/contact-form';
-
 import dynamic from 'next/dynamic';
 
+// 🚀 Importación dinámica de componentes
+const CarFeaturesShowcase = dynamic(() => import('./components/car-features-show-case'));
+const VideoSection = dynamic(() => import('./components/car-video-section'));
+const SplitImageSection = dynamic(() => import('./components/split-image-section'));
+const FeaturesSection = dynamic(() => import('./components/features-section'));
+const SinglePictureSection = dynamic(() => import('./components/single-picture-section'));
+const CarGallerySection = dynamic(() => import('./components/car-gallery-section'));
+const SpecsSection = dynamic(() => import('./components/specs-section'));
+const ContactForm = dynamic(() => import('./components/contact-form'));
 const VehicleVisualizer = dynamic(() => import('./components/new-3d'));
 
 const carData = {

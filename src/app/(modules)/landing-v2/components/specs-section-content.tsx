@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { carThemes } from '../page';
 import { ThemeKey } from '../data/theme-definitions';
-import { CarSpects } from './car-specs';
+import CarSpects from './car-specs';
 
 interface SpecsSectionContentProps {
   specs: Record<string, Record<string, string>>;

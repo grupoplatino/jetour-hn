@@ -16,4 +16,4 @@ const SpecsSection = ({ specs, themeKey }: SpecsSectionProps) => {
   );
 };
 
-export { SpecsSection };
+export default SpecsSection;

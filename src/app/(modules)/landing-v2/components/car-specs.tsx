@@ -55,4 +55,4 @@ const CarSpects = ({ title, specs, activeTitle, toggleSpecs, theme }: CarSpectsP
   );
 };
 
-export { CarSpects };
+export default CarSpects;
