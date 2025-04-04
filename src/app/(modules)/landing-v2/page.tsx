@@ -16,6 +16,9 @@ import t2NeutralImage from '@root/public/img/T2/car.0022.webp';
 import t2ImageSection from '@root/public/img/T2/Approach and departure angles.webp'; // Cambia esto por la ruta correcta de tu imagen
 import t2ImageSection2 from '@root/public/img/T2/Magic Electric Door.webp'; // Cambia esto por la ruta correcta de tu imagen
 
+import extraStorageT2 from '@root/public/img/T2/Extra Large Storage Space.webp'; // Cambia esto por la ruta correcta de tu imagen
+import screenT2 from '@root/public/img/T2/15.6_high-resolution color touchscreen.webp'; // Cambia esto por la ruta correcta de tu imagen
+
 import CarFeaturesShowcase, { CarColorModel, CarFeature } from './components/car-features-show-case';
 import { VideoSection } from './components/car-video-section';
 import { SplitImageSection } from './components/split-image-section';
@@ -188,6 +191,17 @@ export default function LandingPage() {
         sectionTitle="T2 FUE CREADA PARA LA AVENTURA"
         sectionText="Tiene un sistema de tracción en las 4 ruedas que la hace perfecta para cualquier terreno, cuenta con 7 modos de conducción que te permitirán personalizar la conducción."
         carTheme="orange"
+        carModelName="T2"
+      />
+
+      <SplitImageSection
+        image1={screenT2}
+        image2={extraStorageT2}
+        sectionTitle="ESTILO POR FUERA Y POR DENTRO"
+        sectionText="La T2 tiene un impresionante tablero, Volante multifunción, pantalla touchscreen de 15 pulgadas, parlantes Sony, cargador inalámbrico, interior de lujo con asientos ventilados, luces atmosféricas."
+        carTheme="orange"
+        carModelName="T2"
+        brochureUrl="https://www.jetour.com.co/brochure/T2.pdf"
       />
     </>
   );
