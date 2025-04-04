@@ -5,6 +5,10 @@ export default {
   content: ['./src/pages/**/*.{js,ts,jsx,tsx,mdx}', './src/components/**/*.{js,ts,jsx,tsx,mdx}', './src/app/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
+      rotate: {
+        'y-[-20deg]': 'rotateY(-20deg)',
+        'y-[20deg]': 'rotateY(20deg)'
+      },
       colors: {
         customBlack: '#1d1d1b',
         customCeleste: '#99c1da',

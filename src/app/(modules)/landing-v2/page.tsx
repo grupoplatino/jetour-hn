@@ -9,6 +9,11 @@ import { StaticImageData } from 'next/image';
 import Image from 'next/image';
 import clsx from 'clsx';
 
+import t2BlackImage from '@root/public/img/T2/car black 0022 (1).webp';
+import t2WhiteImage from '@root/public/img/T2/car white 0022.webp';
+import t2NeutralImage from '@root/public/img/T2/car.0022.webp';
+import CarFeaturesShowcase, { CarColorModel, CarFeature } from './components/car-features-show-case';
+
 // Definimos los temas de colores para cada modelo de vehículo
 export const carThemes = {
   orange: {
@@ -47,7 +52,9 @@ const TestDriveButton: React.FC<TestDriveButtonProps> = ({ carTheme, fixed = tru
     <div
       className={clsx(
         'flex flex-row gap-2 w-full md:w-auto md:right-[-2.25rem] lg:right-0 md:scale-75 lg:scale-100',
-        fixed ? 'fixed md:fixed top-24 right-5 z-50' : 'absolute md:absolute'
+        fixed
+          ? 'fixed md:fixed right-5 z-50 top-1/2 transform -translate-y-1/2' // Centrado verticalmente
+          : 'absolute md:absolute'
       )}
     >
       <div className={`w-2 h-12 -skew-x-[20deg] md:-skew-x-12`} style={{ backgroundColor: theme.primary }}></div>
@@ -121,17 +128,50 @@ const CarHero: React.FC<CarHeroProps> = ({ backgroundImage, carLogo, tagline, ca
       </div>
 
       <WarrantyBadge className="absolute bottom-28 max-w-full" />
-
-      {/* Botón de Test Drive */}
-      <TestDriveButton carTheme={carTheme} />
-
-      {/* Botón de WhatsApp */}
-      <WhatsAppButton />
     </section>
   );
 };
 
 // Componente principal que integra todo
 export default function LandingPage() {
-  return <CarHero backgroundImageUrl={t2Image.src} backgroundImage={t2Image} carLogo={t2Logo} tagline="AVENTURAS SIN LÍMITES" carTheme="orange" />;
+  const carTheme = 'orange'; // Cambia esto según el vehículo seleccionado
+
+  const t2Models: CarColorModel[] = [
+    {
+      carImage: t2BlackImage,
+      color: 'nightBlack',
+      colorName: 'Negro',
+      hexColor: '#030304'
+    },
+    {
+      carImage: t2WhiteImage,
+      color: 'white',
+      colorName: 'Blanco',
+      hexColor: '#ffffff'
+    },
+    {
+      carImage: t2NeutralImage,
+      color: 'neutralColor',
+      colorName: 'Color Neutral',
+      hexColor: '#d8cbb1' // Este es un color similar al arena que vi en la imagen
+    }
+  ];
+
+  const t2Features: CarFeature[] = [
+    { name: 'CABALLOS DE FUERZA MÁX.', value: 250, position: 'topleft' },
+    { name: 'TORQUE MÁXIMO', value: 390, position: 'topcenter' },
+    { name: 'VELOCIDAD MÁXIMA (KM/H)', value: 197, position: 'topright' },
+    { name: 'DISTANCIA ENTRE EJES (MM)', value: 2800, position: 'bottomleft' },
+    { name: 'DESPLAZAMIENTO (ML)', value: 1998, position: 'bottomright' }
+  ];
+
+  return (
+    <>
+      <WhatsAppButton />
+      <TestDriveButton carTheme={carTheme} />
+      <CarHero backgroundImageUrl={t2Image.src} backgroundImage={t2Image} carLogo={t2Logo} tagline="AVENTURAS SIN LÍMITES" carTheme="orange" />
+      {/* Añade el componente de características del carro */}
+      <CarFeaturesShowcase carModels={t2Models} features={t2Features} carTheme="orange" />
+    </>
+  );
 }
