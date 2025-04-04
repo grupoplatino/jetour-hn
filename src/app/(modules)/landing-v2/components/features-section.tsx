@@ -3,7 +3,7 @@ import { StaticImageData } from 'next/image';
 import { carThemes } from '../page';
 
 interface Feature {
-  image: StaticImageData;
+  image: StaticImageData | string;
   label: string;
 }
 

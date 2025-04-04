@@ -3,8 +3,8 @@ import { StaticImageData } from 'next/image';
 import { carThemes } from '../page';
 
 interface SplitImageSectionProps {
-  image1: StaticImageData;
-  image2: StaticImageData;
+  image1: StaticImageData | string;
+  image2: StaticImageData | string;
   sectionTitle: string;
   sectionText: string;
   carTheme: keyof typeof carThemes;

@@ -4,7 +4,7 @@ import { StaticImageData } from 'next/image';
 
 interface SinglePictureSectionProps {
   title: string;
-  image: StaticImageData;
+  image: StaticImageData | string;
   altText?: string;
 }
 

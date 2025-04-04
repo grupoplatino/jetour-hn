@@ -170,7 +170,7 @@ const WarrantyBadge: React.FC<WarrantyBadgeProps> = ({ className }) => {
 interface CarHeroProps {
   backgroundImageUrl: string;
   backgroundImage: StaticImageData;
-  carLogo: StaticImageData;
+  carLogo: StaticImageData | string;
   tagline: string;
   carTheme: CarTheme;
 }

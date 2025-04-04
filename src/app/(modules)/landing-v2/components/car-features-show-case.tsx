@@ -12,7 +12,7 @@ export interface CarFeature {
 }
 
 export interface CarColorModel {
-  carImage: StaticImageData;
+  carImage: StaticImageData | string;
   color: string;
   colorName: string;
   hexColor: string;
