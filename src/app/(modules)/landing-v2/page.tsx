@@ -3,6 +3,7 @@ import t2Image from '@root/public/img/T2/T2 Jetour.jpg';
 import t2Logo from '@root/public/img/T2/Logo.png';
 import certificateLogo from '@root/public/img/Certificado.png';
 import whatsAppLogo from '@root/public/img/WhatsappLogo.png';
+import jetourLogo from '@root/public/img/JetourLogo.png';
 
 import { StaticImageData } from 'next/image';
 import Image from 'next/image';
@@ -68,7 +69,7 @@ const TestDriveButton: React.FC<TestDriveButtonProps> = ({ carTheme, fixed = tru
 const WhatsAppButton: React.FC = () => {
   return (
     <div className="fixed bottom-8 right-8 z-50">
-      <Image src={whatsAppLogo} alt="WhatsApp" width={120} height={120} className="cursor-pointer" />
+      <Image src={whatsAppLogo} alt="WhatsApp" width={100} height={100} className="cursor-pointer" />
     </div>
   );
 };
@@ -81,7 +82,7 @@ interface WarrantyBadgeProps {
 const WarrantyBadge: React.FC<WarrantyBadgeProps> = ({ className }) => {
   return (
     <div className={`relative ${className}`}>
-      <Image src={certificateLogo} alt="5 años de garantía" width={250} height={180} className="object-contain" />
+      <Image src={certificateLogo} alt="5 años de garantía" width={200} height={150} className="object-contain" />
     </div>
   );
 };
@@ -101,22 +102,25 @@ const CarHero: React.FC<CarHeroProps> = ({ backgroundImage, carLogo, tagline, ca
   return (
     <section className="relative w-full h-screen">
       {/* Línea superior en el color del tema */}
-      <div className="absolute top-0 left-0 right-0 h-1.5 z-10" style={{ backgroundColor: theme.primary }} />
+      <div className="absolute top-0 left-0 right-0 h-1.5 z-10 max-w-full" style={{ backgroundColor: theme.primary }} />
 
       {/* Imagen de fondo */}
-      <div className="w-full h-full relative">
-        <Image src={backgroundImage} alt="Background" fill className="object-cover object-center" priority />
+      <div className="w-full h-full relative max-w-full">
+        <Image src={backgroundImage} alt="Background" fill className="object-cover object-center max-w-full" priority />
 
         {/* Contenido del hero */}
-        <div className="absolute bottom-36 left-24 z-20">
-          <Image src={carLogo} alt="Car Logo" width={300} height={150} className="mb-4 object-contain" />
-          <h1 className="text-6xl font-bold uppercase" style={{ color: theme.primary }}>
+        <div className="absolute bottom-32 left-16 z-20 flex flex-col max-w-full">
+          <div className="flex w-fit">
+            <Image src={carLogo} alt="Car Logo" width={250} height={100} className="object-contain -ml-10" />
+            <Image src={jetourLogo} alt="Jetour Logo" width={250} height={250} className="object-contain mt-auto -ml-10 -mb-5" />
+          </div>
+          <h1 className="text-4xl font-bold uppercase" style={{ color: theme.primary }}>
             {tagline}
           </h1>
         </div>
       </div>
 
-      <WarrantyBadge className="absolute bottom-36 left-6" />
+      <WarrantyBadge className="absolute bottom-28 max-w-full" />
 
       {/* Botón de Test Drive */}
       <TestDriveButton carTheme={carTheme} />
@@ -129,9 +133,5 @@ const CarHero: React.FC<CarHeroProps> = ({ backgroundImage, carLogo, tagline, ca
 
 // Componente principal que integra todo
 export default function LandingPage() {
-  return (
-    <main className="flex flex-col">
-      <CarHero backgroundImageUrl={t2Image.src} backgroundImage={t2Image} carLogo={t2Logo} tagline="AVENTURAS SIN LÍMITES" carTheme="orange" />
-    </main>
-  );
+  return <CarHero backgroundImageUrl={t2Image.src} backgroundImage={t2Image} carLogo={t2Logo} tagline="AVENTURAS SIN LÍMITES" carTheme="orange" />;
 }
