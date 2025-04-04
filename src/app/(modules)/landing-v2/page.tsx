@@ -16,13 +16,25 @@ import t2NeutralImage from '@root/public/img/T2/car.0022.webp';
 import t2ImageSection from '@root/public/img/T2/Approach and departure angles.webp'; // Cambia esto por la ruta correcta de tu imagen
 import t2ImageSection2 from '@root/public/img/T2/Magic Electric Door.webp'; // Cambia esto por la ruta correcta de tu imagen
 
+import securityImage from '@root/public/img/T2/Seaside scenery.webp'; // Cambia esto por la ruta correcta de tu imagen
+
 import extraStorageT2 from '@root/public/img/T2/Extra Large Storage Space.webp'; // Cambia esto por la ruta correcta de tu imagen
 import screenT2 from '@root/public/img/T2/15.6_high-resolution color touchscreen.webp'; // Cambia esto por la ruta correcta de tu imagen
+
+import t2SkeletonImage from '@root/public/img/T2/Steel skeletonized body.webp'; // Cambia esto por la ruta correcta de tu imagen
+import t2TopSkeletonImage from '@root/public/img/T2/Matrix protected roof.webp'; // Cambia esto por la ruta correcta de tu imagen
+import t2SecondSeatsRowImage from '@root/public/img/T2/Second row seats faced down.webp'; // Cambia esto por la ruta correcta de tu imagen
+import t2ProximityImage from '@root/public/img/T2/Forward-collision warning system copia.webp'; // Cambia esto por la ruta correcta de tu imagen
 
 import CarFeaturesShowcase, { CarColorModel, CarFeature } from './components/car-features-show-case';
 import { VideoSection } from './components/car-video-section';
 import { SplitImageSection } from './components/split-image-section';
 import { FeaturesSection } from './components/features-section';
+import SinglePictureSection from './components/single-picture-section';
+import CarGallerySection from './components/car-gallery-section';
+import { SpecsSection } from './components/specs-section';
+import { CarSpects } from './components/car-specs';
+import { t2SpecsData } from './data/t2-specs-data';
 
 // Definimos los temas de colores para cada modelo de vehículo
 export const carThemes = {
@@ -223,6 +235,12 @@ export default function LandingPage() {
         ]}
         title="COMODIDAD DESDE DONDE LA VEAS"
       />
+
+      <SinglePictureSection title="SEGURIDAD Y RESPALDO PARA DISFRUTAR EL VIAJE" image={securityImage} />
+
+      <CarGallerySection images={[t2SkeletonImage, t2TopSkeletonImage, t2SecondSeatsRowImage, t2ProximityImage]} />
+
+      <SpecsSection specs={t2SpecsData} themeKey="orange" />
     </>
   );
 }
