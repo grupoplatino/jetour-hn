@@ -39,7 +39,7 @@ import ContactForm from './components/contact-form';
 
 import dynamic from 'next/dynamic';
 
-const Viewer3D = dynamic(() => import('./components/3d-viewer-server'));
+const VehicleVisualizer = dynamic(() => import('./components/new-3d'));
 
 const carData = {
   primaryColor: '#f28b2d', // Color naranja para T2
@@ -290,7 +290,26 @@ export default function LandingPage() {
 
       <SpecsSection specs={t2SpecsData} themeKey="orange" />
 
-      <Viewer3D carData={carData} />
+      {/* <Viewer3D carData={carData} /> */}
+
+      <section className="p-16">
+        <VehicleVisualizer
+          title="VISUALIZADOR 3D"
+          basePath="/img/T2/T2 360_"
+          filePattern="T2-EXT-{index}.png"
+          imageCount={36}
+          colors={[
+            { name: 'Gris', hex: '#747b89', folderName: 'Highway Grey', class: 'bg-[#747b89]' },
+            { name: 'Cian', hex: '#97a8bd', folderName: 'Misty Cyan', class: 'bg-[#97a8bd]' },
+            { name: 'Blanco', hex: '#FFFFFF', folderName: 'White', class: 'border border-2' },
+            { name: 'Negro', hex: '#1d1d1b', folderName: 'Night Black', class: 'bg-[#030304]' },
+            { name: 'Arena', hex: '#d8cbb1', folderName: 'Sand', class: 'bg-[#d8cbb1]' }
+          ]}
+          interiorImagePath="/img/X70 Plus/X70PLUS_360/INT/X70PLUS-INT.png"
+          themeKey="orange"
+          defaultColorIndex={0}
+        />
+      </section>
 
       <ContactForm themeKey="orange" />
     </>

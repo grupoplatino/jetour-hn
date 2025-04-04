@@ -30,7 +30,16 @@ interface CotizacionFormProps {
   themeKey: ThemeKey;
 }
 
-export default function CotizacionForm({ themeKey }: CotizacionFormProps) {
+/*************  ✨ Windsurf Command ⭐  *************/
+/**
+ * Formulario de contacto que se utiliza en la landing page de cada
+ * modelo de vehículo. Recibe como prop el tema actual (llave de
+ * `carThemes`) y utiliza colores y estilos de ese tema.
+ *
+ * @param themeKey - La llave del tema a utilizar (e.g. "orange" o
+ *                   "turquoise")
+ */
+/*******  29026a9d-9505-4272-881f-255a4579dd62  *******/ export default function CotizacionForm({ themeKey }: CotizacionFormProps) {
   const theme = carThemes[themeKey];
   const primaryColor = theme.colors.primary;
 
