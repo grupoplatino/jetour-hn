@@ -1,9 +1,9 @@
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import { carThemes } from '../page'; // Adjust import path as needed
 
 interface SplitImageSectionProps {
-  image1: string;
-  image2: string;
+  image1: StaticImageData;
+  image2: StaticImageData;
   sectionTitle: string;
   sectionText: string;
   carTheme: keyof typeof carThemes;
