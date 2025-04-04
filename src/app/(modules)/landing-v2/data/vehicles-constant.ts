@@ -37,13 +37,6 @@ import { t2SpecsData } from './t2-specs-data';
 // Tipos
 export type ThemeKey = 'orange' | 'turquoise'; // Ampliar según los temas que se tengan
 
-interface CarColor {
-  name: string;
-  hex: string;
-  folderName: string;
-  class?: string;
-}
-
 interface CarFeature {
   name: string;
   value: number;
@@ -68,10 +61,23 @@ interface Visualizer {
   basePath: string;
   filePattern: string;
   imageCount: number;
-  colors: CarColor[];
+  colors: {
+    name: string;
+    hex: string;
+    folderName: string;
+    class: string;
+  }[];
   interiorImagePath: string;
   defaultColorIndex: number;
 }
+
+// name: string;
+// hex: string;
+// folderName: string;
+// class: string;
+// color: string;
+// colorName: string;
+// hexColor: string;
 
 // Estructura principal de datos del vehículo
 export interface VehicleData {
@@ -267,8 +273,12 @@ export const vehiclesData: Record<string, VehicleData> = {
       filePattern: 'DASHING-EXT-{index}.png',
       imageCount: 36,
       colors: [
-        // Placeholder para Dashing
-        { color: 'black', colorName: 'Negro', hexColor: '#000000', folderName: 'black', class: 'bg-[#000000]' }
+        {
+          name: 'black',
+          hex: '#000000',
+          folderName: 'black',
+          class: 'bg-[#000000]'
+        }
       ],
       interiorImagePath: '/img/DASHING/Dashing 360_/IN/Black&red/Black&red.jpg',
       defaultColorIndex: 0
