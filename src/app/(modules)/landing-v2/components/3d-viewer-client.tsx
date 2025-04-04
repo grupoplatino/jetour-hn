@@ -2,8 +2,10 @@
 
 import { useState, useEffect } from 'react';
 import clsx from 'clsx';
-import { ExteriorViewer } from './3d-exterior-viewer';
-import InteriorViewer from './3d-interior-viewer';
+import dynamic from 'next/dynamic';
+
+const InteriorViewer = dynamic(() => import('./3d-interior-viewer'), { ssr: false });
+const ExteriorViewer = dynamic(() => import('./3d-exterior-viewer'), { ssr: false });
 
 interface ColorDetails {
   imageCount: number;

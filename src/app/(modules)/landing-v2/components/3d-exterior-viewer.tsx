@@ -23,7 +23,7 @@ interface ExteriorViewerProps {
   selectedColor: string;
 }
 
-export const ExteriorViewer = ({ isGrabbing, imagePaths, setIsGrabbing, availableColors, setSelectedColor, selectedColor }: ExteriorViewerProps) => {
+const ExteriorViewer = ({ isGrabbing, imagePaths, setIsGrabbing, availableColors, setSelectedColor, selectedColor }: ExteriorViewerProps) => {
   const [preloadedImages, setPreloadedImages] = useState<HTMLImageElement[]>([]);
   const [imagesLoaded, setImagesLoaded] = useState(false);
 
@@ -101,3 +101,5 @@ export const ExteriorViewer = ({ isGrabbing, imagePaths, setIsGrabbing, availabl
     </div>
   );
 };
+
+export default ExteriorViewer;

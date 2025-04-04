@@ -35,8 +35,11 @@ import CarGallerySection from './components/car-gallery-section';
 import { SpecsSection } from './components/specs-section';
 import { CarSpects } from './components/car-specs';
 import { t2SpecsData } from './data/t2-specs-data';
-import Viewer3D from './components/3d-viewer-server';
 import ContactForm from './components/contact-form';
+
+import dynamic from 'next/dynamic';
+
+const Viewer3D = dynamic(() => import('./components/3d-viewer-server'));
 
 const carData = {
   primaryColor: '#f28b2d', // Color naranja para T2

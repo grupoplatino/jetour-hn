@@ -1,4 +1,6 @@
-import Viewer3DClient from './3d-viewer-client';
+import dynamic from 'next/dynamic';
+
+const Viewer3DClient = dynamic(() => import('./3d-viewer-client'));
 
 interface CarData {
   primaryColor: string;
