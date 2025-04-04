@@ -8,6 +8,9 @@ import clsx from 'clsx';
 
 import jetourLogo from '@root/public/img/JetourLogo.png';
 import autosAliadosLogo from '@root/public/img/AutosAliados.png';
+import { useParams } from 'next/navigation';
+import { getVehicleById } from '../data/vehicles-constant';
+import { carThemes } from '../data/theme-definitions';
 
 interface NavbarProps {
   disableTransparent?: boolean;
@@ -18,6 +21,16 @@ export function Navbar({ disableTransparent = false, primaryColor = '#00a3b4' }:
   const [toggledNav, setToggledNav] = useState<boolean>(false);
   const [dropdownOpen, setDropdownOpen] = useState<boolean>(false);
   const [scrollPosition, setScrollPosition] = useState(0);
+
+  const params = useParams();
+
+  const carData = getVehicleById(params.id as string);
+
+  const carTheme = carData ? carThemes?.[carData.theme]?.colors : null;
+
+  useEffect(() => {
+    console.log('Params:', params);
+  }, [params]);
 
   const handleScroll = () => {
     const position = window.pageYOffset;
@@ -102,7 +115,7 @@ export function Navbar({ disableTransparent = false, primaryColor = '#00a3b4' }:
         />
       </section>
 
-      {scrollPosition > 0 && <div className="h-2" style={{ backgroundColor: primaryColor }} />}
+      {scrollPosition > 0 && <div className="h-2" style={{ backgroundColor: carTheme ? carTheme.primary : primaryColor }} />}
 
       {/* Mobile Menu */}
       {toggledNav && (

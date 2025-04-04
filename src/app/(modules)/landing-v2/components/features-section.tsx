@@ -13,9 +13,7 @@ interface FeaturesSectionProps {
   carTheme: keyof typeof carThemes;
 }
 
-export default function FeaturesSection({ title, features, carTheme }: FeaturesSectionProps) {
-  const theme = carThemes[carTheme];
-
+export default function FeaturesSection({ title, features }: FeaturesSectionProps) {
   return (
     <section className="w-full py-16 px-4 md:px-8 lg:px-20">
       {/* Título principal centrado */}
@@ -34,13 +32,6 @@ export default function FeaturesSection({ title, features, carTheme }: FeaturesS
             <h3 className="text-lg md:text-xl font-bold text-center uppercase">{feature.label}</h3>
           </div>
         ))}
-      </div>
-
-      {/* Botón de Test Drive (versión móvil) */}
-      <div className="fixed bottom-4 right-4 z-50 md:hidden">
-        <button className="flex items-center px-4 py-2 rounded-md font-bold text-white" style={{ backgroundColor: theme.colors.primary }}>
-          AGENDA TU TEST DRIVE
-        </button>
       </div>
     </section>
   );
