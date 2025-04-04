@@ -50,18 +50,18 @@ export function Navbar({ disableTransparent = false, primaryColor = '#00a3b4' }:
       href: '#',
       hasDropdown: true,
       dropdownItems: [
-        { label: 'Dashing', href: '/landing/dashing' },
-        { label: 'T2', href: '/landing/t2' },
-        { label: 'X50', href: '/landing/x50' },
-        { label: 'X70 PLUS', href: '/landing/x70' }
+        { label: 'Dashing', href: '/landing-v2/dashing' },
+        { label: 'T2', href: '/landing-v2/t2' },
+        { label: 'X50', href: '/landing-v2/x50' },
+        { label: 'X70 PLUS', href: '/landing-v2/x70' }
       ]
     },
-    { label: 'SOLICITA UNA COTIZACIÓN', href: '/' },
-    { label: 'POSTVENTA', href: '/' },
-    { label: 'NOSOTROS', href: '/' },
-    { label: 'NOVEDADES', href: '/' },
-    { label: 'BLOG', href: '/' },
-    { label: 'CONTÁCTANOS', href: '/' }
+    { label: 'SOLICITA UNA COTIZACIÓN', href: '/landing-v2' },
+    { label: 'POSTVENTA', href: '/landing-v2' },
+    { label: 'NOSOTROS', href: '/landing-v2' },
+    { label: 'NOVEDADES', href: '/landing-v2' },
+    { label: 'BLOG', href: '/landing-v2' },
+    { label: 'CONTÁCTANOS', href: '/landing-v2' }
   ];
 
   return (
