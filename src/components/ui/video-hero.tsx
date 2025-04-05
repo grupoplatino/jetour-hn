@@ -93,7 +93,7 @@ const VideoHero = () => {
         <PageSection
           imgSrc="/img/landing/T2/Fashion Blocks 2.jpg"
           firstVideoSrc="/img/landing/T2/T2 TVC-30s-4K.mp4"
-          secondVideoSrc="/img/landing/T2/9x16-40s.mp4"
+          secondVideoSrc="/img/landing/T2/9X16-40S.mp4"
           page={1}
         >
           <figure className="absolute z-10 top-44 left-8 flex flex-col justify-start">
@@ -110,7 +110,7 @@ const VideoHero = () => {
         </PageSection>
       ) : (
         <PageSection
-          imgSrc="/img/DASHING/3.jpg"
+          imgSrc="/img/landing/DASHING/3.jpg"
           firstVideoSrc="/img/landing/DASHING/Product CG Video.MP4"
           secondVideoSrc="/img/landing/DASHING/Jetour Jx65 Showroom 高清 无字幕.mp4"
           page={2}

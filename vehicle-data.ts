@@ -54,7 +54,7 @@ const vehicleData = [
       informativeCards: [
         {
           text: "Arranque remoto y encendido sin llave",
-          image: "/img/DASHING/Rubik's cube key.jpg",
+          image: "/img/DASHING/Rubik_s cube key.jpg",
         },
         {
           text: "Head Acoustic (Optional)",
@@ -68,7 +68,7 @@ const vehicleData = [
     },
     singleImageSection: {
       title: "Diseño excepcional y deportivo",
-      image: "/img/DASHING/3.jpg",
+      image: "/img/DASHING/3.webp",
     },
     carGallery: [
       "/img/DASHING/Foto 01.jpg",
