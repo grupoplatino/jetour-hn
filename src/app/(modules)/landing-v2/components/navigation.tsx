@@ -64,7 +64,7 @@ export function Navbar({ disableTransparent = false, primaryColor = '#00a3b4' }:
   return (
     <nav
       className={clsx(
-        'transition flex flex-col fixed w-full z-40',
+        'transition flex flex-col fixed w-full z-40 max-h-[100px]',
         scrollPosition > 0 && !disableTransparent ? 'bg-black text-white' : disableTransparent ? 'bg-black text-white' : 'bg-transparent text-white'
       )}
     >
