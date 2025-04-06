@@ -59,7 +59,6 @@ export default function CotizacionForm({ themeKey }: CotizacionFormProps) {
 
     try {
       // Aquí iría la lógica para enviar el formulario a un backend
-      console.log('Formulario enviado:', data);
 
       // Simular envío exitoso
       await new Promise((resolve) => setTimeout(resolve, 1000));

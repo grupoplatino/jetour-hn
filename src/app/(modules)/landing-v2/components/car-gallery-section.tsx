@@ -8,8 +8,6 @@ interface CarGallerySectionProps {
 }
 
 const CarGallerySection: React.FC<CarGallerySectionProps> = ({ images, title }) => {
-  console.log("CarGallerySection images:", images);
-  console.log("CarGallerySection title:", title);
   return (
     <section className="relative w-full flex flex-col justify-start py-16 md:py-20 lg:py-28 items-center px-4 md:px-8 lg:px-16">
       {title && (

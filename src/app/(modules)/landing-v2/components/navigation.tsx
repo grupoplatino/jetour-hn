@@ -29,15 +29,8 @@ export function Navbar({ disableTransparent = false, primaryColor = '#00a3b4' }:
   const carTheme = carData ? carThemes?.[carData.theme]?.colors : null;
 
   useEffect(() => {
-    console.log('Params:', params);
   }, [params]);
 
-/*************  ✨ Windsurf Command ⭐  *************/
-/**
- * Updates the scroll position state with the current vertical scroll offset of the window.
- */
-
-/*******  ecfde393-cb87-4328-8280-633ab8fc498e  *******/
   const handleScroll = () => {
     const position = window.pageYOffset;
     setScrollPosition(position);
