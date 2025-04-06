@@ -33,7 +33,7 @@ export default function ContactForm({ backgroundImage = '/img/Fondo Cotización.
 
           {/* Columna derecha - formulario */}
           <div className="bg-black/30 p-8 rounded-lg backdrop-blur-sm md:ml-auto w-full max-w-lg">
-            <h1 className="text-4xl md:text-5xl font-bold mb-8">SOLICITA TU COTIZACIÓN</h1>
+            <h1 className="text-4xl md:text-4xl font-bold mb-8">SOLICITA TU COTIZACIÓN</h1>
             <CotizacionForm themeKey={themeKey} />
           </div>
         </div>
