@@ -1,10 +1,10 @@
 // SpecsSection.tsx
-import { ThemeKey } from '../data/theme-definitions';
+import { CarThemeKey } from '../data/theme-definitions';
 import { SpecsSectionContent } from './specs-section-content';
 
 interface SpecsSectionProps {
   specs: Record<string, Record<string, string>>;
-  themeKey: ThemeKey;
+  themeKey: CarThemeKey;
 }
 
 const SpecsSection = ({ specs, themeKey }: SpecsSectionProps) => {

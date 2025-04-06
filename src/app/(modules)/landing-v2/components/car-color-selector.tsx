@@ -85,8 +85,8 @@ export function CarColorSelector({ carModels }: CarColorSelectorProps) {
               className={`
                 absolute transition-all duration-700
                 ${isCenter ? 'z-30 opacity-100' : 'z-10 opacity-90'}
-                ${isLeft ? 'left-0 -translate-x-1/3' : ''}
-                ${isRight ? 'right-0 translate-x-1/3' : ''}
+                ${isLeft ? 'left-32 -mt-20' : ''}
+                ${isRight ? 'right-32 -mt-20' : ''}
                 cursor-pointer hover:brightness-110 hover:drop-shadow-xl
               `}
               style={{
@@ -114,7 +114,7 @@ export function CarColorSelector({ carModels }: CarColorSelectorProps) {
       </div>
 
       {/* Selector de colores */}
-      <div className="flex justify-center gap-4 mt-6 relative">
+      <div className="flex justify-center gap-4 relative">
         {carModels.map((car, index) => (
           <div key={index} className="relative group">
             <button

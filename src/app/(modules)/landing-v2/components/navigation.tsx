@@ -32,6 +32,12 @@ export function Navbar({ disableTransparent = false, primaryColor = '#00a3b4' }:
     console.log('Params:', params);
   }, [params]);
 
+/*************  ✨ Windsurf Command ⭐  *************/
+/**
+ * Updates the scroll position state with the current vertical scroll offset of the window.
+ */
+
+/*******  ecfde393-cb87-4328-8280-633ab8fc498e  *******/
   const handleScroll = () => {
     const position = window.pageYOffset;
     setScrollPosition(position);
@@ -59,8 +65,6 @@ export function Navbar({ disableTransparent = false, primaryColor = '#00a3b4' }:
     { label: 'SOLICITA UNA COTIZACIÓN', href: '/landing-v2' },
     { label: 'POSTVENTA', href: '/landing-v2' },
     { label: 'NOSOTROS', href: '/landing-v2' },
-    { label: 'NOVEDADES', href: '/landing-v2' },
-    { label: 'BLOG', href: '/landing-v2' },
     { label: 'CONTÁCTANOS', href: '/landing-v2' }
   ];
 
@@ -73,8 +77,8 @@ export function Navbar({ disableTransparent = false, primaryColor = '#00a3b4' }:
     >
       <section className="flex flex-row px-4 md:px-16 py-2 justify-between items-center">
         <figure className="flex flex-row items-center gap-4 md:gap-10 text-white">
-          <Image src={jetourLogo} alt="Logo Jetour" width={150} height={150} className="w-28 md:w-auto" />
-          <Image src={autosAliadosLogo} alt="Logo Auto Aliados" width={150} height={150} className="w-28 md:w-auto" />
+          <Image src={jetourLogo} alt="Logo Jetour" width={120} height={120} className="w-28 md:w-36" />
+          <Image src={autosAliadosLogo} alt="Logo Auto Aliados" width={120} height={120} className="w-28 md:w-32" />
         </figure>
 
         {/* Desktop Navigation */}
@@ -115,7 +119,7 @@ export function Navbar({ disableTransparent = false, primaryColor = '#00a3b4' }:
         />
       </section>
 
-      {scrollPosition > 0 && <div className="h-2" style={{ backgroundColor: carTheme ? carTheme.primary : primaryColor }} />}
+      {(scrollPosition  > 0 && !disableTransparent) ? <div className="h-2" style={{ backgroundColor: carTheme ? carTheme.primary : primaryColor }} /> : <div className="h-2" style={{ backgroundColor: carTheme ? carTheme.primary : primaryColor }} />}
 
       {/* Mobile Menu */}
       {toggledNav && (

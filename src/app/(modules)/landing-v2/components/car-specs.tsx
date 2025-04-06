@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import clsx from 'clsx';
 import { ChevronRight } from 'lucide-react';
-import { carThemes } from '../page';
+import { carThemes } from '../data/theme-definitions';
 
 type ThemeKey = keyof typeof carThemes;
 

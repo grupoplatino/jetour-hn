@@ -6,7 +6,7 @@ import clsx from 'clsx';
 import { useVehicleImages } from './use-vehicleImages';
 import LoadingIndicator from './loading-indicator';
 import ColorSelector from './color-selector';
-import { carThemes } from '../../page';
+import { carThemes } from '../../data/theme-definitions';
 
 const ExteriorView: React.FC<ExteriorViewProps & { themeKey: string }> = ({
   colors,

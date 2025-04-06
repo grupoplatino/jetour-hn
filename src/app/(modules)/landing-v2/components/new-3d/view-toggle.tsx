@@ -22,7 +22,7 @@ const ViewToggle: React.FC<ViewToggleProps> = ({ currentView, onViewChange, them
     <div className="flex items-center gap-x-10 justify-center md:justify-end">
       <button
         onClick={() => onViewChange('exterior')}
-        className={clsx('font-bold cursor-pointer transition-all', currentView === 'exterior' ? 'text-3xl md:text-5xl' : 'text-xl md:text-3xl')}
+        className={clsx('font-bold cursor-pointer transition-all', currentView === 'exterior' ? 'text-3xl md:text-4xl' : 'text-xl md:text-4xl')}
         style={{
           color: currentView === 'exterior' ? theme.colors.primary : '#6b7280'
         }}
@@ -31,7 +31,7 @@ const ViewToggle: React.FC<ViewToggleProps> = ({ currentView, onViewChange, them
       </button>
       <button
         onClick={() => onViewChange('interior')}
-        className={clsx('font-bold cursor-pointer transition-all', currentView === 'interior' ? 'text-3xl md:text-5xl' : 'text-xl md:text-3xl')}
+        className={clsx('font-bold cursor-pointer transition-all', currentView === 'interior' ? 'text-3xl md:text-4xl' : 'text-xl md:text-4xl')}
         style={{
           color: currentView === 'interior' ? theme.colors.primary : '#6b7280'
         }}
