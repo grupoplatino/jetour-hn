@@ -30,7 +30,7 @@ export default function VehicleDetailPage({ carData }: { carData: VehicleData })
         carTheme={carTheme}
       />
       <CarFeaturesShowcase carModels={carData.colorModels} features={carData.features} carTheme="orange" />
-      <VideoSection videoUrl="/video/Video-T2/Dubai Night Tour.mp4" thumbnailUrl="/img/T2/T2 Jetour.jpg" />
+      <VideoSection videoUrl={carData.video.url} thumbnailUrl={carData.video.thumbnail} />
 
       {carData.splitSections.map((section, index) => (
         <SplitImageSection
