@@ -8,7 +8,7 @@ import t2LandingBackground from '@root/public/img/landing/T2/Fashion Blocks 2.we
 import t2LandingLogo from '@root/public/img/T2/Logo.png';
 
 import dashingLandingBackground from '@root/public/img/landing/DASHING/9.webp';
-import dashingLandingLogo from '@root/public/img/Dashing/Logo.png';
+import dashingLandingLogo from '@root/public/img/DASHING/Logo.png';
 import CarModelsGallery from './components/car-model-gallery';
 import { getVehicleById, vehiclesData } from './data/vehicles-constant';
 import VehicleDetailPage from './components/vehicle-deatail-page';
