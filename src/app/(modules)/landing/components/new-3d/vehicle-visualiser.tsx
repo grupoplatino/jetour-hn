@@ -47,7 +47,7 @@ const VehicleVisualizer: React.FC<VehicleVisualizerProps> = ({
         />
       </div>
 
-      <div className="w-full h-[90vh] mt-8">
+      <div className="w-full h-[65vh] mt-8">
         {viewMode === 'exterior' ? (
           <ExteriorView
             colors={colors}
