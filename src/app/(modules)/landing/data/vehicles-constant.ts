@@ -501,15 +501,15 @@ export const vehiclesData: Record<string, VehicleData> = {
       }
     ],
     features: [
-      { name: 'CABALLOS DE FUERZA MÁX.', value: 197, position: 'topleft' },
-      { name: 'TORQUE MÁXIMO', value: 290, position: 'topcenter' },
+      { name: 'CABALLOS DE FUERZA MÁX.', value: 156, position: 'topleft' },
+      { name: 'TORQUE MÁXIMO', value: 230, position: 'topcenter' },
       { name: 'VELOCIDAD MÁXIMA (KM/H)', value: 180, position: 'topright' },
       {
         name: 'DISTANCIA ENTRE EJES (MM)',
-        value: 2720,
+        value: 2601,
         position: 'bottomleft'
       },
-      { name: 'DESPLAZAMIENTO (ML)', value: 1598, position: 'bottomright' }
+      { name: 'DESPLAZAMIENTO (ML)', value: 1499, position: 'bottomright' }
     ],
     video: {
       url: '/video/Video-X50/No Subtitle(1).mp4',
