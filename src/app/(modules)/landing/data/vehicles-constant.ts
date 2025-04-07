@@ -76,6 +76,7 @@ import x50SecondGalleryImage from '@root/public/img/X50/Dual Screen.jpg';
 import x50FourthGalleryImage from '@root/public/img/X50/60 drgee front right angle.png';
 
 import x50SplitSection2Image1 from '@root/public/img/X50/360° Panoramic Reversing Camera&180° Transparent Chassis.jpg';
+import x50SplitSection2Image2 from "@root/public/img/X50/c (3).jpg";
 
 // Importación de datos de especificaciones
 
@@ -536,7 +537,7 @@ export const vehiclesData: Record<string, VehicleData> = {
       },
       {
         image1: x50SplitSection2Image1,
-        image2: x50SplitSection1Image2,
+        image2: x50SplitSection2Image2,
         title: 'DISFRUTA SUS DETALLES',
         text: 'El Jetour X50 ofrece comodidad con asientos revestidos en cuero sintético, y una amplia fila de asientos. Este auto es perfecto para salir y disfrutar del día y la noche, junto a tu familia o amigos.',
         brochureUrl: 'https://www.jetour.com.co/brochure/X50.pdf'
@@ -691,14 +692,14 @@ export const vehiclesData: Record<string, VehicleData> = {
     video: { url: '/video/Videos-X70-Plus-Web/Video X70 Plus.mp4', thumbnail: '/img/X70 Plus/0Y6H8571_1final.jpg' },
     splitSections: [
       {
-        image1: x70Image,
-        image2: x70Image,
+        image1: x50SplitSection1Image1,
+        image2: x50SplitSection1Image2,
         title: 'SEGURIDAD ANTE TODO',
         text: 'La X70 Plus cuenta con cuatro airbags (frontales y laterales), ISOFIX, sistema de control de tracción y estabilidad, sistema de frenado AUTOHOLD, sistema de monitoreo de puntos ciegos, entre otros equipos que hacen de esta una SUV segura y confiable.'
       },
       {
-        image1: x70Image,
-        image2: x70Image,
+        image1: x50SplitSection2Image1,
+        image2: x50SplitSection2Image2,
         title: 'Tecnología espacial',
         text: 'La X70 PLUS está equipada con sistema de visión 360, asientos forrados, un excelente sistema de infoentretenimiento con pantalla de 10.25” y cargador inalámbrico para teléfonos.'
       }
