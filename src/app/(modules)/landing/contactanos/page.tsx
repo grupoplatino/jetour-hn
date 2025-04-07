@@ -5,10 +5,13 @@ import { MapPin, Phone, MessageSquare, Clock } from 'lucide-react';
 import ContactForm from '../components/contact-form';
 import heroImage from '@root/public/img/X50/c (5).jpg';
 import WhatsAppButton from '../components/whats-app-button';
+import TestDriveButton from '../components/test-drive-button';
 
 export default function ContactPage() {
   return (
     <div className="min-h-screen">
+      <TestDriveButton carTheme={'orange'} />
+
       {/* Hero Banner */}
       <div className="relative w-full h-[300px] md:h-[400px] lg:h-[600px] overflow-hidden">
         <Image src={heroImage} alt="JETOUR Concesionaria" fill priority className="object-cover brightness-50 mt-[90px]" />

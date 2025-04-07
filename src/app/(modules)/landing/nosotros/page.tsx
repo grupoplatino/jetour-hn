@@ -3,10 +3,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Calendar, Medal, Users, TrendingUp, Target, Globe } from 'lucide-react';
 import WhatsAppButton from '../components/whats-app-button';
+import TestDriveButton from '../components/test-drive-button';
 
 export default function AboutUsPage() {
   return (
     <div className="min-h-screen bg-white text-black">
+      <TestDriveButton carTheme="orange" />
+
       {/* Hero Banner */}
       <div className="relative w-full h-[400px] md:h-[500px]">
         <Image src="/img/about-hero.jpg" alt="JETOUR Concesionaria" fill priority className="object-cover" />
