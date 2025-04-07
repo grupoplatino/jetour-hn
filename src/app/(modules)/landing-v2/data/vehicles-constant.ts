@@ -92,6 +92,7 @@ interface Visualizer {
 // Estructura principal de datos del vehículo
 export interface VehicleData {
 	id: string;
+  carSelecctorImage: StaticImageData;
 	modelName: string;
 	tagline: string;
 	theme: CarThemeKey;
@@ -127,6 +128,7 @@ export interface VehicleData {
 // Definición de datos de vehículos
 export const vehiclesData: Record<string, VehicleData> = {
 	t2: {
+    carSelecctorImage: t2WhiteImage,
 		id: "t2",
 		modelName: "T2",
 		tagline: "AVENTURAS SIN LÍMITES",
