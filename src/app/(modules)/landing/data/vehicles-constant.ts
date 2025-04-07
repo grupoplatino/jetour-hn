@@ -26,6 +26,10 @@ import X70PlusSingleImage from '@root/public/img/X70 Plus/0Y6H8571_1final.jpg'
 import x70FeatureImage1 from '@root/public/img/X70 Plus/featuresSection1.webp'
 import x70FeatureImage2 from '@root/public/img/X70 Plus/featuresSection2.webp'
 import x70FeatureImage3 from '@root/public/img/X70 Plus/featuresSection3.webp'
+import x70GalleryImage1 from "@root/public/img/X70 Plus/galleryImage1.webp";
+import x70GalleryImage2 from "@root/public/img/X70 Plus/galleryImage2.webp";
+import x70GalleryImage3 from "@root/public/img/X70 Plus/galleryImage3.webp";
+import x70GalleryImage4 from "@root/public/img/X70 Plus/galleryImage4.webp";
 import rubikKey from '@root/public/img/DASHING/Rubik_s cube key.webp';
 import headAcoustics from '@root/public/img/DASHING/Head acoustics(optional).webp';
 import wirelessCharging from '@root/public/img/DASHING/40 watts of wireless charging.webp';
@@ -718,10 +722,10 @@ export const vehiclesData: Record<string, VehicleData> = {
     },
     singlePictureSection: { title: 'SEGURIDAD Y RESPALDO PARA DISFRUTAR EL VIAJE', image: X70PlusSingleImage },
     gallery: [
-      x70Image,
-      x70Image,
-      x70Image,
-      x70Image
+      x70GalleryImage1,
+      x70GalleryImage2,
+      x70GalleryImage3,
+      x70GalleryImage4
     ],
     specs: {
       'Diseño y estilo': {
