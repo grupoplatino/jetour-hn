@@ -16,6 +16,10 @@ import dashingGrayImage from "@root/public/img/Dashing/JETOUR_gris_cam360_out.00
 import dashingBlackImage from "@root/public/img/Dashing/JETOUR_negro_cam360_out.0003.webp";
 import dashingImageSection from "@root/public/img/DASHING/15.8 in. Digital screen.webp";
 import dashingSingleImageSection from "@root/public/img/DASHING/3.webp";
+import dashingImage01 from "@root/public/img/DASHING/Foto 01.webp";
+import dashingImage02 from "@root/public/img/DASHING/Foto 02.webp";
+import dashingImage03 from "@root/public/img/DASHING/Foto 03.webp";
+import dashingImage04 from "@root/public/img/DASHING/Foto 04.webp";
 import rubikKey from "@root/public/img/DASHING/Rubik_s cube key.webp";
 import headAcoustics from "@root/public/img/DASHING/Head acoustics(optional).webp";
 import wirelessCharging from "@root/public/img/DASHING/40 watts of wireless charging.webp";
@@ -266,7 +270,7 @@ export const vehiclesData: Record<string, VehicleData> = {
 		},
 	},
 	dashing: {
-    carSelecctorImage: dashingSelectorImage,
+		carSelecctorImage: dashingSelectorImage,
 		id: "dashing",
 		modelName: "Dashing",
 		tagline: "EXPERIMENTA LA TECNOLOGÍA DE VANGUARDIA",
@@ -349,7 +353,10 @@ export const vehiclesData: Record<string, VehicleData> = {
 		},
 		gallery: [
 			// Placeholder para Dashing
-			t2SkeletonImage,
+			dashingImage01,
+			dashingImage02,
+			dashingImage03,
+			dashingImage04,
 		],
 		specs: {}, // Reemplazar con los datos correctos
 		visualizer: {
@@ -370,7 +377,7 @@ export const vehiclesData: Record<string, VehicleData> = {
 		},
 	},
 	x50: {
-    carSelecctorImage: x50CarSelectorImage,
+		carSelecctorImage: x50CarSelectorImage,
 		id: "x50",
 		modelName: "X50",
 		tagline: "DISFRUTA EL VIAJE DE TU VIDA",
@@ -399,7 +406,7 @@ export const vehiclesData: Record<string, VehicleData> = {
 		},
 	},
 	x70plus: {
-    carSelecctorImage: x70CarSelectorImage,
+		carSelecctorImage: x70CarSelectorImage,
 		id: "x70plus",
 		modelName: "X70 Plus",
 		tagline: "INNOVACIÓN Y AMPLITUD REDEFINIDAS",
