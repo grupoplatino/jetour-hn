@@ -1,8 +1,7 @@
 // src/app/(modules)/landing/postventa/page.tsx
 import Image from 'next/image';
 import Link from 'next/link';
-import { ToolIcon, Timer, MessageSquare, Clock, Wrench, ShieldCheck, Calendar, Truck } from 'lucide-react';
-import ContactForm from '../components/contact-form';
+import { Timer, Clock, Wrench, ShieldCheck, Calendar, Truck } from 'lucide-react';
 import heroImage from '@root/public/img/DASHING/Foto 01.jpg';
 import WhatsAppButton from '../components/whats-app-button';
 
