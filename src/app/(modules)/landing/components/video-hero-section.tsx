@@ -1,0 +1,71 @@
+// src/components/ui/landing/video-hero-section/video-hero-section.tsx
+import React from 'react';
+import Image, { StaticImageData } from 'next/image';
+import { cn } from '@/lib/utils';
+import { CarThemeKey, carThemes, ThemeCars } from '../data/theme-definitions';
+
+interface VideoHeroSectionProps {
+  backgroundImage: string | StaticImageData;
+  logo: string | StaticImageData;
+  title: string;
+  subtitle: string;
+  themeKey: CarThemeKey;
+  videos: {
+    leftVideo: string;
+    rightVideo: string;
+  };
+  extraClassName?: string;
+}
+
+export default function VideoHeroSection({ backgroundImage, logo, title, subtitle, videos, extraClassName, themeKey }: VideoHeroSectionProps) {
+  const theme = carThemes[themeKey] as ThemeCars;
+
+  return (
+    <section className={cn('relative w-full h-screen overflow-hidden', extraClassName)}>
+      {/* Contenedor principal con elementos superpuestos */}
+      <div className="relative w-full h-full flex">
+        {/* Sección izquierda - Imagen de fondo con clipPath */}
+        <div className="absolute top-0 left-0 w-full h-full" style={{ clipPath: 'polygon(0% 0%, 45% 0%, 35% 100%, 0% 100%)' }}>
+          <Image className="object-contain w-full h-full -ml-[600px]" src={backgroundImage} priority fill alt="Background" />
+
+          {/* Logo y texto superpuestos en la sección izquierda */}
+          <div className="absolute top-[60px] left-8 z-10">
+            <Image
+              src={logo}
+              width={theme?.colors?.landingVideoSectionLogiSizes?.width ? theme?.colors?.landingVideoSectionLogiSizes?.width : 170}
+              height={theme?.colors?.landingVideoSectionLogiSizes?.height ? theme?.colors?.landingVideoSectionLogiSizes?.height : 170}
+              alt="Logo"
+              className="h-auto"
+            />
+            <h1
+              className={cn(
+                'text-white text-3xl font-bold uppercase max-w-[600px]',
+                theme.colors.landingVideoSectionTextColor === 'white' ? 'text-white' : 'text-black',
+                theme?.colors?.landingVideoTitleClass
+              )}
+            >
+              {title}
+            </h1>
+            <p className="text-white mt-2 font-medium uppercase">{subtitle}</p>
+          </div>
+        </div>
+
+        {/* Sección derecha - Video principal con clipPath */}
+        <div className="absolute top-0 left-0 w-full h-full" style={{ clipPath: 'polygon(45% 0%, 100% 0%, 100% 100%, 35% 100%)' }}>
+          <video autoPlay loop muted playsInline className="w-full h-full object-cover" src={videos.leftVideo} />
+
+          {/* Botones 01 02 para cambiar videos (estáticos por ahora) */}
+          <div className="absolute bottom-10 right-10 z-20 flex gap-4">
+            <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center font-bold">01</div>
+            <div className="w-12 h-12 bg-black/40 text-white rounded-full flex items-center justify-center font-bold">02</div>
+          </div>
+        </div>
+
+        {/* Tercer elemento - Video pequeño en el medio con clipPath */}
+        <div className="absolute bottom-0 left-[20%] w-[25%] h-[60%] z-10" style={{ clipPath: 'polygon(45% 0%, 100% 0%, 70% 100%, 10% 100%)' }}>
+          <video autoPlay loop muted playsInline className="w-full h-full object-cover" src={videos.rightVideo} />
+        </div>
+      </div>
+    </section>
+  );
+}
