@@ -478,7 +478,7 @@ export const vehiclesData: Record<string, VehicleData> = {
           class: 'bg-[#000000]'
         }
       ],
-      interiorImagePath: '/img/DASHING/Dashing 360_/IN/Black&red/Black&red.jpg',
+      interiorImagePath: '/img/DASHING/Dashing 360_/IN/Grey&white/Grey&white.jpg',
       defaultColorIndex: 0
     }
   },
