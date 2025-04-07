@@ -14,7 +14,7 @@ interface FooterProps {
   primaryColor?: string;
 }
 
-export function Footer({ primaryColor = '#00a3b4' }: FooterProps) {
+export function Footer({ primaryColor = '#FF7A00' }: FooterProps) {
   const currentYear = new Date().getFullYear();
 
   const params = useParams();
