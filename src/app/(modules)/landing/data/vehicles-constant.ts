@@ -698,15 +698,15 @@ export const vehiclesData: Record<string, VehicleData> = {
     },
     visualizer: {
       title: 'VISUALIZADOR 3D',
-      basePath: '/img/T2/T2 360_',
-      filePattern: 'T2-EXT-{index}.png',
+      basePath: '/img/X70 Plus/X70PLUS_360',
+      filePattern: 'X70PLUS-EXT-{index}.png',
       imageCount: 36,
       colors: [
         {
-          name: 'highwayGrey',
-          hex: '#747b89',
-          folderName: 'Highway Grey',
-          class: 'bg-[#747b89]'
+          name: 'black',
+          hex: '#000000',
+          folderName: 'black',
+          class: 'bg-black'
         }
       ],
       interiorImagePath: '/img/X70 Plus/X70PLUS_360/INT/X70PLUS-INT.png',
