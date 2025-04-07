@@ -20,7 +20,6 @@ import t2SecondSeatsRowImage from '@root/public/img/T2/Second row seats faced do
 import t2ProximityImage from '@root/public/img/T2/Forward-collision warning system copia.webp'; // Cambia esto por la ruta correcta de tu imagen
 
 import { CarColorModel, CarFeature } from './components/car-features-show-case';
-import { t2SpecsData } from './data/t2-specs-data';
 import dynamic from 'next/dynamic';
 import WhatsAppButton from './components/whats-app-button';
 import TestDriveButton from './components/test-drive-button';
@@ -118,8 +117,6 @@ export default function LandingPage() {
       <SinglePictureSection title="SEGURIDAD Y RESPALDO PARA DISFRUTAR EL VIAJE" image={securityImage} />
 
       <CarGallerySection images={[t2SkeletonImage, t2TopSkeletonImage, t2SecondSeatsRowImage, t2ProximityImage]} />
-
-      <SpecsSection specs={t2SpecsData} themeKey="orange" />
 
       <section className="p-16">
         <VehicleVisualizer
