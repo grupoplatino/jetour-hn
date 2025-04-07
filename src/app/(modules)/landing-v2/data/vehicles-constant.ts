@@ -10,10 +10,10 @@ import t2Logo from "@root/public/img/T2/Logo.png";
 import t2BlackImage from "@root/public/img/T2/car black 0022 (1).webp";
 import t2WhiteImage from "@root/public/img/T2/car white 0022.webp";
 import t2NeutralImage from "@root/public/img/T2/car.0022.webp";
-import dashingAzulImage from "@root/public/img/Dashing/JETOUR_azul_cam360_out.0003.webp";
-import dashingBlancoImage from "@root/public/img/Dashing/JETOUR_blanco_cam360_out.0003.webp";
-import dashingGrisImage from "@root/public/img/Dashing/JETOUR_gris_cam360_out.0003.webp";
-import dashingNegroImage from "@root/public/img/Dashing/JETOUR_negro_cam360_out.0003.webp";
+import dashingBlueImage from "@root/public/img/Dashing/JETOUR_azul_cam360_out.0003.webp";
+import dashingWhiteImage from "@root/public/img/Dashing/JETOUR_blanco_cam360_out.0003.webp";
+import dashingGrayImage from "@root/public/img/Dashing/JETOUR_gris_cam360_out.0003.webp";
+import dashingBlackImage from "@root/public/img/Dashing/JETOUR_negro_cam360_out.0003.webp";
 import dashingImageSection from "@root/public/img/DASHING/15.8 in. Digital screen.webp";
 import dashingSingleImageSection from "@root/public/img/DASHING/3.webp";
 import rubikKey from "@root/public/img/DASHING/Rubik_s cube key.webp";
@@ -277,25 +277,25 @@ export const vehiclesData: Record<string, VehicleData> = {
 		},
 		colorModels: [
 			{
-				carImage: dashingNegroImage,
+				carImage: dashingBlackImage,
 				color: "Black",
 				colorName: "Negro",
 				hexColor: "#000000",
 			},
 			{
-				carImage: dashingBlancoImage,
+				carImage: dashingWhiteImage,
 				color: "white",
 				colorName: "Blanco",
 				hexColor: "#FFFFFF",
 			},
 			{
-				carImage: dashingAzulImage,
+				carImage: dashingBlueImage,
 				color: "blue",
 				colorName: "Azul",
 				hexColor: "#9AC7E5",
 			},
 			{
-				carImage: dashingGrisImage,
+				carImage: dashingGrayImage,
 				color: "gray",
 				colorName: "Gris",
 				hexColor: "#808080",
