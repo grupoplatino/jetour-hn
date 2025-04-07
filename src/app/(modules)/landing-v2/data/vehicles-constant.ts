@@ -39,11 +39,11 @@ import x50Logo from "@root/public/img/X50/Logo.png";
 // Importaciones para X70 (ejemplo)
 import x70Image from "@root/public/img/X70 Plus/X70 Jetour.jpg";
 import x70Logo from "@root/public/img/X70 Plus/Logo.png";
+import { CarThemeKey } from "./theme-definitions";
 
 // Importación de datos de especificaciones
 
 // Tipos
-export type ThemeKey = "orange" | "turquoise"; // Ampliar según los temas que se tengan
 
 interface CarFeature {
 	name: string;
@@ -96,9 +96,10 @@ interface Visualizer {
 // Estructura principal de datos del vehículo
 export interface VehicleData {
 	id: string;
+  carSelecctorImage: StaticImageData;
 	modelName: string;
 	tagline: string;
-	theme: ThemeKey;
+	theme: CarThemeKey;
 	hero: {
 		backgroundImage: StaticImageData;
 		logo: StaticImageData;
@@ -131,6 +132,7 @@ export interface VehicleData {
 // Definición de datos de vehículos
 export const vehiclesData: Record<string, VehicleData> = {
 	t2: {
+    carSelecctorImage: t2WhiteImage,
 		id: "t2",
 		modelName: "T2",
 		tagline: "AVENTURAS SIN LÍMITES",
