@@ -17,7 +17,7 @@ interface NavbarProps {
   primaryColor?: string;
 }
 
-export function Navbar({ disableTransparent = false, primaryColor = '#00a3b4' }: NavbarProps) {
+export function Navbar({ disableTransparent = false, primaryColor = '#FF7A00' }: NavbarProps) {
   const [toggledNav, setToggledNav] = useState<boolean>(false);
   const [dropdownOpen, setDropdownOpen] = useState<boolean>(false);
   const [scrollPosition, setScrollPosition] = useState(0);

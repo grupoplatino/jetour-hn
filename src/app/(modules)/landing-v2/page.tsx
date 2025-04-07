@@ -10,13 +10,20 @@ import t2LandingLogo from '@root/public/img/T2/Logo.png';
 import dashingLandingBackground from '@root/public/img/landing/DASHING/9.webp';
 import dashingLandingLogo from '@root/public/img/Dashing/Logo.png';
 import CarModelsGallery from './components/car-model-gallery';
-import { vehiclesData } from './data/vehicles-constant';
+import { getVehicleById, vehiclesData } from './data/vehicles-constant';
+import VehicleDetailPage from './components/vehicle-deatail-page';
 
 const ContactForm = dynamic(() => import('./components/contact-form'));
 const VideoHeroSection = dynamic(() => import('./components/video-hero-section'));
 
 export default function LandingPage() {
   const carTheme = 'turquoise'; // Cambia esto según el vehículo seleccionado
+
+
+  const landingCar = getVehicleById('t2');
+  if (!landingCar) {
+    return <div>Car not found</div>;
+  }
 
   return (
     <>
@@ -48,9 +55,11 @@ export default function LandingPage() {
         subtitle=""
       />
 
-      <CarModelsGallery models={Object.values(vehiclesData)} themeKey="turquoise" />
+      <CarModelsGallery models={Object.values(vehiclesData)} themeKey="orange" />
 
-      <ContactForm themeKey={carTheme} />
+      <VehicleDetailPage carData={landingCar} />
+
+      {/* <ContactForm themeKey={carTheme} /> */}
     </>
   );
 }
