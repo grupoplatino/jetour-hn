@@ -54,6 +54,12 @@ import dashingSelectorImage from '@root/public/img/DASHING/JETOUR_azul_cam360_ou
 
 import x50WhiteImage from '@root/public/img/X50/x50-360BAI_00005.webp';
 import x50BlackImage from '@root/public/img/X50/x50-360HEI_00005.webp';
+import x50SplitSection1Image1 from '@root/public/img/X50/c (5).jpg';
+import x50SplitSection1Image2 from '@root/public/img/X50/Console.jpg';
+
+import x50ThirdSpecImage from '@root/public/img/X50/HAI_6221.jpg';
+
+import x50SplitSection2Image1 from '@root/public/img/X50/360° Panoramic Reversing Camera&180° Transparent Chassis.jpg';
 
 // Importación de datos de especificaciones
 
@@ -507,27 +513,34 @@ export const vehiclesData: Record<string, VehicleData> = {
     splitSections: [
       // Placeholder para Dashing
       {
-        image1: dashingImageSection,
-        image2: dashingImageSection,
-        title: 'MINIMALISMO Y TECNOLOGÍA',
-        text: 'El estilo interior minimalista de la Dashing se destaca por su pantalla LCD de control central.'
+        image1: x50SplitSection1Image1,
+        image2: x50SplitSection1Image2,
+        title: 'TAMAÑO Y DISEÑO',
+        text: 'El X50 se destaca por su interior, al igual que por sus dimensiones exteriores, con un diseño estilizado y detalles de alta calidad. Un espacio muy bien aprovechado, ideal para tí quien piensa en la seguridad y es amante a la tecnología.'
+      },
+      {
+        image1: x50SplitSection2Image1,
+        image2: x50SplitSection1Image2,
+        title: 'DISFRUTA SUS DETALLES',
+        text: 'El Jetour X50 ofrece comodidad con asientos revestidos en cuero sintético, y una amplia fila de asientos. Este auto es perfecto para salir y disfrutar del día y la noche, junto a tu familia o amigos.',
+        brochureUrl: 'https://www.jetour.com.co/brochure/X50.pdf'
       }
     ],
     featuresSections: {
-      title: 'CARACTERÍSTICAS Y ACABADOS DE LUJO',
+      title: 'COMODIDAD DESDE DONDE LA VEAS',
       items: [
         // Placeholder para Dashing
         {
           image: rubikKey,
-          label: 'ARRANQUE REMOTO Y ENCENDIDO SIN LLAVE'
+          label: 'CAMBIO PRECISO, CONTROL ABSOLUTO'
         },
         {
           image: headAcoustics,
-          label: 'HEAD ACOUSTICS (OPTIONAL)'
+          label: 'PANTALLA CENTRAL DE 10.3'
         },
         {
-          image: wirelessCharging,
-          label: 'ALMOHADILLA DE CARGA INALÁMBRICA DE 40 W'
+          image: x50ThirdSpecImage,
+          label: 'DISTANCIA ENTRE EJES EXTENDIDA'
         }
       ]
     },
@@ -607,7 +620,7 @@ export const vehiclesData: Record<string, VehicleData> = {
           class: 'bg-[#000000]'
         }
       ],
-      interiorImagePath: '/img/DASHING/Dashing 360_/IN/Black&red/Black&red.jpg',
+      interiorImagePath: '/img/X50/Interior-2/Blue&grey/Blue&grey.jpg',
       defaultColorIndex: 0
     }
   },

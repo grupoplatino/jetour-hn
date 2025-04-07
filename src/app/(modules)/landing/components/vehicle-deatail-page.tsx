@@ -15,7 +15,7 @@ const WhatsAppButton = dynamic(() => import('./whats-app-button'));
 
 import { VehicleData } from '../data/vehicles-constant';
 
-export default function VehicleDetailPage({ carData, showTestDriveButton }: { carData: VehicleData; showTestDriveButton?: boolean }) {
+export default function VehicleDetailPage({ carData, showTestDriveButton = true }: { carData: VehicleData; showTestDriveButton?: boolean }) {
   const carTheme = carData.theme;
 
   return (
