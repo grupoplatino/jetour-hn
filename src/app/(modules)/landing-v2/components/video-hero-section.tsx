@@ -22,12 +22,12 @@ export default function VideoHeroSection({ backgroundImage, logo, title, subtitl
       <div className="relative w-full h-full flex">
         {/* Sección izquierda - Imagen de fondo con clipPath */}
         <div className="absolute top-0 left-0 w-full h-full" style={{ clipPath: 'polygon(0% 0%, 45% 0%, 35% 100%, 0% 100%)' }}>
-          <Image className="object-cover w-full h-full -ml-[600px]" src={backgroundImage} priority fill alt="Background" />
+          <Image className="object-contain w-full h-full -ml-[600px]" src={backgroundImage} priority fill alt="Background" />
 
           {/* Logo y texto superpuestos en la sección izquierda */}
-          <div className="absolute top-1/4 left-8 z-10">
-            <Image src={logo} width={120} height={80} alt="Logo" className="mb-4" />
-            <h1 className="text-white text-xl font-bold uppercase">{title}</h1>
+          <div className="absolute top-[100px] left-8 z-10">
+            <Image src={logo} width={170} height={170} alt="Logo" className="mb-4" />
+            <h1 className="text-white text-3xl font-bold uppercase">{title}</h1>
             <p className="text-white mt-2 font-medium uppercase">{subtitle}</p>
           </div>
         </div>
