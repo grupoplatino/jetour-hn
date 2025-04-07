@@ -19,6 +19,9 @@ import dashingImage01 from '@root/public/img/DASHING/Foto 01.webp';
 import dashingImage02 from '@root/public/img/DASHING/Foto 02.webp';
 import dashingImage03 from '@root/public/img/DASHING/Foto 03.webp';
 import dashingImage04 from '@root/public/img/DASHING/Foto 04.webp';
+import x70PlusBlue from '@root/public/img/X70 Plus/X70 Plus 45 degree Blue.webp'
+import x70PlusWhite from '@root/public/img/X70 Plus/X70 Plus 45 degree White.webp';
+import x70PlusBlack from '@root/public/img/X70 Plus/45 degree front left angle Black.webp'
 import rubikKey from '@root/public/img/DASHING/Rubik_s cube key.webp';
 import headAcoustics from '@root/public/img/DASHING/Head acoustics(optional).webp';
 import wirelessCharging from '@root/public/img/DASHING/40 watts of wireless charging.webp';
@@ -42,8 +45,8 @@ import x50Image from '@root/public/img/X50/X50 Jetour.webp';
 import x50Logo from '@root/public/img/X50/Logo.png';
 
 // Importaciones para X70 (ejemplo)
-import x70Image from '@root/public/img/X70 Plus/X70 Jetour.jpg';
-import x70Logo from '@root/public/img/X70 Plus/Logo.png';
+import x70Image from '@root/public/img/X70 Plus/X70 Jetour.webp';
+import x70Logo from '@root/public/img/X70 Plus/Logo.webp';
 import { CarThemeKey } from './theme-definitions';
 
 import x50CarSelectorImage from '@root/public/img/X50/x50-360BAI_00005.webp';
@@ -646,8 +649,37 @@ export const vehiclesData: Record<string, VehicleData> = {
       logo: x70Logo
     },
     // Datos parciales - completar con información real
-    colorModels: [],
-    features: [],
+    colorModels: [
+      {
+        carImage: x70PlusBlue,
+        color: 'Blue',
+        colorName: 'Azul',
+        hexColor: '#2E3A5F'
+      },
+      {
+        carImage: x70PlusBlack,
+        color: 'Black',
+        colorName: 'Negro',
+        hexColor: '#000000'
+      },
+      {
+        carImage: x70PlusWhite,
+        color: 'White',
+        colorName: 'Blanco',
+        hexColor: '#FFFFFF'
+      }
+    ],
+    features: [
+      { name: 'CABALLOS DE FUERZA MÁX.', value: 197, position: 'topleft' },
+      { name: 'TORQUE MÁXIMO', value: 290, position: 'topcenter' },
+      { name: 'VELOCIDAD MÁXIMA (KM/H)', value: 180, position: 'topright' },
+      {
+        name: 'DISTANCIA ENTRE EJES (MM)',
+        value: 2745,
+        position: 'bottomleft'
+      },
+      { name: 'DESPLAZAMIENTO (ML)', value: 1598, position: 'bottomright' }
+    ],
     video: { url: '', thumbnail: '' },
     splitSections: [],
     featuresSections: { title: '', items: [] },
