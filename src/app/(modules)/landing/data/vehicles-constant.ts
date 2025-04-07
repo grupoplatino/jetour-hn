@@ -60,6 +60,7 @@ import x50SplitSection1Image2 from '@root/public/img/X50/Console.jpg';
 import x50FirstSpecImage from '@root/public/img/X50/Blue&grey.jpg';
 import x50ThirdSpecImage from '@root/public/img/X50/HAI_6221.jpg';
 
+import x50FirstGalleryImage from '@root/public/img/X50/Left 45 degree angle view.jpg';
 import x50SecondGalleryImage from '@root/public/img/X50/Dual Screen.jpg';
 import x50FourthGalleryImage from '@root/public/img/X50/60 drgee front right angle.png';
 
@@ -554,7 +555,7 @@ export const vehiclesData: Record<string, VehicleData> = {
     },
     gallery: [
       // Placeholder para Dashing
-      dashingImage01,
+      x50FirstGalleryImage,
       x50SecondGalleryImage,
       x50SplitSection1Image2,
       x50FourthGalleryImage
@@ -613,10 +614,16 @@ export const vehiclesData: Record<string, VehicleData> = {
     },
     visualizer: {
       title: 'VISUALIZADOR 3D',
-      basePath: '/img/DASHING/Dashing 360_/360 OUT',
-      filePattern: 'DASHING-EXT-{index}.png',
-      imageCount: 36,
+      basePath: '/img/X50/Exterior 360_',
+      filePattern: 'X50-EXT-{index}.png',
+      imageCount: 71,
       colors: [
+        {
+          name: 'white',
+          hex: '#FFFFFF',
+          folderName: 'white',
+          class: 'bg-white'
+        },
         {
           name: 'black',
           hex: '#000000',
