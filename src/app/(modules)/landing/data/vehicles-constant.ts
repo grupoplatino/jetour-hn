@@ -10,7 +10,6 @@ import t2Logo from "@root/public/img/T2/Logo.png";
 import t2BlackImage from "@root/public/img/T2/car black 0022 (1).webp";
 import t2WhiteImage from "@root/public/img/T2/car white 0022.webp";
 import t2NeutralImage from "@root/public/img/T2/car.0022.webp";
-import dashingBlueImage from "@root/public/img/Dashing/JETOUR_azul_cam360_out.0003.webp";
 import dashingWhiteImage from "@root/public/img/Dashing/JETOUR_blanco_cam360_out.0003.webp";
 import dashingGrayImage from "@root/public/img/Dashing/JETOUR_gris_cam360_out.0003.webp";
 import dashingBlackImage from "@root/public/img/Dashing/JETOUR_negro_cam360_out.0003.webp";
@@ -293,7 +292,7 @@ export const vehiclesData: Record<string, VehicleData> = {
 				hexColor: "#FFFFFF",
 			},
 			{
-				carImage: dashingBlueImage,
+				carImage: dashingSelectorImage,
 				color: "blue",
 				colorName: "Azul",
 				hexColor: "#9AC7E5",
