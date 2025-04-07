@@ -37,7 +37,7 @@ export default function CarModelsGallery({ title = 'Nuestros Modelos', models, c
         {models.map((model, index) => (
           <Link
             key={model.id}
-            href={`/lading-v2/${model.id}`}
+            href={`/landing/${model.id}`}
             className="group relative flex flex-col items-center transition-all duration-300 hover:scale-[1.02]"
             prefetch={false}
           >
