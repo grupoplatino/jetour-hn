@@ -4,13 +4,14 @@ import Link from 'next/link';
 import { MapPin, Phone, MessageSquare, Clock } from 'lucide-react';
 import ContactForm from '../components/contact-form';
 import heroImage from '@root/public/img/X50/c (5).jpg';
+import WhatsAppButton from '../components/whats-app-button';
 
 export default function ContactPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Banner */}
       <div className="relative w-full h-[300px] md:h-[400px] lg:h-[600px] overflow-hidden">
-        <Image src={heroImage} alt="JETOUR Concesionaria" fill priority className="object-cover brightness-50 mt-[100px]" />
+        <Image src={heroImage} alt="JETOUR Concesionaria" fill priority className="object-cover brightness-50 mt-[90px]" />
         <div className="absolute inset-0 flex flex-col justify-center items-center text-white">
           <h1 className="text-3xl md:text-5xl font-bold mb-4">Contáctanos</h1>
           <div className="h-1 w-20 bg-[#FF7A00]"></div>
@@ -18,7 +19,7 @@ export default function ContactPage() {
       </div>
 
       {/* Main Content */}
-      <div className="mx-auto py-12 md:py-20">
+      <div className="mx-auto">
         <div className="px-24 py-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Information */}
@@ -131,18 +132,18 @@ export default function ContactPage() {
         <ContactForm themeKey="orange" />
 
         {/* CTA Banner */}
-        <div className="px-24">
-          <div className="mt-20 bg-gradient-to-r from-[#FF7A00] to-orange-600 rounded-xl p-8 text-white text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">¿Interesado en nuestros vehículos?</h2>
-            <p className="text-lg mb-6 max-w-2xl mx-auto">Descubre la mejor experiencia de manejo con JETOUR. Agenda una prueba de manejo hoy mismo.</p>
-            <div className="inline-block">
-              <Link href="/test-drive" className="bg-white text-[#FF7A00] px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
-                AGENDA TU TEST DRIVE
-              </Link>
-            </div>
+        <div className="bg-gradient-to-r from-[#FF7A00] to-orange-600 p-8 text-white text-center">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">¿Interesado en nuestros vehículos?</h2>
+          <p className="text-lg mb-6 max-w-2xl mx-auto">Descubre la mejor experiencia de manejo con JETOUR. Agenda una prueba de manejo hoy mismo.</p>
+          <div className="inline-block">
+            <Link href="/test-drive" className="bg-white text-[#FF7A00] px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
+              AGENDA TU TEST DRIVE
+            </Link>
           </div>
         </div>
       </div>
+
+      <WhatsAppButton />
     </div>
   );
 }
