@@ -6,6 +6,7 @@ export interface ThemeCars {
     background?: string;
     testDriveText?: string; // Color del texto para el botón de test drive
     sectionText?: string; // Color del texto para la sección
+    landingVideoTitleClass?: string;
     landingVideoSectionTextColor?: string; // Color del texto para la sección de video de landing,
     landingVideoSectionLogiSizes?: {
       width?: number;
@@ -27,7 +28,8 @@ export const carThemes: CarThemesConstants = {
       text: '#FFFFFF',
       background: '#1D1D1B',
       testDriveText: 'black', // Color del texto para el botón de test drive,
-      sectionText: '#FFFFFF' // Color del texto para la sección
+      sectionText: '#FFFFFF', // Color del texto para la sección,
+      landingVideoSectionTextColor: 'white', // Color del texto para la sección de video de landing,
     }
   },
   turquoise: {
@@ -40,8 +42,10 @@ export const carThemes: CarThemesConstants = {
       sectionText: '#FFFFFF', // Color del texto para la sección,
       landingVideoSectionTextColor: 'white', // Color del texto para la sección de video de landing,
       landingVideoSectionLogiSizes: {
-        width: 300
-      }
+        width: 300,
+        height: 300
+      },
+      landingVideoTitleClass: '-mt-10'
     }
   }
 };

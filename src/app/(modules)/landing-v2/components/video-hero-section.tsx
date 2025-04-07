@@ -35,12 +35,13 @@ export default function VideoHeroSection({ backgroundImage, logo, title, subtitl
               width={theme?.colors?.landingVideoSectionLogiSizes?.width ? theme?.colors?.landingVideoSectionLogiSizes?.width : 170}
               height={theme?.colors?.landingVideoSectionLogiSizes?.height ? theme?.colors?.landingVideoSectionLogiSizes?.height : 170}
               alt="Logo"
-              className="mb-4"
+              className="h-auto"
             />
             <h1
               className={cn(
                 'text-white text-3xl font-bold uppercase max-w-[600px]',
-                theme.colors.landingVideoSectionTextColor === 'white' ? 'text-white' : 'text-black'
+                theme.colors.landingVideoSectionTextColor === 'white' ? 'text-white' : 'text-black',
+                theme?.colors?.landingVideoTitleClass
               )}
             >
               {title}
