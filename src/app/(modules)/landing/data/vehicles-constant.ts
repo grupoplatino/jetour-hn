@@ -57,7 +57,11 @@ import x50BlackImage from '@root/public/img/X50/x50-360HEI_00005.webp';
 import x50SplitSection1Image1 from '@root/public/img/X50/c (5).jpg';
 import x50SplitSection1Image2 from '@root/public/img/X50/Console.jpg';
 
+import x50FirstSpecImage from '@root/public/img/X50/Blue&grey.jpg';
 import x50ThirdSpecImage from '@root/public/img/X50/HAI_6221.jpg';
+
+import x50SecondGalleryImage from '@root/public/img/X50/Dual Screen.jpg';
+import x50FourthGalleryImage from '@root/public/img/X50/60 drgee front right angle.png';
 
 import x50SplitSection2Image1 from '@root/public/img/X50/360° Panoramic Reversing Camera&180° Transparent Chassis.jpg';
 
@@ -531,11 +535,11 @@ export const vehiclesData: Record<string, VehicleData> = {
       items: [
         // Placeholder para Dashing
         {
-          image: rubikKey,
+          image: x50SplitSection1Image2,
           label: 'CAMBIO PRECISO, CONTROL ABSOLUTO'
         },
         {
-          image: headAcoustics,
+          image: x50FirstSpecImage,
           label: 'PANTALLA CENTRAL DE 10.3'
         },
         {
@@ -545,15 +549,15 @@ export const vehiclesData: Record<string, VehicleData> = {
       ]
     },
     singlePictureSection: {
-      title: 'DISEÑO EXCEPCIONAL Y DEPORTIVO',
-      image: dashingSingleImageSection
+      title: 'SEGURIDAD Y RESPALDO PARA DISFRUTAR EL VIAJE',
+      image: x50ThirdSpecImage
     },
     gallery: [
       // Placeholder para Dashing
       dashingImage01,
-      dashingImage02,
-      dashingImage03,
-      dashingImage04
+      x50SecondGalleryImage,
+      x50SplitSection1Image2,
+      x50FourthGalleryImage
     ],
     specs: {
       'Características principales': {
