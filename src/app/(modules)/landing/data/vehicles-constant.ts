@@ -22,6 +22,10 @@ import dashingImage04 from '@root/public/img/DASHING/Foto 04.webp';
 import x70PlusBlue from '@root/public/img/X70 Plus/X70 Plus 45 degree Blue.webp'
 import x70PlusWhite from '@root/public/img/X70 Plus/X70 Plus 45 degree White.webp';
 import x70PlusBlack from '@root/public/img/X70 Plus/45 degree front left angle Black.webp'
+import X70PlusSingleImage from '@root/public/img/X70 Plus/0Y6H8571_1final.jpg'
+import x70FeatureImage1 from '@root/public/img/X70 Plus/featuresSection1.webp'
+import x70FeatureImage2 from '@root/public/img/X70 Plus/featuresSection2.webp'
+import x70FeatureImage3 from '@root/public/img/X70 Plus/featuresSection3.webp'
 import rubikKey from '@root/public/img/DASHING/Rubik_s cube key.webp';
 import headAcoustics from '@root/public/img/DASHING/Head acoustics(optional).webp';
 import wirelessCharging from '@root/public/img/DASHING/40 watts of wireless charging.webp';
@@ -680,12 +684,45 @@ export const vehiclesData: Record<string, VehicleData> = {
       },
       { name: 'DESPLAZAMIENTO (ML)', value: 1598, position: 'bottomright' }
     ],
-    video: { url: '', thumbnail: '' },
     video: { url: '/video/Videos-X70-Plus-Web/Video X70 Plus.mp4', thumbnail: '/img/X70 Plus/0Y6H8571_1final.jpg' },
-    splitSections: [],
-    featuresSections: { title: '', items: [] },
-    singlePictureSection: { title: '', image: securityImage },
-    gallery: [],
+    splitSections: [
+      {
+        image1: x70Image,
+        image2: x70Image,
+        title: 'SEGURIDAD ANTE TODO',
+        text: 'La X70 Plus cuenta con cuatro airbags (frontales y laterales), ISOFIX, sistema de control de tracción y estabilidad, sistema de frenado AUTOHOLD, sistema de monitoreo de puntos ciegos, entre otros equipos que hacen de esta una SUV segura y confiable.'
+      },
+      {
+        image1: x70Image,
+        image2: x70Image,
+        title: 'Tecnología espacial',
+        text: 'La X70 PLUS está equipada con sistema de visión 360, asientos forrados, un excelente sistema de infoentretenimiento con pantalla de 10.25” y cargador inalámbrico para teléfonos.'
+      }
+    ],
+    featuresSections: { 
+      title: 'COMODIDAD DESDE DONDE LO VEAS', 
+      items: [
+        {
+          image: x70FeatureImage1,
+          label: 'MODELADO TRIDIMENSIONAL MULTINIVEL'
+        },
+        {
+          image: x70FeatureImage2,
+          label: 'TECHO CORREDIZO PANORÁMICO'
+        },
+        {
+          image: x70FeatureImage3,
+          label: 'DISTANCIA ENTRE EJES SUPER LARGA'
+        }
+      ]
+    },
+    singlePictureSection: { title: 'SEGURIDAD Y RESPALDO PARA DISFRUTAR EL VIAJE', image: X70PlusSingleImage },
+    gallery: [
+      x70Image,
+      x70Image,
+      x70Image,
+      x70Image
+    ],
     specs: {
       'Diseño y estilo': {
         Capacidad: 'Asientos: 3 filas, 7 pasajeros',
