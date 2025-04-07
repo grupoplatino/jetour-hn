@@ -1,48 +1,60 @@
 // src/components/ui/landing/video-hero-section/video-hero-section.tsx
 import React from 'react';
-import Image from 'next/image';
-import { VideoPlayerClient } from './video-player-client';
+import Image, { StaticImageData } from 'next/image';
+import { ThemeKey } from '../data/vehicles-constant';
 
 interface VideoHeroSectionProps {
-  backgroundImage: string;
-  logo: string;
+  backgroundImage: string | StaticImageData;
+  logo: string | StaticImageData;
   title: string;
   subtitle: string;
-  themeKey: 'dashing' | 't2' | 'x70' | 'x50';
+  themeKey: ThemeKey;
   videos: {
     leftVideo: string;
     rightVideo: string;
   };
 }
 
-export function VideoHeroSection({ backgroundImage, logo, title, subtitle, themeKey, videos }: VideoHeroSectionProps) {
+export function VideoHeroSection({ backgroundImage, logo, title, subtitle, videos }: VideoHeroSectionProps) {
   return (
     <section className="relative w-full h-screen overflow-hidden">
-      {/* Left section with background image and logo/text overlay */}
-      <div className="absolute top-0 left-0 w-full md:w-1/2 h-full">
-        <div className="relative w-full h-full">
-          {/* Background Image */}
-          <Image src={backgroundImage} alt={title} fill priority className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
+      {/* Contenedor principal con elementos superpuestos */}
+      <div className="relative w-full h-full flex">
+        {/* Sección izquierda - Imagen de fondo con clipPath */}
+        <div className="absolute top-0 left-0 w-full h-full" style={{ clipPath: 'polygon(0% 0%, 45% 0%, 35% 100%, 0% 100%)' }}>
+          <Image className="object-cover w-full h-full" src={backgroundImage} priority fill alt="Background" />
 
-          {/* Overlay with logo and text */}
-          <div className="absolute top-0 left-0 w-full h-full bg-black/10 flex flex-col justify-center p-8">
-            <div className="w-4/5 max-w-md">
-              <Image src={logo} alt={`${title} logo`} width={300} height={150} className="w-auto h-auto" priority />
-              <h1 className="text-white mt-4 font-bold text-lg md:text-2xl">{title}</h1>
-              <p className="text-white mt-2 uppercase font-medium">{subtitle}</p>
-            </div>
-          </div>
-
-          {/* "VIDEO" text for left side */}
-          <div className="absolute bottom-8 left-8 md:bottom-12 md:left-12">
-            <h2 className="text-white text-5xl md:text-7xl font-bold opacity-70">VIDEO</h2>
+          {/* Logo y texto superpuestos en la sección izquierda */}
+          <div className="absolute top-1/4 left-8 z-10">
+            <Image src={logo} width={120} height={80} alt="Logo" className="mb-4" />
+            <h1 className="text-white text-xl font-bold uppercase">{title}</h1>
+            <p className="text-white mt-2 font-medium uppercase">{subtitle}</p>
           </div>
         </div>
-      </div>
 
-      {/* Right section with videos */}
-      <div className="absolute top-0 right-0 w-full md:w-1/2 h-full md:left-1/2">
-        <VideoPlayerClient leftVideo={videos.leftVideo} rightVideo={videos.rightVideo} themeKey={themeKey} />
+        {/* Sección derecha - Video principal con clipPath */}
+        <div className="absolute top-0 left-0 w-full h-full" style={{ clipPath: 'polygon(45% 0%, 100% 0%, 100% 100%, 35% 100%)' }}>
+          <video autoPlay loop muted playsInline className="w-full h-full object-cover" src={videos.leftVideo} />
+
+          {/* Texto "VIDEO" en la esquina inferior derecha */}
+          <div className="absolute bottom-10 right-10 z-10">
+            <h2 className="text-white text-6xl font-bold opacity-60">VIDEO</h2>
+          </div>
+
+          {/* Botones 01 02 para cambiar videos (estáticos por ahora) */}
+          <div className="absolute bottom-10 right-56 z-20 flex gap-4">
+            <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center font-bold">01</div>
+            <div className="w-12 h-12 bg-black/40 text-white rounded-full flex items-center justify-center font-bold">02</div>
+          </div>
+        </div>
+
+        {/* Tercer elemento - Video pequeño en el medio con clipPath */}
+        <div className="absolute bottom-0 left-[20%] w-[25%] h-[60%] z-10" style={{ clipPath: 'polygon(45% 0%, 100% 0%, 70% 100%, 10% 100%)' }}>
+          <video autoPlay loop muted playsInline className="w-full h-full object-cover" src={videos.rightVideo} />
+        </div>
+
+        {/* Barra superior naranja */}
+        <div className="absolute top-0 left-0 w-full h-1 bg-orange-500 z-20"></div>
       </div>
     </section>
   );
