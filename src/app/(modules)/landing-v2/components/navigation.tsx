@@ -28,8 +28,7 @@ export function Navbar({ disableTransparent = false, primaryColor = '#FF7A00' }:
 
   const carTheme = carData ? carThemes?.[carData.theme]?.colors : null;
 
-  useEffect(() => {
-  }, [params]);
+  useEffect(() => {}, [params]);
 
   const handleScroll = () => {
     const position = window.pageYOffset;
@@ -49,16 +48,16 @@ export function Navbar({ disableTransparent = false, primaryColor = '#FF7A00' }:
       href: '#',
       hasDropdown: true,
       dropdownItems: [
-        { label: 'Dashing', href: '/landing-v2/dashing' },
-        { label: 'T2', href: '/landing-v2/t2' },
-        { label: 'X50', href: '/landing-v2/x50' },
-        { label: 'X70 PLUS', href: '/landing-v2/x70' }
+        { label: 'Dashing', href: '/landing/dashing' },
+        { label: 'T2', href: '/landing/t2' },
+        { label: 'X50', href: '/landing/x50' },
+        { label: 'X70 PLUS', href: '/landing/x70' }
       ]
     },
-    { label: 'SOLICITA UNA COTIZACIÓN', href: '/landing-v2' },
-    { label: 'POSTVENTA', href: '/landing-v2' },
-    { label: 'NOSOTROS', href: '/landing-v2' },
-    { label: 'CONTÁCTANOS', href: '/landing-v2' }
+    { label: 'SOLICITA UNA COTIZACIÓN', href: '/landing#cotizacion' },
+    { label: 'POSTVENTA', href: '/landing/post-venta' },
+    { label: 'NOSOTROS', href: '/landing/nosotros' },
+    { label: 'CONTÁCTANOS', href: '/landing/contactanos' }
   ];
 
   return (
@@ -70,7 +69,9 @@ export function Navbar({ disableTransparent = false, primaryColor = '#FF7A00' }:
     >
       <section className="flex flex-row px-4 md:px-16 py-2 justify-between items-center">
         <figure className="flex flex-row items-center gap-4 md:gap-10 text-white">
-          <Image src={jetourLogo} alt="Logo Jetour" width={120} height={120} className="w-28 md:w-36" />
+          <Link href="/" className="w-fit h-fit">
+            <Image src={jetourLogo} alt="Logo Jetour" width={120} height={120} className="w-28 md:w-36" />
+          </Link>
           <Image src={autosAliadosLogo} alt="Logo Auto Aliados" width={120} height={120} className="w-28 md:w-32" />
         </figure>
 
@@ -112,7 +113,11 @@ export function Navbar({ disableTransparent = false, primaryColor = '#FF7A00' }:
         />
       </section>
 
-      {(scrollPosition  > 0 && !disableTransparent) ? <div className="h-2" style={{ backgroundColor: carTheme ? carTheme.primary : primaryColor }} /> : <div className="h-2" style={{ backgroundColor: carTheme ? carTheme.primary : primaryColor }} />}
+      {scrollPosition > 0 && !disableTransparent ? (
+        <div className="h-2" style={{ backgroundColor: carTheme ? carTheme.primary : primaryColor }} />
+      ) : (
+        <div className="h-2" style={{ backgroundColor: carTheme ? carTheme.primary : primaryColor }} />
+      )}
 
       {/* Mobile Menu */}
       {toggledNav && (

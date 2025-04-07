@@ -15,6 +15,7 @@ export default function ContactForm({ backgroundImage = '/img/Fondo Cotización.
 
   return (
     <section
+      id="cotizacion"
       className="relative w-full bg-cover bg-no-repeat py-20 min-h-screen flex items-center"
       style={{
         backgroundImage: `url("${backgroundImage}")`,
