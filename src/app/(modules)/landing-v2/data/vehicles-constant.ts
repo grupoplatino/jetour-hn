@@ -15,6 +15,7 @@ import dashingBlancoImage from "@root/public/img/Dashing/JETOUR_blanco_cam360_ou
 import dashingGrisImage from "@root/public/img/Dashing/JETOUR_gris_cam360_out.0003.webp";
 import dashingNegroImage from "@root/public/img/Dashing/JETOUR_negro_cam360_out.0003.webp";
 import dashingImageSection from "@root/public/img/DASHING/15.8 in. Digital screen.webp";
+import dashingSingleImageSection from "@root/public/img/DASHING/3.webp";
 import rubikKey from "@root/public/img/DASHING/Rubik_s cube key.webp";
 import headAcoustics from "@root/public/img/DASHING/Head acoustics(optional).webp";
 import wirelessCharging from "@root/public/img/DASHING/40 watts of wireless charging.webp";
@@ -135,8 +136,8 @@ export interface VehicleData {
 
 // Definición de datos de vehículos
 export const vehiclesData: Record<string, VehicleData> = {
-  t2: {
-    carSelecctorImage: t2WhiteImage,
+	t2: {
+		carSelecctorImage: t2WhiteImage,
 		id: "t2",
 		modelName: "T2",
 		tagline: "AVENTURAS SIN LÍMITES",
@@ -344,11 +345,11 @@ export const vehiclesData: Record<string, VehicleData> = {
 		},
 		singlePictureSection: {
 			title: "DISEÑO EXCEPCIONAL Y DEPORTIVO",
-			image: securityImage, // Reemplazar con la imagen correcta
+			image: dashingSingleImageSection,
 		},
 		gallery: [
 			// Placeholder para Dashing
-			t2SkeletonImage, // Reemplazar con las imágenes correctas
+			t2SkeletonImage,
 		],
 		specs: {}, // Reemplazar con los datos correctos
 		visualizer: {
