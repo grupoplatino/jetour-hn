@@ -48,6 +48,9 @@ import x50CarSelectorImage from '@root/public/img/X50/x50-360BAI_00005.webp';
 
 import x70CarSelectorImage from '@root/public/img/X70 Plus/X70 Plus 45 degree Blue.webp';
 
+
+import dashingSelectorImage from '@root/public/img/DASHING/JETOUR_azul_cam360_out.0003.webp';
+
 // Importación de datos de especificaciones
 
 // Tipos
@@ -262,7 +265,7 @@ export const vehiclesData: Record<string, VehicleData> = {
 		},
 	},
 	dashing: {
-    carSelecctorImage: dashingImage,
+    carSelecctorImage: dashingSelectorImage,
 		id: "dashing",
 		modelName: "Dashing",
 		tagline: "EXPERIMENTA LA TECNOLOGÍA DE VANGUARDIA",
