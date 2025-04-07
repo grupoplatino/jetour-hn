@@ -1,6 +1,6 @@
 // car-feature-stats.tsx
 
-import { CarThemeKey, carThemes } from '../data/theme-definitions';
+import { CarThemeKey } from '../data/theme-definitions';
 
 interface CarFeatureStatsProps {
   name: string;
@@ -9,9 +9,7 @@ interface CarFeatureStatsProps {
   carTheme: CarThemeKey;
 }
 
-export function CarFeatureStats({ name, value, position, carTheme }: CarFeatureStatsProps) {
-  const theme = carThemes[carTheme].colors;
-
+export function CarFeatureStats({ name, value, position }: CarFeatureStatsProps) {
   // Clases adicionales según la posición
   const positionClasses = {
     topleft: 'text-left',
@@ -23,11 +21,11 @@ export function CarFeatureStats({ name, value, position, carTheme }: CarFeatureS
   };
 
   return (
-    <div className={`flex items-center gap-2 ${positionClasses[position]}`}>
-      <h3 className="text-sm font-semibold uppercase">{name}</h3>
-      <span className="text-6xl font-bold" style={{ color: theme.primary }}>
-        {value}
-      </span>
-    </div>
-  );
+		<div className={`flex items-center gap-2 ${positionClasses[position]}`}>
+			<h3 className='text-sm font-semibold uppercase'>{name}</h3>
+			<span className='text-6xl font-bold' style={{ color: "#D32F2F" }}>
+				{value}
+			</span>
+		</div>
+	);
 }
