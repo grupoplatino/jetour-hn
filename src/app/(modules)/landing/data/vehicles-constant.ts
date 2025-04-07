@@ -38,7 +38,7 @@ import dashingImage from '@root/public/img/DASHING/Dashing Jetour.webp';
 import dashingLogo from '@root/public/img/DASHING/Logo.png';
 
 // Importaciones para X50 (ejemplo)
-import x50Image from '@root/public/img/X50/X50 Jetour.png';
+import x50Image from '@root/public/img/X50/X50 Jetour.webp';
 import x50Logo from '@root/public/img/X50/Logo.png';
 
 // Importaciones para X70 (ejemplo)
@@ -51,6 +51,9 @@ import x50CarSelectorImage from '@root/public/img/X50/x50-360BAI_00005.webp';
 import x70CarSelectorImage from '@root/public/img/X70 Plus/X70 Plus 45 degree Blue.webp';
 
 import dashingSelectorImage from '@root/public/img/DASHING/JETOUR_azul_cam360_out.0003.webp';
+
+import x50WhiteImage from '@root/public/img/X50/x50-360BAI_00005.webp';
+import x50BlackImage from '@root/public/img/X50/x50-360HEI_00005.webp';
 
 // Importación de datos de especificaciones
 
@@ -472,13 +475,73 @@ export const vehiclesData: Record<string, VehicleData> = {
       logo: x50Logo
     },
     // Datos parciales - completar con información real
-    colorModels: [],
-    features: [],
-    video: { url: '', thumbnail: '' },
-    splitSections: [],
-    featuresSections: { title: '', items: [] },
-    singlePictureSection: { title: '', image: securityImage },
-    gallery: [],
+    colorModels: [
+      {
+        carImage: x50BlackImage,
+        color: 'Black',
+        colorName: 'Negro',
+        hexColor: '#000000'
+      },
+      {
+        carImage: x50WhiteImage,
+        color: 'white',
+        colorName: 'Blanco',
+        hexColor: '#FFFFFF'
+      }
+    ],
+    features: [
+      { name: 'CABALLOS DE FUERZA MÁX.', value: 197, position: 'topleft' },
+      { name: 'TORQUE MÁXIMO', value: 290, position: 'topcenter' },
+      { name: 'VELOCIDAD MÁXIMA (KM/H)', value: 180, position: 'topright' },
+      {
+        name: 'DISTANCIA ENTRE EJES (MM)',
+        value: 2720,
+        position: 'bottomleft'
+      },
+      { name: 'DESPLAZAMIENTO (ML)', value: 1598, position: 'bottomright' }
+    ],
+    video: {
+      url: '/video/Video-X50/No Subtitle(1).mp4',
+      thumbnail: '/img/X50/X50 Jetour.webp'
+    },
+    splitSections: [
+      // Placeholder para Dashing
+      {
+        image1: dashingImageSection,
+        image2: dashingImageSection,
+        title: 'MINIMALISMO Y TECNOLOGÍA',
+        text: 'El estilo interior minimalista de la Dashing se destaca por su pantalla LCD de control central.'
+      }
+    ],
+    featuresSections: {
+      title: 'CARACTERÍSTICAS Y ACABADOS DE LUJO',
+      items: [
+        // Placeholder para Dashing
+        {
+          image: rubikKey,
+          label: 'ARRANQUE REMOTO Y ENCENDIDO SIN LLAVE'
+        },
+        {
+          image: headAcoustics,
+          label: 'HEAD ACOUSTICS (OPTIONAL)'
+        },
+        {
+          image: wirelessCharging,
+          label: 'ALMOHADILLA DE CARGA INALÁMBRICA DE 40 W'
+        }
+      ]
+    },
+    singlePictureSection: {
+      title: 'DISEÑO EXCEPCIONAL Y DEPORTIVO',
+      image: dashingSingleImageSection
+    },
+    gallery: [
+      // Placeholder para Dashing
+      dashingImage01,
+      dashingImage02,
+      dashingImage03,
+      dashingImage04
+    ],
     specs: {
       'Características principales': {
         Motor: 'MOTOR 1.5L',
@@ -533,11 +596,18 @@ export const vehiclesData: Record<string, VehicleData> = {
     },
     visualizer: {
       title: 'VISUALIZADOR 3D',
-      basePath: '',
-      filePattern: '',
-      imageCount: 0,
-      colors: [],
-      interiorImagePath: '',
+      basePath: '/img/DASHING/Dashing 360_/360 OUT',
+      filePattern: 'DASHING-EXT-{index}.png',
+      imageCount: 36,
+      colors: [
+        {
+          name: 'black',
+          hex: '#000000',
+          folderName: 'black',
+          class: 'bg-[#000000]'
+        }
+      ],
+      interiorImagePath: '/img/DASHING/Dashing 360_/IN/Black&red/Black&red.jpg',
       defaultColorIndex: 0
     }
   },
