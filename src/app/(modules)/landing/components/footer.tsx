@@ -63,7 +63,7 @@ export function Footer({ primaryColor = '#FF7A00' }: FooterProps) {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/landing/x70" className="hover:text-gray-600 transition-colors">
+                  <Link href="/landing/x70plus" className="hover:text-gray-600 transition-colors">
                     X70 Plus
                   </Link>
                 </li>

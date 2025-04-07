@@ -51,7 +51,7 @@ export function Navbar({ disableTransparent = false, primaryColor = '#FF7A00' }:
         { label: 'Dashing', href: '/landing/dashing' },
         { label: 'T2', href: '/landing/t2' },
         { label: 'X50', href: '/landing/x50' },
-        { label: 'X70 PLUS', href: '/landing/x70' }
+        { label: 'X70 PLUS', href: '/landing/x70plus' }
       ]
     },
     { label: 'SOLICITA UNA COTIZACIÓN', href: '/landing#cotizacion' },
