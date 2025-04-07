@@ -395,7 +395,55 @@ export const vehiclesData: Record<string, VehicleData> = {
       dashingImage03,
       dashingImage04
     ],
-    specs: {}, // Reemplazar con los datos correctos
+    specs: {
+      'Motor y rendimiento': {
+        Tipo: 'Motor de 1.6 L Turbo',
+        Potencia: '197 ps / 5,500 rpm',
+        Torque: '290 nm / 2,000 - 4,000 rpm'
+      },
+      Dimensiones: {
+        Largo: '4785 mm',
+        Ancho: '2006 mm',
+        Altura: '1880 mm'
+      },
+      'Diseño exterior': {
+        Rines: 'Rines de lujo de 20"',
+        Llanta: 'Llanta de repuesto',
+        Luces: 'DRL (Luces Diurnas), Luces delanteras LED',
+        Espejos: 'Espejos retrovisores con ajuste eléctrico y desempañables',
+        Techo: 'Techo Panorámico y Sunroof',
+        Sensores: 'Sensor de Lluvia',
+        'Colores disponibles': 'Blanco, Gris, Azul, Negro'
+      },
+      'Confort y comodidad': {
+        Llave: 'Llave de entrada a distancia',
+        Encendido: 'Encendido del motor a distancia',
+        Asientos: 'Asientos tapizados en cuero, Asiento del conductor y pasajero con calefacción y enfriamiento',
+        Memorias: 'Asiento del conductor con memorias del perfil de manejo',
+        Portaobjetos: 'Portaobjetos central tapizado en cuero climatizado'
+      },
+      'Centro de entretenimiento': {
+        Pantalla: 'Pantalla de 15,6 pulgadas',
+        Clima: 'Aire acondicionado con control eléctrico y ajuste automático',
+        Audio: 'Sistema de sonido SONY, 6 bocinas de sonido',
+        Visualizador: 'Visualizador frontal digital para conductor',
+        Carga: 'Cargador inalámbrico para celular',
+        Conectividad: 'Puertos USB delanteros y traseros, Portalentes, Conectividad Mirror Link, Compatible con Apple Carplay y Android Auto'
+      },
+      'Sistemas avanzados': {
+        Asistencia: 'Sistemas avanzados de asistencia',
+        Cámara: 'Cámara de visión de 360 con guías dinámicas',
+        Sensores: 'Sensores de estacionamiento traseros y delanteros'
+      },
+      'Especificaciones de seguridad': {
+        Frenos: 'Sistema antibloqueo de ruedas T, Asistente de frenado',
+        Control: 'Control de estabilidad electrónico, Sistema de control de tracción',
+        Asistentes: 'Asistente de ascenso en pendiente, Control de descenso de pendientes',
+        Protección: '6 Airbags',
+        Monitoreo: 'Sistema de monitoreo de presión de llantas',
+        Advertencias: 'Advertencia de colisión frontal y lateral, Advertencia de abandono de carril'
+      }
+    }, // Reemplazar con los datos correctos
     visualizer: {
       title: 'VISUALIZADOR 3D',
       basePath: '/img/DASHING/Dashing 360_/360 OUT',
@@ -431,7 +479,58 @@ export const vehiclesData: Record<string, VehicleData> = {
     featuresSections: { title: '', items: [] },
     singlePictureSection: { title: '', image: securityImage },
     gallery: [],
-    specs: {},
+    specs: {
+      'Características principales': {
+        Motor: 'MOTOR 1.5L',
+        Pantalla: 'PANTALLA DUAL DE 20.5 PULGADAS',
+        Cámara: 'CÁMARA DE VISIÓN 360°',
+        Seguridad: '6 BOLSAS DE AIRE'
+      },
+      'Diseño y estilo exterior': {
+        Luces: 'Luces delanteras LED y de encendido automático',
+        Techo: 'Sunroof',
+        Espejos: 'Espejos retrovisores eléctricos y abatibles',
+        Antena: 'Antena tiburón',
+        Spoiler: 'Spoiler trasero',
+        Rines: 'RINES DE LUJO DE 18"'
+      },
+      'Comodidad interior': {
+        Asientos: 'Asientos tapizados en cuero sintético',
+        Ajustes: 'Asiento del conductor con ajuste eléctrico',
+        Climatización: 'Aire acondicionado con control de velocidad'
+      },
+      'Tecnología y conectividad': {
+        Pantalla: 'Pantalla digital de 10.25"',
+        Radio: 'Radio AM/FM/Bluetooth',
+        Compatibilidad: 'CarPlay y Android Auto',
+        Controles: 'Botones multifunción en el timón',
+        Audio: '6 bocinas de sonido',
+        Carga: 'Cargador de teléfono inalámbrico',
+        Puertos: 'Puertos USB delanteros y traseros'
+      },
+      'Seguridad y rendimiento': {
+        Protección: '6 bolsas de aire',
+        Cámara: 'Cámara de visión 360° con guías dinámicas',
+        Sensores: 'Sensores de estacionamiento delanteros y traseros',
+        Monitoreo: 'Sistema de monitoreo de presión de llantas (TPMS)',
+        Cinturones: 'Cinturones de seguridad en todos los asientos',
+        'Sistema infantil': 'Sistema ISOFIX para silla de bebé'
+      },
+      'Motorización y especificaciones clave': {
+        Motor: 'Motor 1.5L Turbo / 156 hp / 230 Nm',
+        Transmisión: 'Transmisión automática de 6 velocidades',
+        Tracción: 'Tracción delantera',
+        Capacidad: '5 pasajeros'
+      },
+      Medidas: {
+        Largo: '4397 mm',
+        Altura: '1664 mm'
+      },
+      Colores: {
+        Exteriores: 'Negro, Blanco',
+        Interiores: 'Negro, Azul'
+      }
+    },
     visualizer: {
       title: 'VISUALIZADOR 3D',
       basePath: '',
@@ -460,7 +559,49 @@ export const vehiclesData: Record<string, VehicleData> = {
     featuresSections: { title: '', items: [] },
     singlePictureSection: { title: '', image: securityImage },
     gallery: [],
-    specs: {},
+    specs: {
+      'Diseño y estilo': {
+        Capacidad: 'Asientos: 3 filas, 7 pasajeros',
+        Techo: 'Sunroof panorámico',
+        Rines: 'Rines de lujo',
+        Luces: 'Luces delanteras halógenas y traseras LED',
+        Rieles: 'Rieles de techo',
+        Antena: 'Antena tipo aleta de tiburón',
+        Asientos: 'Asientos tapizados en cuero',
+        'Iluminación interior': 'Luces de ambiente interior monocromáticas'
+      },
+      'Multimedia y conectividad': {
+        Pantalla: 'Pantalla: 10.25"',
+        Conectividad: 'Conectividad: Mirrorlink',
+        Cámara: 'Cámara de visión 360° con guías dinámicas',
+        Puertos: 'Puertos USB: Delanteros y traseros'
+      },
+      Motor: {
+        Tipo: 'Motor 1.6L TURBO',
+        Torque: 'Torque de 290Nm'
+      },
+      'Seguridad avanzada y asistencia': {
+        Frenos: 'Sistema de frenado antibloqueo',
+        Estabilidad: 'Control de estabilidad electrónico',
+        'Asistencia conducción': 'Asistente de mantenimiento de carril',
+        Monitoreo: 'Monitor de punto ciego',
+        Cámara: 'Cámara de 360° con modelo 3D',
+        Protección: '6 airbags',
+        'Distribución frenado': 'Distribución electrónica de frenado',
+        'Control descenso': 'Control de descenso en pendientes',
+        'Seguridad infantil': 'Puertas con Child Lock'
+      },
+      'Confort y ajustes': {
+        Climatización: 'Aire acondicionado: Control digital',
+        Audio: 'Sonido: 6 bocinas',
+        Controles: 'Botones multifuncionales en el timón',
+        'Asientos ajustables': 'Asientos del conductor: Ajuste eléctrico'
+      },
+      Colores: {
+        Exteriores: 'Negro, Blanco, Azul',
+        Interiores: 'Color Negro, Color Rojo'
+      }
+    },
     visualizer: {
       title: 'VISUALIZADOR 3D',
       basePath: '',
