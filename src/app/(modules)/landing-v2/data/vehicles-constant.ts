@@ -13,6 +13,10 @@ import dashingAzulImage from "@root/public/img/Dashing/JETOUR_azul_cam360_out.00
 import dashingBlancoImage from "@root/public/img/Dashing/JETOUR_blanco_cam360_out.0003.webp";
 import dashingGrisImage from "@root/public/img/Dashing/JETOUR_gris_cam360_out.0003.webp";
 import dashingNegroImage from "@root/public/img/Dashing/JETOUR_negro_cam360_out.0003.webp";
+import dashingImageSection from "@root/public/img/DASHING/15.8 in. Digital screen.webp";
+import rubikKey from "@root/public/img/DASHING/Rubik_s cube key.webp";
+import headAcoustics from "@root/public/img/DASHING/Head acoustics(optional).webp";
+import wirelessCharging from "@root/public/img/DASHING/40 watts of wireless charging.webp";
 import t2ImageSection from "@root/public/img/T2/Approach and departure angles.webp";
 import t2ImageSection2 from "@root/public/img/T2/Magic Electric Door.webp";
 import securityImage from "@root/public/img/T2/Seaside scenery.webp";
@@ -307,10 +311,10 @@ export const vehiclesData: Record<string, VehicleData> = {
 		splitSections: [
 			// Placeholder para Dashing
 			{
-				image1: t2ImageSection, // Reemplazar con la imagen correcta
-				image2: t2ImageSection2, // Reemplazar con la imagen correcta
-				title: "VANGUARDIA AL SERVICIO DEL DISEÑO",
-				text: "La carrocería de la Dashing de líneas suaves y rectas, se destaca por su diseño deportivo coupé en 3D.",
+				image1: dashingImageSection,
+				image2: dashingImageSection,
+				title: "MINIMALISMO Y TECNOLOGÍA",
+				text: "El estilo interior minimalista de la Dashing se destaca por su pantalla LCD de control central.",
 			},
 		],
 		featuresSections: {
@@ -318,8 +322,16 @@ export const vehiclesData: Record<string, VehicleData> = {
 			items: [
 				// Placeholder para Dashing
 				{
-					image: heatedSeats, // Reemplazar con la imagen correcta
+					image: rubikKey,
 					label: "ARRANQUE REMOTO Y ENCENDIDO SIN LLAVE",
+				},
+				{
+					image: headAcoustics,
+					label: "HEAD ACOUSTICS (OPTIONAL)",
+				},
+				{
+					image: wirelessCharging,
+					label: "ALMOHADILLA DE CARGA INALÁMBRICA DE 40 W",
 				},
 			],
 		},
