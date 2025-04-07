@@ -52,7 +52,7 @@ const ExteriorView: React.FC<ExteriorViewProps & { themeKey: string }> = ({
         />
       </div>
 
-      <div className="absolute bottom-8 left-0 right-0">
+      <div className="absolute -bottom-12 left-0 right-0">
         <ColorSelector colors={colors} selectedColor={selectedColor} onColorChange={onColorChange} themeKey={themeKey} />
       </div>
     </div>

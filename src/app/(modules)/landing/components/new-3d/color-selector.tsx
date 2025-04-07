@@ -2,15 +2,18 @@
 import React from 'react';
 import { VehicleColor } from './types';
 import clsx from 'clsx';
+import { CarThemeKey, carThemes } from '../../data/theme-definitions';
 
 interface ColorSelectorProps {
   colors: VehicleColor[];
   selectedColor: VehicleColor;
   onColorChange: (color: VehicleColor) => void;
-  themeKey: string;
+  themeKey: CarThemeKey;
 }
 
 const ColorSelector: React.FC<ColorSelectorProps> = ({ colors, selectedColor, onColorChange, themeKey }) => {
+  const theme = carThemes[themeKey].colors;
+
   return (
     <div className="flex justify-center items-center gap-3 mt-4">
       {colors.map((color) => (
@@ -25,7 +28,7 @@ const ColorSelector: React.FC<ColorSelectorProps> = ({ colors, selectedColor, on
           aria-label={`Seleccionar color ${color.name}`}
           style={{
             backgroundColor: color.hex,
-            borderColor: selectedColor.folderName === color.folderName ? (themeKey === 'orange' ? '#FF7A00' : '#00A3B4') : 'transparent'
+            borderColor: selectedColor.folderName === color.folderName ? theme.primary : selectedColor.folderName.includes('white') ? 'gray' : 'gray'
           }}
         />
       ))}
