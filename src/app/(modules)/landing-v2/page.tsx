@@ -17,7 +17,7 @@ const ContactForm = dynamic(() => import('./components/contact-form'));
 const VideoHeroSection = dynamic(() => import('./components/video-hero-section'));
 
 export default function LandingPage() {
-  const carTheme = 'turquoise'; // Cambia esto según el vehículo seleccionado
+  const carTheme = 'orange'; // Cambia esto según el vehículo seleccionado
 
 
   const landingCar = getVehicleById('t2');
