@@ -3,12 +3,12 @@
 import dynamic from 'next/dynamic';
 import WhatsAppButton from './components/whats-app-button';
 import TestDriveButton from './components/test-drive-button';
-import { VideoHeroSection } from './components/video-hero-section';
 
 import t2LandingBackground from '@root/public/img/landing/T2/Fashion Blocks 2.jpg';
 import t2LandingLogo from '@root/public/img/T2/Logo.png';
 
 const ContactForm = dynamic(() => import('./components/contact-form'));
+const VideoHeroSection = dynamic(() => import('./components/video-hero-section'));
 
 export default function LandingPage() {
   const carTheme = 'turquoise'; // Cambia esto según el vehículo seleccionado

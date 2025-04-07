@@ -15,7 +15,7 @@ interface VideoHeroSectionProps {
   };
 }
 
-export function VideoHeroSection({ backgroundImage, logo, title, subtitle, videos }: VideoHeroSectionProps) {
+export default function VideoHeroSection({ backgroundImage, logo, title, subtitle, videos }: VideoHeroSectionProps) {
   return (
     <section className="relative w-full h-screen overflow-hidden">
       {/* Contenedor principal con elementos superpuestos */}
@@ -36,13 +36,8 @@ export function VideoHeroSection({ backgroundImage, logo, title, subtitle, video
         <div className="absolute top-0 left-0 w-full h-full" style={{ clipPath: 'polygon(45% 0%, 100% 0%, 100% 100%, 35% 100%)' }}>
           <video autoPlay loop muted playsInline className="w-full h-full object-cover" src={videos.leftVideo} />
 
-          {/* Texto "VIDEO" en la esquina inferior derecha */}
-          <div className="absolute bottom-10 right-10 z-10">
-            <h2 className="text-white text-6xl font-bold opacity-60">VIDEO</h2>
-          </div>
-
           {/* Botones 01 02 para cambiar videos (estáticos por ahora) */}
-          <div className="absolute bottom-10 right-56 z-20 flex gap-4">
+          <div className="absolute bottom-10 right-10 z-20 flex gap-4">
             <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center font-bold">01</div>
             <div className="w-12 h-12 bg-black/40 text-white rounded-full flex items-center justify-center font-bold">02</div>
           </div>
@@ -52,9 +47,6 @@ export function VideoHeroSection({ backgroundImage, logo, title, subtitle, video
         <div className="absolute bottom-0 left-[20%] w-[25%] h-[60%] z-10" style={{ clipPath: 'polygon(45% 0%, 100% 0%, 70% 100%, 10% 100%)' }}>
           <video autoPlay loop muted playsInline className="w-full h-full object-cover" src={videos.rightVideo} />
         </div>
-
-        {/* Barra superior naranja */}
-        <div className="absolute top-0 left-0 w-full h-1 bg-orange-500 z-20"></div>
       </div>
     </section>
   );
