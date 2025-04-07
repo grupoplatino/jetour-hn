@@ -45,7 +45,6 @@ export const carThemes: CarThemesConstants = {
         width: 300,
         height: 300
       },
-      landingVideoTitleClass: '-mt-10'
     }
   }
 };
