@@ -49,7 +49,7 @@ export default function LandingPage() {
         title="DISEÑADA PARA SATISFACER A LOS MAS EXIGENTES"
         videos={{
           leftVideo: '/img/landing/DASHING/Jetour Jx65 Showroom 高清 无字幕.mp4',
-          rightVideo: '/img/landing/DASHING/Product CG Video.mp4'
+          rightVideo: '/video/Video-Dashing/Product CG Video.mp4'
         }}
         subtitle=""
       />
