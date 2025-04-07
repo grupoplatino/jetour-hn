@@ -19,7 +19,6 @@ const VideoHeroSection = dynamic(() => import('./components/video-hero-section')
 export default function LandingPage() {
   const carTheme = 'orange'; // Cambia esto según el vehículo seleccionado
 
-
   const landingCar = getVehicleById('t2');
   if (!landingCar) {
     return <div>Car not found</div>;
@@ -57,7 +56,7 @@ export default function LandingPage() {
 
       <CarModelsGallery models={Object.values(vehiclesData)} themeKey="orange" />
 
-      <VehicleDetailPage carData={landingCar} />
+      <VehicleDetailPage showTestDriveButton={false} carData={landingCar} />
 
       {/* <ContactForm themeKey={carTheme} /> */}
     </>
