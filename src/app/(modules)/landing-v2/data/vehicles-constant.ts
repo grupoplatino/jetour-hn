@@ -35,11 +35,11 @@ import x50Logo from "@root/public/img/X50/Logo.png";
 // Importaciones para X70 (ejemplo)
 import x70Image from "@root/public/img/X70 Plus/X70 Jetour.jpg";
 import x70Logo from "@root/public/img/X70 Plus/Logo.png";
+import { CarThemeKey } from "./theme-definitions";
 
 // Importación de datos de especificaciones
 
 // Tipos
-export type ThemeKey = "orange" | "turquoise"; // Ampliar según los temas que se tengan
 
 interface CarFeature {
 	name: string;
@@ -94,7 +94,7 @@ export interface VehicleData {
 	id: string;
 	modelName: string;
 	tagline: string;
-	theme: ThemeKey;
+	theme: CarThemeKey;
 	hero: {
 		backgroundImage: StaticImageData;
 		logo: StaticImageData;
