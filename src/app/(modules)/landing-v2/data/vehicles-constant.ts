@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // car-data.ts
 
 import { StaticImageData } from 'next/image';
@@ -30,7 +31,6 @@ import x50Logo from '@root/public/img/X50/Logo.png';
 // Importaciones para X70 (ejemplo)
 import x70Image from '@root/public/img/X70 Plus/X70 Jetour.jpg';
 import x70Logo from '@root/public/img/X70 Plus/Logo.png';
-import { t2SpecsData } from './t2-specs-data';
 
 // Importación de datos de especificaciones
 
@@ -110,7 +110,7 @@ export interface VehicleData {
     image: StaticImageData;
   };
   gallery: StaticImageData[];
-  specs: typeof t2SpecsData;
+  specs: Record<string, Record<string, string>>;
   visualizer: Visualizer;
 }
 
@@ -193,7 +193,7 @@ export const vehiclesData: Record<string, VehicleData> = {
       image: securityImage
     },
     gallery: [t2SkeletonImage, t2TopSkeletonImage, t2SecondSeatsRowImage, t2ProximityImage],
-    specs: t2SpecsData,
+    specs: {},
     visualizer: {
       title: 'VISUALIZADOR 3D',
       basePath: '/img/T2/T2 360_',
@@ -266,7 +266,7 @@ export const vehiclesData: Record<string, VehicleData> = {
       // Placeholder para Dashing
       t2SkeletonImage // Reemplazar con las imágenes correctas
     ],
-    specs: t2SpecsData, // Reemplazar con los datos correctos
+    specs: {}, // Reemplazar con los datos correctos
     visualizer: {
       title: 'VISUALIZADOR 3D',
       basePath: '/img/DASHING/Dashing 360_/360 OUT',
@@ -301,7 +301,7 @@ export const vehiclesData: Record<string, VehicleData> = {
     featuresSections: { title: '', items: [] },
     singlePictureSection: { title: '', image: securityImage },
     gallery: [],
-    specs: t2SpecsData,
+    specs: {},
     visualizer: {
       title: 'VISUALIZADOR 3D',
       basePath: '',
@@ -329,7 +329,7 @@ export const vehiclesData: Record<string, VehicleData> = {
     featuresSections: { title: '', items: [] },
     singlePictureSection: { title: '', image: securityImage },
     gallery: [],
-    specs: t2SpecsData,
+    specs: {},
     visualizer: {
       title: 'VISUALIZADOR 3D',
       basePath: '',
