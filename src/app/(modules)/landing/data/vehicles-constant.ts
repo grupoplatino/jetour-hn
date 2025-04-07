@@ -371,7 +371,7 @@ export const vehiclesData: Record<string, VehicleData> = {
       { name: 'DESPLAZAMIENTO (ML)', value: 1598, position: 'bottomright' }
     ],
     video: {
-      url: '/video/Video-Dashing/Product CG Video.MP4',
+      url: '/video/Video-Dashing/Product CG Video.mp4',
       thumbnail: '/img/DASHING/Dashing Jetour.webp'
     },
     splitSections: [
@@ -504,15 +504,15 @@ export const vehiclesData: Record<string, VehicleData> = {
       }
     ],
     features: [
-      { name: 'CABALLOS DE FUERZA MÁX.', value: 197, position: 'topleft' },
-      { name: 'TORQUE MÁXIMO', value: 290, position: 'topcenter' },
+      { name: 'CABALLOS DE FUERZA MÁX.', value: 156, position: 'topleft' },
+      { name: 'TORQUE MÁXIMO', value: 230, position: 'topcenter' },
       { name: 'VELOCIDAD MÁXIMA (KM/H)', value: 180, position: 'topright' },
       {
         name: 'DISTANCIA ENTRE EJES (MM)',
-        value: 2720,
+        value: 2601,
         position: 'bottomleft'
       },
-      { name: 'DESPLAZAMIENTO (ML)', value: 1598, position: 'bottomright' }
+      { name: 'DESPLAZAMIENTO (ML)', value: 1499, position: 'bottomright' }
     ],
     video: {
       url: '/video/Video-X50/No Subtitle(1).mp4',
@@ -681,6 +681,7 @@ export const vehiclesData: Record<string, VehicleData> = {
       { name: 'DESPLAZAMIENTO (ML)', value: 1598, position: 'bottomright' }
     ],
     video: { url: '', thumbnail: '' },
+    video: { url: '/video/Videos-X70-Plus-Web/Video X70 Plus.mp4', thumbnail: '/img/X70 Plus/0Y6H8571_1final.jpg' },
     splitSections: [],
     featuresSections: { title: '', items: [] },
     singlePictureSection: { title: '', image: securityImage },
