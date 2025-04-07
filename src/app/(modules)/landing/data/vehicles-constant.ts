@@ -680,7 +680,6 @@ export const vehiclesData: Record<string, VehicleData> = {
       },
       { name: 'DESPLAZAMIENTO (ML)', value: 1598, position: 'bottomright' }
     ],
-    video: { url: '', thumbnail: '' },
     video: { url: '/video/Videos-X70-Plus-Web/Video X70 Plus.mp4', thumbnail: '/img/X70 Plus/0Y6H8571_1final.jpg' },
     splitSections: [],
     featuresSections: { title: '', items: [] },
