@@ -48,22 +48,22 @@ export function Footer({ primaryColor = '#FF7A00' }: FooterProps) {
               <h3 className="text-lg font-bold mb-4">Vehículos</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/landing-v2/dashing" className="hover:text-gray-600 transition-colors">
+                  <Link href="/landing/dashing" className="hover:text-gray-600 transition-colors">
                     Dashing
                   </Link>
                 </li>
                 <li>
-                  <Link href="/landing-v2/t2" className="hover:text-gray-600 transition-colors">
+                  <Link href="/landing/t2" className="hover:text-gray-600 transition-colors">
                     T2
                   </Link>
                 </li>
                 <li>
-                  <Link href="/landing-v2/x50" className="hover:text-gray-600 transition-colors">
+                  <Link href="/landing/x50" className="hover:text-gray-600 transition-colors">
                     X50
                   </Link>
                 </li>
                 <li>
-                  <Link href="/landing-v2/x70" className="hover:text-gray-600 transition-colors">
+                  <Link href="/landing/x70" className="hover:text-gray-600 transition-colors">
                     X70 Plus
                   </Link>
                 </li>
@@ -80,27 +80,27 @@ export function Footer({ primaryColor = '#FF7A00' }: FooterProps) {
               <h3 className="text-lg font-bold mb-4">Empresa</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/nosotros" className="hover:text-gray-600 transition-colors">
+                  <Link href="/landing/nosotros" className="hover:text-gray-600 transition-colors">
                     Sobre Nosotros
                   </Link>
                 </li>
                 <li>
-                  <Link href="/faqs" className="hover:text-gray-600 transition-colors">
+                  <Link href="/" className="hover:text-gray-600 transition-colors">
                     Preguntas Frecuentes
                   </Link>
                 </li>
                 <li>
-                  <Link href="/postventa" className="hover:text-gray-600 transition-colors">
+                  <Link href="/landing/post-venta" className="hover:text-gray-600 transition-colors">
                     Servicio Postventa
                   </Link>
                 </li>
                 <li>
-                  <Link href="/socios-globales" className="hover:text-gray-600 transition-colors">
+                  <Link href="/" className="hover:text-gray-600 transition-colors">
                     Socios Globales
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contacto" className="hover:text-gray-600 transition-colors">
+                  <Link href="/landing/contactanos" className="hover:text-gray-600 transition-colors">
                     Contáctanos
                   </Link>
                 </li>
@@ -162,13 +162,13 @@ export function Footer({ primaryColor = '#FF7A00' }: FooterProps) {
           <div className="text-sm mb-4 md:mb-0">© {currentYear} JETOUR Auto. Todos los derechos reservados.</div>
 
           <div className="flex gap-6 text-sm">
-            <Link href="/landing-v2/politica-de-privacidad" className="hover:text-gray-300 transition-colors">
+            <Link href="/landing/politica-de-privacidad" className="hover:text-gray-300 transition-colors">
               Política de Privacidad
             </Link>
-            <Link href="/landing-v2/cookies" className="hover:text-gray-300 transition-colors">
+            <Link href="/landing/cookies" className="hover:text-gray-300 transition-colors">
               Cookies
             </Link>
-            <Link href="/landing-v2/terminos-y-condiciones" className="hover:text-gray-300 transition-colors">
+            <Link href="/landing/terminos-y-condiciones" className="hover:text-gray-300 transition-colors">
               Términos y Condiciones
             </Link>
           </div>
