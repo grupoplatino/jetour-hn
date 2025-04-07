@@ -38,9 +38,9 @@ export const carThemes: CarThemesConstants = {
       background: '#1D1D1B',
       testDriveText: '#FFFFFF',
       sectionText: '#FFFFFF', // Color del texto para la sección,
-      landingVideoSectionTextColor: 'black', // Color del texto para la sección de video de landing,
+      landingVideoSectionTextColor: 'white', // Color del texto para la sección de video de landing,
       landingVideoSectionLogiSizes: {
-        width: 200
+        width: 300
       }
     }
   }
