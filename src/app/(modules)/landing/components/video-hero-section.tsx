@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-'use client';
-import React, { useState, useRef } from 'react';
-import Image, { StaticImageData } from 'next/image';
-import { cn } from '@/lib/utils';
-import { CarThemeKey, carThemes, ThemeCars } from '../data/theme-definitions';
+"use client";
+import React, { useState, useRef } from "react";
+import Image, { StaticImageData } from "next/image";
+import { cn } from "@/lib/utils";
+import { CarThemeKey, carThemes, ThemeCars } from "../data/theme-definitions";
 
 interface VideoHeroSectionProps {
   backgroundImage: string | StaticImageData;
@@ -18,7 +18,15 @@ interface VideoHeroSectionProps {
   extraClassName?: string;
 }
 
-export default function VideoHeroSection({ backgroundImage, logo, title, subtitle, videos, extraClassName, themeKey }: VideoHeroSectionProps) {
+export default function VideoHeroSection({
+  backgroundImage,
+  logo,
+  title,
+  subtitle,
+  videos,
+  extraClassName,
+  themeKey,
+}: VideoHeroSectionProps) {
   const theme = carThemes[themeKey] as ThemeCars;
 
   // Estado para controlar qué video está en qué posición
@@ -51,49 +59,78 @@ export default function VideoHeroSection({ backgroundImage, logo, title, subtitl
   const secondaryVideo = isSwapped ? videos.leftVideo : videos.rightVideo;
 
   return (
-    <section className={cn('relative w-full h-screen overflow-hidden', extraClassName)}>
+    <section
+      className={cn("relative w-full h-screen overflow-hidden", extraClassName)}
+    >
       {/* Contenedor principal con elementos superpuestos */}
       <div className="relative w-full h-full flex">
         {/* Sección izquierda - Imagen de fondo con clipPath */}
-        <div className="absolute top-0 left-0 w-full h-full" style={{ clipPath: 'polygon(0% 0%, 45% 0%, 35% 100%, 0% 100%)' }}>
-          <Image className="object-contain w-full h-full -ml-[600px]" src={backgroundImage} priority fill alt="Background" />
+        <div
+          className="absolute top-0 left-0 w-full h-full"
+          style={{ clipPath: "polygon(0% 0%, 45% 0%, 35% 100%, 0% 100%)" }}
+        >
+          <Image
+            className="object-cover w-full h-full md:-ml-[400px] lg:-ml-[600px]"
+            src={backgroundImage}
+            priority
+            fill
+            alt="Background"
+          />
+        </div>
 
-          {/* Logo y texto superpuestos en la sección izquierda */}
-          <div className="absolute top-[60px] left-8 z-10">
-            <Image
-              src={logo}
-              width={theme?.colors?.landingVideoSectionLogiSizes?.width ? theme?.colors?.landingVideoSectionLogiSizes?.width : 170}
-              height={theme?.colors?.landingVideoSectionLogiSizes?.height ? theme?.colors?.landingVideoSectionLogiSizes?.height : 170}
-              alt="Logo"
-              className="h-auto"
-            />
-            <h1
-              className={cn(
-                'text-white text-3xl font-bold uppercase max-w-[600px]',
-                theme.colors.landingVideoSectionTextColor === 'white' ? 'text-white' : 'text-black',
-                theme?.colors?.landingVideoTitleClass
-              )}
-            >
-              {title}
-            </h1>
-            <p className="text-white mt-2 font-medium uppercase">{subtitle}</p>
-          </div>
+        {/* Logo y texto superpuestos en la sección izquierda */}
+        <div className="absolute overflow-visible top-[60px] left-6 z-20">
+          <Image
+            src={logo}
+            width={
+              theme?.colors?.landingVideoSectionLogiSizes?.width
+                ? theme?.colors?.landingVideoSectionLogiSizes?.width
+                : 170
+            }
+            height={
+              theme?.colors?.landingVideoSectionLogiSizes?.height
+                ? theme?.colors?.landingVideoSectionLogiSizes?.height
+                : 170
+            }
+            alt="Logo"
+            className="h-auto"
+          />
+          <h1
+            className={cn(
+              "text-white text-2xl md:text-3xl font-bold uppercase max-w-[600px]",
+              theme.colors.landingVideoSectionTextColor === "white"
+                ? "text-white"
+                : "text-black",
+              theme?.colors?.landingVideoTitleClass
+            )}
+          >
+            {title}
+          </h1>
+          <p className="text-white mt-2 font-medium uppercase">{subtitle}</p>
         </div>
 
         {/* Sección derecha - Video principal con clipPath */}
         <div
           className="absolute top-0 left-0 w-full h-full cursor-pointer"
-          style={{ clipPath: 'polygon(45% 0%, 100% 0%, 100% 100%, 35% 100%)' }}
+          style={{ clipPath: "polygon(45% 0%, 100% 0%, 100% 100%, 35% 100%)" }}
           onDoubleClick={() => handleFullscreen(mainVideoRef as any)}
         >
-          <video ref={mainVideoRef} autoPlay loop muted playsInline className="w-full h-full object-cover" src={mainVideo} />
+          <video
+            ref={mainVideoRef}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover"
+            src={mainVideo}
+          />
 
           {/* Botones 01 02 para cambiar videos */}
           <div className="absolute bottom-10 right-10 z-20 flex gap-4">
             <div
               className={cn(
-                'w-12 h-12 rounded-full flex items-center justify-center font-bold transition-all cursor-pointer',
-                !isSwapped ? 'bg-white text-black' : 'bg-black/40 text-white'
+                "w-12 h-12 rounded-full flex items-center justify-center font-bold transition-all cursor-pointer",
+                !isSwapped ? "bg-white text-black" : "bg-black/40 text-white"
               )}
               onClick={() => setIsSwapped(false)}
             >
@@ -101,8 +138,8 @@ export default function VideoHeroSection({ backgroundImage, logo, title, subtitl
             </div>
             <div
               className={cn(
-                'w-12 h-12 rounded-full flex items-center justify-center font-bold transition-all cursor-pointer',
-                isSwapped ? 'bg-white text-black' : 'bg-black/40 text-white'
+                "w-12 h-12 rounded-full flex items-center justify-center font-bold transition-all cursor-pointer",
+                isSwapped ? "bg-white text-black" : "bg-black/40 text-white"
               )}
               onClick={() => setIsSwapped(true)}
             >
@@ -114,11 +151,19 @@ export default function VideoHeroSection({ backgroundImage, logo, title, subtitl
         {/* Tercer elemento - Video pequeño en el medio con clipPath */}
         <div
           className="absolute bottom-0 left-[20%] w-[25%] h-[60%] z-10 cursor-pointer"
-          style={{ clipPath: 'polygon(45% 0%, 100% 0%, 70% 100%, 10% 100%)' }}
+          style={{ clipPath: "polygon(45% 0%, 100% 0%, 70% 100%,   10% 100%)" }}
           onClick={swapVideos}
           onDoubleClick={() => handleFullscreen(smallVideoRef as any)}
         >
-          <video ref={smallVideoRef} autoPlay loop muted playsInline className="w-full h-full object-cover" src={secondaryVideo} />
+          <video
+            ref={smallVideoRef}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover"
+            src={secondaryVideo}
+          />
         </div>
       </div>
     </section>
