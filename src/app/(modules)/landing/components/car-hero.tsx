@@ -1,8 +1,8 @@
-import { StaticImageData } from 'next/image';
-import { CarThemeKey, carThemes } from '../data/theme-definitions';
-import WarrantyBadge from './warrabty-badge';
-import jetourLogo from '@root/public/img/JetourLogo.png';
-import Image from 'next/image';
+import { StaticImageData } from "next/image";
+import { CarThemeKey, carThemes } from "../data/theme-definitions";
+import WarrantyBadge from "./warrabty-badge";
+import jetourLogo from "@root/public/img/JetourLogo.png";
+import Image from "next/image";
 
 interface CarHeroProps {
   backgroundImageUrl: string;
@@ -12,7 +12,12 @@ interface CarHeroProps {
   carTheme: CarThemeKey;
 }
 
-const CarHero: React.FC<CarHeroProps> = ({ backgroundImage, carLogo, tagline, carTheme }) => {
+const CarHero: React.FC<CarHeroProps> = ({
+  backgroundImage,
+  carLogo,
+  tagline,
+  carTheme,
+}) => {
   const theme = carThemes[carTheme].colors;
 
   return (
@@ -22,15 +27,36 @@ const CarHero: React.FC<CarHeroProps> = ({ backgroundImage, carLogo, tagline, ca
 
       {/* Imagen de fondo */}
       <div className="w-full h-full relative max-w-full">
-        <Image src={backgroundImage} alt="Background" fill className="object-cover object-center max-w-full" priority />
+        <Image
+          src={backgroundImage}
+          alt="Background"
+          fill
+          className="object-cover object-center max-w-full"
+          priority
+        />
 
         {/* Contenido del hero */}
         <div className="absolute bottom-32 left-16 z-20 flex flex-col max-w-full">
           <div className="flex w-fit">
-            <Image src={carLogo} alt="Car Logo" width={250} height={100} className="object-contain -ml-10" />
-            <Image src={jetourLogo} alt="Jetour Logo" width={250} height={250} className="object-contain mt-auto -ml-10 -mb-5" />
+            <Image
+              src={carLogo}
+              alt="Car Logo"
+              width={250}
+              height={100}
+              className="object-contain -ml-20 scale-50 md:scale-100 md:-ml-10"
+            />
+            <Image
+              src={jetourLogo}
+              alt="Jetour Logo"
+              width={250}
+              height={250}
+              className="object-contain mt-auto -ml-32 -mb-5 scale-50 md:scale-100 md:-ml-10"
+            />
           </div>
-          <h1 className="text-4xl font-bold uppercase" style={{ color: theme.primary }}>
+          <h1
+            className="text-4xl font-bold uppercase"
+            style={{ color: theme.primary }}
+          >
             {tagline}
           </h1>
         </div>

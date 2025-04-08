@@ -1,6 +1,6 @@
-import Image from 'next/image';
-import { StaticImageData } from 'next/image';
-import { carThemes } from '../data/theme-definitions';
+import Image from "next/image";
+import { StaticImageData } from "next/image";
+import { carThemes } from "../data/theme-definitions";
 
 interface SplitImageSectionProps {
   image1: StaticImageData | string;
@@ -12,13 +12,24 @@ interface SplitImageSectionProps {
   brochureUrl?: string;
 }
 
-export default function SplitImageSection({ image1, image2, sectionTitle, sectionText, carTheme, carModelName, brochureUrl }: SplitImageSectionProps) {
+export default function SplitImageSection({
+  image1,
+  image2,
+  sectionTitle,
+  sectionText,
+  carTheme,
+  carModelName,
+  brochureUrl,
+}: SplitImageSectionProps) {
   const theme = carThemes[carTheme];
 
   return (
     <section className="relative h-screen w-full flex flex-col justify-center items-center px-4 sm:px-8 md:px-16">
       {/* Título de la sección */}
-      <h1 className="absolute top-12 left-4 md:left-16 text-2xl md:text-3xl lg:text-4xl font-bold uppercase z-10" style={{ color: theme.colors.primary }}>
+      <h1
+        className="absolute top-8 md:top-12 left-4 md:left-16 text-2xl md:text-3xl lg:text-4xl font-bold uppercase z-10"
+        style={{ color: theme.colors.primary }}
+      >
         {sectionTitle}
       </h1>
 
@@ -27,26 +38,40 @@ export default function SplitImageSection({ image1, image2, sectionTitle, sectio
         <div
           className="absolute top-0 left-0 w-full h-full overflow-hidden"
           style={{
-            clipPath: 'polygon(0% 0%, 55% 0%, 45% 100%, 0% 100%)'
+            clipPath: "polygon(0% 0%, 55% 0%, 45% 100%, 0% 100%)",
           }}
         >
           <div className="absolute inset-0 bg-black/30 z-10"></div>
-          <Image className="w-full h-full object-cover" src={image1} alt="Car View 1" placeholder="blur" />
+          <Image
+            className="w-full h-full object-cover"
+            src={image1}
+            alt="Car View 1"
+            placeholder="blur"
+          />
         </div>
 
         {/* Imagen derecha */}
         <div
           className="absolute top-0 left-0 w-full h-full overflow-hidden"
           style={{
-            clipPath: 'polygon(55% 0%, 100% 0%, 100% 100%, 45% 100%)'
+            clipPath: "polygon(55% 0%, 100% 0%, 100% 100%, 45% 100%)",
           }}
         >
-          <Image className="w-full h-full object-cover" src={image2} alt="Car View 2" placeholder="blur" />
+          <Image
+            className="w-full h-full object-cover"
+            src={image2}
+            alt="Car View 2"
+            placeholder="blur"
+          />
         </div>
 
         {/* Texto de la sección */}
-        <div className="absolute top-32 left-12 text-left text-white font-bold w-[38rem] z-20">
-          <p className={`text-lg md:text-xl ${theme.colors.sectionText}`}>{sectionText}</p>
+        <div className="absolute top-32 left-12 text-left text-white font-bold max-w-[38rem] z-20">
+          <p
+            className={`text-md -ml-4 -mt-28 md:-mt-0 w-32 md:text-xl md:text-justify md:w-64 lg:w-full ${theme.colors.sectionText}`}
+          >
+            {sectionText}
+          </p>
         </div>
 
         {/* Botón para descargar brochure */}
@@ -75,7 +100,9 @@ export default function SplitImageSection({ image1, image2, sectionTitle, sectio
                 <polyline points="7 10 12 15 17 10" />
                 <line x1="12" y1="15" x2="12" y2="3" />
               </svg>
-              <span className="font-bold text-white text-xl">Brochure {carModelName}</span>
+              <span className="font-bold text-white text-xl">
+                Brochure {carModelName}
+              </span>
             </div>
           </a>
         )}
