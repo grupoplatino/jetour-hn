@@ -56,6 +56,7 @@ export default function VehicleDetailPage({
           carTheme={carTheme}
           carModelName={carData.modelName}
           brochureUrl={section.brochureUrl}
+          textWhite={section.whiteText && true}
         />
       ))}
 

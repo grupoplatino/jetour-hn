@@ -45,12 +45,13 @@ const ExteriorView: React.FC<ExteriorViewProps & { themeKey: string }> = ({
       <div className="w-full lg:w-[80%] h-full">
         <ReactImageTurntable
           className={clsx(
-            "w-full h-full",
+            "w-full h-full img-turntable",
             isGrabbing ? "cursor-grabbing" : "cursor-grab",
             isLoading
               ? "opacity-0"
               : "opacity-100 transition-opacity duration-500"
           )}
+          style={{ objectFit: "contain" }}
           images={imagePaths}
           autoRotate={{ disabled: true }}
           onMouseDown={() => setIsGrabbing(true)}

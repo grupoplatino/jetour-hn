@@ -10,6 +10,7 @@ interface SplitImageSectionProps {
   carTheme: keyof typeof carThemes;
   carModelName: string;
   brochureUrl?: string;
+  textWhite?: boolean;
 }
 
 export default function SplitImageSection({
@@ -20,6 +21,7 @@ export default function SplitImageSection({
   carTheme,
   carModelName,
   brochureUrl,
+  textWhite,
 }: SplitImageSectionProps) {
   const theme = carThemes[carTheme];
 
@@ -66,9 +68,13 @@ export default function SplitImageSection({
         </div>
 
         {/* Texto de la sección */}
-        <div className="absolute top-32 left-12 text-left text-white font-bold max-w-[38rem] z-20">
+        <div
+          className={`absolute top-2 left-44 text-right ${
+            textWhite ? "text-white" : "text-black"
+          } font-bold max-w-[35rem] z-20`}
+        >
           <p
-            className={`text-md -ml-4 -mt-28 md:-mt-0 w-32 md:text-xl md:text-justify md:w-64 lg:w-full ${theme.colors.sectionText}`}
+            className={`text-md -ml-4 -mt-28 md:-mt-0 w-32 md:text-xl md:text-right md:w-64 lg:w-full ${theme.colors.sectionText}`}
           >
             {sectionText}
           </p>
