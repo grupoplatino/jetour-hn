@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-'use client';
+"use client";
 
-import { ReactImageTurntable } from 'react-image-turntable';
-import clsx from 'clsx';
-import { Dispatch, SetStateAction, useState, useEffect } from 'react';
+import { ReactImageTurntable, CLASS_NAME_IMG } from "react-image-turntable";
+import clsx from "clsx";
+import { Dispatch, SetStateAction, useState, useEffect } from "react";
 
 interface ColorDetails {
   imageCount: number;
@@ -23,8 +23,17 @@ interface ExteriorViewerProps {
   selectedColor: string;
 }
 
-const ExteriorViewer = ({ isGrabbing, imagePaths, setIsGrabbing, availableColors, setSelectedColor, selectedColor }: ExteriorViewerProps) => {
-  const [preloadedImages, setPreloadedImages] = useState<HTMLImageElement[]>([]);
+const ExteriorViewer = ({
+  isGrabbing,
+  imagePaths,
+  setIsGrabbing,
+  availableColors,
+  setSelectedColor,
+  selectedColor,
+}: ExteriorViewerProps) => {
+  const [preloadedImages, setPreloadedImages] = useState<HTMLImageElement[]>(
+    []
+  );
   const [imagesLoaded, setImagesLoaded] = useState(false);
 
   // Precargar las imágenes para una experiencia más fluida
@@ -46,7 +55,7 @@ const ExteriorViewer = ({ isGrabbing, imagePaths, setIsGrabbing, availableColors
         setPreloadedImages(loadedImages);
         setImagesLoaded(true);
       } catch (error) {
-        console.error('Error al precargar imágenes:', error);
+        console.error("Error al precargar imágenes:", error);
         setImagesLoaded(true); // Continuar incluso si hay errores
       }
     };
@@ -55,7 +64,7 @@ const ExteriorViewer = ({ isGrabbing, imagePaths, setIsGrabbing, availableColors
   }, [imagePaths]);
 
   return (
-    <div className="w-full lg:w-[60%] h-full min-h-[300px] mt-5 flex flex-col items-center">
+    <div className="w-full lg:w-[60%] h-full overflow-visible min-h-[300px] mt-5 flex flex-col items-center">
       {!imagesLoaded ? (
         <div className="flex flex-col items-center justify-center h-[400px]">
           <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-blue-500"></div>
@@ -63,7 +72,12 @@ const ExteriorViewer = ({ isGrabbing, imagePaths, setIsGrabbing, availableColors
         </div>
       ) : (
         <ReactImageTurntable
-          className={clsx('w-full h-full mt-5', isGrabbing ? 'cursor-grabbing' : 'cursor-grab')}
+          className={clsx(
+            "w-full h-full mt-5 overflow-visible",
+            isGrabbing ? "cursor-grabbing" : "cursor-grab",
+            CLASS_NAME_IMG
+          )}
+          style={{ overflow: "visible" }}
           images={imagePaths}
           autoRotate={{ disabled: true }}
           onMouseDown={() => {
@@ -80,13 +94,16 @@ const ExteriorViewer = ({ isGrabbing, imagePaths, setIsGrabbing, availableColors
           <div key={colorKey} className="flex flex-col items-center">
             <button
               className={clsx(
-                'h-8 w-8 rounded-full transition-all',
-                selectedColor === colorKey ? 'ring-2 ring-offset-2' : '',
-                colorKey.includes('white') || colorData.hexColor === '#FFFFFF' ? 'border border-gray-300' : ''
+                "h-8 w-8 rounded-full transition-all",
+                selectedColor === colorKey ? "ring-2 ring-offset-2" : "",
+                colorKey.includes("white") || colorData.hexColor === "#FFFFFF"
+                  ? "border border-gray-300"
+                  : ""
               )}
               style={{
-                backgroundColor: colorData.hexColor || '#CCCCCC',
-                transform: selectedColor === colorKey ? 'scale(1.1)' : 'scale(1)'
+                backgroundColor: colorData.hexColor || "#CCCCCC",
+                transform:
+                  selectedColor === colorKey ? "scale(1.1)" : "scale(1)",
               }}
               onClick={() => {
                 setSelectedColor(colorKey);
@@ -94,7 +111,11 @@ const ExteriorViewer = ({ isGrabbing, imagePaths, setIsGrabbing, availableColors
               title={colorData.colorName || colorKey}
               aria-label={`Color ${colorData.colorName || colorKey}`}
             />
-            {selectedColor === colorKey && <span className="text-xs mt-1 font-medium">{colorData.colorName || colorKey}</span>}
+            {selectedColor === colorKey && (
+              <span className="text-xs mt-1 font-medium">
+                {colorData.colorName || colorKey}
+              </span>
+            )}
           </div>
         ))}
       </div>
