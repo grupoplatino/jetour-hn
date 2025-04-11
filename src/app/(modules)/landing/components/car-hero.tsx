@@ -10,6 +10,7 @@ interface CarHeroProps {
   carLogo: StaticImageData | string;
   tagline: string;
   carTheme: CarThemeKey;
+  displayJetourLogo?: boolean;
 }
 
 const CarHero: React.FC<CarHeroProps> = ({
@@ -17,6 +18,7 @@ const CarHero: React.FC<CarHeroProps> = ({
   carLogo,
   tagline,
   carTheme,
+  displayJetourLogo,
 }) => {
   const theme = carThemes[carTheme].colors;
 
@@ -37,25 +39,29 @@ const CarHero: React.FC<CarHeroProps> = ({
 
         {/* Contenido del hero */}
         <div className="absolute bottom-32 left-16 z-20 flex flex-col max-w-full">
-          <div className="flex w-fit">
+          <div className="flex flex-row gap-0">
             <Image
               src={carLogo}
               alt="Car Logo"
               width={250}
               height={100}
-              className="object-contain -ml-20 scale-50 md:scale-100 md:-ml-10"
+              className={`object-contain scale-50 md:scale-100 ${
+                displayJetourLogo ? "" : "mb-4"
+              }`}
             />
-            <Image
-              src={jetourLogo}
-              alt="Jetour Logo"
-              width={250}
-              height={250}
-              className="object-contain mt-auto -ml-32 -mb-5 scale-50 md:scale-100 md:-ml-10"
-            />
+            {displayJetourLogo && (
+              <Image
+                src={jetourLogo}
+                alt="Jetour Logo"
+                width={250}
+                height={250}
+                className="object-contain mt-autNo -mb-5 scale-50 md:scale-100"
+              />
+            )}
           </div>
           <h1
-            className="text-4xl font-bold uppercase"
-            style={{ color: theme.primary }}
+            className="text-4xl font-bold uppercase text-white"
+            // style={{ color: theme.primary }}
           >
             {tagline}
           </h1>
