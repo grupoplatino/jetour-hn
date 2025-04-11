@@ -326,18 +326,6 @@ export const vehiclesData: Record<string, VehicleData> = {
       imageCount: 36,
       colors: [
         {
-          name: "highwayGrey",
-          hex: "#747b89",
-          folderName: "Highway Grey",
-          class: "bg-[#747b89]",
-        },
-        {
-          name: "mistyCyan",
-          hex: "#97a8bd",
-          folderName: "Misty Cyan",
-          class: "bg-[#97a8bd]",
-        },
-        {
           name: "white",
           hex: "#FFFFFF",
           folderName: "White",
@@ -351,9 +339,21 @@ export const vehiclesData: Record<string, VehicleData> = {
         },
         {
           name: "sand",
-          hex: "#d8cbb1",
+          hex: "#827058",
           folderName: "Sand",
-          class: "bg-[#d8cbb1]",
+          class: "bg-[#827058]",
+        },
+        {
+          name: "highwayGrey",
+          hex: "#8095a1",
+          folderName: "Highway Grey",
+          class: "bg-[#8095a1]",
+        },
+        {
+          name: "mistyCyan",
+          hex: "#366da6",
+          folderName: "Silver Snow",
+          class: "bg-[#366da6]",
         },
       ],
       interiorImagePath: [
