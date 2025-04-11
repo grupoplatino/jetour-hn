@@ -35,6 +35,7 @@ export default function VehicleDetailPage({
         carLogo={carData.hero.logo}
         tagline={carData.tagline}
         carTheme={carTheme}
+        displayJetourLogo={carData.hero.jetourLogo ? true : false}
       />
       <CarFeaturesShowcase
         carModels={carData.colorModels}
@@ -57,6 +58,8 @@ export default function VehicleDetailPage({
           carModelName={carData.modelName}
           brochureUrl={section.brochureUrl}
           textWhite={section.whiteText && true}
+          leftSpacing={section.leftSpacing}
+          rightSpacing={section.rightSpacing}
         />
       ))}
 

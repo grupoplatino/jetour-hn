@@ -38,11 +38,14 @@ import t2SkeletonImage from "@root/public/img/T2/Steel skeletonized body.webp";
 import t2TopSkeletonImage from "@root/public/img/T2/Matrix protected roof.webp";
 import t2SecondSeatsRowImage from "@root/public/img/T2/Second row seats faced down.webp";
 import t2ProximityImage from "@root/public/img/T2/Forward-collision warning system copia.webp";
-import heatedSeats from "@root/public/img/T2/Heated front seats.jpg";
+import multilevelModel from "@root/public/img/T2/Modelado tridimensional multinivel.jpg";
+import superLargeAxisDistance from "@root/public/img/T2/Distancia entre ejes súper larga.jpg";
 
 // Importaciones para Dashing (ejemplo)
 import dashingImage from "@root/public/img/DASHING/Dashing Jetour.webp";
 import dashingLogo from "@root/public/img/DASHING/Logo.png";
+import backtruckWhite from "@root/public/img/DASHING/JETOUR_JX65_cam010 white.jpg";
+import surroundHifi from "@root/public/img/DASHING/Surround Hi-fi 8 speaker.jpg";
 
 // Importaciones para X50 (ejemplo)
 import x50Image from "@root/public/img/X50/X50 Jetour.webp";
@@ -96,6 +99,8 @@ interface SplitImageSection {
   text: string;
   brochureUrl?: string;
   whiteText?: boolean;
+  leftSpacing?: string;
+  rightSpacing?: string;
 }
 
 interface FeatureItem {
@@ -114,7 +119,7 @@ interface Visualizer {
     folderName: string;
     class: string;
   }[];
-  interiorImagePath: string;
+  interiorImagePath: string[];
   defaultColorIndex: number;
 }
 
@@ -136,6 +141,7 @@ export interface VehicleData {
   hero: {
     backgroundImage: StaticImageData;
     logo: StaticImageData;
+    jetourLogo?: boolean;
   };
   colorModels: {
     carImage: StaticImageData;
@@ -173,6 +179,7 @@ export const vehiclesData: Record<string, VehicleData> = {
     hero: {
       backgroundImage: t2Image,
       logo: t2Logo,
+      jetourLogo: true,
     },
     colorModels: [
       {
@@ -192,6 +199,18 @@ export const vehiclesData: Record<string, VehicleData> = {
         color: "neutralColor",
         colorName: "Color Neutral",
         hexColor: "#d8cbb1",
+      },
+      {
+        carImage: t2NeutralImage,
+        color: "Silver Snow",
+        colorName: "Plateado",
+        hexColor: "#8592a2",
+      },
+      {
+        carImage: t2WhiteImage,
+        color: "Misty Cyan",
+        colorName: "Cyan",
+        hexColor: "#366da6",
       },
     ],
     features: [
@@ -229,7 +248,7 @@ export const vehiclesData: Record<string, VehicleData> = {
       title: "COMODIDAD DESDE DONDE LA VEAS",
       items: [
         {
-          image: heatedSeats,
+          image: multilevelModel,
           label: "MODELADO TRIDIMENSIONAL MULTINIVEL",
         },
         {
@@ -237,7 +256,7 @@ export const vehiclesData: Record<string, VehicleData> = {
           label: 'PANTALLA CENTRAL DE 15.6"',
         },
         {
-          image: extraStorageT2,
+          image: superLargeAxisDistance,
           label: "DISTANCIA ENTRE EJES SÚPER LARGA",
         },
       ],
@@ -337,8 +356,10 @@ export const vehiclesData: Record<string, VehicleData> = {
           class: "bg-[#d8cbb1]",
         },
       ],
-      interiorImagePath:
+      interiorImagePath: [
         "/img/T2/Interior/Forward-collision warning system copia.jpg",
+        "/img/T2/Interior/brown.jpg",
+      ],
       defaultColorIndex: 0,
     },
   },
@@ -399,7 +420,18 @@ export const vehiclesData: Record<string, VehicleData> = {
         image1: dashingImageSection,
         image2: dashingImageSection,
         title: "MINIMALISMO Y TECNOLOGÍA",
-        text: "El estilo interior minimalista de la Dashing se destaca por su pantalla LCD de control central.",
+        text: `El estilo interior minimalista de la Dashing se destaca por su pantalla LCD de 15.6" con un pandel de instrumentos LCD.`,
+        whiteText: true,
+      },
+      {
+        image1: backtruckWhite,
+        image2: surroundHifi,
+        title: "VANGUARDIA AL SERVICIO DEL DISEÑO",
+        text: `La carrocería de la Dashing de líneas suaves y recetas, se destaca por su diseño deportivo coupé en 3D y su asa inteligente de detección invisible, lo que le otorga una sensación de tecnología futurista.`,
+        brochureUrl: "https://www.jetour.com.co/brochure/T2.pdf",
+        leftSpacing: "-20rem",
+        rightSpacing: "16rem",
+        whiteText: true,
       },
     ],
     featuresSections: {
@@ -412,7 +444,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         },
         {
           image: headAcoustics,
-          label: "HEAD ACOUSTICS (OPTIONAL)",
+          label: "HEAD ACOUSTICS",
         },
         {
           image: wirelessCharging,
@@ -498,8 +530,9 @@ export const vehiclesData: Record<string, VehicleData> = {
           class: "bg-[#000000]",
         },
       ],
-      interiorImagePath:
+      interiorImagePath: [
         "/img/DASHING/Dashing 360_/IN/Grey&white/Grey&white.jpg",
+      ],
       defaultColorIndex: 0,
     },
   },
@@ -659,7 +692,7 @@ export const vehiclesData: Record<string, VehicleData> = {
           class: "bg-[#000000]",
         },
       ],
-      interiorImagePath: "/img/X50/Interior-2/Blue&grey/Blue&grey.jpg",
+      interiorImagePath: ["/img/X50/Interior-2/Blue&grey/Blue&grey.jpg"],
       defaultColorIndex: 0,
     },
   },
@@ -801,7 +834,7 @@ export const vehiclesData: Record<string, VehicleData> = {
           class: "bg-black",
         },
       ],
-      interiorImagePath: "/img/X70 Plus/X70PLUS_360/INT/X70PLUS-INT.png",
+      interiorImagePath: ["/img/X70 Plus/X70PLUS_360/INT/X70PLUS-INT.png"],
       defaultColorIndex: 0,
     },
   },
