@@ -5,7 +5,7 @@ import { StaticImageData } from 'next/image';
 
 // Importaciones para T2
 
-import t2Image from "@root/public/img/T2/T2 Jetour.webp";
+import t2Image from "@root/public/img/T2/T2 Jetour (2).webp";
 import t2Logo from "@root/public/img/T2/Logo.png";
 import t2BlackImage from "@root/public/img/T2/car black 0022 (1).webp";
 import t2WhiteImage from "@root/public/img/T2/car white 0022.webp";
@@ -22,7 +22,7 @@ import dashingImage04 from "@root/public/img/DASHING/Foto 04.webp";
 import x70PlusBlue from "@root/public/img/X70 Plus/X70 Plus 45 degree Blue.webp";
 import x70PlusWhite from "@root/public/img/X70 Plus/X70 Plus 45 degree White.webp";
 import x70PlusBlack from "@root/public/img/X70 Plus/45 degree front left angle Black.webp";
-import X70PlusSingleImage from "@root/public/img/X70 Plus/Estabilidad y Seguridad.webp";
+import X70PlusSingleImage from "@root/public/img/X70 Plus/Estabilidad y Seguridad.jpg";
 import x70FeatureImage1 from "@root/public/img/X70 Plus/featuresSection1.webp";
 import x70FeatureImage2 from "@root/public/img/X70 Plus/Techo Corredizo.jpg";
 import x70FeatureImage3 from "@root/public/img/X70 Plus/Distancia Ejes.jpg";
