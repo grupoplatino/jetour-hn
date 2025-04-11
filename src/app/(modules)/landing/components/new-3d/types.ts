@@ -47,7 +47,7 @@ export interface ExteriorViewProps {
 }
 
 export interface InteriorViewProps {
-  imagePath: string;
+  imagePath: string[];
 }
 
-export type ViewMode = 'exterior' | 'interior';
+export type ViewMode = "exterior" | "interior";
