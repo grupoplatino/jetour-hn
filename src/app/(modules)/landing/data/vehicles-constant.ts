@@ -356,12 +356,12 @@ export const vehiclesData: Record<string, VehicleData> = {
       ],
       interiorImagePath: [
         {
-          path: '/img/T2/Interior/Forward-collision warning system copia.jpg',
+          path: '/img/T2/Interior/Forward-collision warning system copia (2).webp',
           colorName: 'Negro',
           hexColor: '#000000'
         },
         {
-          path: '/img/T2/Interior/brown.jpg',
+          path: '/img/T2/Interior/brown.webp',
           colorName: 'Cafe',
           hexColor: '#654321'
         }
@@ -551,12 +551,12 @@ export const vehiclesData: Record<string, VehicleData> = {
       ],
       interiorImagePath: [
         {
-          path: '/img/DASHING/Dashing 360_/IN/Grey&white/Grey&white.jpg',
+          path: '/img/DASHING/Dashing 360_/IN/Grey&white/Grey&white.webp',
           colorName: 'Gris',
           hexColor: '#808080'
         },
         {
-          path: '/img/DASHING/Dashing 360_/IN/Black&red/Black&red.jpg',
+          path: '/img/DASHING/Dashing 360_/IN/Black&red/Black&red.webp',
           colorName: 'Negro',
           hexColor: '#000000'
         }
@@ -722,7 +722,7 @@ export const vehiclesData: Record<string, VehicleData> = {
       ],
       interiorImagePath: [
         {
-          path: '/img/X50/Interior-2/Blue&grey/Blue&grey.jpg',
+          path: '/img/X50/Interior-2/Blue&grey/Blue&grey (1).webp',
           colorName: 'Blue & Grey',
           hexColor: '#2E3A5F'
         }
@@ -887,7 +887,7 @@ export const vehiclesData: Record<string, VehicleData> = {
       ],
       interiorImagePath: [
         {
-          path: '/img/X70 Plus/X70PLUS_360/INT/X70PLUS-INT.png',
+          path: '/img/X70 Plus/X70PLUS_360/INT/X70PLUS-INT.webp',
           colorName: 'black',
           hexColor: '#000000'
         }
