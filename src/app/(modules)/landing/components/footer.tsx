@@ -214,22 +214,13 @@ export function Footer({ primaryColor = "#FF7A00" }: FooterProps) {
 					</div>
 
 					<div className='flex gap-6 text-sm'>
-						<Link
-							href='/landing/politica-de-privacidad'
-							className='hover:text-gray-300 transition-colors'
-						>
+						<Link href='/' className='hover:text-gray-300 transition-colors'>
 							Política de Privacidad
 						</Link>
-						<Link
-							href='/landing/cookies'
-							className='hover:text-gray-300 transition-colors'
-						>
+						<Link href='/' className='hover:text-gray-300 transition-colors'>
 							Cookies
 						</Link>
-						<Link
-							href='/landing/terminos-y-condiciones'
-							className='hover:text-gray-300 transition-colors'
-						>
+						<Link href='/' className='hover:text-gray-300 transition-colors'>
 							Términos y Condiciones
 						</Link>
 					</div>
