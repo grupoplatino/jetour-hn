@@ -45,7 +45,7 @@ const CarHero: React.FC<CarHeroProps> = ({
               alt="Car Logo"
               width={250}
               height={100}
-              className={`object-contain scale-50 md:scale-100 ${
+              className={`object-contain -ml-[6rem] md:-ml-0 scale-50 md:scale-100 ${
                 displayJetourLogo ? "" : "mb-4"
               }`}
             />
@@ -55,7 +55,7 @@ const CarHero: React.FC<CarHeroProps> = ({
                 alt="Jetour Logo"
                 width={250}
                 height={250}
-                className="object-contain mt-autNo -mb-5 scale-50 md:scale-100"
+                className="object-contain -ml-[8rem] md:-ml-0 mt-autNo -mb-5 scale-50 md:scale-100"
               />
             )}
           </div>
