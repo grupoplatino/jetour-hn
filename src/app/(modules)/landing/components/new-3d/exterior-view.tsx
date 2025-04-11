@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // src/components/VehicleVisualizer/ExteriorView.tsx
 import React, { useState } from "react";
 import { ReactImageTurntable } from "react-image-turntable";
@@ -74,7 +75,7 @@ const ExteriorView: React.FC<ExteriorViewProps & { themeKey: string }> = ({
           colors={colors}
           selectedColor={selectedColor}
           onColorChange={onColorChange}
-          themeKey={themeKey}
+          themeKey={themeKey as any}
         />
       </div>
     </div>
