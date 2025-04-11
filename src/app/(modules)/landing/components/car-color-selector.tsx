@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import { useState, useRef } from 'react';
-import Image from 'next/image';
-import { CarColorModel } from './car-features-show-case';
-import { cn } from '@/lib/utils';
-import { CarThemeKey } from '../data/theme-definitions';
+import { useState, useRef } from "react";
+import Image from "next/image";
+import { CarColorModel } from "./car-features-show-case";
+import { cn } from "@/lib/utils";
+import { CarThemeKey } from "../data/theme-definitions";
 
 interface CarColorSelectorProps {
   carModels: CarColorModel[];
@@ -14,7 +14,9 @@ interface CarColorSelectorProps {
 export function CarColorSelector({ carModels }: CarColorSelectorProps) {
   const [selectedColorIndex, setSelectedColorIndex] = useState(1);
   const [isAnimating, setIsAnimating] = useState(false);
-  const [transitionDirection, setTransitionDirection] = useState<'left' | 'right' | null>(null);
+  const [transitionDirection, setTransitionDirection] = useState<
+    "left" | "right" | null
+  >(null);
   const previousIndex = useRef(selectedColorIndex);
 
   // Renderizar los 3 carros en el carousel con efecto de perspectiva
@@ -23,7 +25,8 @@ export function CarColorSelector({ carModels }: CarColorSelectorProps) {
     const displayModels = [];
 
     for (let i = 0; i < 3; i++) {
-      const modelIndex = (selectedColorIndex + i - 1 + totalModels) % totalModels;
+      const modelIndex =
+        (selectedColorIndex + i - 1 + totalModels) % totalModels;
       displayModels.push({ model: carModels[modelIndex], index: modelIndex });
     }
 
@@ -35,9 +38,12 @@ export function CarColorSelector({ carModels }: CarColorSelectorProps) {
 
     // Determinar dirección de la transición
     const totalModels = carModels.length;
-    const clockwiseDistance = (index - selectedColorIndex + totalModels) % totalModels;
-    const counterClockwiseDistance = (selectedColorIndex - index + totalModels) % totalModels;
-    const direction = clockwiseDistance <= counterClockwiseDistance ? 'right' : 'left';
+    const clockwiseDistance =
+      (index - selectedColorIndex + totalModels) % totalModels;
+    const counterClockwiseDistance =
+      (selectedColorIndex - index + totalModels) % totalModels;
+    const direction =
+      clockwiseDistance <= counterClockwiseDistance ? "right" : "left";
 
     setTransitionDirection(direction);
     setIsAnimating(true);
@@ -68,14 +74,38 @@ export function CarColorSelector({ carModels }: CarColorSelectorProps) {
           // Determinar la animación específica basada en la posición y dirección
           let animationStyle = {};
           if (isAnimating) {
-            if (transitionDirection === 'right') {
-              if (isLeft) animationStyle = { animation: 'slideLeft 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards' };
-              if (isCenter) animationStyle = { animation: 'slideCenterToLeft 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards' };
-              if (isRight) animationStyle = { animation: 'slideRightToCenter 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards' };
-            } else if (transitionDirection === 'left') {
-              if (isLeft) animationStyle = { animation: 'slideLeftToCenter 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards' };
-              if (isCenter) animationStyle = { animation: 'slideCenterToRight 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards' };
-              if (isRight) animationStyle = { animation: 'slideRight 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards' };
+            if (transitionDirection === "right") {
+              if (isLeft)
+                animationStyle = {
+                  animation:
+                    "slideLeft 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards",
+                };
+              if (isCenter)
+                animationStyle = {
+                  animation:
+                    "slideCenterToLeft 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards",
+                };
+              if (isRight)
+                animationStyle = {
+                  animation:
+                    "slideRightToCenter 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards",
+                };
+            } else if (transitionDirection === "left") {
+              if (isLeft)
+                animationStyle = {
+                  animation:
+                    "slideLeftToCenter 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards",
+                };
+              if (isCenter)
+                animationStyle = {
+                  animation:
+                    "slideCenterToRight 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards",
+                };
+              if (isRight)
+                animationStyle = {
+                  animation:
+                    "slideRight 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards",
+                };
             }
           }
 
@@ -84,19 +114,19 @@ export function CarColorSelector({ carModels }: CarColorSelectorProps) {
               key={`${index}-${arrayIndex}`}
               className={`
                 absolute transition-all duration-700
-                ${isCenter ? 'z-30 opacity-100' : 'z-10 opacity-90'}
-                ${isLeft ? 'left-32 -mt-20' : ''}
-                ${isRight ? 'right-32 -mt-20' : ''}
+                ${isCenter ? "z-30 opacity-100" : "z-10 opacity-90"}
+                ${isLeft ? "left-56 -mt-20" : ""}
+                ${isRight ? "right-48 -mt-20" : ""}
                 cursor-pointer hover:brightness-110 hover:drop-shadow-xl
               `}
               style={{
                 transform: `
-                  ${isCenter ? 'translateX(0) scale(1)' : ''}
-                  ${isLeft ? 'translateX(-33%) scale(0.75)' : ''}
-                  ${isRight ? 'translateX(33%) scale(0.75)' : ''}
+                  ${isCenter ? "translateX(0) scale(1)" : ""}
+                  ${isLeft ? "translateX(-33%) scale(0.75)" : ""}
+                  ${isRight ? "translateX(33%) scale(0.75)" : ""}
                 `,
-                transition: 'all 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
-                ...animationStyle
+                transition: "all 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+                ...animationStyle,
               }}
               onClick={() => handleColorSelect(index)}
             >
@@ -105,7 +135,7 @@ export function CarColorSelector({ carModels }: CarColorSelectorProps) {
                 alt={`${model.colorName} model`}
                 width={isCenter ? 600 : 500}
                 height={350}
-                className={cn('object-contain', { 'drop-shadow-md': isCenter })}
+                className={cn("object-contain", { "drop-shadow-md": isCenter })}
                 priority={isCenter}
               />
             </div>
@@ -120,22 +150,30 @@ export function CarColorSelector({ carModels }: CarColorSelectorProps) {
             <button
               onClick={() => handleColorSelect(index)}
               className={`
-                w-12 h-12 rounded-full transition-all
-                ${index === selectedColorIndex ? 'transform scale-110 border-[3px]' : 'border-2 hover:border-gray-500'}
-                ${car.hexColor === '#ffffff' ? 'border-gray-300' : 'border-gray-400'}
+                w-8 h-8 rounded-full transition-all
+                ${
+                  index === selectedColorIndex
+                    ? "transform scale-110 border-[3px]"
+                    : "border-2 hover:border-gray-500"
+                }
+                ${
+                  car.hexColor === "#ffffff"
+                    ? "border-gray-300"
+                    : "border-gray-400"
+                }
               `}
               style={{
                 backgroundColor: car.hexColor,
                 borderColor:
                   index === selectedColorIndex
-                    ? car.hexColor === '#ffffff'
-                      ? '#333333'
-                      : car.hexColor === '#000000'
-                      ? '#555555'
-                      : 'gray'
-                    : car.hexColor === '#ffffff'
-                    ? '#cccccc'
-                    : '#a0a0a0'
+                    ? car.hexColor === "#ffffff"
+                      ? "#333333"
+                      : car.hexColor === "#000000"
+                      ? "#555555"
+                      : "gray"
+                    : car.hexColor === "#ffffff"
+                    ? "#cccccc"
+                    : "#a0a0a0",
               }}
               aria-label={`Select ${car.colorName} color`}
               disabled={isAnimating}

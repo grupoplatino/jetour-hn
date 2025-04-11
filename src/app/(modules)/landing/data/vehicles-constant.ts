@@ -22,10 +22,10 @@ import dashingImage04 from "@root/public/img/DASHING/Foto 04.webp";
 import x70PlusBlue from "@root/public/img/X70 Plus/X70 Plus 45 degree Blue.webp";
 import x70PlusWhite from "@root/public/img/X70 Plus/X70 Plus 45 degree White.webp";
 import x70PlusBlack from "@root/public/img/X70 Plus/45 degree front left angle Black.webp";
-import X70PlusSingleImage from "@root/public/img/X70 Plus/0Y6H8571_1final.jpg";
+import X70PlusSingleImage from "@root/public/img/X70 Plus/Estabilidad y Seguridad.jpg";
 import x70FeatureImage1 from "@root/public/img/X70 Plus/featuresSection1.webp";
-import x70FeatureImage2 from "@root/public/img/X70 Plus/featuresSection2.webp";
-import x70FeatureImage3 from "@root/public/img/X70 Plus/featuresSection3.webp";
+import x70FeatureImage2 from "@root/public/img/X70 Plus/Techo Corredizo.jpg";
+import x70FeatureImage3 from "@root/public/img/X70 Plus/Distancia Ejes.jpg";
 import rubikKey from "@root/public/img/DASHING/Rubik_s cube key.webp";
 import headAcoustics from "@root/public/img/DASHING/Head acoustics(optional).webp";
 import wirelessCharging from "@root/public/img/DASHING/40 watts of wireless charging.webp";
@@ -55,6 +55,13 @@ import x50Logo from "@root/public/img/X50/Logo.png";
 import x70Image from "@root/public/img/X70 Plus/X70 Jetour.webp";
 import x70Logo from "@root/public/img/X70 Plus/Logo.webp";
 import { CarThemeKey } from "./theme-definitions";
+
+import x70firstSplitImage from "@root/public/img/X70 Plus/First split image.png";
+import x70secondSplitImage from "@root/public/img/X70 Plus/Second split image.png";
+import x70gallery1 from "@root/public/img/X70 Plus/Foto 01.jpg";
+import x70gallery2 from "@root/public/img/X70 Plus/Foto 02.jpg";
+import x70gallery3 from "@root/public/img/X70 Plus/Foto 03.jpg";
+import x70gallery4 from "@root/public/img/X70 Plus/Foto 04.jpg";
 
 import x50CarSelectorImage from "@root/public/img/X50/x50-360BAI_00005.webp";
 
@@ -101,6 +108,7 @@ interface SplitImageSection {
   whiteText?: boolean;
   leftSpacing?: string;
   rightSpacing?: string;
+  textLeft?: boolean;
 }
 
 interface FeatureItem {
@@ -763,16 +771,21 @@ export const vehiclesData: Record<string, VehicleData> = {
     },
     splitSections: [
       {
-        image1: x70Image,
-        image2: x70Image,
+        image1: x70secondSplitImage,
+        image2: x70secondSplitImage,
         title: "SEGURIDAD ANTE TODO",
         text: "La X70 Plus cuenta con cuatro airbags (frontales y laterales), ISOFIX, sistema de control de tracción y estabilidad, sistema de frenado AUTOHOLD, sistema de monitoreo de puntos ciegos, entre otros equipos que hacen de esta una SUV segura y confiable.",
+        whiteText: true,
+        textLeft: true,
       },
       {
-        image1: x70Image,
-        image2: x70Image,
+        image1: x70firstSplitImage,
+        image2: x70firstSplitImage,
         title: "Tecnología espacial",
         text: "La X70 PLUS está equipada con sistema de visión 360, asientos forrados, un excelente sistema de infoentretenimiento con pantalla de 10.25” y cargador inalámbrico para teléfonos.",
+        whiteText: true,
+        textLeft: true,
+        brochureUrl: "https://www.jetour.com.co/brochure/X50.pdf",
       },
     ],
     featuresSections: {
@@ -796,7 +809,7 @@ export const vehiclesData: Record<string, VehicleData> = {
       title: "SEGURIDAD Y RESPALDO PARA DISFRUTAR EL VIAJE",
       image: X70PlusSingleImage,
     },
-    gallery: [x70Image, x70Image, x70Image, x70Image],
+    gallery: [x70gallery1, x70gallery2, x70gallery3, x70gallery4],
     specs: {
       "Diseño y estilo": {
         Capacidad: "Asientos: 3 filas, 7 pasajeros",
@@ -812,7 +825,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         Pantalla: 'Pantalla: 10.25"',
         Conectividad: "Conectividad: Mirrorlink",
         Cámara: "Cámara de visión 360° con guías dinámicas",
-        Puertos: "Puertos USB: Delanteros y traseros",
+        Puertos: "Puertos USB: delanteros y traseros",
       },
       Motor: {
         Tipo: "Motor 1.6L TURBO",
@@ -830,14 +843,14 @@ export const vehiclesData: Record<string, VehicleData> = {
         "Seguridad infantil": "Puertas con Child Lock",
       },
       "Confort y ajustes": {
-        Climatización: "Aire acondicionado: Control digital",
+        Climatización: "Aire acondicionado: control digital",
         Audio: "Sonido: 6 bocinas",
         Controles: "Botones multifuncionales en el timón",
-        "Asientos ajustables": "Asientos del conductor: Ajuste eléctrico",
+        "Asientos ajustables": "Asientos del conductor: ajuste eléctrico",
       },
       Colores: {
-        Exteriores: "Negro, Blanco, Azul",
-        Interiores: "Color Negro, Color Rojo",
+        Exteriores: "Negro, blanco, azul",
+        Interiores: "Color negro, color rojo",
       },
     },
     visualizer: {
@@ -847,10 +860,22 @@ export const vehiclesData: Record<string, VehicleData> = {
       imageCount: 36,
       colors: [
         {
+          name: "blue",
+          hex: "#4c6280",
+          folderName: "deep-blue",
+          class: "bg-[#4c6280]",
+        },
+        {
           name: "black",
           hex: "#000000",
           folderName: "black",
           class: "bg-black",
+        },
+        {
+          name: "white",
+          hex: "#FFFFFF",
+          folderName: "white",
+          class: "border border-2",
         },
       ],
       interiorImagePath: ["/img/X70 Plus/X70PLUS_360/INT/X70PLUS-INT.png"],

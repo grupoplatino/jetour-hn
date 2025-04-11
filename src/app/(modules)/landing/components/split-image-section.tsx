@@ -13,6 +13,7 @@ interface SplitImageSectionProps {
   textWhite?: boolean;
   leftSpacing?: string;
   rightSpacing?: string;
+  textLeft?: boolean;
 }
 
 export default function SplitImageSection({
@@ -26,6 +27,7 @@ export default function SplitImageSection({
   textWhite,
   leftSpacing,
   rightSpacing,
+  textLeft,
 }: SplitImageSectionProps) {
   const theme = carThemes[carTheme];
 
@@ -82,7 +84,7 @@ export default function SplitImageSection({
         {/* Texto de la sección */}
         <div
           className={`absolute top-2 ${
-            image1 !== image2 ? "left-44" : "right-0"
+            textLeft ? "left-44" : image1 !== image2 ? "left-44" : "right-0"
           } text-right ${
             textWhite ? "text-white drop-shadow-lg" : "text-black"
           } font-bold max-w-[35rem] z-20`}
