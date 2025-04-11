@@ -44,7 +44,7 @@ export default function FeaturesSection({
             </div>
 
             {/* Etiqueta centrada debajo de la imagen */}
-            <h3 className="text-lg md:text-xl font-bold text-center uppercase">
+            <h3 className="text-lg md:text-xl font-bold text-center uppercase max-w-[11rem]">
               {feature.label}
             </h3>
           </div>

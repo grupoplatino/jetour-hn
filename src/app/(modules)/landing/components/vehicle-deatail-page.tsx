@@ -60,6 +60,7 @@ export default function VehicleDetailPage({
           textWhite={section.whiteText && true}
           leftSpacing={section.leftSpacing && section.leftSpacing}
           rightSpacing={section.rightSpacing && section.rightSpacing}
+          textLeft={section.textLeft ? true : false}
         />
       ))}
 
