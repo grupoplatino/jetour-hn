@@ -11,6 +11,8 @@ interface SplitImageSectionProps {
   carModelName: string;
   brochureUrl?: string;
   textWhite?: boolean;
+  leftSpacing?: string;
+  rightSpacing?: string;
 }
 
 export default function SplitImageSection({
@@ -22,6 +24,8 @@ export default function SplitImageSection({
   carModelName,
   brochureUrl,
   textWhite,
+  leftSpacing,
+  rightSpacing,
 }: SplitImageSectionProps) {
   const theme = carThemes[carTheme];
 
@@ -43,9 +47,14 @@ export default function SplitImageSection({
             clipPath: "polygon(0% 0%, 55% 0%, 45% 100%, 0% 100%)",
           }}
         >
-          <div className="absolute inset-0 bg-black/30 z-10"></div>
+          {image1 !== image2 && (
+            <div className="absolute inset-0 bg-black/30 z-10"></div>
+          )}
           <Image
-            className="w-full h-full object-cover"
+            className={`w-full h-full object-cover`}
+            style={
+              leftSpacing ? { transform: `translateX(${leftSpacing})` } : {}
+            }
             src={image1}
             alt="Car View 1"
             placeholder="blur"
@@ -61,6 +70,9 @@ export default function SplitImageSection({
         >
           <Image
             className="w-full h-full object-cover"
+            style={
+              rightSpacing ? { transform: `translateX(${rightSpacing})` } : {}
+            }
             src={image2}
             alt="Car View 2"
             placeholder="blur"
@@ -69,12 +81,14 @@ export default function SplitImageSection({
 
         {/* Texto de la sección */}
         <div
-          className={`absolute top-2 left-44 text-right ${
-            textWhite ? "text-white" : "text-black"
+          className={`absolute top-2 ${
+            image1 !== image2 ? "left-44" : "right-0"
+          } text-right ${
+            textWhite ? "text-white drop-shadow-lg" : "text-black"
           } font-bold max-w-[35rem] z-20`}
         >
           <p
-            className={`text-md -ml-4 -mt-28 md:-mt-0 w-32 md:text-xl md:text-right md:w-64 lg:w-full ${theme.colors.sectionText}`}
+            className={`text-md -ml-4 -mt-28 md:-mt-0 w-32 md:text-lg md:text-right md:w-64 lg:w-full ${theme.colors.sectionText}`}
           >
             {sectionText}
           </p>

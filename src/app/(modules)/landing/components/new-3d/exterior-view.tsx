@@ -7,6 +7,8 @@ import { useVehicleImages } from "./use-vehicleImages";
 import LoadingIndicator from "./loading-indicator";
 import ColorSelector from "./color-selector";
 import { carThemes } from "../../data/theme-definitions";
+import background360 from "@root/public/img/Fondo para el 360.jpg";
+import Image from "next/image";
 
 const ExteriorView: React.FC<ExteriorViewProps & { themeKey: string }> = ({
   colors,
@@ -43,6 +45,13 @@ const ExteriorView: React.FC<ExteriorViewProps & { themeKey: string }> = ({
       )}
 
       <div className="w-full lg:w-[80%] h-full">
+        <Image
+          src={background360}
+          height={300}
+          width={300}
+          alt="Background"
+          className="w-full h-full absolute top-0 left-0"
+        />
         <ReactImageTurntable
           className={clsx(
             "w-full h-full img-turntable",
@@ -51,7 +60,6 @@ const ExteriorView: React.FC<ExteriorViewProps & { themeKey: string }> = ({
               ? "opacity-0"
               : "opacity-100 transition-opacity duration-500"
           )}
-          style={{ objectFit: "contain" }}
           images={imagePaths}
           autoRotate={{ disabled: true }}
           onMouseDown={() => setIsGrabbing(true)}
@@ -61,7 +69,7 @@ const ExteriorView: React.FC<ExteriorViewProps & { themeKey: string }> = ({
         />
       </div>
 
-      <div className="absolute -bottom-12 left-0 right-0">
+      <div className="absolute -bottom-16 left-0 right-0">
         <ColorSelector
           colors={colors}
           selectedColor={selectedColor}
