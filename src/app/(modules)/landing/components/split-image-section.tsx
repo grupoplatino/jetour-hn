@@ -84,13 +84,17 @@ export default function SplitImageSection({
         {/* Texto de la sección */}
         <div
           className={`absolute top-2 ${
-            textLeft ? "left-44" : image1 !== image2 ? "left-44" : "right-0"
+            textLeft
+              ? "left-8 md:left-16 lg:left-44 text-start"
+              : image1 !== image2
+              ? "left-44"
+              : "right-4"
           } text-right ${
             textWhite ? "text-white drop-shadow-lg" : "text-black"
           } font-bold max-w-[35rem] z-20`}
         >
           <p
-            className={`text-md -ml-4 -mt-28 md:-mt-0 w-32 md:text-lg md:text-right md:w-64 lg:w-full ${theme.colors.sectionText}`}
+            className={`text-md -ml-4 drop-shadow-lg -mt-0 md:-mt-0 w-32 md:text-lg md:text-right md:w-64 lg:w-full ${theme.colors.sectionText}`}
           >
             {sectionText}
           </p>

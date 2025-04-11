@@ -242,6 +242,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         image2: t2ImageSection2,
         title: "T2 FUE CREADA PARA LA AVENTURA",
         text: "Tiene un sistema de tracción en las 4 ruedas que la hace perfecta para cualquier terreno, cuenta con 7 modos de conducción que te permitirán personalizar la conducción.",
+        textLeft: true,
       },
       {
         image1: screenT2,
@@ -250,6 +251,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         text: "La T2 tiene un impresionante tablero, volante multifunción, pantalla touchscreen de 15 pulgadas, parlantes Sony, cargador inalámbrico, interior de lujo con asientos ventilados, luces atmosféricas.",
         brochureUrl: "https://www.jetour.com.co/brochure/T2.pdf",
         whiteText: true,
+        textLeft: true,
       },
     ],
     featuresSections: {
