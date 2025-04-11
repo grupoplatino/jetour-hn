@@ -66,7 +66,7 @@ const InteriorView: React.FC<InteriorViewProps & { themeKey: string }> = ({
             onClick={() => {
               setActiveImage(imagePath[index]);
             }}
-            className={`text-3xl hover:cursor-pointer select-none ${
+            className={`text-3xl hover:cursor-pointer drop-shadow-[0_4px_6px_rgba(255,255,255,0.9)] shadow-white select-none ${
               activeImage === imagePath[index]
                 ? "text-4xl font-bold text-white"
                 : ""
