@@ -243,7 +243,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         image2: extraStorageT2,
         title: 'ESTILO POR FUERA Y POR DENTRO',
         text: 'La T2 tiene un impresionante tablero, volante multifunción, pantalla touchscreen de 15 pulgadas, parlantes Sony, cargador inalámbrico, interior de lujo con asientos ventilados, luces atmosféricas.',
-        brochureUrl: 'https://www.jetour.com.co/brochure/T2.pdf',
+        brochureUrl: 'https://platinosoftware.blob.core.windows.net/auto-aliados/Ficha_tecnica_t2.pdf',
         whiteText: true,
         textLeft: true
       }
@@ -434,7 +434,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         image2: surroundHifi,
         title: 'VANGUARDIA AL SERVICIO DEL DISEÑO',
         text: `La carrocería de la Dashing de líneas suaves y recetas, se destaca por su diseño deportivo coupé en 3D y su asa inteligente de detección invisible, lo que le otorga una sensación de tecnología futurista.`,
-        brochureUrl: 'https://www.jetour.com.co/brochure/T2.pdf',
+        brochureUrl: 'https://platinosoftware.blob.core.windows.net/auto-aliados/Ficha_tecnica_dashing.pdf',
         leftSpacing: '-20rem',
         rightSpacing: '16rem',
         whiteText: true
@@ -617,7 +617,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         image2: x50SplitSection1Image2,
         title: 'DISFRUTA SUS DETALLES',
         text: 'El Jetour X50 ofrece comodidad con asientos revestidos en cuero sintético, y una amplia fila de asientos. Este auto es perfecto para salir y disfrutar del día y la noche, junto a tu familia o amigos.',
-        brochureUrl: 'https://www.jetour.com.co/brochure/X50.pdf'
+        brochureUrl: 'https://platinosoftware.blob.core.windows.net/auto-aliados/Ficha_tecnica_x50.pdf'
       }
     ],
     featuresSections: {
@@ -792,7 +792,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         text: 'La X70 PLUS está equipada con sistema de visión 360, asientos forrados, un excelente sistema de infoentretenimiento con pantalla de 10.25” y cargador inalámbrico para teléfonos.',
         whiteText: true,
         textLeft: true,
-        brochureUrl: 'https://www.jetour.com.co/brochure/X50.pdf'
+        brochureUrl: 'https://platinosoftware.blob.core.windows.net/auto-aliados/Ficha_tecnica_x70plus.pdf'
       }
     ],
     featuresSections: {
