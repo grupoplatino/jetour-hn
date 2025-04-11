@@ -5,41 +5,41 @@ import { StaticImageData } from 'next/image';
 
 // Importaciones para T2
 
-import t2Image from "@root/public/img/T2/T2 Jetour (2).webp";
-import t2Logo from "@root/public/img/T2/Logo.png";
-import t2BlackImage from "@root/public/img/T2/car black 0022 (1).webp";
-import t2WhiteImage from "@root/public/img/T2/car white 0022.webp";
-import t2NeutralImage from "@root/public/img/T2/car.0022.webp";
-import dashingWhiteImage from "@root/public/img/DASHING/JETOUR_blanco_cam360_out.0003.webp";
-import dashingGrayImage from "@root/public/img/DASHING/JETOUR_gris_cam360_out.0003.webp";
-import dashingBlackImage from "@root/public/img/DASHING/JETOUR_negro_cam360_out.0003.webp";
-import dashingImageSection from "@root/public/img/DASHING/15.8 in. Digital screen.webp";
-import dashingSingleImageSection from "@root/public/img/DASHING/DISEÑO EXCEPCIONAL Y DEPORTIVO.webp";
-import dashingImage01 from "@root/public/img/DASHING/Foto 01.webp";
-import dashingImage02 from "@root/public/img/DASHING/Foto 02.webp";
-import dashingImage03 from "@root/public/img/DASHING/Foto 03.webp";
-import dashingImage04 from "@root/public/img/DASHING/Foto 04.webp";
-import x70PlusBlue from "@root/public/img/X70 Plus/X70 Plus 45 degree Blue.webp";
-import x70PlusWhite from "@root/public/img/X70 Plus/X70 Plus 45 degree White.webp";
-import x70PlusBlack from "@root/public/img/X70 Plus/45 degree front left angle Black.webp";
-import X70PlusSingleImage from "@root/public/img/X70 Plus/Estabilidad y Seguridad.jpg";
-import x70FeatureImage1 from "@root/public/img/X70 Plus/featuresSection1.webp";
-import x70FeatureImage2 from "@root/public/img/X70 Plus/Techo Corredizo.jpg";
-import x70FeatureImage3 from "@root/public/img/X70 Plus/Distancia Ejes.jpg";
-import rubikKey from "@root/public/img/DASHING/Rubik_s cube key.webp";
-import headAcoustics from "@root/public/img/DASHING/Head acoustics(optional).webp";
-import wirelessCharging from "@root/public/img/DASHING/40 watts of wireless charging.webp";
-import t2ImageSection from "@root/public/img/T2/Approach and departure angles.webp";
-import t2ImageSection2 from "@root/public/img/T2/Magic Electric Door.webp";
-import securityImage from "@root/public/img/T2/Seaside scenery.webp";
-import extraStorageT2 from "@root/public/img/T2/Extra Large Storage Space.webp";
-import screenT2 from "@root/public/img/T2/15.6_high-resolution color touchscreen.webp";
-import t2SkeletonImage from "@root/public/img/T2/Steel skeletonized body.webp";
-import t2TopSkeletonImage from "@root/public/img/T2/Matrix protected roof.webp";
-import t2SecondSeatsRowImage from "@root/public/img/T2/Second row seats faced down.webp";
-import t2ProximityImage from "@root/public/img/T2/Forward-collision warning system copia.webp";
-import multilevelModel from "@root/public/img/T2/Modelado tridimensional multinivel.webp";
-import superLargeAxisDistance from "@root/public/img/T2/Distancia entre ejes súper larga.webp";
+import t2Image from '@root/public/img/T2/T2 Jetour (2).webp';
+import t2Logo from '@root/public/img/T2/Logo.png';
+import t2BlackImage from '@root/public/img/T2/car black 0022 (1).webp';
+import t2WhiteImage from '@root/public/img/T2/car white 0022.webp';
+import t2NeutralImage from '@root/public/img/T2/car.0022.webp';
+import dashingWhiteImage from '@root/public/img/DASHING/JETOUR_blanco_cam360_out.0003.webp';
+import dashingGrayImage from '@root/public/img/DASHING/JETOUR_gris_cam360_out.0003.webp';
+import dashingBlackImage from '@root/public/img/DASHING/JETOUR_negro_cam360_out.0003.webp';
+import dashingImageSection from '@root/public/img/DASHING/15.8 in. Digital screen.webp';
+import dashingSingleImageSection from '@root/public/img/DASHING/DISEÑO EXCEPCIONAL Y DEPORTIVO.webp';
+import dashingImage01 from '@root/public/img/DASHING/Foto 01.webp';
+import dashingImage02 from '@root/public/img/DASHING/Foto 02.webp';
+import dashingImage03 from '@root/public/img/DASHING/Foto 03.webp';
+import dashingImage04 from '@root/public/img/DASHING/Foto 04.webp';
+import x70PlusBlue from '@root/public/img/X70 Plus/X70 Plus 45 degree Blue.webp';
+import x70PlusWhite from '@root/public/img/X70 Plus/X70 Plus 45 degree White.webp';
+import x70PlusBlack from '@root/public/img/X70 Plus/45 degree front left angle Black.webp';
+import X70PlusSingleImage from '@root/public/img/X70 Plus/Estabilidad y Seguridad.jpg';
+import x70FeatureImage1 from '@root/public/img/X70 Plus/featuresSection1.webp';
+import x70FeatureImage2 from '@root/public/img/X70 Plus/Techo Corredizo.jpg';
+import x70FeatureImage3 from '@root/public/img/X70 Plus/Distancia Ejes.jpg';
+import rubikKey from '@root/public/img/DASHING/Rubik_s cube key.webp';
+import headAcoustics from '@root/public/img/DASHING/Head acoustics(optional).webp';
+import wirelessCharging from '@root/public/img/DASHING/40 watts of wireless charging.webp';
+import t2ImageSection from '@root/public/img/T2/Approach and departure angles.webp';
+import t2ImageSection2 from '@root/public/img/T2/Magic Electric Door.webp';
+import securityImage from '@root/public/img/T2/Seaside scenery.webp';
+import extraStorageT2 from '@root/public/img/T2/Extra Large Storage Space.webp';
+import screenT2 from '@root/public/img/T2/15.6_high-resolution color touchscreen.webp';
+import t2SkeletonImage from '@root/public/img/T2/Steel skeletonized body.webp';
+import t2TopSkeletonImage from '@root/public/img/T2/Matrix protected roof.webp';
+import t2SecondSeatsRowImage from '@root/public/img/T2/Second row seats faced down.webp';
+import t2ProximityImage from '@root/public/img/T2/Forward-collision warning system copia.webp';
+import multilevelModel from '@root/public/img/T2/Modelado tridimensional multinivel.webp';
+import superLargeAxisDistance from '@root/public/img/T2/Distancia entre ejes súper larga.webp';
 
 // Importaciones para Dashing (ejemplo)
 import dashingImage from '@root/public/img/DASHING/Dashing Jetour.webp';
@@ -56,14 +56,14 @@ import x70Image from '@root/public/img/X70 Plus/X70 Jetour.webp';
 import x70Logo from '@root/public/img/X70 Plus/Logo.webp';
 import { CarThemeKey } from './theme-definitions';
 
-import x70firstSplitImage from "@root/public/img/X70 Plus/First split image.png";
-import x70secondSplitImage from "@root/public/img/X70 Plus/Second split image.png";
-import x70gallery1 from "@root/public/img/X70 Plus/Foto 01.jpg";
-import x70gallery2 from "@root/public/img/X70 Plus/Foto 02.jpg";
-import x70gallery3 from "@root/public/img/X70 Plus/Foto 03.jpg";
-import x70gallery4 from "@root/public/img/X70 Plus/Foto 04.jpg";
+import x70firstSplitImage from '@root/public/img/X70 Plus/First split image.png';
+import x70secondSplitImage from '@root/public/img/X70 Plus/Second split image.png';
+import x70gallery1 from '@root/public/img/X70 Plus/Foto 01.jpg';
+import x70gallery2 from '@root/public/img/X70 Plus/Foto 02.jpg';
+import x70gallery3 from '@root/public/img/X70 Plus/Foto 03.jpg';
+import x70gallery4 from '@root/public/img/X70 Plus/Foto 04.jpg';
 
-import x50CarSelectorImage from "@root/public/img/X50/x50-360BAI_00005.webp";
+import x50CarSelectorImage from '@root/public/img/X50/x50-360BAI_00005.webp';
 
 import x70CarSelectorImage from '@root/public/img/X70 Plus/X70 Plus 45 degree Blue.webp';
 
@@ -121,7 +121,7 @@ interface Visualizer {
     folderName: string;
     class: string;
   }[];
-  interiorImagePath: string[];
+  interiorImagePath: { path: string; hexColor: string; colorName: string }[];
   defaultColorIndex: number;
 }
 
@@ -234,19 +234,19 @@ export const vehiclesData: Record<string, VehicleData> = {
       {
         image1: t2ImageSection,
         image2: t2ImageSection2,
-        title: "T2 FUE CREADA PARA LA AVENTURA",
-        text: "Tiene un sistema de tracción en las 4 ruedas que la hace perfecta para cualquier terreno, cuenta con 7 modos de conducción que te permitirán personalizar la conducción.",
-        textLeft: true,
+        title: 'T2 FUE CREADA PARA LA AVENTURA',
+        text: 'Tiene un sistema de tracción en las 4 ruedas que la hace perfecta para cualquier terreno, cuenta con 7 modos de conducción que te permitirán personalizar la conducción.',
+        textLeft: true
       },
       {
         image1: screenT2,
         image2: extraStorageT2,
-        title: "ESTILO POR FUERA Y POR DENTRO",
-        text: "La T2 tiene un impresionante tablero, volante multifunción, pantalla touchscreen de 15 pulgadas, parlantes Sony, cargador inalámbrico, interior de lujo con asientos ventilados, luces atmosféricas.",
-        brochureUrl: "https://www.jetour.com.co/brochure/T2.pdf",
+        title: 'ESTILO POR FUERA Y POR DENTRO',
+        text: 'La T2 tiene un impresionante tablero, volante multifunción, pantalla touchscreen de 15 pulgadas, parlantes Sony, cargador inalámbrico, interior de lujo con asientos ventilados, luces atmosféricas.',
+        brochureUrl: 'https://www.jetour.com.co/brochure/T2.pdf',
         whiteText: true,
-        textLeft: true,
-      },
+        textLeft: true
+      }
     ],
     featuresSections: {
       title: 'COMODIDAD DESDE DONDE LA VEAS',
@@ -354,7 +354,18 @@ export const vehiclesData: Record<string, VehicleData> = {
           class: 'bg-[#366da6]'
         }
       ],
-      interiorImagePath: ['/img/T2/Interior/Forward-collision warning system copia.jpg', '/img/T2/Interior/brown.jpg'],
+      interiorImagePath: [
+        {
+          path: '/img/T2/Interior/Forward-collision warning system copia.jpg',
+          colorName: 'Negro',
+          hexColor: '#000000'
+        },
+        {
+          path: '/img/T2/Interior/brown.jpg',
+          colorName: 'Cafe',
+          hexColor: '#654321'
+        }
+      ],
       defaultColorIndex: 0
     }
   },
@@ -538,7 +549,18 @@ export const vehiclesData: Record<string, VehicleData> = {
           class: 'bg-[#808080]'
         }
       ],
-      interiorImagePath: ['/img/DASHING/Dashing 360_/IN/Grey&white/Grey&white.jpg', '/img/DASHING/Dashing 360_/IN/Black&red/Black&red.jpg'],
+      interiorImagePath: [
+        {
+          path: '/img/DASHING/Dashing 360_/IN/Grey&white/Grey&white.jpg',
+          colorName: 'Gris',
+          hexColor: '#808080'
+        },
+        {
+          path: '/img/DASHING/Dashing 360_/IN/Black&red/Black&red.jpg',
+          colorName: 'Negro',
+          hexColor: '#000000'
+        }
+      ],
       defaultColorIndex: 0
     }
   },
@@ -698,7 +720,13 @@ export const vehiclesData: Record<string, VehicleData> = {
           class: 'bg-[#000000]'
         }
       ],
-      interiorImagePath: ['/img/X50/Interior-2/Blue&grey/Blue&grey.jpg'],
+      interiorImagePath: [
+        {
+          path: '/img/X50/Interior-2/Blue&grey/Blue&grey.jpg',
+          colorName: 'Blue & Grey',
+          hexColor: '#2E3A5F'
+        }
+      ],
       defaultColorIndex: 0
     }
   },
@@ -752,20 +780,20 @@ export const vehiclesData: Record<string, VehicleData> = {
       {
         image1: x70secondSplitImage,
         image2: x70secondSplitImage,
-        title: "SEGURIDAD ANTE TODO",
-        text: "La X70 Plus cuenta con cuatro airbags (frontales y laterales), ISOFIX, sistema de control de tracción y estabilidad, sistema de frenado AUTOHOLD, sistema de monitoreo de puntos ciegos, entre otros equipos que hacen de esta una SUV segura y confiable.",
+        title: 'SEGURIDAD ANTE TODO',
+        text: 'La X70 Plus cuenta con cuatro airbags (frontales y laterales), ISOFIX, sistema de control de tracción y estabilidad, sistema de frenado AUTOHOLD, sistema de monitoreo de puntos ciegos, entre otros equipos que hacen de esta una SUV segura y confiable.',
         whiteText: true,
-        textLeft: true,
+        textLeft: true
       },
       {
         image1: x70firstSplitImage,
         image2: x70firstSplitImage,
-        title: "Tecnología espacial",
-        text: "La X70 PLUS está equipada con sistema de visión 360, asientos forrados, un excelente sistema de infoentretenimiento con pantalla de 10.25” y cargador inalámbrico para teléfonos.",
+        title: 'Tecnología espacial',
+        text: 'La X70 PLUS está equipada con sistema de visión 360, asientos forrados, un excelente sistema de infoentretenimiento con pantalla de 10.25” y cargador inalámbrico para teléfonos.',
         whiteText: true,
         textLeft: true,
-        brochureUrl: "https://www.jetour.com.co/brochure/X50.pdf",
-      },
+        brochureUrl: 'https://www.jetour.com.co/brochure/X50.pdf'
+      }
     ],
     featuresSections: {
       title: 'COMODIDAD DESDE DONDE LO VEAS',
@@ -802,9 +830,9 @@ export const vehiclesData: Record<string, VehicleData> = {
       },
       'Multimedia y conectividad': {
         Pantalla: 'Pantalla: 10.25"',
-        Conectividad: "Conectividad: Mirrorlink",
-        Cámara: "Cámara de visión 360° con guías dinámicas",
-        Puertos: "Puertos USB: delanteros y traseros",
+        Conectividad: 'Conectividad: Mirrorlink',
+        Cámara: 'Cámara de visión 360° con guías dinámicas',
+        Puertos: 'Puertos USB: delanteros y traseros'
       },
       Motor: {
         Tipo: 'Motor 1.6L TURBO',
@@ -821,16 +849,16 @@ export const vehiclesData: Record<string, VehicleData> = {
         'Control descenso': 'Control de descenso en pendientes',
         'Seguridad infantil': 'Puertas con Child Lock'
       },
-      "Confort y ajustes": {
-        Climatización: "Aire acondicionado: control digital",
-        Audio: "Sonido: 6 bocinas",
-        Controles: "Botones multifuncionales en el timón",
-        "Asientos ajustables": "Asientos del conductor: ajuste eléctrico",
+      'Confort y ajustes': {
+        Climatización: 'Aire acondicionado: control digital',
+        Audio: 'Sonido: 6 bocinas',
+        Controles: 'Botones multifuncionales en el timón',
+        'Asientos ajustables': 'Asientos del conductor: ajuste eléctrico'
       },
       Colores: {
-        Exteriores: "Negro, blanco, azul",
-        Interiores: "Color negro, color rojo",
-      },
+        Exteriores: 'Negro, blanco, azul',
+        Interiores: 'Color negro, color rojo'
+      }
     },
     visualizer: {
       title: 'VISUALIZADOR 3D',
@@ -839,25 +867,31 @@ export const vehiclesData: Record<string, VehicleData> = {
       imageCount: 36,
       colors: [
         {
-          name: "blue",
-          hex: "#4c6280",
-          folderName: "deep-blue",
-          class: "bg-[#4c6280]",
+          name: 'blue',
+          hex: '#4c6280',
+          folderName: 'deep-blue',
+          class: 'bg-[#4c6280]'
         },
         {
-          name: "black",
-          hex: "#000000",
-          folderName: "black",
-          class: "bg-black",
+          name: 'black',
+          hex: '#000000',
+          folderName: 'black',
+          class: 'bg-black'
         },
         {
-          name: "white",
-          hex: "#FFFFFF",
-          folderName: "white",
-          class: "border border-2",
-        },
+          name: 'white',
+          hex: '#FFFFFF',
+          folderName: 'white',
+          class: 'border border-2'
+        }
       ],
-      interiorImagePath: ['/img/X70 Plus/X70PLUS_360/INT/X70PLUS-INT.png'],
+      interiorImagePath: [
+        {
+          path: '/img/X70 Plus/X70PLUS_360/INT/X70PLUS-INT.png',
+          colorName: 'black',
+          hexColor: '#000000'
+        }
+      ],
       defaultColorIndex: 0
     }
   }

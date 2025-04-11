@@ -1,13 +1,13 @@
-"use client";
-import React, { useState, useMemo } from "react";
-import { VehicleVisualizerProps, ViewMode, VehicleColor } from "./types";
-import ViewToggle from "./view-toggle";
-import ExteriorView from "./exterior-view";
-import InteriorView from "./interior-view";
-import { carThemes } from "../../data/theme-definitions";
+'use client';
+import React, { useState, useMemo } from 'react';
+import { VehicleVisualizerProps, ViewMode, VehicleColor } from './types';
+import ViewToggle from './view-toggle';
+import ExteriorView from './exterior-view';
+import InteriorView from './interior-view';
+import { carThemes } from '../../data/theme-definitions';
 
 const VehicleVisualizer: React.FC<VehicleVisualizerProps> = ({
-  title = "VISUALIZADOR 3D",
+  title = 'VISUALIZADOR 3D',
   basePath,
   filePattern,
   imageCount,
@@ -15,11 +15,10 @@ const VehicleVisualizer: React.FC<VehicleVisualizerProps> = ({
   interiorImagePath,
   defaultColorIndex = 0,
   themeKey,
-  fileExtension = "png",
+  fileExtension = 'png'
 }) => {
-  const [viewMode, setViewMode] = useState<ViewMode>("exterior");
-  const [selectedColorIndex, setSelectedColorIndex] =
-    useState(defaultColorIndex);
+  const [viewMode, setViewMode] = useState<ViewMode>('exterior');
+  const [selectedColorIndex, setSelectedColorIndex] = useState(defaultColorIndex);
 
   const selectedColor = useMemo(() => {
     return colors[selectedColorIndex] || colors[0];
@@ -49,7 +48,7 @@ const VehicleVisualizer: React.FC<VehicleVisualizerProps> = ({
       </div>
 
       <div className="w-full h-[65vh] mt-8">
-        {viewMode === "exterior" ? (
+        {viewMode === 'exterior' ? (
           <ExteriorView
             colors={colors}
             selectedColor={selectedColor}
@@ -61,9 +60,7 @@ const VehicleVisualizer: React.FC<VehicleVisualizerProps> = ({
             themeKey={themeKey}
           />
         ) : (
-          interiorImagePath && (
-            <InteriorView imagePath={interiorImagePath} themeKey={themeKey} />
-          )
+          interiorImagePath && <InteriorView imagePaths={interiorImagePath} themeKey={themeKey} />
         )}
       </div>
     </section>
