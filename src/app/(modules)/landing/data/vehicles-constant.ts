@@ -14,7 +14,7 @@ import dashingWhiteImage from "@root/public/img/DASHING/JETOUR_blanco_cam360_out
 import dashingGrayImage from "@root/public/img/DASHING/JETOUR_gris_cam360_out.0003.webp";
 import dashingBlackImage from "@root/public/img/DASHING/JETOUR_negro_cam360_out.0003.webp";
 import dashingImageSection from "@root/public/img/DASHING/15.8 in. Digital screen.webp";
-import dashingSingleImageSection from "@root/public/img/DASHING/3.webp";
+import dashingSingleImageSection from "@root/public/img/DASHING/DISEÑO EXCEPCIONAL Y DEPORTIVO.jpg";
 import dashingImage01 from "@root/public/img/DASHING/Foto 01.webp";
 import dashingImage02 from "@root/public/img/DASHING/Foto 02.webp";
 import dashingImage03 from "@root/public/img/DASHING/Foto 03.webp";
@@ -524,14 +524,33 @@ export const vehiclesData: Record<string, VehicleData> = {
       imageCount: 36,
       colors: [
         {
-          name: "black",
+          name: "Negro",
           hex: "#000000",
           folderName: "black",
           class: "bg-[#000000]",
         },
+        {
+          name: "Blanco",
+          hex: "#FFFFFF",
+          folderName: "white",
+          class: "bg-[#FFFFFF]",
+        },
+        {
+          name: "Azul",
+          hex: "#9AC7E5",
+          folderName: "blue",
+          class: "bg-[#9AC7E5]",
+        },
+        {
+          name: "Gris",
+          hex: "#808080",
+          folderName: "gray",
+          class: "bg-[#808080]",
+        },
       ],
       interiorImagePath: [
         "/img/DASHING/Dashing 360_/IN/Grey&white/Grey&white.jpg",
+        "/img/DASHING/Dashing 360_/IN/Black&red/Black&red.jpg",
       ],
       defaultColorIndex: 0,
     },

@@ -58,8 +58,8 @@ export default function VehicleDetailPage({
           carModelName={carData.modelName}
           brochureUrl={section.brochureUrl}
           textWhite={section.whiteText && true}
-          leftSpacing={section.leftSpacing}
-          rightSpacing={section.rightSpacing}
+          leftSpacing={section.leftSpacing && section.leftSpacing}
+          rightSpacing={section.rightSpacing && section.rightSpacing}
         />
       ))}
 

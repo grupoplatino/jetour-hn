@@ -51,7 +51,7 @@ export default function SplitImageSection({
             <div className="absolute inset-0 bg-black/30 z-10"></div>
           )}
           <Image
-            className={`w-full h-full object-contain`}
+            className={`w-full h-full object-cover`}
             style={
               leftSpacing ? { transform: `translateX(${leftSpacing})` } : {}
             }
@@ -69,7 +69,7 @@ export default function SplitImageSection({
           }}
         >
           <Image
-            className="w-full h-full object-contain"
+            className="w-full h-full object-cover"
             style={
               rightSpacing ? { transform: `translateX(${rightSpacing})` } : {}
             }
