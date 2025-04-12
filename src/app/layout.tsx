@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jetour Honduras",
-  description: "Create by Jetour Honduras",
+  title: "Jetour Honduras | Autos Aliados",
+  description: "Create by Autos Aliados",
 };
 
 export default function RootLayout({
