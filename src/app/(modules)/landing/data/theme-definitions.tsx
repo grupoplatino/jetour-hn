@@ -1,5 +1,6 @@
 export interface ThemeCars {
   colors: {
+    statsText?: string;
     primary?: string;
     secondary?: string;
     text?: string;
@@ -23,6 +24,7 @@ export interface CarThemesConstants {
 export const carThemes: CarThemesConstants = {
   orange: {
     colors: {
+      statsText: '#D32F2F',
       primary: '#FF7A00', // Color naranja para T2
       secondary: '#FFA866',
       text: '#FFFFFF',
@@ -34,6 +36,7 @@ export const carThemes: CarThemesConstants = {
   },
   turquoise: {
     colors: {
+      statsText: '#D32F2F',
       primary: '#00A3B4', // Color turquesa para Dashing
       secondary: '#66D8E3',
       text: '#FFFFFF',

@@ -38,7 +38,7 @@ export function CarFeatureStats({
       className={`flex items-center gap-2 md:${positionClasses[position]} text-center`}
     >
       <h3 className="text-sm font-semibold uppercase">{name}</h3>
-      <span className="text-6xl font-bold" style={{ color: theme.primary }}>
+      <span className="text-6xl font-bold" style={{ color: theme.statsText }}>
         {value}
       </span>
     </div>
