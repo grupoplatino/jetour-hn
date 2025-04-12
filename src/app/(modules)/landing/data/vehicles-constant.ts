@@ -24,8 +24,8 @@ import x70PlusWhite from '@root/public/img/X70 Plus/X70 Plus 45 degree White.web
 import x70PlusBlack from '@root/public/img/X70 Plus/45 degree front left angle Black.webp';
 import X70PlusSingleImage from '@root/public/img/X70 Plus/Estabilidad y Seguridad.jpg';
 import x70FeatureImage1 from '@root/public/img/X70 Plus/featuresSection1.webp';
-import x70FeatureImage2 from '@root/public/img/X70 Plus/Techo Corredizo.jpg';
-import x70FeatureImage3 from '@root/public/img/X70 Plus/Distancia Ejes.jpg';
+import x70FeatureImage2 from '@root/public/img/X70 Plus/Techo Corredizo.webp';
+import x70FeatureImage3 from '@root/public/img/X70 Plus/Distancia Ejes.webp';
 import rubikKey from '@root/public/img/DASHING/Rubik_s cube key.webp';
 import headAcoustics from '@root/public/img/DASHING/Head acoustics(optional).webp';
 import wirelessCharging from '@root/public/img/DASHING/40 watts of wireless charging.webp';
@@ -56,12 +56,12 @@ import x70Image from '@root/public/img/X70 Plus/X70 Jetour.webp';
 import x70Logo from '@root/public/img/X70 Plus/Logo.webp';
 import { CarThemeKey } from './theme-definitions';
 
-import x70firstSplitImage from '@root/public/img/X70 Plus/First split image.png';
-import x70secondSplitImage from '@root/public/img/X70 Plus/Second split image.png';
-import x70gallery1 from '@root/public/img/X70 Plus/Foto 01.jpg';
-import x70gallery2 from '@root/public/img/X70 Plus/Foto 02.jpg';
-import x70gallery3 from '@root/public/img/X70 Plus/Foto 03.jpg';
-import x70gallery4 from '@root/public/img/X70 Plus/Foto 04.jpg';
+import x70firstSplitImage from '@root/public/img/X70 Plus/First split image.webp';
+import x70secondSplitImage from '@root/public/img/X70 Plus/Second split image.webp';
+import x70gallery1 from '@root/public/img/X70 Plus/Foto 01.webp';
+import x70gallery2 from '@root/public/img/X70 Plus/Foto 02.webp';
+import x70gallery3 from '@root/public/img/X70 Plus/Foto 03.webp';
+import x70gallery4 from '@root/public/img/X70 Plus/Foto 04.webp';
 
 import x50CarSelectorImage from '@root/public/img/X50/x50-360BAI_00005.webp';
 
