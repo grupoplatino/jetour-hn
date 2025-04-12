@@ -266,7 +266,7 @@ export const vehiclesData: Record<string, VehicleData> = {
       ]
     },
     singlePictureSection: {
-      title: 'SEGURIDAD Y RESPALDO PARA DISFRUTAR EL VIAJE',
+      title: 'SEGURIDAD Y RESPALDO',
       image: securityImage
     },
     gallery: [t2SkeletonImage, t2TopSkeletonImage, t2SecondSeatsRowImage, t2ProximityImage],
@@ -307,7 +307,7 @@ export const vehiclesData: Record<string, VehicleData> = {
       'Seguridad y tecnología XWD': {
         'Sistema de ruedas': 'Sistema antibloqueo de ruedas',
         'Modos de conducción': '7 modos de conducción',
-        Asistentes: 'Asistente de ascenso y descenso en pendientes, Asistente de frenado',
+        Asistentes: 'Asistente de ascenso y descenso en pendientes, asistente de frenado',
         'Sistema off-road': 'Sistema XWD para principiantes en off-road',
         'Capacidad de remolque': 'Hasta 1,600 kg (trailer con frenos)',
         Chasis: 'Con rigidez torsional de 3100 Nm/deg',
@@ -639,7 +639,7 @@ export const vehiclesData: Record<string, VehicleData> = {
       ]
     },
     singlePictureSection: {
-      title: 'SEGURIDAD Y RESPALDO PARA DISFRUTAR EL VIAJE',
+      title: 'SEGURIDAD Y RESPALDO',
       image: x50ThirdSpecImage
     },
     gallery: [
@@ -652,7 +652,7 @@ export const vehiclesData: Record<string, VehicleData> = {
     specs: {
       'Características principales': {
         Motor: 'MOTOR 1.5L',
-        Pantalla: 'PANTALLA DUAL DE 20.5 PULGADAS',
+        Pantalla: 'PANTALLA CENTRAL DUAL DE 20.5 PULGADAS',
         Cámara: 'CÁMARA DE VISIÓN 360°',
         Seguridad: '6 BOLSAS DE AIRE'
       },
@@ -813,7 +813,7 @@ export const vehiclesData: Record<string, VehicleData> = {
       ]
     },
     singlePictureSection: {
-      title: 'SEGURIDAD Y RESPALDO PARA DISFRUTAR EL VIAJE',
+      title: 'SEGURIDAD Y RESPALDO',
       image: X70PlusSingleImage
     },
     gallery: [x70gallery1, x70gallery2, x70gallery3, x70gallery4],
