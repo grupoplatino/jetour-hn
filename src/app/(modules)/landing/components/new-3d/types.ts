@@ -30,7 +30,7 @@ export interface VehicleVisualizerProps {
   filePattern: string; // Patrón como "T2-EXT-{index}.png"
   imageCount: number;
   colors: VehicleColor[];
-  interiorImagePath?: string;
+  interiorImagePath?: string[];
   defaultColorIndex?: number;
   themeKey: string;
   fileExtension?: string;
