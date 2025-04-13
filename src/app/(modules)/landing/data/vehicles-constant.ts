@@ -857,7 +857,7 @@ export const vehiclesData: Record<string, VehicleData> = {
       },
       Colores: {
         Exteriores: 'Negro, blanco, azul',
-        Interiores: 'Color negro, color rojo'
+        Interiores: 'Color negro, rojo'
       }
     },
     visualizer: {
