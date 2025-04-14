@@ -644,7 +644,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         leftSpacing: '-24rem',
         rightSpacing: '20rem',
         imageContainRight: true,
-        brochureUrl: 'https://www.jetour.com.co/brochure/X50.pdf'
+        brochureUrl: 'https://platinosoftware.blob.core.windows.net/auto-aliados/Ficha_tecnica_x70plus.pdf'
       }
     ],
     featuresSections: {
@@ -812,7 +812,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         text: 'El Jetour X50 ofrece comodidad con asientos revestidos en cuero sintético, y una amplia fila de asientos. Este auto es perfecto para salir y disfrutar del día y la noche, junto a tu familia o amigos.',
         leftSpacing: '-35rem',
         rightSpacing: '20rem',
-        brochureUrl: 'https://www.jetour.com.co/brochure/X50.pdf',
+        brochureUrl: 'https://platinosoftware.blob.core.windows.net/auto-aliados/Ficha_tecnica_x50.pdf',
         whiteText: true,
         imageContainRight: true
       }
