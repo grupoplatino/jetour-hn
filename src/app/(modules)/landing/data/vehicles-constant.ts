@@ -254,7 +254,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         image2: extraStorageT2,
         title: 'ESTILO POR FUERA Y POR DENTRO',
         text: 'La T2 tiene un impresionante tablero, volante multifunción, pantalla touchscreen de 15 pulgadas, parlantes Sony, cargador inalámbrico, interior de lujo con asientos ventilados, luces atmosféricas.',
-        brochureUrl: 'https://platinosoftware.blob.core.windows.net/auto-aliados/Ficha_tecnica_t2.pdf',
+        brochureUrl: 'https://platinosoftware.blob.core.windows.net/auto-aliados/Ficha_tecnica_t2_v2.pdf',
         whiteText: true,
         textLeft: true
       }
