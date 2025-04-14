@@ -184,7 +184,7 @@ export interface VehicleData {
 // Definición de datos de vehículos
 export const vehiclesData: Record<string, VehicleData> = {
   t2: {
-    carSelecctorImage: t2WhiteImage,
+    carSelecctorImage: t2NeutralImage,
     id: 't2',
     modelName: 'T2',
     tagline: 'AVENTURAS SIN LÍMITES',
@@ -575,8 +575,180 @@ export const vehiclesData: Record<string, VehicleData> = {
       defaultColorIndex: 0
     }
   },
+
+  x70plus: {
+    carSelecctorImage: x70CarSelectorImage,
+    id: 'x70plus',
+    modelName: 'X70 Plus',
+    tagline: 'INNOVACIÓN Y AMPLITUD REDEFINIDAS',
+    theme: 'turquoise',
+    hero: {
+      backgroundImage: x70Image,
+      logo: x70Logo
+    },
+    // Datos parciales - completar con información real
+    colorModels: [
+      {
+        carImage: x70PlusBlue,
+        color: 'Blue',
+        colorName: 'Azul',
+        hexColor: '#2E3A5F'
+      },
+      {
+        carImage: x70PlusBlack,
+        color: 'Black',
+        colorName: 'Negro',
+        hexColor: '#000000'
+      },
+      {
+        carImage: x70PlusWhite,
+        color: 'White',
+        colorName: 'Blanco',
+        hexColor: '#FFFFFF'
+      }
+    ],
+    features: [
+      { name: 'CABALLOS DE FUERZA MÁX.', value: 197, position: 'topleft' },
+      { name: 'TORQUE MÁXIMO', value: 290, position: 'topcenter' },
+      { name: 'VELOCIDAD MÁXIMA (KM/H)', value: 180, position: 'topright' },
+      {
+        name: 'DISTANCIA ENTRE EJES (MM)',
+        value: 2745,
+        position: 'bottomleft'
+      },
+      { name: 'DESPLAZAMIENTO (ML)', value: 1598, position: 'bottomright' }
+    ],
+    video: {
+      url: '/video/Videos-X70-Plus-Web/Video X70 Plus.mp4',
+      thumbnail: '/img/X70 Plus/0Y6H8571_1final.jpg'
+    },
+    splitSections: [
+      {
+        image1: x70FirstSplitImage1,
+        image2: x70FirstSplitImage2,
+        title: 'SEGURIDAD ANTE TODO',
+        text: 'La X70 Plus cuenta con cuatro airbags (frontales y laterales), ISOFIX, sistema de control de tracción y estabilidad, sistema de frenado AUTOHOLD, sistema de monitoreo de puntos ciegos, entre otros equipos que hacen de esta una SUV segura y confiable.',
+        whiteText: true,
+        textLeft: true,
+        leftSpacing: '-15rem',
+        rightSpacing: '20rem',
+        imageContainRight: true
+      },
+      {
+        image1: x70SecondSplitImage1,
+        image2: x70SecondSplitImage2,
+        title: 'Tecnología espacial',
+        text: 'La X70 PLUS está equipada con sistema de visión 360, asientos forrados, un excelente sistema de infoentretenimiento con pantalla de 10.25” y cargador inalámbrico para teléfonos.',
+        whiteText: true,
+        textLeft: true,
+        leftSpacing: '-24rem',
+        rightSpacing: '20rem',
+        imageContainRight: true,
+        brochureUrl: 'https://www.jetour.com.co/brochure/X50.pdf'
+      }
+    ],
+    featuresSections: {
+      title: 'COMODIDAD DESDE DONDE LO VEAS',
+      items: [
+        {
+          image: x70FeatureImage1,
+          label: 'MODELADO TRIDIMENSIONAL MULTINIVEL'
+        },
+        {
+          image: x70FeatureImage2,
+          label: 'TECHO CORREDIZO PANORÁMICO'
+        },
+        {
+          image: x70FeatureImage3,
+          label: 'DISTANCIA ENTRE EJES SUPER LARGA'
+        }
+      ]
+    },
+    singlePictureSection: {
+      title: 'SEGURIDAD Y RESPALDO',
+      image: X70PlusSingleImage
+    },
+    gallery: [x70gallery1, x70gallery2, x70gallery3, x70gallery4],
+    specs: {
+      'Diseño y estilo': {
+        Capacidad: 'Asientos: 3 filas, 7 pasajeros',
+        Techo: 'Sunroof panorámico',
+        Rines: 'Rines de lujo',
+        Luces: 'Luces delanteras halógenas y traseras LED',
+        Rieles: 'Rieles de techo',
+        Antena: 'Antena tipo aleta de tiburón',
+        Asientos: 'Asientos tapizados en cuero',
+        'Iluminación interior': 'Luces de ambiente interior monocromáticas'
+      },
+      'Multimedia y conectividad': {
+        Pantalla: 'Pantalla: 10.25"',
+        Conectividad: 'Conectividad: Mirrorlink',
+        Cámara: 'Cámara de visión 360° con guías dinámicas',
+        Puertos: 'Puertos USB: delanteros y traseros'
+      },
+      Motor: {
+        Tipo: 'Motor 1.6L TURBO',
+        Torque: 'Torque de 290Nm'
+      },
+      'Seguridad avanzada y asistencia': {
+        Frenos: 'Sistema de frenado antibloqueo',
+        Estabilidad: 'Control de estabilidad electrónico',
+        'Asistencia conducción': 'Asistente de mantenimiento de carril',
+        Monitoreo: 'Monitor de punto ciego',
+        Cámara: 'Cámara de 360° con modelo 3D',
+        Protección: '6 airbags',
+        'Distribución frenado': 'Distribución electrónica de frenado',
+        'Control descenso': 'Control de descenso en pendientes',
+        'Seguridad infantil': 'Puertas con Child Lock'
+      },
+      'Confort y ajustes': {
+        Climatización: 'Aire acondicionado: control digital',
+        Audio: 'Sonido: 6 bocinas',
+        Controles: 'Botones multifuncionales en el timón',
+        'Asientos ajustables': 'Asientos del conductor: ajuste eléctrico'
+      },
+      Colores: {
+        Exteriores: 'Negro, blanco, azul',
+        Interiores: 'Color negro, rojo'
+      }
+    },
+    visualizer: {
+      title: 'VISUALIZADOR 3D',
+      basePath: '/img/X70 Plus/X70PLUS_360',
+      filePattern: 'X70PLUS-EXT-{index}.png',
+      imageCount: 36,
+      colors: [
+        {
+          name: 'blue',
+          hex: '#4c6280',
+          folderName: 'deep-blue',
+          class: 'bg-[#4c6280]'
+        },
+        {
+          name: 'black',
+          hex: '#000000',
+          folderName: 'black',
+          class: 'bg-black'
+        },
+        {
+          name: 'white',
+          hex: '#FFFFFF',
+          folderName: 'white',
+          class: 'border border-2'
+        }
+      ],
+      interiorImagePath: [
+        {
+          path: '/img/X70 Plus/X70PLUS_360/INT/X70PLUS-INT.webp',
+          colorName: 'black',
+          hexColor: '#000000'
+        }
+      ],
+      defaultColorIndex: 0
+    }
+  },
   x50: {
-    carSelecctorImage: x50CarSelectorImage,
+    carSelecctorImage: x50BlackImage,
     id: 'x50',
     modelName: 'X50',
     tagline: 'DISFRUTA EL VIAJE DE TU VIDA',
@@ -759,177 +931,6 @@ export const vehiclesData: Record<string, VehicleData> = {
         },
         {
           path: '/img/X50/Interior-2/Black&Red/Black&Red.jpg',
-          colorName: 'black',
-          hexColor: '#000000'
-        }
-      ],
-      defaultColorIndex: 0
-    }
-  },
-  x70plus: {
-    carSelecctorImage: x70CarSelectorImage,
-    id: 'x70plus',
-    modelName: 'X70 Plus',
-    tagline: 'INNOVACIÓN Y AMPLITUD REDEFINIDAS',
-    theme: 'turquoise',
-    hero: {
-      backgroundImage: x70Image,
-      logo: x70Logo
-    },
-    // Datos parciales - completar con información real
-    colorModels: [
-      {
-        carImage: x70PlusBlue,
-        color: 'Blue',
-        colorName: 'Azul',
-        hexColor: '#2E3A5F'
-      },
-      {
-        carImage: x70PlusBlack,
-        color: 'Black',
-        colorName: 'Negro',
-        hexColor: '#000000'
-      },
-      {
-        carImage: x70PlusWhite,
-        color: 'White',
-        colorName: 'Blanco',
-        hexColor: '#FFFFFF'
-      }
-    ],
-    features: [
-      { name: 'CABALLOS DE FUERZA MÁX.', value: 197, position: 'topleft' },
-      { name: 'TORQUE MÁXIMO', value: 290, position: 'topcenter' },
-      { name: 'VELOCIDAD MÁXIMA (KM/H)', value: 180, position: 'topright' },
-      {
-        name: 'DISTANCIA ENTRE EJES (MM)',
-        value: 2745,
-        position: 'bottomleft'
-      },
-      { name: 'DESPLAZAMIENTO (ML)', value: 1598, position: 'bottomright' }
-    ],
-    video: {
-      url: '/video/Videos-X70-Plus-Web/Video X70 Plus.mp4',
-      thumbnail: '/img/X70 Plus/0Y6H8571_1final.jpg'
-    },
-    splitSections: [
-      {
-        image1: x70FirstSplitImage1,
-        image2: x70FirstSplitImage2,
-        title: 'SEGURIDAD ANTE TODO',
-        text: 'La X70 Plus cuenta con cuatro airbags (frontales y laterales), ISOFIX, sistema de control de tracción y estabilidad, sistema de frenado AUTOHOLD, sistema de monitoreo de puntos ciegos, entre otros equipos que hacen de esta una SUV segura y confiable.',
-        whiteText: true,
-        textLeft: true,
-        leftSpacing: '-15rem',
-        rightSpacing: '20rem',
-        imageContainRight: true
-      },
-      {
-        image1: x70SecondSplitImage1,
-        image2: x70SecondSplitImage2,
-        title: 'Tecnología espacial',
-        text: 'La X70 PLUS está equipada con sistema de visión 360, asientos forrados, un excelente sistema de infoentretenimiento con pantalla de 10.25” y cargador inalámbrico para teléfonos.',
-        whiteText: true,
-        textLeft: true,
-        leftSpacing: '-24rem',
-        rightSpacing: '20rem',
-        imageContainRight: true,
-        brochureUrl: 'https://www.jetour.com.co/brochure/X50.pdf'
-      }
-    ],
-    featuresSections: {
-      title: 'COMODIDAD DESDE DONDE LO VEAS',
-      items: [
-        {
-          image: x70FeatureImage1,
-          label: 'MODELADO TRIDIMENSIONAL MULTINIVEL'
-        },
-        {
-          image: x70FeatureImage2,
-          label: 'TECHO CORREDIZO PANORÁMICO'
-        },
-        {
-          image: x70FeatureImage3,
-          label: 'DISTANCIA ENTRE EJES SUPER LARGA'
-        }
-      ]
-    },
-    singlePictureSection: {
-      title: 'SEGURIDAD Y RESPALDO',
-      image: X70PlusSingleImage
-    },
-    gallery: [x70gallery1, x70gallery2, x70gallery3, x70gallery4],
-    specs: {
-      'Diseño y estilo': {
-        Capacidad: 'Asientos: 3 filas, 7 pasajeros',
-        Techo: 'Sunroof panorámico',
-        Rines: 'Rines de lujo',
-        Luces: 'Luces delanteras halógenas y traseras LED',
-        Rieles: 'Rieles de techo',
-        Antena: 'Antena tipo aleta de tiburón',
-        Asientos: 'Asientos tapizados en cuero',
-        'Iluminación interior': 'Luces de ambiente interior monocromáticas'
-      },
-      'Multimedia y conectividad': {
-        Pantalla: 'Pantalla: 10.25"',
-        Conectividad: 'Conectividad: Mirrorlink',
-        Cámara: 'Cámara de visión 360° con guías dinámicas',
-        Puertos: 'Puertos USB: delanteros y traseros'
-      },
-      Motor: {
-        Tipo: 'Motor 1.6L TURBO',
-        Torque: 'Torque de 290Nm'
-      },
-      'Seguridad avanzada y asistencia': {
-        Frenos: 'Sistema de frenado antibloqueo',
-        Estabilidad: 'Control de estabilidad electrónico',
-        'Asistencia conducción': 'Asistente de mantenimiento de carril',
-        Monitoreo: 'Monitor de punto ciego',
-        Cámara: 'Cámara de 360° con modelo 3D',
-        Protección: '6 airbags',
-        'Distribución frenado': 'Distribución electrónica de frenado',
-        'Control descenso': 'Control de descenso en pendientes',
-        'Seguridad infantil': 'Puertas con Child Lock'
-      },
-      'Confort y ajustes': {
-        Climatización: 'Aire acondicionado: control digital',
-        Audio: 'Sonido: 6 bocinas',
-        Controles: 'Botones multifuncionales en el timón',
-        'Asientos ajustables': 'Asientos del conductor: ajuste eléctrico'
-      },
-      Colores: {
-        Exteriores: 'Negro, blanco, azul',
-        Interiores: 'Color negro, rojo'
-      }
-    },
-    visualizer: {
-      title: 'VISUALIZADOR 3D',
-      basePath: '/img/X70 Plus/X70PLUS_360',
-      filePattern: 'X70PLUS-EXT-{index}.png',
-      imageCount: 36,
-      colors: [
-        {
-          name: 'blue',
-          hex: '#4c6280',
-          folderName: 'deep-blue',
-          class: 'bg-[#4c6280]'
-        },
-        {
-          name: 'black',
-          hex: '#000000',
-          folderName: 'black',
-          class: 'bg-black'
-        },
-        {
-          name: 'white',
-          hex: '#FFFFFF',
-          folderName: 'white',
-          class: 'border border-2'
-        }
-      ],
-      interiorImagePath: [
-        {
-          path: '/img/X70 Plus/X70PLUS_360/INT/X70PLUS-INT.webp',
           colorName: 'black',
           hexColor: '#000000'
         }
