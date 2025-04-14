@@ -1,6 +1,6 @@
-import Image from "next/image";
-import { StaticImageData } from "next/image";
-import { carThemes } from "../data/theme-definitions";
+import Image from 'next/image';
+import { StaticImageData } from 'next/image';
+import { carThemes } from '../data/theme-definitions';
 
 interface SplitImageSectionProps {
   image1: StaticImageData | string;
@@ -31,7 +31,7 @@ export default function SplitImageSection({
   rightSpacing,
   textLeft,
   imageContainLeft,
-  imageContainRight,
+  imageContainRight
 }: SplitImageSectionProps) {
   const theme = carThemes[carTheme];
 
@@ -45,69 +45,34 @@ export default function SplitImageSection({
         {sectionTitle}
       </h1>
 
-      <figure className="relative w-full h-[70vh] sm:h-[60vh] md:h-[70vh] flex items-center justify-center">
+      <figure className="relative w-full h-[70vh] sm:h-[60vh] md:h-[70vh] flex items-center justify-between">
         {/* Imagen izquierda con overlay para mejor legibilidad del texto */}
         {image1 !== image2 ? (
           <>
             <div
-              className="absolute top-0 left-0 w-full h-full overflow-hidden"
+              className="absolute top-0 z-10 left-0 w-full h-full overflow-hidden"
               style={{
-                clipPath: "polygon(0% 0%, 56% 0%, 46% 100%, 0% 100%)",
+                clipPath: 'polygon(0% 0%, 56% 0%, 46% 100%, 0% 100%)'
               }}
             >
               {/* {image1 !== image2 && (
                 <div className="absolute inset-0 bg-black/30 z-10"></div>
               )} */}
-              <Image
-                className={`w-full h-full ${
-                  imageContainLeft ? "object-contain" : "object-cover"
-                }`}
-                style={
-                  leftSpacing ? { transform: `translateX(${leftSpacing})` } : {}
-                }
-                src={image1}
-                alt="Car View 1"
-                placeholder="blur"
-              />
+              <Image className={`w-[60%] h-full ${imageContainLeft ? 'object-cover' : 'object-cover'}`} src={image1} alt="Car View 1" placeholder="blur" />
             </div>
 
             {/* Imagen derecha */}
-            <div
-              className="absolute top-0 left-0 w-full h-full overflow-hidden"
-              style={{
-                clipPath: "polygon(55% 0%, 100% 0%, 100% 100%, 45% 100%)",
-              }}
-            >
-              <Image
-                className={`w-full h-full ${
-                  imageContainRight ? "object-contain" : "object-cover"
-                }`}
-                style={
-                  rightSpacing
-                    ? { transform: `translateX(${rightSpacing})` }
-                    : {}
-                }
-                src={image2}
-                alt="Car View 2"
-                placeholder="blur"
-              />
+            <div className="absolute top-0 !right-0 w-[60%] h-full overflow-hidden">
+              <Image className={`w-full h-full ${imageContainRight ? 'object-cover' : 'object-cover'}`} src={image2} alt="Car View 2" placeholder="blur" />
             </div>
 
             {/* Texto de la sección */}
             <div
-              className={`absolute top-2 ${
-                textLeft
-                  ? "left-8 md:left-16 lg:left-20 text-start"
-                  : image1 !== image2
-                  ? "left-20"
-                  : "right-4"
-              } text-right ${
-                textWhite ? "text-white drop-shadow-lg" : "text-black"
+              className={`absolute top-2 ${textLeft ? 'left-8 md:left-16 lg:left-20 text-start' : image1 !== image2 ? 'left-20' : 'right-4'} text-right ${
+                textWhite ? 'text-white drop-shadow-lg' : 'text-black'
               } font-bold max-w-[40rem] z-20`}
             >
-              <p
-                className={`text-xs -ml-4 drop-shadow-lg -mt-0 md:-mt-0 w-32 md:text-lg md:text-right md:w-64 lg:w-full ${theme.colors.sectionText}`}
-              >
+              <p className={`text-xs -ml-4 drop-shadow-lg -mt-0 md:-mt-0 w-32 md:text-lg md:text-right md:w-64 lg:w-full ${theme.colors.sectionText}`}>
                 {sectionText}
               </p>
             </div>
@@ -138,33 +103,21 @@ export default function SplitImageSection({
                     <polyline points="7 10 12 15 17 10" />
                     <line x1="12" y1="15" x2="12" y2="3" />
                   </svg>
-                  <span className="font-bold text-white text-xl">
-                    Brochure {carModelName}
-                  </span>
+                  <span className="font-bold text-white text-xl">Brochure {carModelName}</span>
                 </div>
               </a>
             )}
           </>
         ) : (
           <>
-            <Image
-              src={image1}
-              alt="Image Section"
-              width={200}
-              height={200}
-              className="w-full h-full"
-            />
+            <Image src={image1} alt="Image Section" width={200} height={200} className="w-full h-full" />
             {/* Texto de la sección */}
             <div
-              className={`absolute top-2 ${
-                textLeft ? "left-8 md:left-16 lg:left-24 text-start" : "right-4"
-              } text-right ${
-                textWhite ? "text-white drop-shadow-lg" : "text-black"
+              className={`absolute top-2 ${textLeft ? 'left-8 md:left-16 lg:left-24 text-start' : 'right-4'} text-right ${
+                textWhite ? 'text-white drop-shadow-lg' : 'text-black'
               } font-bold max-w-[40rem] z-20`}
             >
-              <p
-                className={`text-xs -ml-4 drop-shadow-lg -mt-0 md:-mt-0 w-32 md:text-lg md:text-right md:w-64 lg:w-full ${theme.colors.sectionText}`}
-              >
+              <p className={`text-xs -ml-4 drop-shadow-lg -mt-0 md:-mt-0 w-32 md:text-lg md:text-right md:w-64 lg:w-full ${theme.colors.sectionText}`}>
                 {sectionText}
               </p>
             </div>
@@ -195,9 +148,7 @@ export default function SplitImageSection({
                     <polyline points="7 10 12 15 17 10" />
                     <line x1="12" y1="15" x2="12" y2="3" />
                   </svg>
-                  <span className="font-bold text-white text-xl">
-                    Brochure {carModelName}
-                  </span>
+                  <span className="font-bold text-white text-xl">Brochure {carModelName}</span>
                 </div>
               </a>
             )}
