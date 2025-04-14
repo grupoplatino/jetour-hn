@@ -15,7 +15,7 @@ import VehicleDetailPage from './components/vehicle-deatail-page';
 const VideoHeroSection = dynamic(() => import('./components/video-hero-section'));
 
 import Image from 'next/image';
-import homeImage from '@root/public/img/landing/Home Jetour.jpg';
+import homeImage from '@root/public/img/landing/Home Jetour (1).webp';
 import jetourLogo from '@root/public/img/JetourLogo.png';
 
 export default function LandingPage() {
