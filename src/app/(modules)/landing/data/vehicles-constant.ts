@@ -290,7 +290,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         Ajustes: 'Asientos delanteros con ajuste eléctrico',
         Climatización: 'Asientos delanteros con calefacción y enfriamiento',
         Iluminación: 'Luces de ambiente interior',
-        'Colores interiores': 'Color Café, Negro'
+        'Colores interiores': 'Color café, negro'
       },
       'Funcionalidad y tecnología': {
         Techo: 'Panorámico y sunroof',
