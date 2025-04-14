@@ -53,7 +53,7 @@ export default function LandingPage() {
             subtitle: '',
             themeKey: 'orange',
             videos: {
-              rightVideo: '/img/landing/T2/9X16-40S.mp4',
+              rightVideo: '/img/landing/T2/9X16-40S - Trim.mp4',
               leftVideo: '/img/landing/T2/T2 TVC-30s-4K.mp4'
             }
           },
