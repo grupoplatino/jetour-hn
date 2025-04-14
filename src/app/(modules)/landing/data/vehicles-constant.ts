@@ -23,9 +23,9 @@ import x70PlusBlue from '@root/public/img/X70 Plus/X70 Plus 45 degree Blue.webp'
 import x70PlusWhite from '@root/public/img/X70 Plus/X70 Plus 45 degree White.webp';
 import x70PlusBlack from '@root/public/img/X70 Plus/45 degree front left angle Black.webp';
 import X70PlusSingleImage from '@root/public/img/X70 Plus/Estabilidad y Seguridad.jpg';
-import x70FeatureImage1 from '@root/public/img/X70 Plus/featuresSection1.webp';
-import x70FeatureImage2 from '@root/public/img/X70 Plus/featuresSection2.webp';
-import x70FeatureImage3 from '@root/public/img/X70 Plus/featuresSection3.webp';
+import x70FeatureImage1 from '@root/public/img/X70 Plus/Modelado Palanca.webp';
+import x70FeatureImage2 from '@root/public/img/X70 Plus/Techo Corredizo.webp';
+import x70FeatureImage3 from '@root/public/img/X70 Plus/Distancia Ejes.webp';
 import rubikKey from '@root/public/img/DASHING/Rubik_s cube key.webp';
 import headAcoustics from '@root/public/img/DASHING/Head acoustics(optional).webp';
 import wirelessCharging from '@root/public/img/DASHING/40 watts of wireless charging.webp';
