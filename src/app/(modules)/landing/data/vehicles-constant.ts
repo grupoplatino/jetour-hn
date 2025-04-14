@@ -56,8 +56,6 @@ import x70Image from '@root/public/img/X70 Plus/X70 Jetour.webp';
 import x70Logo from '@root/public/img/X70 Plus/Logo.webp';
 import { CarThemeKey } from './theme-definitions';
 
-import x70firstSplitImage from '@root/public/img/X70 Plus/First split image.webp';
-import x70secondSplitImage from '@root/public/img/X70 Plus/Second split image.webp';
 import x70gallery1 from '@root/public/img/X70 Plus/Foto 01.webp';
 import x70gallery2 from '@root/public/img/X70 Plus/Foto 02.webp';
 import x70gallery3 from '@root/public/img/X70 Plus/Foto 03.webp';
@@ -75,7 +73,6 @@ import dashingSelectorImage from '@root/public/img/DASHING/JETOUR_azul_cam360_ou
 
 import x50WhiteImage from '@root/public/img/X50/x50-360BAI_00005.webp';
 import x50BlackImage from '@root/public/img/X50/x50-360HEI_00005.webp';
-import x50SplitSection1Image1 from '@root/public/img/X50/c (5).webp';
 import x50SplitSection1Image2 from '@root/public/img/X50/Console.webp';
 import x50SplitSectionImage1 from '@root/public/img/X50/First Split Section - Image 1.png';
 import x50SplitSectionImage2 from '@root/public/img/X50/First Split Section - Image 2.png';
@@ -91,6 +88,8 @@ import x50FourthGalleryImage from '@root/public/img/X50/60 drgee front right ang
 import x50SplitSection2Image1 from '@root/public/img/X50/360° Panoramic Reversing Camera&180° Transparent Chassis.webp';
 import x50Feature1 from '@root/public/img/X50/Feature 1.png';
 import x50Feature2 from '@root/public/img/X50/Feature 2.png';
+
+import t2NewSinglePictureImage from '@root/public/img/T2/Seguridad y Respaldo.jpg';
 
 // Importación de datos de especificaciones
 
@@ -278,7 +277,7 @@ export const vehiclesData: Record<string, VehicleData> = {
     },
     singlePictureSection: {
       title: 'SEGURIDAD Y RESPALDO',
-      image: securityImage
+      image: t2NewSinglePictureImage
     },
     gallery: [t2SkeletonImage, t2TopSkeletonImage, t2SecondSeatsRowImage, t2ProximityImage],
     specs: {
@@ -301,7 +300,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         Ajustes: 'Asientos delanteros con ajuste eléctrico',
         Climatización: 'Asientos delanteros con calefacción y enfriamiento',
         Iluminación: 'Luces de ambiente interior',
-        'Colores interiores': 'Color Café, Negro'
+        'Colores interiores': 'Color café, Negro'
       },
       'Funcionalidad y tecnología': {
         Techo: 'Panorámico y sunroof',
