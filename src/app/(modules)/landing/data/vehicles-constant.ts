@@ -237,7 +237,7 @@ export const vehiclesData: Record<string, VehicleData> = {
       { name: 'DESPLAZAMIENTO (ML)', value: 1998, position: 'bottomright' }
     ],
     video: {
-      url: '/video/Video-T2/Dubai Night Tour.mp4',
+      url: '/video/Video-T2/T2 TVC-15s-4K.mp4',
       thumbnail: '/img/T2/T2 Jetour.jpg'
     },
     splitSections: [
