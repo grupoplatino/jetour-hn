@@ -314,7 +314,7 @@ export default function AboutUsPage() {
               Contáctanos
             </Link>
             <Link
-              href="/test-drive"
+              href="/landing/contactanos"
               className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white/10 transition-colors"
             >
               Agenda tu Test Drive
