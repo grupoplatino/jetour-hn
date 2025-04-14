@@ -107,7 +107,7 @@ export default function SplitImageSection({
       ) : (
         <>
           <figure className="h-[900px] relative mx-auto w-full">
-            <Image src={image1} alt="Image Section" width={200} height={200} className="w-full mx-auto" />
+            <Image placeholder="blur" src={image1} alt="Image Section" width={512} height={512} className="w-full mx-auto" />
             {/* Texto de la sección */}
             <div
               className={`absolute top-2 ${textLeft ? 'left-8 md:left-16 lg:left-24 text-start' : 'right-4'} text-right ${

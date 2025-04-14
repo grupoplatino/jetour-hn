@@ -14,6 +14,10 @@ import VehicleDetailPage from './components/vehicle-deatail-page';
 
 const VideoHeroSection = dynamic(() => import('./components/video-hero-section'));
 
+import Image from 'next/image';
+import homeImage from '@root/public/img/landing/Home Jetour.jpg';
+import jetourLogo from '@root/public/img/JetourLogo.png';
+
 export default function LandingPage() {
   const carTheme = 'orange'; // Cambia esto según el vehículo seleccionado
 
@@ -27,8 +31,20 @@ export default function LandingPage() {
       <WhatsAppButton />
       <TestDriveButton carTheme={carTheme} />
 
+      <section className="mt-[10px] relative">
+        <Image className="w-full" alt="Logo home jetour" height={512} width={512} src={homeImage} placeholder="blur" />
+
+        <div className="flex flex-col absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[18rem] ">
+          <div className="flex flex-col">
+            <h1 className="font-bold text-6xl text-center text-white">Bienvenido a</h1>
+            <Image className="w-auto h-[140px] object-contain -mt-8" alt="Logo jetour" height={512} width={512} src={jetourLogo} placeholder="blur" />
+          </div>
+          <h2 className="font-semibold text-3xl text-center text-white -mt-5">Diseñado para moverte, creado para inspirarte</h2>
+        </div>
+      </section>
+
       <VideoHeroSection
-        extraClassName="mt-[40px] lg:mt-[50px]"
+        extraClassName=""
         sections={[
           {
             backgroundImage: t2LandingBackground,

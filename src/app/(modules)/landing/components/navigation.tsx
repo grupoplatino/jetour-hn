@@ -63,16 +63,16 @@ export function Navbar({ disableTransparent = false, primaryColor = '#FF7A00' }:
   return (
     <nav
       className={clsx(
-        'transition flex flex-col fixed w-full z-40 max-h-[100px]',
+        'transition flex flex-col fixed w-full z-40 lg:max-h-[100px] lg:h-[100px]',
         scrollPosition > 0 && !disableTransparent ? 'bg-black text-white' : disableTransparent ? 'bg-black text-white' : 'bg-transparent text-white'
       )}
     >
       <section className="flex flex-row px-4 md:px-16 py-2 justify-between items-center">
         <figure className="flex flex-row items-center gap-4 md:gap-10 text-white">
           <Link href="/" className="w-fit h-fit">
-            <Image src={jetourLogo} alt="Logo Jetour" width={120} height={120} className="w-28 md:w-36" />
+            <Image src={jetourLogo} alt="Logo Jetour" width={512} height={512} className="w-28 md:w-36" />
           </Link>
-          <Image src={autosAliadosLogo} alt="Logo Auto Aliados" width={120} height={120} className="w-28 md:w-32" />
+          <Image src={autosAliadosLogo} alt="Logo Auto Aliados" width={512} height={512} className="w-28 md:w-32" />
         </figure>
 
         {/* Desktop Navigation */}
