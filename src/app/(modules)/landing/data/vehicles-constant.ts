@@ -86,7 +86,7 @@ import x50FirstGalleryImage from '@root/public/img/X50/Left 45 degree angle view
 import x50SecondGalleryImage from '@root/public/img/X50/Dual Screen.webp';
 import x50FourthGalleryImage from '@root/public/img/X50/60 drgee front right angle.png';
 
-import x50SplitSection2Image1 from '@root/public/img/X50/360° Panoramic Reversing Camera&180° Transparent Chassis.webp';
+import x50SplitSection2Image1 from '@root/public/img/X50/360° Panoramic Reversing Camera&180° Transparent Chassis.jpg';
 import x50Feature1 from '@root/public/img/X50/Feature 1.png';
 import x50Feature2 from '@root/public/img/X50/Feature 2.png';
 
