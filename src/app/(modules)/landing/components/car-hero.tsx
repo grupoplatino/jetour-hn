@@ -1,8 +1,8 @@
-import { StaticImageData } from "next/image";
-import { CarThemeKey, carThemes } from "../data/theme-definitions";
-import WarrantyBadge from "./warrabty-badge";
-import jetourLogo from "@root/public/img/JetourLogo.png";
-import Image from "next/image";
+import { StaticImageData } from 'next/image';
+import { CarThemeKey, carThemes } from '../data/theme-definitions';
+import WarrantyBadge from './warrabty-badge';
+import jetourLogo from '@root/public/img/JetourLogo.png';
+import Image from 'next/image';
 
 interface CarHeroProps {
   backgroundImageUrl: string;
@@ -13,13 +13,7 @@ interface CarHeroProps {
   displayJetourLogo?: boolean;
 }
 
-const CarHero: React.FC<CarHeroProps> = ({
-  backgroundImage,
-  carLogo,
-  tagline,
-  carTheme,
-  displayJetourLogo,
-}) => {
+const CarHero: React.FC<CarHeroProps> = ({ backgroundImage, carLogo, tagline, carTheme, displayJetourLogo }) => {
   const theme = carThemes[carTheme].colors;
 
   return (
@@ -29,13 +23,7 @@ const CarHero: React.FC<CarHeroProps> = ({
 
       {/* Imagen de fondo */}
       <div className="w-full h-full relative max-w-full">
-        <Image
-          src={backgroundImage}
-          alt="Background"
-          fill
-          className="object-cover object-center max-w-full"
-          priority
-        />
+        <Image src={backgroundImage} alt="Background" fill className="object-cover object-center max-w-full" priority />
 
         {/* Contenido del hero */}
         <div className="absolute bottom-32 left-16 z-20 flex flex-col max-w-full">
@@ -45,9 +33,7 @@ const CarHero: React.FC<CarHeroProps> = ({
               alt="Car Logo"
               width={250}
               height={100}
-              className={`object-contain -ml-[6rem] md:-ml-0 scale-50 md:scale-100 ${
-                displayJetourLogo ? "" : "mb-4"
-              }`}
+              className={`object-contain -ml-[6rem] md:-ml-0 scale-50 md:scale-100 ${displayJetourLogo ? '' : 'mb-4'}`}
             />
             {displayJetourLogo && (
               <Image

@@ -115,8 +115,8 @@ export function CarColorSelector({ carModels }: CarColorSelectorProps) {
               className={`
                 absolute transition-all duration-700
                 ${isCenter ? "z-30 opacity-100" : "z-10 opacity-90"}
-                ${isLeft ? "left-56 -mt-20" : ""}
-                ${isRight ? "right-48 -mt-20" : ""}
+                ${isLeft ? "left-60 -mt-20" : ""}
+                ${isRight ? "right-52 -mt-20" : ""}
                 cursor-pointer hover:brightness-110 hover:drop-shadow-xl
               `}
               style={{

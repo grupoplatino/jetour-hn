@@ -62,6 +62,10 @@ import x70gallery1 from '@root/public/img/X70 Plus/Foto 01.webp';
 import x70gallery2 from '@root/public/img/X70 Plus/Foto 02.webp';
 import x70gallery3 from '@root/public/img/X70 Plus/Foto 03.webp';
 import x70gallery4 from '@root/public/img/X70 Plus/Foto 04.webp';
+import x70FirstSplitImage1 from '@root/public/img/X70 Plus/First Split Image - Image 1.png';
+import x70FirstSplitImage2 from '@root/public/img/X70 Plus/First Split Image - Image 2.png';
+import x70SecondSplitImage1 from '@root/public/img/X70 Plus/Second Split Image - Image 1.png';
+import x70SecondSplitImage2 from '@root/public/img/X70 Plus/Second Split Image - Image 2.png';
 
 import x50CarSelectorImage from '@root/public/img/X50/x50-360BAI_00005.webp';
 
@@ -73,6 +77,9 @@ import x50WhiteImage from '@root/public/img/X50/x50-360BAI_00005.webp';
 import x50BlackImage from '@root/public/img/X50/x50-360HEI_00005.webp';
 import x50SplitSection1Image1 from '@root/public/img/X50/c (5).webp';
 import x50SplitSection1Image2 from '@root/public/img/X50/Console.webp';
+import x50SplitSectionImage1 from '@root/public/img/X50/First Split Section - Image 1.png';
+import x50SplitSectionImage2 from '@root/public/img/X50/First Split Section - Image 2.png';
+import x50SplitSection2Image2 from '@root/public/img/X50/Second Split Section - Image 2.png';
 
 import x50FirstSpecImage from '@root/public/img/X50/Blue&grey.webp';
 import x50ThirdSpecImage from '@root/public/img/X50/HAI_6221.webp';
@@ -82,6 +89,8 @@ import x50SecondGalleryImage from '@root/public/img/X50/Dual Screen.webp';
 import x50FourthGalleryImage from '@root/public/img/X50/60 drgee front right angle.png';
 
 import x50SplitSection2Image1 from '@root/public/img/X50/360° Panoramic Reversing Camera&180° Transparent Chassis.webp';
+import x50Feature1 from '@root/public/img/X50/Feature 1.png';
+import x50Feature2 from '@root/public/img/X50/Feature 2.png';
 
 // Importación de datos de especificaciones
 
@@ -103,6 +112,8 @@ interface SplitImageSection {
   leftSpacing?: string;
   rightSpacing?: string;
   textLeft?: boolean;
+  imageContainLeft?: boolean;
+  imageContainRight?: boolean;
 }
 
 interface FeatureItem {
@@ -607,17 +618,25 @@ export const vehiclesData: Record<string, VehicleData> = {
     splitSections: [
       // Placeholder para Dashing
       {
-        image1: x50SplitSection1Image1,
-        image2: x50SplitSection1Image2,
+        image1: x50SplitSectionImage1,
+        image2: x50SplitSectionImage2,
         title: 'TAMAÑO Y DISEÑO',
-        text: 'El X50 se destaca por su interior, al igual que por sus dimensiones exteriores, con un diseño estilizado y detalles de alta calidad. Un espacio muy bien aprovechado, ideal para tí quien piensa en la seguridad y es amante a la tecnología.'
+        text: 'El X50 se destaca por su interior, al igual que por sus dimensiones exteriores, con un diseño estilizado y detalles de alta calidad. Un espacio muy bien aprovechado, ideal para tí quien piensa en la seguridad y es amante a la tecnología.',
+        leftSpacing: '-40rem',
+        rightSpacing: '20rem',
+        whiteText: true,
+        imageContainRight: true
       },
       {
         image1: x50SplitSection2Image1,
-        image2: x50SplitSection1Image2,
+        image2: x50SplitSection2Image2,
         title: 'DISFRUTA SUS DETALLES',
         text: 'El Jetour X50 ofrece comodidad con asientos revestidos en cuero sintético, y una amplia fila de asientos. Este auto es perfecto para salir y disfrutar del día y la noche, junto a tu familia o amigos.',
-        brochureUrl: 'https://platinosoftware.blob.core.windows.net/auto-aliados/Ficha_tecnica_x50.pdf'
+        leftSpacing: '-35rem',
+        rightSpacing: '20rem',
+        brochureUrl: 'https://www.jetour.com.co/brochure/X50.pdf',
+        whiteText: true,
+        imageContainRight: true
       }
     ],
     featuresSections: {
@@ -625,7 +644,7 @@ export const vehiclesData: Record<string, VehicleData> = {
       items: [
         // Placeholder para Dashing
         {
-          image: x50SplitSection1Image2,
+          image: x50Feature1,
           label: 'CAMBIO PRECISO, CONTROL ABSOLUTO'
         },
         {
@@ -633,7 +652,7 @@ export const vehiclesData: Record<string, VehicleData> = {
           label: 'PANTALLA CENTRAL DE 10.3'
         },
         {
-          image: x50ThirdSpecImage,
+          image: x50Feature2,
           label: 'DISTANCIA ENTRE EJES EXTENDIDA'
         }
       ]
@@ -722,9 +741,14 @@ export const vehiclesData: Record<string, VehicleData> = {
       ],
       interiorImagePath: [
         {
-          path: '/img/X50/Interior-2/Blue&grey/Blue&grey (1).webp',
-          colorName: 'Blue & Grey',
+          path: '/img/X50/Interior-2/Blue&grey/Blue&grey.jpg',
+          colorName: 'blue',
           hexColor: '#2E3A5F'
+        },
+        {
+          path: '/img/X50/Interior-2/Black&Red/Black&Red.jpg',
+          colorName: 'black',
+          hexColor: '#000000'
         }
       ],
       defaultColorIndex: 0
@@ -778,21 +802,27 @@ export const vehiclesData: Record<string, VehicleData> = {
     },
     splitSections: [
       {
-        image1: x70secondSplitImage,
-        image2: x70secondSplitImage,
+        image1: x70FirstSplitImage1,
+        image2: x70FirstSplitImage2,
         title: 'SEGURIDAD ANTE TODO',
         text: 'La X70 Plus cuenta con cuatro airbags (frontales y laterales), ISOFIX, sistema de control de tracción y estabilidad, sistema de frenado AUTOHOLD, sistema de monitoreo de puntos ciegos, entre otros equipos que hacen de esta una SUV segura y confiable.',
         whiteText: true,
-        textLeft: true
+        textLeft: true,
+        leftSpacing: '-15rem',
+        rightSpacing: '20rem',
+        imageContainRight: true
       },
       {
-        image1: x70firstSplitImage,
-        image2: x70firstSplitImage,
+        image1: x70SecondSplitImage1,
+        image2: x70SecondSplitImage2,
         title: 'Tecnología espacial',
         text: 'La X70 PLUS está equipada con sistema de visión 360, asientos forrados, un excelente sistema de infoentretenimiento con pantalla de 10.25” y cargador inalámbrico para teléfonos.',
         whiteText: true,
         textLeft: true,
-        brochureUrl: 'https://platinosoftware.blob.core.windows.net/auto-aliados/Ficha_tecnica_x70plus.pdf'
+        leftSpacing: '-24rem',
+        rightSpacing: '20rem',
+        imageContainRight: true,
+        brochureUrl: 'https://www.jetour.com.co/brochure/X50.pdf'
       }
     ],
     featuresSections: {
