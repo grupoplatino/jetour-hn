@@ -48,6 +48,8 @@ export default function VehicleDetailPage({ carData, showTestDriveButton = true 
           leftSpacing={section.leftSpacing && section.leftSpacing}
           rightSpacing={section.rightSpacing && section.rightSpacing}
           textLeft={section.textLeft ? true : false}
+          imageContainLeft={section.imageContainLeft ? true : false}
+          imageContainRight={section.imageContainRight ? true : false}
         />
       ))}
 
