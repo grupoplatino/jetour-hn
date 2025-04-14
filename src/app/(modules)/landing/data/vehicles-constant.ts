@@ -80,6 +80,7 @@ import x50SplitSection2Image2 from '@root/public/img/X50/Second Split Section - 
 
 import x50FirstSpecImage from '@root/public/img/X50/Blue&grey.webp';
 import x50ThirdSpecImage from '@root/public/img/X50/HAI_6221.webp';
+import x50SinglePictureSection from '@root/public/img/X50/Seguridad & Respaldo.jpg';
 
 import x50FirstGalleryImage from '@root/public/img/X50/Left 45 degree angle view.webp';
 import x50SecondGalleryImage from '@root/public/img/X50/Dual Screen.webp';
@@ -597,6 +598,12 @@ export const vehiclesData: Record<string, VehicleData> = {
         color: 'white',
         colorName: 'Blanco',
         hexColor: '#FFFFFF'
+      },
+      {
+        carImage: x50WhiteImage,
+        color: 'Blue',
+        colorName: 'Azul',
+        hexColor: '#9AC7E5'
       }
     ],
     features: [
@@ -658,7 +665,7 @@ export const vehiclesData: Record<string, VehicleData> = {
     },
     singlePictureSection: {
       title: 'SEGURIDAD Y RESPALDO',
-      image: x50ThirdSpecImage
+      image: x50SinglePictureSection
     },
     gallery: [
       // Placeholder para Dashing
@@ -669,10 +676,10 @@ export const vehiclesData: Record<string, VehicleData> = {
     ],
     specs: {
       'Características principales': {
-        Motor: 'MOTOR 1.5L',
-        Pantalla: 'PANTALLA CENTRAL DUAL DE 20.5 PULGADAS',
-        Cámara: 'CÁMARA DE VISIÓN 360°',
-        Seguridad: '6 BOLSAS DE AIRE'
+        Motor: 'Motor 1.5 L turbo',
+        Pantalla: 'Pantalla central dual de 20.5 pulgadas',
+        Cámara: 'Cámara de visión 360°',
+        Seguridad: '6 bolsas de aire'
       },
       'Diseño y estilo exterior': {
         Luces: 'Luces delanteras LED y de encendido automático',
@@ -680,7 +687,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         Espejos: 'Espejos retrovisores eléctricos y abatibles',
         Antena: 'Antena tiburón',
         Spoiler: 'Spoiler trasero',
-        Rines: 'RINES DE LUJO DE 18"'
+        Rines: 'Rines de lujo de 18"'
       },
       'Comodidad interior': {
         Asientos: 'Asientos tapizados en cuero sintético',
@@ -736,11 +743,17 @@ export const vehiclesData: Record<string, VehicleData> = {
           hex: '#000000',
           folderName: 'black',
           class: 'bg-[#000000]'
+        },
+        {
+          name: 'blue',
+          hex: '#8399B7',
+          folderName: 'blue',
+          class: 'bg-[#8399B7]'
         }
       ],
       interiorImagePath: [
         {
-          path: '/img/X50/Interior-2/Blue&grey/Blue&grey.jpg',
+          path: '/img/X50/Interior-2/Blue&grey/Blue&grey (1).webp',
           colorName: 'blue',
           hexColor: '#2E3A5F'
         },
