@@ -7,6 +7,7 @@ import { CarThemeKey, carThemes, ThemeCars } from '../data/theme-definitions';
 
 // Define the interface for a single section
 interface SectionData {
+  imageLeftExtraClassName?: string;
   backgroundImage: string | StaticImageData;
   logo: string | StaticImageData;
   title: string;
@@ -86,7 +87,13 @@ export default function VideoHeroCarousel({
             opacity: 1 // You could add more sophisticated transition if needed
           }}
         >
-          <Image className="object-cover w-full h-full md:-ml-[400px] lg:-ml-[600px]" src={currentSection.backgroundImage} priority fill alt="Background" />
+          <Image
+            className={cn('object-contain w-full h-full md:-ml-[400px] lg:-ml-[600px]', currentSection.imageLeftExtraClassName)}
+            src={currentSection.backgroundImage}
+            priority
+            fill
+            alt="Background"
+          />
         </div>
 
         {/* Logo y texto superpuestos en la sección izquierda */}

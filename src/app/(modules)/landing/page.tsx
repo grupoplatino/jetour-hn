@@ -28,7 +28,7 @@ export default function LandingPage() {
       <TestDriveButton carTheme={carTheme} />
 
       <VideoHeroSection
-        extraClassName="mt-[50px]"
+        extraClassName="mt-[40px] lg:mt-[50px]"
         sections={[
           {
             backgroundImage: t2LandingBackground,
@@ -42,6 +42,7 @@ export default function LandingPage() {
             }
           },
           {
+            imageLeftExtraClassName: 'md:-ml-[0] lg:-ml-[400px]',
             backgroundImage: dashingLandingBackground,
             logo: dashingLandingLogo,
             title: 'DISEÑADA PARA SATISFACER A LOS MAS EXIGENTES',

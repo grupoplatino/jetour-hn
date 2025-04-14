@@ -27,8 +27,6 @@ export default function SplitImageSection({
   carModelName,
   brochureUrl,
   textWhite,
-  leftSpacing,
-  rightSpacing,
   textLeft,
   imageContainLeft,
   imageContainRight
@@ -36,19 +34,16 @@ export default function SplitImageSection({
   const theme = carThemes[carTheme];
 
   return (
-    <section className="relative h-screen w-full flex flex-col justify-center items-center px-4 sm:px-8 md:px-16">
+    <section className="relative w-full flex flex-col gap-y-8 justify-center items-center px-4 sm:px-8 md:px-16">
       {/* Título de la sección */}
-      <h1
-        className="absolute top-8 md:top-12 left-4 md:left-16 text-2xl md:text-3xl lg:text-4xl font-bold uppercase z-10"
-        style={{ color: theme.colors.primary }}
-      >
+      <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold uppercase mr-auto" style={{ color: theme.colors.primary }}>
         {sectionTitle}
       </h1>
 
-      <figure className="relative w-full h-[70vh] sm:h-[60vh] md:h-[70vh] flex items-center justify-between">
-        {/* Imagen izquierda con overlay para mejor legibilidad del texto */}
-        {image1 !== image2 ? (
-          <>
+      {/* Imagen izquierda con overlay para mejor legibilidad del texto */}
+      {image1 !== image2 ? (
+        <>
+          <figure className="relative w-full h-[70vh] sm:h-[60vh] md:h-[70vh] flex items-center justify-between">
             <div
               className="absolute top-0 z-10 left-0 w-full h-full overflow-hidden"
               style={{
@@ -107,10 +102,12 @@ export default function SplitImageSection({
                 </div>
               </a>
             )}
-          </>
-        ) : (
-          <>
-            <Image src={image1} alt="Image Section" width={200} height={200} className="w-full h-full" />
+          </figure>
+        </>
+      ) : (
+        <>
+          <figure className="h-[900px] relative mx-auto w-full">
+            <Image src={image1} alt="Image Section" width={200} height={200} className="w-full mx-auto" />
             {/* Texto de la sección */}
             <div
               className={`absolute top-2 ${textLeft ? 'left-8 md:left-16 lg:left-24 text-start' : 'right-4'} text-right ${
@@ -152,9 +149,9 @@ export default function SplitImageSection({
                 </div>
               </a>
             )}
-          </>
-        )}
-      </figure>
+          </figure>
+        </>
+      )}
     </section>
   );
 }
