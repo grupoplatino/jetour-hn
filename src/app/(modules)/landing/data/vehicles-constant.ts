@@ -284,7 +284,7 @@ export const vehiclesData: Record<string, VehicleData> = {
       'Parámetros básicos': {
         'Dimensiones (mm)': '4785 x 2006 x 1880',
         Capacidad: '5 pasajeros',
-        'Colores exteriores': 'Blanco, Gris Claro, Negro, Arena, Cyan'
+        'Colores exteriores': 'Blanco, gris claro, negro, arena, cyan'
       },
       Motor: {
         Tipo: '2.0 Turbo',
@@ -300,7 +300,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         Ajustes: 'Asientos delanteros con ajuste eléctrico',
         Climatización: 'Asientos delanteros con calefacción y enfriamiento',
         Iluminación: 'Luces de ambiente interior',
-        'Colores interiores': 'Color café, Negro'
+        'Colores interiores': 'Color café, negro'
       },
       'Funcionalidad y tecnología': {
         Techo: 'Panorámico y sunroof',
@@ -497,7 +497,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         Espejos: 'Espejos retrovisores con ajuste eléctrico y desempañables',
         Techo: 'Techo Panorámico y Sunroof',
         Sensores: 'Sensor de Lluvia',
-        'Colores disponibles': 'Blanco, Gris, Azul, Negro'
+        'Colores disponibles': 'Blanco, gris, azul, negro'
       },
       'Confort y comodidad': {
         Llave: 'Llave de entrada a distancia',
