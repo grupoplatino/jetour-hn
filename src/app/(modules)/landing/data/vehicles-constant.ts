@@ -114,6 +114,7 @@ interface SplitImageSection {
   textLeft?: boolean;
   imageContainLeft?: boolean;
   imageContainRight?: boolean;
+  leftImageClassName?: string;
 }
 
 interface FeatureItem {
@@ -803,7 +804,8 @@ export const vehiclesData: Record<string, VehicleData> = {
         leftSpacing: '-40rem',
         rightSpacing: '20rem',
         whiteText: true,
-        imageContainRight: true
+        imageContainRight: true,
+        leftImageClassName: '!h-auto -mt-28'
       },
       {
         image1: x50SplitSection2Image1,

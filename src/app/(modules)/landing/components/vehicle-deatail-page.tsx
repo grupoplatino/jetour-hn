@@ -50,6 +50,7 @@ export default function VehicleDetailPage({ carData, showTestDriveButton = true 
           textLeft={section.textLeft ? true : false}
           imageContainLeft={section.imageContainLeft ? true : false}
           imageContainRight={section.imageContainRight ? true : false}
+          leftImageClassName={section.leftImageClassName}
         />
       ))}
 

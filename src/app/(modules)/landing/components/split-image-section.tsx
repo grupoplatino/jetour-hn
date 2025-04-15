@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { StaticImageData } from 'next/image';
 import { carThemes } from '../data/theme-definitions';
+import { cn } from '@/lib/utils';
 
 interface SplitImageSectionProps {
   image1: StaticImageData | string;
@@ -16,6 +17,7 @@ interface SplitImageSectionProps {
   textLeft?: boolean;
   imageContainLeft?: boolean;
   imageContainRight?: boolean;
+  leftImageClassName?: string;
 }
 
 export default function SplitImageSection({
@@ -29,7 +31,8 @@ export default function SplitImageSection({
   textWhite,
   textLeft,
   imageContainLeft,
-  imageContainRight
+  imageContainRight,
+  leftImageClassName
 }: SplitImageSectionProps) {
   const theme = carThemes[carTheme];
 
@@ -53,7 +56,12 @@ export default function SplitImageSection({
               {/* {image1 !== image2 && (
                 <div className="absolute inset-0 bg-black/30 z-10"></div>
               )} */}
-              <Image className={`w-[60%] h-full ${imageContainLeft ? 'object-cover' : 'object-cover'}`} src={image1} alt="Car View 1" placeholder="blur" />
+              <Image
+                className={cn(`w-[60%] h-full ${imageContainLeft ? 'object-cover' : 'object-cover'}`, leftImageClassName)}
+                src={image1}
+                alt="Car View 1"
+                placeholder="blur"
+              />
             </div>
 
             {/* Imagen derecha */}
@@ -65,7 +73,7 @@ export default function SplitImageSection({
             <div
               className={`absolute top-2 ${textLeft ? 'left-8 md:left-16 lg:left-20 text-start' : image1 !== image2 ? 'left-20' : 'right-4'} text-right ${
                 textWhite ? 'text-white drop-shadow-lg' : 'text-black'
-              } font-bold max-w-[40rem] z-20`}
+              } font-bold max-w-[44rem] z-20`}
             >
               <p className={`text-xs -ml-4 drop-shadow-lg -mt-0 md:-mt-0 w-32 md:text-lg md:text-right md:w-64 lg:w-full ${theme.colors.sectionText}`}>
                 {sectionText}
