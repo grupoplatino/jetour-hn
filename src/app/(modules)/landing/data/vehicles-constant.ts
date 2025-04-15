@@ -816,7 +816,8 @@ export const vehiclesData: Record<string, VehicleData> = {
         rightSpacing: '20rem',
         brochureUrl: 'https://platinosoftware.blob.core.windows.net/auto-aliados/Ficha_tecnica_x50.pdf',
         whiteText: true,
-        imageContainRight: true
+        imageContainRight: true,
+        leftImageClassName: 'h-[700px]'
       }
     ],
     featuresSections: {

@@ -71,13 +71,11 @@ export default function SplitImageSection({
 
             {/* Texto de la sección */}
             <div
-              className={`absolute top-2 ${textLeft ? 'left-8 md:left-16 lg:left-20 text-start' : image1 !== image2 ? 'left-20' : 'right-4'} text-right ${
+              className={`absolute top-2 ${textLeft ? '' : image1 !== image2 ? '' : ''} text-right ${
                 textWhite ? 'text-white drop-shadow-lg' : 'text-black'
-              } font-bold max-w-[44rem] z-20`}
+              } font-bold max-w-[54%] z-20 text-right px-3`}
             >
-              <p className={`text-xs -ml-4 drop-shadow-lg -mt-0 md:-mt-0 w-32 md:text-lg md:text-right md:w-64 lg:w-full ${theme.colors.sectionText}`}>
-                {sectionText}
-              </p>
+              <p className={`text-xs drop-shadow-lg md:text-lg md:text-right md:w-64 lg:w-full ${theme.colors.sectionText}`}>{sectionText}</p>
             </div>
 
             {/* Botón para descargar brochure */}
