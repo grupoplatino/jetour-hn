@@ -148,8 +148,9 @@ export function Footer({ primaryColor = '#FF7A00' }: FooterProps) {
               <div>
                 <h4 className="font-semibold mb-2">Visítanos</h4>
                 <p className="text-sm">San Pedro Sula, Honduras</p>
-                <p className="text-sm">Lunes a Viernes: 9am - 6pm</p>
-                <p className="text-sm">Sábados: 9am - 2pm</p>
+                <p className="text-sm">Lunes a Viernes: 8:00 AM - 6:00 PM</p>
+                <p className="text-sm">Sábados: 8:00 AM - 4:00 PM</p>
+                <p className="text-sm">Domingo: Cerrado</p>
               </div>
             </div>
           </div>
@@ -162,13 +163,13 @@ export function Footer({ primaryColor = '#FF7A00' }: FooterProps) {
           <div className="text-sm mb-4 md:mb-0">© {currentYear} JETOUR Auto. Todos los derechos reservados.</div>
 
           <div className="flex gap-6 text-sm">
-            <Link href="/landing/politica-de-privacidad" className="hover:text-gray-300 transition-colors">
+            <Link href="/" className="hover:text-gray-300 transition-colors">
               Política de Privacidad
             </Link>
-            <Link href="/landing/cookies" className="hover:text-gray-300 transition-colors">
+            <Link href="/" className="hover:text-gray-300 transition-colors">
               Cookies
             </Link>
-            <Link href="/landing/terminos-y-condiciones" className="hover:text-gray-300 transition-colors">
+            <Link href="/" className="hover:text-gray-300 transition-colors">
               Términos y Condiciones
             </Link>
           </div>

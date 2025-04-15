@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { MapPin, Phone, MessageSquare, Clock } from "lucide-react";
 import ContactForm from "../components/contact-form";
-import heroImage from "@root/public/img/X50/c (5).jpg";
+import heroImage from "@root/public/img/X50/c (5).webp";
 import WhatsAppButton from "../components/whats-app-button";
 import TestDriveButton from "../components/test-drive-button";
 

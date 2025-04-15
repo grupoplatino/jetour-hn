@@ -215,7 +215,7 @@ const vehicleData = [
       ],
     },
     singleImageSection: {
-      title: "SEGURIDAD Y RESPALDO PARA DISFRUTAR EL VIAJE",
+      title: "SEGURIDAD Y RESPALDO",
       image: "/img/X50/HAI_6221.jpg",
     },
     carGallery: [
@@ -365,7 +365,7 @@ const vehicleData = [
       ],
     },
     singleImageSection: {
-      title: "SEGURIDAD Y RESPALDO PARA DISFRUTAR EL VIAJE",
+      title: "SEGURIDAD Y RESPALDO",
       image: "/img/T2/Seaside scenery.jpg",
     },
     carGallery: [
@@ -531,7 +531,7 @@ const vehicleData = [
       ],
     },
     singleImageSection: {
-      title: "SEGURIDAD Y RESPALDO PARA DISFRUTAR EL VIAJE",
+      title: "SEGURIDAD Y RESPALDO",
       image: "/img/X70 Plus/0Y6H8571_1final.jpg",
     },
     carGallery: [

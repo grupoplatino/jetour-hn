@@ -5,18 +5,18 @@ import { StaticImageData } from "next/image";
 
 // Importaciones para T2
 
-import t2Image from "@root/public/img/T2/T2 Jetour.jpg";
+import t2Image from "@root/public/img/T2/T2 Jetour (2).webp";
 import t2Logo from "@root/public/img/T2/Logo.png";
 import t2BlackImage from "@root/public/img/T2/car black 0022 (1).webp";
 import t2WhiteImage from "@root/public/img/T2/car white 0022.webp";
 import t2NeutralImage from "@root/public/img/T2/car.0022.webp";
 import t2SilverImage from "@root/public/img/T2/car.silver 0022.png";
-import t2GrayImage from "@root/public/img/T2/car gray 0022.png";
+import t2BlueImage from "@root/public/img/T2/car blue 0022.webp";
 import dashingWhiteImage from "@root/public/img/DASHING/JETOUR_blanco_cam360_out.0003.webp";
 import dashingGrayImage from "@root/public/img/DASHING/JETOUR_gris_cam360_out.0003.webp";
 import dashingBlackImage from "@root/public/img/DASHING/JETOUR_negro_cam360_out.0003.webp";
 import dashingImageSection from "@root/public/img/DASHING/15.8 in. Digital screen.webp";
-import dashingSingleImageSection from "@root/public/img/DASHING/DISEÑO EXCEPCIONAL Y DEPORTIVO.jpg";
+import dashingSingleImageSection from "@root/public/img/DASHING/DISEÑO EXCEPCIONAL Y DEPORTIVO.webp";
 import dashingImage01 from "@root/public/img/DASHING/Foto 01.webp";
 import dashingImage02 from "@root/public/img/DASHING/Foto 02.webp";
 import dashingImage03 from "@root/public/img/DASHING/Foto 03.webp";
@@ -25,9 +25,9 @@ import x70PlusBlue from "@root/public/img/X70 Plus/X70 Plus 45 degree Blue.webp"
 import x70PlusWhite from "@root/public/img/X70 Plus/X70 Plus 45 degree White.webp";
 import x70PlusBlack from "@root/public/img/X70 Plus/45 degree front left angle Black.webp";
 import X70PlusSingleImage from "@root/public/img/X70 Plus/Estabilidad y Seguridad.jpg";
-import x70FeatureImage1 from "@root/public/img/X70 Plus/featuresSection1.webp";
-import x70FeatureImage2 from "@root/public/img/X70 Plus/Techo Corredizo.jpg";
-import x70FeatureImage3 from "@root/public/img/X70 Plus/Distancia Ejes.jpg";
+import x70FeatureImage1 from "@root/public/img/X70 Plus/Modelado Palanca.webp";
+import x70FeatureImage2 from "@root/public/img/X70 Plus/Techo Corredizo.webp";
+import x70FeatureImage3 from "@root/public/img/X70 Plus/Distancia Ejes.webp";
 import rubikKey from "@root/public/img/DASHING/Rubik_s cube key.webp";
 import headAcoustics from "@root/public/img/DASHING/Head acoustics(optional).webp";
 import wirelessCharging from "@root/public/img/DASHING/40 watts of wireless charging.webp";
@@ -40,14 +40,14 @@ import t2SkeletonImage from "@root/public/img/T2/Steel skeletonized body.webp";
 import t2TopSkeletonImage from "@root/public/img/T2/Matrix protected roof.webp";
 import t2SecondSeatsRowImage from "@root/public/img/T2/Second row seats faced down.webp";
 import t2ProximityImage from "@root/public/img/T2/Forward-collision warning system copia.webp";
-import multilevelModel from "@root/public/img/T2/Modelado tridimensional multinivel.jpg";
-import superLargeAxisDistance from "@root/public/img/T2/Distancia entre ejes súper larga.jpg";
+import multilevelModel from "@root/public/img/T2/Modelado tridimensional multinivel.webp";
+import superLargeAxisDistance from "@root/public/img/T2/Distancia entre ejes súper larga.webp";
 
 // Importaciones para Dashing (ejemplo)
 import dashingImage from "@root/public/img/DASHING/Dashing Jetour.webp";
 import dashingLogo from "@root/public/img/DASHING/Logo.png";
-import backtruckWhite from "@root/public/img/DASHING/JETOUR_JX65_cam010 white.jpg";
-import surroundHifi from "@root/public/img/DASHING/Surround Hi-fi 8 speaker.jpg";
+import backtruckWhite from "@root/public/img/DASHING/JETOUR_JX65_cam010 white.webp";
+import surroundHifi from "@root/public/img/DASHING/Surround Hi-fi 8 speaker.webp";
 
 // Importaciones para X50 (ejemplo)
 import x50Image from "@root/public/img/X50/X50 Jetour.webp";
@@ -58,14 +58,14 @@ import x70Image from "@root/public/img/X70 Plus/X70 Jetour.webp";
 import x70Logo from "@root/public/img/X70 Plus/Logo.webp";
 import { CarThemeKey } from "./theme-definitions";
 
+import x70gallery1 from "@root/public/img/X70 Plus/Foto 01.webp";
+import x70gallery2 from "@root/public/img/X70 Plus/Foto 02.webp";
+import x70gallery3 from "@root/public/img/X70 Plus/Foto 03.webp";
+import x70gallery4 from "@root/public/img/X70 Plus/Foto 04.webp";
 import x70FirstSplitImage1 from "@root/public/img/X70 Plus/First Split Image - Image 1.png";
 import x70FirstSplitImage2 from "@root/public/img/X70 Plus/First Split Image - Image 2.png";
 import x70SecondSplitImage1 from "@root/public/img/X70 Plus/Second Split Image - Image 1.png";
 import x70SecondSplitImage2 from "@root/public/img/X70 Plus/Second Split Image - Image 2.png";
-import x70gallery1 from "@root/public/img/X70 Plus/Foto 01.jpg";
-import x70gallery2 from "@root/public/img/X70 Plus/Foto 02.jpg";
-import x70gallery3 from "@root/public/img/X70 Plus/Foto 03.jpg";
-import x70gallery4 from "@root/public/img/X70 Plus/Foto 04.jpg";
 
 import x50CarSelectorImage from "@root/public/img/X50/x50-360BAI_00005.webp";
 
@@ -75,22 +75,25 @@ import dashingSelectorImage from "@root/public/img/DASHING/JETOUR_azul_cam360_ou
 
 import x50WhiteImage from "@root/public/img/X50/x50-360BAI_00005.webp";
 import x50BlackImage from "@root/public/img/X50/x50-360HEI_00005.webp";
-import x50SplitSection1Image2 from "@root/public/img/X50/Console.jpg";
+import x50BlueImage from "@root/public/img/X50/x50-BLUE.webp";
+import x50SplitSection1Image2 from "@root/public/img/X50/Console.webp";
 import x50SplitSectionImage1 from "@root/public/img/X50/First Split Section - Image 1.png";
 import x50SplitSectionImage2 from "@root/public/img/X50/First Split Section - Image 2.png";
-import x50SplitSection2Image1 from "@root/public/img/X50/Second Split Section - Image 1.png";
 import x50SplitSection2Image2 from "@root/public/img/X50/Second Split Section - Image 2.png";
 
-import x50FirstSpecImage from "@root/public/img/X50/Blue&grey.jpg";
-import x50ThirdSpecImage from "@root/public/img/X50/HAI_6221.jpg";
+import x50FirstSpecImage from "@root/public/img/X50/Blue&grey.webp";
+import x50ThirdSpecImage from "@root/public/img/X50/HAI_6221.webp";
+import x50SinglePictureSection from "@root/public/img/X50/Seguridad & Respaldo.jpg";
 
 import x50FirstGalleryImage from "@root/public/img/X50/Left 45 degree angle view.jpg";
 import x50SecondGalleryImage from "@root/public/img/X50/Dual Screen.jpg";
 import x50FourthGalleryImage from "@root/public/img/X50/60 drgee front right angle.png";
-import x50BlueImage from "@root/public/img/X50/x50-BLUE.png";
 
+import x50SplitSection2Image1 from "@root/public/img/X50/360° Panoramic Reversing Camera&180° Transparent Chassis.jpg";
 import x50Feature1 from "@root/public/img/X50/Feature 1.png";
 import x50Feature2 from "@root/public/img/X50/Feature 2.png";
+
+import t2NewSinglePictureImage from "@root/public/img/T2/Seguridad y Respaldo.jpg";
 
 // Importación de datos de especificaciones
 
@@ -120,6 +123,7 @@ interface SplitImageSection {
   textLeft?: boolean;
   imageContainLeft?: boolean;
   imageContainRight?: boolean;
+  leftImageClassName?: string;
 }
 
 interface FeatureItem {
@@ -138,7 +142,7 @@ interface Visualizer {
     folderName: string;
     class: string;
   }[];
-  interiorImagePath: string[];
+  interiorImagePath: { path: string; hexColor: string; colorName: string }[];
   defaultColorIndex: number;
 }
 
@@ -191,7 +195,7 @@ export interface VehicleData {
 // Definición de datos de vehículos
 export const vehiclesData: Record<string, VehicleData> = {
   t2: {
-    carSelecctorImage: t2WhiteImage,
+    carSelecctorImage: t2NeutralImage,
     id: "t2",
     modelName: "T2",
     tagline: "AVENTURAS SIN LÍMITES",
@@ -227,10 +231,10 @@ export const vehiclesData: Record<string, VehicleData> = {
         hexColor: "#8592a2",
       },
       {
-        carImage: t2GrayImage,
-        color: "Gray",
-        colorName: "Gris",
-        hexColor: "#5c6166",
+        carImage: t2BlueImage,
+        color: "Misty Cyan",
+        colorName: "Cyan",
+        hexColor: "#336caf",
       },
     ],
     features: [
@@ -245,7 +249,7 @@ export const vehiclesData: Record<string, VehicleData> = {
       { name: "DESPLAZAMIENTO (ML)", value: 1998, position: "bottomright" },
     ],
     video: {
-      url: "/video/Video-T2/Dubai Night Tour.mp4",
+      url: "/video/Video-T2/T2 TVC-15s-4K.mp4",
       thumbnail: "/img/T2/T2 Jetour.jpg",
     },
     splitSections: [
@@ -261,7 +265,8 @@ export const vehiclesData: Record<string, VehicleData> = {
         image2: extraStorageT2,
         title: "ESTILO POR FUERA Y POR DENTRO",
         text: "La T2 tiene un impresionante tablero, volante multifunción, pantalla touchscreen de 15 pulgadas, parlantes Sony, cargador inalámbrico, interior de lujo con asientos ventilados, luces atmosféricas.",
-        brochureUrl: "https://www.jetour.com.co/brochure/T2.pdf",
+        brochureUrl:
+          "https://platinosoftware.blob.core.windows.net/auto-aliados/Ficha_tecnica_t2_v2.pdf",
         whiteText: true,
         textLeft: true,
       },
@@ -284,8 +289,8 @@ export const vehiclesData: Record<string, VehicleData> = {
       ],
     },
     singlePictureSection: {
-      title: "SEGURIDAD Y RESPALDO PARA DISFRUTAR EL VIAJE",
-      image: securityImage,
+      title: "SEGURIDAD Y RESPALDO",
+      image: t2NewSinglePictureImage,
     },
     gallery: [
       t2SkeletonImage,
@@ -297,7 +302,7 @@ export const vehiclesData: Record<string, VehicleData> = {
       "Parámetros básicos": {
         "Dimensiones (mm)": "4785 x 2006 x 1880",
         Capacidad: "5 pasajeros",
-        "Colores exteriores": "Blanco, Gris Claro, Negro, Arena, Cyan",
+        "Colores exteriores": "Blanco, gris claro, negro, arena, cyan",
       },
       Motor: {
         Tipo: "2.0 Turbo",
@@ -313,7 +318,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         Ajustes: "Asientos delanteros con ajuste eléctrico",
         Climatización: "Asientos delanteros con calefacción y enfriamiento",
         Iluminación: "Luces de ambiente interior",
-        "Colores interiores": "Color Café, Negro",
+        "Colores interiores": "Color café, negro",
       },
       "Funcionalidad y tecnología": {
         Techo: "Panorámico y sunroof",
@@ -331,7 +336,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         "Sistema de ruedas": "Sistema antibloqueo de ruedas",
         "Modos de conducción": "7 modos de conducción",
         Asistentes:
-          "Asistente de ascenso y descenso en pendientes, Asistente de frenado",
+          "Asistente de ascenso y descenso en pendientes, asistente de frenado",
         "Sistema off-road": "Sistema XWD para principiantes en off-road",
         "Capacidad de remolque": "Hasta 1,600 kg (trailer con frenos)",
         Chasis: "Con rigidez torsional de 3100 Nm/deg",
@@ -372,15 +377,23 @@ export const vehiclesData: Record<string, VehicleData> = {
           class: "bg-[#8592a2]",
         },
         {
-          name: "highwayGrey",
-          hex: "#5c6166",
-          folderName: "Highway Grey",
-          class: "bg-[#5c6166]",
+          name: "mistyCyan",
+          hex: "#336caf",
+          folderName: "Misty Cyan",
+          class: "bg-[#336caf]",
         },
       ],
       interiorImagePath: [
-        "/img/T2/Interior/Forward-collision warning system copia.jpg",
-        "/img/T2/Interior/brown.jpg",
+        {
+          path: "/img/T2/Interior/Forward-collision warning system copia (2).webp",
+          colorName: "Negro",
+          hexColor: "#000000",
+        },
+        {
+          path: "/img/T2/Interior/brown.webp",
+          colorName: "Cafe",
+          hexColor: "#654321",
+        },
       ],
       defaultColorIndex: 0,
     },
@@ -450,7 +463,8 @@ export const vehiclesData: Record<string, VehicleData> = {
         image2: surroundHifi,
         title: "VANGUARDIA AL SERVICIO DEL DISEÑO",
         text: `La carrocería de la Dashing de líneas suaves y recetas, se destaca por su diseño deportivo coupé en 3D y su asa inteligente de detección invisible, lo que le otorga una sensación de tecnología futurista.`,
-        brochureUrl: "https://www.jetour.com.co/brochure/T2.pdf",
+        brochureUrl:
+          "https://platinosoftware.blob.core.windows.net/auto-aliados/Ficha_tecnica_dashing.pdf",
         leftSpacing: "-20rem",
         rightSpacing: "16rem",
         whiteText: true,
@@ -503,7 +517,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         Espejos: "Espejos retrovisores con ajuste eléctrico y desempañables",
         Techo: "Techo Panorámico y Sunroof",
         Sensores: "Sensor de Lluvia",
-        "Colores disponibles": "Blanco, Gris, Azul, Negro",
+        "Colores disponibles": "Blanco, gris, azul, negro",
       },
       "Confort y comodidad": {
         Llave: "Llave de entrada a distancia",
@@ -571,14 +585,189 @@ export const vehiclesData: Record<string, VehicleData> = {
         },
       ],
       interiorImagePath: [
-        "/img/DASHING/Dashing 360_/IN/Grey&white/Grey&white.jpg",
-        "/img/DASHING/Dashing 360_/IN/Black&red/Black&red.jpg",
+        {
+          path: "/img/DASHING/Dashing 360_/IN/Grey&white/Grey&white.webp",
+          colorName: "Gris",
+          hexColor: "#808080",
+        },
+        {
+          path: "/img/DASHING/Dashing 360_/IN/Black&red/Black&red.webp",
+          colorName: "Negro",
+          hexColor: "#000000",
+        },
+      ],
+      defaultColorIndex: 0,
+    },
+  },
+
+  x70plus: {
+    carSelecctorImage: x70CarSelectorImage,
+    id: "x70plus",
+    modelName: "X70 Plus",
+    tagline: "INNOVACIÓN Y AMPLITUD REDEFINIDAS",
+    theme: "turquoise",
+    hero: {
+      backgroundImage: x70Image,
+      logo: x70Logo,
+    },
+    // Datos parciales - completar con información real
+    colorModels: [
+      {
+        carImage: x70PlusBlue,
+        color: "Blue",
+        colorName: "Azul",
+        hexColor: "#2E3A5F",
+      },
+      {
+        carImage: x70PlusBlack,
+        color: "Black",
+        colorName: "Negro",
+        hexColor: "#000000",
+      },
+      {
+        carImage: x50WhiteImage,
+        color: "white",
+        colorName: "Blanco",
+        hexColor: "#FFFFFF",
+      },
+    ],
+    features: [
+      { name: "CABALLOS DE FUERZA MÁX.", value: 197, position: "topleft" },
+      { name: "TORQUE MÁXIMO", value: 290, position: "topcenter" },
+      { name: "VELOCIDAD MÁXIMA (KM/H)", value: 180, position: "topright" },
+      {
+        name: "DISTANCIA ENTRE EJES (MM)",
+        value: 2745,
+        position: "bottomleft",
+      },
+      { name: "DESPLAZAMIENTO (ML)", value: 1598, position: "bottomright" },
+    ],
+    video: {
+      url: "/video/Videos-X70-Plus-Web/Video X70 Plus.mp4",
+      thumbnail: "/img/X70 Plus/0Y6H8571_1final.jpg",
+    },
+    splitSections: [
+      {
+        image1: x70FirstSplitImage1,
+        image2: x70FirstSplitImage2,
+        title: "SEGURIDAD ANTE TODO",
+        text: "La X70 Plus cuenta con cuatro airbags (frontales y laterales), ISOFIX, sistema de control de tracción y estabilidad, sistema de frenado AUTOHOLD, sistema de monitoreo de puntos ciegos, entre otros equipos que hacen de esta una SUV segura y confiable.",
+        whiteText: true,
+        textLeft: true,
+        leftSpacing: "-15rem",
+        rightSpacing: "20rem",
+        imageContainRight: true,
+      },
+      {
+        image1: x70SecondSplitImage1,
+        image2: x70SecondSplitImage2,
+        title: "Tecnología espacial",
+        text: "La X70 PLUS está equipada con sistema de visión 360, asientos forrados, un excelente sistema de infoentretenimiento con pantalla de 10.25” y cargador inalámbrico para teléfonos.",
+        whiteText: true,
+        textLeft: true,
+        leftSpacing: "-24rem",
+        rightSpacing: "20rem",
+        imageContainRight: true,
+        brochureUrl:
+          "https://platinosoftware.blob.core.windows.net/auto-aliados/Ficha_tecnica_x70plus.pdf",
+      },
+    ],
+    featuresSections: {
+      title: "COMODIDAD DESDE DONDE LO VEAS",
+      items: [
+        {
+          image: x70FeatureImage1,
+          label: "MODELADO TRIDIMENSIONAL MULTINIVEL",
+        },
+        {
+          image: x70FeatureImage2,
+          label: "TECHO CORREDIZO PANORÁMICO",
+        },
+        {
+          image: x70FeatureImage3,
+          label: "DISTANCIA ENTRE EJES SUPER LARGA",
+        },
+      ],
+    },
+    singlePictureSection: {
+      title: "SEGURIDAD Y RESPALDO",
+      image: X70PlusSingleImage,
+    },
+    gallery: [x70gallery1, x70gallery2, x70gallery3, x70gallery4],
+    specs: {
+      "Diseño y estilo": {
+        Capacidad: "Asientos: 3 filas, 7 pasajeros",
+        Techo: "Sunroof panorámico",
+        Rines: "Rines de lujo",
+        Luces: "Luces delanteras halógenas y traseras LED",
+        Rieles: "Rieles de techo",
+        Antena: "Antena tipo aleta de tiburón",
+        Asientos: "Asientos tapizados en cuero",
+        "Iluminación interior": "Luces de ambiente interior monocromáticas",
+      },
+      "Multimedia y conectividad": {
+        Pantalla: 'Pantalla: 10.25"',
+        Conectividad: "Conectividad: Mirrorlink",
+        Cámara: "Cámara de visión 360° con guías dinámicas",
+        Puertos: "Puertos USB: delanteros y traseros",
+      },
+      Motor: {
+        Tipo: "Motor 1.6L TURBO",
+        Torque: "Torque de 290Nm",
+      },
+      "Seguridad avanzada y asistencia": {
+        Frenos: "Sistema de frenado antibloqueo",
+        Estabilidad: "Control de estabilidad electrónico",
+        "Asistencia conducción": "Asistente de mantenimiento de carril",
+        Monitoreo: "Monitor de punto ciego",
+        Cámara: "Cámara de 360° con modelo 3D",
+        Protección: "6 airbags",
+        "Distribución frenado": "Distribución electrónica de frenado",
+        "Control descenso": "Control de descenso en pendientes",
+        "Seguridad infantil": "Puertas con Child Lock",
+      },
+      "Confort y ajustes": {
+        Climatización: "Aire acondicionado: control digital",
+        Audio: "Sonido: 6 bocinas",
+        Controles: "Botones multifuncionales en el timón",
+        "Asientos ajustables": "Asientos del conductor: ajuste eléctrico",
+      },
+      Colores: {
+        Exteriores: "Negro, blanco, azul",
+        Interiores: "Color negro, rojo",
+      },
+    },
+    visualizer: {
+      title: "VISUALIZADOR 3D",
+      basePath: "/img/X70 Plus/X70PLUS_360",
+      filePattern: "X70PLUS-EXT-{index}.png",
+      imageCount: 36,
+      colors: [
+        {
+          name: "blue",
+          hex: "#4c6280",
+          folderName: "deep-blue",
+          class: "bg-[#4c6280]",
+        },
+        {
+          name: "black",
+          hex: "#000000",
+          folderName: "black",
+          class: "bg-[#000000]",
+        },
+      ],
+      interiorImagePath: [
+        {
+          path: "/img/X70 Plus/X70PLUS_360/INT/X70PLUS-INT.webp",
+          colorName: "black",
+          hexColor: "#000000",
+        },
       ],
       defaultColorIndex: 0,
     },
   },
   x50: {
-    carSelecctorImage: x50CarSelectorImage,
+    carSelecctorImage: x50BlackImage,
     id: "x50",
     modelName: "X50",
     tagline: "DISFRUTA EL VIAJE DE TU VIDA",
@@ -605,8 +794,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         carImage: x50BlueImage,
         color: "Blue",
         colorName: "Azul",
-        hexColor: "#7c92b1",
-        scaleCar: 1,
+        hexColor: "#9AC7E5",
       },
     ],
     features: [
@@ -635,6 +823,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         rightSpacing: "20rem",
         whiteText: true,
         imageContainRight: true,
+        leftImageClassName: "!h-auto -mt-28",
       },
       {
         image1: x50SplitSection2Image1,
@@ -643,9 +832,11 @@ export const vehiclesData: Record<string, VehicleData> = {
         text: "El Jetour X50 ofrece comodidad con asientos revestidos en cuero sintético, y una amplia fila de asientos. Este auto es perfecto para salir y disfrutar del día y la noche, junto a tu familia o amigos.",
         leftSpacing: "-35rem",
         rightSpacing: "20rem",
-        brochureUrl: "https://www.jetour.com.co/brochure/X50.pdf",
+        brochureUrl:
+          "https://platinosoftware.blob.core.windows.net/auto-aliados/Ficha_tecnica_x50.pdf",
         whiteText: true,
         imageContainRight: true,
+        leftImageClassName: "h-[800px] -mt-16 -ml-14",
       },
     ],
     featuresSections: {
@@ -667,8 +858,8 @@ export const vehiclesData: Record<string, VehicleData> = {
       ],
     },
     singlePictureSection: {
-      title: "SEGURIDAD Y RESPALDO PARA DISFRUTAR EL VIAJE",
-      image: x50ThirdSpecImage,
+      title: "SEGURIDAD Y RESPALDO",
+      image: x50SinglePictureSection,
     },
     gallery: [
       // Placeholder para Dashing
@@ -679,10 +870,10 @@ export const vehiclesData: Record<string, VehicleData> = {
     ],
     specs: {
       "Características principales": {
-        Motor: "MOTOR 1.5L",
-        Pantalla: "PANTALLA DUAL DE 20.5 PULGADAS",
-        Cámara: "CÁMARA DE VISIÓN 360°",
-        Seguridad: "6 BOLSAS DE AIRE",
+        Motor: "Motor 1.5 L turbo",
+        Pantalla: "Pantalla central dual de 20.5 pulgadas",
+        Cámara: "Cámara de visión 360°",
+        Seguridad: "6 bolsas de aire",
       },
       "Diseño y estilo exterior": {
         Luces: "Luces delanteras LED y de encendido automático",
@@ -690,7 +881,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         Espejos: "Espejos retrovisores eléctricos y abatibles",
         Antena: "Antena tiburón",
         Spoiler: "Spoiler trasero",
-        Rines: 'RINES DE LUJO DE 18"',
+        Rines: 'Rines de lujo de 18"',
       },
       "Comodidad interior": {
         Asientos: "Asientos tapizados en cuero sintético",
@@ -749,180 +940,23 @@ export const vehiclesData: Record<string, VehicleData> = {
         },
         {
           name: "blue",
-          hex: "#7c92b1",
+          hex: "#8399B7",
           folderName: "blue",
-          class: "bg-[#7c92b1]",
+          class: "bg-[#8399B7]",
         },
       ],
       interiorImagePath: [
-        "/img/X50/Interior-2/Blue&grey/Blue&grey.jpg",
-        "/img/X50/Interior-2/Black&Red/Black&Red.jpg",
-      ],
-      defaultColorIndex: 0,
-    },
-  },
-  x70plus: {
-    carSelecctorImage: x70CarSelectorImage,
-    id: "x70plus",
-    modelName: "X70 Plus",
-    tagline: "INNOVACIÓN Y AMPLITUD REDEFINIDAS",
-    theme: "turquoise",
-    hero: {
-      backgroundImage: x70Image,
-      logo: x70Logo,
-    },
-    // Datos parciales - completar con información real
-    colorModels: [
-      {
-        carImage: x70PlusBlue,
-        color: "Blue",
-        colorName: "Azul",
-        hexColor: "#2E3A5F",
-      },
-      {
-        carImage: x70PlusBlack,
-        color: "Black",
-        colorName: "Negro",
-        hexColor: "#000000",
-      },
-      {
-        carImage: x70PlusWhite,
-        color: "White",
-        colorName: "Blanco",
-        hexColor: "#FFFFFF",
-      },
-    ],
-    features: [
-      { name: "CABALLOS DE FUERZA MÁX.", value: 197, position: "topleft" },
-      { name: "TORQUE MÁXIMO", value: 290, position: "topcenter" },
-      { name: "VELOCIDAD MÁXIMA (KM/H)", value: 180, position: "topright" },
-      {
-        name: "DISTANCIA ENTRE EJES (MM)",
-        value: 2745,
-        position: "bottomleft",
-      },
-      { name: "DESPLAZAMIENTO (ML)", value: 1598, position: "bottomright" },
-    ],
-    video: {
-      url: "/video/Videos-X70-Plus-Web/Video X70 Plus.mp4",
-      thumbnail: "/img/X70 Plus/0Y6H8571_1final.jpg",
-    },
-    splitSections: [
-      {
-        image1: x70FirstSplitImage1,
-        image2: x70FirstSplitImage2,
-        title: "SEGURIDAD ANTE TODO",
-        text: "La X70 Plus cuenta con cuatro airbags (frontales y laterales), ISOFIX, sistema de control de tracción y estabilidad, sistema de frenado AUTOHOLD, sistema de monitoreo de puntos ciegos, entre otros equipos que hacen de esta una SUV segura y confiable.",
-        whiteText: true,
-        textLeft: true,
-        leftSpacing: "-15rem",
-        rightSpacing: "20rem",
-        imageContainRight: true,
-      },
-      {
-        image1: x70SecondSplitImage1,
-        image2: x70SecondSplitImage2,
-        title: "Tecnología espacial",
-        text: "La X70 PLUS está equipada con sistema de visión 360, asientos forrados, un excelente sistema de infoentretenimiento con pantalla de 10.25” y cargador inalámbrico para teléfonos.",
-        whiteText: true,
-        textLeft: true,
-        leftSpacing: "-24rem",
-        rightSpacing: "20rem",
-        imageContainRight: true,
-        brochureUrl: "https://www.jetour.com.co/brochure/X50.pdf",
-      },
-    ],
-    featuresSections: {
-      title: "COMODIDAD DESDE DONDE LO VEAS",
-      items: [
         {
-          image: x70FeatureImage1,
-          label: "MODELADO TRIDIMENSIONAL MULTINIVEL",
+          path: "/img/X50/Interior-2/Blue&grey/Blue&grey (1).webp",
+          colorName: "blue",
+          hexColor: "#2E3A5F",
         },
         {
-          image: x70FeatureImage2,
-          label: "TECHO CORREDIZO PANORÁMICO",
-        },
-        {
-          image: x70FeatureImage3,
-          label: "DISTANCIA ENTRE EJES SUPER LARGA",
+          path: "/img/X50/Interior-2/Black&Red/Black&Red.jpg",
+          colorName: "black",
+          hexColor: "#000000",
         },
       ],
-    },
-    singlePictureSection: {
-      title: "SEGURIDAD Y RESPALDO PARA DISFRUTAR EL VIAJE",
-      image: X70PlusSingleImage,
-    },
-    gallery: [x70gallery1, x70gallery2, x70gallery3, x70gallery4],
-    specs: {
-      "Diseño y estilo": {
-        Capacidad: "Asientos: 3 filas, 7 pasajeros",
-        Techo: "Sunroof panorámico",
-        Rines: "Rines de lujo",
-        Luces: "Luces delanteras halógenas y traseras LED",
-        Rieles: "Rieles de techo",
-        Antena: "Antena tipo aleta de tiburón",
-        Asientos: "Asientos tapizados en cuero",
-        "Iluminación interior": "Luces de ambiente interior monocromáticas",
-      },
-      "Multimedia y conectividad": {
-        Pantalla: 'Pantalla: 10.25"',
-        Conectividad: "Conectividad: Mirrorlink",
-        Cámara: "Cámara de visión 360° con guías dinámicas",
-        Puertos: "Puertos USB: delanteros y traseros",
-      },
-      Motor: {
-        Tipo: "Motor 1.6L TURBO",
-        Torque: "Torque de 290Nm",
-      },
-      "Seguridad avanzada y asistencia": {
-        Frenos: "Sistema de frenado antibloqueo",
-        Estabilidad: "Control de estabilidad electrónico",
-        "Asistencia conducción": "Asistente de mantenimiento de carril",
-        Monitoreo: "Monitor de punto ciego",
-        Cámara: "Cámara de 360° con modelo 3D",
-        Protección: "6 airbags",
-        "Distribución frenado": "Distribución electrónica de frenado",
-        "Control descenso": "Control de descenso en pendientes",
-        "Seguridad infantil": "Puertas con Child Lock",
-      },
-      "Confort y ajustes": {
-        Climatización: "Aire acondicionado: control digital",
-        Audio: "Sonido: 6 bocinas",
-        Controles: "Botones multifuncionales en el timón",
-        "Asientos ajustables": "Asientos del conductor: ajuste eléctrico",
-      },
-      Colores: {
-        Exteriores: "Negro, blanco, azul",
-        Interiores: "Color negro, color rojo",
-      },
-    },
-    visualizer: {
-      title: "VISUALIZADOR 3D",
-      basePath: "/img/X70 Plus/X70PLUS_360",
-      filePattern: "X70PLUS-EXT-{index}.png",
-      imageCount: 36,
-      colors: [
-        {
-          name: "blue",
-          hex: "#4c6280",
-          folderName: "deep-blue",
-          class: "bg-[#4c6280]",
-        },
-        {
-          name: "black",
-          hex: "#000000",
-          folderName: "black",
-          class: "bg-black",
-        },
-        {
-          name: "white",
-          hex: "#FFFFFF",
-          folderName: "white",
-          class: "border border-2",
-        },
-      ],
-      interiorImagePath: ["/img/X70 Plus/X70PLUS_360/INT/X70PLUS-INT.png"],
       defaultColorIndex: 0,
     },
   },

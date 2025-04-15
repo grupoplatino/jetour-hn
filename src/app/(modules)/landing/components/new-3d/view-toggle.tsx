@@ -19,7 +19,7 @@ const ViewToggle: React.FC<ViewToggleProps> = ({ currentView, onViewChange, them
   }
 
   return (
-    <div className="flex items-center gap-x-10 justify-center md:justify-end">
+    <div className="flex items-center gap-x-5 justify-center md:justify-end">
       <button
         onClick={() => onViewChange('exterior')}
         className={clsx('font-bold cursor-pointer transition-all', currentView === 'exterior' ? 'text-3xl md:text-4xl' : 'text-xl md:text-4xl')}

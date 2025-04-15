@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { Calendar, Medal, Users, TrendingUp, Target, Globe } from 'lucide-react';
 import WhatsAppButton from '../components/whats-app-button';
 import TestDriveButton from '../components/test-drive-button';
+import fachadaImage from '@root/public/img/Fachada Jetour.webp';
 
 export default function AboutUsPage() {
   return (
@@ -12,7 +13,7 @@ export default function AboutUsPage() {
 
       {/* Hero Banner */}
       <div className="relative w-full h-[400px] md:h-[500px]">
-        <Image src="/img/about-hero.jpg" alt="JETOUR Concesionaria" fill priority className="object-cover" />
+        <Image src={fachadaImage} alt="JETOUR Concesionaria" fill priority className="object-cover object-center" />
         <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-white">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Nosotros</h1>
           <div className="h-1 w-20 bg-[#FF7A00]"></div>
@@ -42,7 +43,7 @@ export default function AboutUsPage() {
             </Link>
           </div>
           <div className="relative h-[400px] rounded-xl overflow-hidden shadow-xl">
-            <Image src="/img/concesionaria.jpg" alt="Concesionaria JETOUR Honduras" fill className="object-cover" />
+            <Image src={fachadaImage} alt="Concesionaria JETOUR Honduras" fill className="object-cover" />
           </div>
         </div>
       </section>
@@ -313,7 +314,7 @@ export default function AboutUsPage() {
               Contáctanos
             </Link>
             <Link
-              href="/test-drive"
+              href="/landing/contactanos"
               className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white/10 transition-colors"
             >
               Agenda tu Test Drive
