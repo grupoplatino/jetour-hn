@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import { useState, useEffect } from 'react';
 import clsx from 'clsx';
@@ -8,9 +8,10 @@ import { X } from 'lucide-react';
 interface TestDriveButtonProps {
   carTheme: CarThemeKey;
   fixed?: boolean;
+  carModel?: string; // Añadimos el modelo de carro para personalizar el mensaje
 }
 
-const TestDriveButton: React.FC<TestDriveButtonProps> = ({ carTheme, fixed = true }) => {
+const TestDriveButton: React.FC<TestDriveButtonProps> = ({ carTheme, fixed = true, carModel = 'Jetour' }) => {
   const theme = carThemes[carTheme].colors;
   const [isVisible, setIsVisible] = useState(true);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -20,23 +21,24 @@ const TestDriveButton: React.FC<TestDriveButtonProps> = ({ carTheme, fixed = tru
     const checkScreenSize = () => {
       setIsSmallScreen(window.innerWidth < 768);
     };
-    
+
     // Comprobar tamaño inicial
     checkScreenSize();
-    
+
     // Añadir listener para cambios de tamaño
     window.addEventListener('resize', checkScreenSize);
-    
+
     // Limpiar listener
     return () => window.removeEventListener('resize', checkScreenSize);
   }, []);
 
   // Si el botón está oculto, mostrar un pequeño indicador para recuperarlo
-  const handleClose = () => {
+  const handleClose = (e: React.MouseEvent) => {
+    e.stopPropagation(); // Evitar que se propague al botón principal
     setIsVisible(false);
     // Guardar estado en localStorage para mantenerlo entre páginas
     localStorage.setItem('testDriveHidden', 'true');
-    
+
     // Configurar timer para mostrar el botón nuevamente después de cierto tiempo
     setTimeout(() => {
       setIsVisible(true);
@@ -49,6 +51,17 @@ const TestDriveButton: React.FC<TestDriveButtonProps> = ({ carTheme, fixed = tru
     const isHidden = localStorage.getItem('testDriveHidden') === 'true';
     setIsVisible(!isHidden);
   }, []);
+
+  // Función para abrir WhatsApp con mensaje predefinido
+  const openWhatsApp = () => {
+    const phoneNumber = '50431820711'; // Número de WhatsApp
+    const message = `¡Hola! Estoy interesado en agendar un test drive para el modelo ${carModel}. ¿Podría proporcionarme más información?`;
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+    // Abrir en nueva pestaña
+    window.open(whatsappUrl, '_blank');
+  };
 
   if (!isVisible) {
     return (
@@ -66,21 +79,22 @@ const TestDriveButton: React.FC<TestDriveButtonProps> = ({ carTheme, fixed = tru
     <div
       className={clsx(
         'group flex flex-row gap-2',
-        isSmallScreen 
+        isSmallScreen
           ? 'fixed bottom-24 right-5 z-50 max-w-[200px]' // Posición para móviles, encima del WhatsApp
           : fixed
-            ? 'fixed right-0 z-50 top-1/2 transform -translate-y-1/2' // Centrado verticalmente en desktop
-            : 'absolute'
+          ? 'fixed right-0 z-50 top-1/2 transform -translate-y-1/2' // Centrado verticalmente en desktop
+          : 'absolute'
       )}
     >
       {/* Barras diagonales */}
       <div className={`hidden md:block w-2 h-12 -skew-x-[20deg] md:-skew-x-12`} style={{ backgroundColor: theme.primary }}></div>
       <div className={`hidden md:block w-2 h-12 -skew-x-[20deg] md:-skew-x-12`} style={{ backgroundColor: theme.primary }}></div>
-      
+
       {/* Botón principal */}
       <div
+        onClick={openWhatsApp}
         className={clsx(
-          'relative flex flex-row justify-center items-center px-5 py-3 md:py-0 md:px-8 rounded-lg md:rounded-none shadow-md md:shadow-none',
+          'relative flex flex-row justify-center items-center px-5 py-3 md:py-0 md:px-8 rounded-lg md:rounded-none shadow-md md:shadow-none cursor-pointer',
           isSmallScreen ? 'ml-0' : 'ml-[-8px] md:ml-[-3px]'
         )}
         style={{
@@ -88,12 +102,10 @@ const TestDriveButton: React.FC<TestDriveButtonProps> = ({ carTheme, fixed = tru
           clipPath: isSmallScreen ? 'none' : 'polygon(3.5% 0%, 100% 0%, 100% 100%, 0% 100%)'
         }}
       >
-        <p className={clsx('font-bold text-sm md:text-base', theme.testDriveText === 'black' ? 'text-black' : 'text-white')}>
-          AGENDA TU TEST DRIVE
-        </p>
-        
+        <p className={clsx('font-bold text-sm md:text-base', theme.testDriveText === 'black' ? 'text-black' : 'text-white')}>AGENDA TU TEST DRIVE</p>
+
         {/* Botón para cerrar */}
-        <button 
+        <button
           onClick={handleClose}
           className={clsx(
             'absolute -top-2 -right-2 md:top-1 md:right-1 p-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity',
