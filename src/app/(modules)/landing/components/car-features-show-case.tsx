@@ -22,6 +22,7 @@ export interface CarColorModel {
   color: string;
   colorName: string;
   hexColor: string;
+  scaleCar?: number;
 }
 
 interface CarFeaturesShowcaseProps {

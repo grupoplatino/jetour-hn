@@ -137,6 +137,7 @@ export function CarColorSelector({ carModels }: CarColorSelectorProps) {
                 height={350}
                 className={cn("object-contain", { "drop-shadow-md": isCenter })}
                 priority={isCenter}
+                style={model.scaleCar ? { scale: model.scaleCar } : {}}
               />
             </div>
           );

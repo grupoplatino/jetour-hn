@@ -10,6 +10,8 @@ import t2Logo from "@root/public/img/T2/Logo.png";
 import t2BlackImage from "@root/public/img/T2/car black 0022 (1).webp";
 import t2WhiteImage from "@root/public/img/T2/car white 0022.webp";
 import t2NeutralImage from "@root/public/img/T2/car.0022.webp";
+import t2SilverImage from "@root/public/img/T2/car.silver 0022.png";
+import t2GrayImage from "@root/public/img/T2/car gray 0022.png";
 import dashingWhiteImage from "@root/public/img/DASHING/JETOUR_blanco_cam360_out.0003.webp";
 import dashingGrayImage from "@root/public/img/DASHING/JETOUR_gris_cam360_out.0003.webp";
 import dashingBlackImage from "@root/public/img/DASHING/JETOUR_negro_cam360_out.0003.webp";
@@ -85,6 +87,7 @@ import x50ThirdSpecImage from "@root/public/img/X50/HAI_6221.jpg";
 import x50FirstGalleryImage from "@root/public/img/X50/Left 45 degree angle view.jpg";
 import x50SecondGalleryImage from "@root/public/img/X50/Dual Screen.jpg";
 import x50FourthGalleryImage from "@root/public/img/X50/60 drgee front right angle.png";
+import x50BlueImage from "@root/public/img/X50/x50-BLUE.png";
 
 import x50Feature1 from "@root/public/img/X50/Feature 1.png";
 import x50Feature2 from "@root/public/img/X50/Feature 2.png";
@@ -164,6 +167,7 @@ export interface VehicleData {
     color: string;
     colorName: string;
     hexColor: string;
+    scaleCar?: number;
   }[];
   features: CarFeature[];
   video: {
@@ -217,16 +221,16 @@ export const vehiclesData: Record<string, VehicleData> = {
         hexColor: "#d8cbb1",
       },
       {
-        carImage: t2NeutralImage,
+        carImage: t2SilverImage,
         color: "Silver Snow",
         colorName: "Plateado",
         hexColor: "#8592a2",
       },
       {
-        carImage: t2WhiteImage,
-        color: "Misty Cyan",
-        colorName: "Cyan",
-        hexColor: "#366da6",
+        carImage: t2GrayImage,
+        color: "Gray",
+        colorName: "Gris",
+        hexColor: "#5c6166",
       },
     ],
     features: [
@@ -362,16 +366,16 @@ export const vehiclesData: Record<string, VehicleData> = {
           class: "bg-[#827058]",
         },
         {
-          name: "highwayGrey",
-          hex: "#8095a1",
-          folderName: "Highway Grey",
-          class: "bg-[#8095a1]",
+          name: "silverSnow",
+          hex: "#8592a2",
+          folderName: "Silver Snow",
+          class: "bg-[#8592a2]",
         },
         {
-          name: "mistyCyan",
-          hex: "#366da6",
-          folderName: "Silver Snow",
-          class: "bg-[#366da6]",
+          name: "highwayGrey",
+          hex: "#5c6166",
+          folderName: "Highway Grey",
+          class: "bg-[#5c6166]",
         },
       ],
       interiorImagePath: [
@@ -597,6 +601,13 @@ export const vehiclesData: Record<string, VehicleData> = {
         colorName: "Blanco",
         hexColor: "#FFFFFF",
       },
+      {
+        carImage: x50BlueImage,
+        color: "Blue",
+        colorName: "Azul",
+        hexColor: "#7c92b1",
+        scaleCar: 1,
+      },
     ],
     features: [
       { name: "CABALLOS DE FUERZA MÁX.", value: 156, position: "topleft" },
@@ -735,6 +746,12 @@ export const vehiclesData: Record<string, VehicleData> = {
           hex: "#000000",
           folderName: "black",
           class: "bg-[#000000]",
+        },
+        {
+          name: "blue",
+          hex: "#7c92b1",
+          folderName: "blue",
+          class: "bg-[#7c92b1]",
         },
       ],
       interiorImagePath: [
