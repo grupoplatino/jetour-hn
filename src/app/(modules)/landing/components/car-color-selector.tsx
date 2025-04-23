@@ -1,7 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import Image from 'next/image';
+import useEmblaCarousel from 'embla-carousel-react';
 import { motion } from 'framer-motion';
 
 interface CarColorModel {
@@ -15,105 +16,151 @@ interface CarColorSelectorProps {
 }
 
 export function CarColorSelector({ carModels }: CarColorSelectorProps) {
-  const [selectedIndex, setSelectedIndex] = useState(0); // Default center index
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [prevIndex, setPrevIndex] = useState(carModels.length - 1);
+  const [nextIndex, setNextIndex] = useState(1);
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    loop: true,
+    align: 'center',
+    slidesToScroll: 1,
+    containScroll: 'keepSnaps',
+    dragFree: false
+  });
 
-  const getDisplayModels = () => {
-    const total = carModels.length;
-    if (total < 3) return []; // Optional: return empty if less than 3
+  const onColorSelect = useCallback(
+    (index: number) => {
+      if (!emblaApi) return;
+      emblaApi.scrollTo(index);
+    },
+    [emblaApi]
+  );
 
-    const leftIndex = (selectedIndex - 1 + total) % total;
-    const rightIndex = (selectedIndex + 1) % total;
+  const updateIndices = useCallback(
+    (selected: number) => {
+      const total = carModels.length;
+      const prev = (selected - 1 + total) % total;
+      const next = (selected + 1) % total;
 
-    return [
-      {
-        model: carModels[leftIndex],
-        index: leftIndex,
-        position: 'left'
-      },
-      {
-        model: carModels[selectedIndex],
-        index: selectedIndex,
-        position: 'center'
-      },
-      {
-        model: carModels[rightIndex],
-        index: rightIndex,
-        position: 'right'
-      }
-    ];
-  };
+      setSelectedIndex(selected);
+      setPrevIndex(prev);
+      setNextIndex(next);
+    },
+    [carModels.length]
+  );
 
-  const handleClick = (clickedIndex: number) => {
-    const total = carModels.length;
-    const leftIndex = (selectedIndex - 1 + total) % total;
-    const rightIndex = (selectedIndex + 1) % total;
+  const onSelect = useCallback(() => {
+    if (!emblaApi) return;
+    const selected = emblaApi.selectedScrollSnap();
+    updateIndices(selected);
+  }, [emblaApi, updateIndices]);
 
-    if (clickedIndex === leftIndex) {
-      setSelectedIndex(leftIndex);
-    } else if (clickedIndex === rightIndex) {
-      setSelectedIndex(rightIndex);
+  useEffect(() => {
+    if (!emblaApi) return;
+
+    onSelect();
+    emblaApi.on('select', onSelect);
+
+    return () => {
+      emblaApi.off('select', onSelect);
+    };
+  }, [emblaApi, onSelect]);
+
+  // Initialize indices
+  useEffect(() => {
+    updateIndices(selectedIndex);
+  }, [selectedIndex, updateIndices]);
+
+  const getPositionStyles = (index: number) => {
+    if (index === selectedIndex) {
+      return {
+        scale: 1,
+        y: 0,
+        x: '0%',
+        opacity: 1,
+        zIndex: 30
+      };
+    } else if (index === prevIndex) {
+      return {
+        scale: 0.9,
+        y: -50,
+        x: '-75%',
+        opacity: 1,
+        zIndex: 20
+      };
+    } else if (index === nextIndex) {
+      return {
+        scale: 0.9,
+        y: -50,
+        x: '80%',
+        opacity: 1,
+        zIndex: 20
+      };
+    } else {
+      return {
+        scale: 0.9,
+        y: -50,
+        x: '0%',
+        opacity: 0,
+        zIndex: 10
+      };
     }
   };
 
-  const displayModels = getDisplayModels();
-
   return (
     <div className="w-full max-w-6xl mx-auto px-4">
-      {/* Carousel */}
-      <div className="flex justify-center items-center py-12 relative h-[400px]">
-        {displayModels.map(({ model, index, position }) => {
-          const isCenter = position === 'center';
+      {/* Three car display section - always visible */}
+      <div className="relative h-[450px] flex items-center justify-center overflow-visible">
+        {carModels.map((car, index) => {
+          const posStyles = getPositionStyles(index);
+          const isVisible = index === selectedIndex || index === prevIndex || index === nextIndex;
 
-          const translateMap = {
-            left: '-100%',
-            center: '0%',
-            right: '100%'
-          };
-
-          const translateYMap = {
-            left: -80,
-            center: 0,
-            right: -80
-          };
+          if (!isVisible) return null;
 
           return (
             <motion.div
-              key={index}
-              onClick={() => handleClick(index)}
-              initial={false}
-              animate={{
-                x: translateMap[position],
-                y: translateYMap[position],
-                scale: 1,
-                zIndex: isCenter ? 30 : 10,
-                opacity: 1
-              }}
+              key={car.colorName}
+              className="absolute cursor-pointer"
+              animate={posStyles}
               transition={{
-                duration: 0.6,
+                duration: 0.4,
                 ease: 'easeInOut'
               }}
-              className="absolute cursor-pointer mt-24"
+              onClick={() => {
+                if (index === prevIndex) {
+                  onColorSelect(prevIndex);
+                } else if (index === nextIndex) {
+                  onColorSelect(nextIndex);
+                }
+              }}
             >
               <Image
-                src={model.carImage}
-                alt={`${model.colorName} model`}
-                width={isCenter ? 600 : 500}
+                src={car.carImage}
+                alt={`${car.colorName} model`}
+                width={600}
                 height={350}
-                className={`object-contain transition-shadow ${isCenter ? 'drop-shadow-2xl' : ''}`}
-                priority={isCenter}
-                style={model.scaleCar ? { scale: model.scaleCar } : {}}
+                className={`object-contain transition-shadow ${index === selectedIndex ? 'drop-shadow-2xl' : ''}`}
+                priority={index === selectedIndex}
               />
             </motion.div>
           );
         })}
       </div>
 
+      {/* Hidden Embla carousel for handling gestures and navigation */}
+      <div className="absolute opacity-0 pointer-events-auto h-[1px]" ref={emblaRef}>
+        <div className="flex">
+          {carModels.map((car) => (
+            <div key={`carousel-${car.colorName}`} className="min-w-0 flex-shrink-0 basis-full" />
+          ))}
+        </div>
+      </div>
+
       {/* Color Selector */}
-      <div className="flex justify-center gap-4 mt-6 relative">
+      <div className="flex justify-center gap-4 mt-2 relative">
         {carModels.map((car, index) => (
           <div key={index} className="relative group">
             <button
-              onClick={() => setSelectedIndex(index)}
+              onClick={() => onColorSelect(index)}
               className={`
                 w-8 h-8 rounded-full transition-all
                 ${index === selectedIndex ? 'scale-110 border-[3px]' : 'border-2 hover:border-gray-500'}
