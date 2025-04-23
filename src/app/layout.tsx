@@ -31,10 +31,24 @@ export const metadata: Metadata = {
   description:
     'Concesionario oficial de vehículos Jetour en Honduras. Descubre nuestra línea de vehículos premium con tecnología de vanguardia. Por Autos Aliados.',
   keywords: ['Jetour Honduras', 'autos Jetour', 'SUV Jetour', 'autos de lujo Honduras', 'Dashing', 'T2', 'X50', 'X70 Plus', 'Autos Aliados'],
+  authors: [{ name: 'Jetour Honduras', url: 'https://www.jetourhn.com' }],
+  creator: 'Autos Aliados',
+  publisher: 'Jetour Honduras',
+  formatDetection: {
+    email: true,
+    address: true,
+    telephone: true
+  },
   openGraph: {
     siteName: 'Jetour Honduras | Autos Aliados',
     type: 'website',
     locale: 'es_HN',
+    alternateLocale: ['es_MX', 'es_GT', 'es_SV', 'es_NI', 'es_CR', 'es_PA'],
+    url: 'https://www.jetourhn.com',
+    title: 'Jetour Honduras | Vehículos de Lujo y Tecnología Avanzada',
+    description:
+      'Concesionario oficial de vehículos Jetour en Honduras. Descubre nuestra línea de vehículos premium con tecnología de vanguardia. Por Autos Aliados.',
+    countryName: 'Honduras',
     images: [
       {
         url: '/img/JetourLogo.png',
@@ -43,6 +57,14 @@ export const metadata: Metadata = {
         alt: 'Jetour Honduras'
       }
     ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Jetour Honduras | Vehículos de Lujo y Tecnología Avanzada',
+    description: 'Concesionario oficial de vehículos Jetour en Honduras. Descubre nuestra línea de SUVs premium con tecnología de vanguardia.',
+    images: ['/img/JetourLogo.png'],
+    site: '@jetourhn',
+    creator: '@autosaliados'
   },
   robots: {
     index: true,
@@ -70,6 +92,22 @@ export const metadata: Metadata = {
         url: '/favicon-32x32.png',
         sizes: '32x32',
         type: 'image/png'
+      },
+      {
+        url: '/android-chrome-192x192.png',
+        sizes: '192x192',
+        type: 'image/png'
+      },
+      {
+        url: '/android-chrome-512x512.png',
+        sizes: '512x512',
+        type: 'image/png'
+      }
+    ],
+    shortcut: [
+      {
+        url: '/favicon.ico',
+        type: 'image/x-icon'
       }
     ],
     apple: [
@@ -78,10 +116,17 @@ export const metadata: Metadata = {
         sizes: '180x180',
         type: 'image/png'
       }
+    ],
+    other: [
+      {
+        rel: 'manifest',
+        url: '/site.webmanifest'
+      }
     ]
   },
   verification: {
-    google: 'AGREGAR_TU_CÓDIGO_DE_VERIFICACIÓN'
+    google: 'TU_CÓDIGO_DE_VERIFICACIÓN_GOOGLE', // Reemplaza con tu código cuando lo tengas
+    yandex: 'TU_CÓDIGO_DE_VERIFICACIÓN_YANDEX' // Opcional
   }
 };
 

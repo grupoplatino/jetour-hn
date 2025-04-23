@@ -18,6 +18,45 @@ import Image from 'next/image';
 import homeImage from '@root/public/img/landing/Home Jetour.jpg';
 import jetourLogo from '@root/public/img/JetourLogo.png';
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Jetour Honduras | SUVs de Lujo y Alta Tecnología',
+  description:
+    'Concesionario oficial de vehículos Jetour en Honduras. Modernos SUVs con tecnología de vanguardia y diseño premium. Distribuido por Autos Aliados.',
+  alternates: {
+    canonical: 'https://www.jetourhn.com/landing'
+  },
+  openGraph: {
+    title: 'Jetour Honduras | SUVs de Lujo y Alta Tecnología',
+    description:
+      'Concesionario oficial de vehículos Jetour en Honduras. Modernos SUVs con tecnología de vanguardia y diseño premium. Distribuido por Autos Aliados.',
+    url: 'https://www.jetourhn.com/landing',
+    images: [
+      {
+        url: '/img/landing/T2/Fashion Blocks 2.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Jetour Honduras'
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Jetour Honduras | SUVs de Lujo y Alta Tecnología',
+    description:
+      'Concesionario oficial de vehículos Jetour en Honduras. Modernos SUVs con tecnología de vanguardia y diseño premium. Distribuido por Autos Aliados.',
+    images: [
+      {
+        url: '/img/landing/T2/Fashion Blocks 2.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Jetour Honduras'
+      }
+    ]
+  }
+};
+
 export default function LandingPage() {
   const carTheme = 'orange'; // Cambia esto según el vehículo seleccionado
 
