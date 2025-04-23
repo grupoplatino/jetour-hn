@@ -81,24 +81,24 @@ export function CarColorSelector({ carModels }: CarColorSelectorProps) {
       };
     } else if (index === prevIndex) {
       return {
-        scale: 0.9,
-        y: -50,
-        x: '-75%',
+        scale: 0.8,
+        y: -60,
+        x: '-80%',
         opacity: 1,
         zIndex: 20
       };
     } else if (index === nextIndex) {
       return {
-        scale: 0.9,
-        y: -50,
-        x: '80%',
+        scale: 0.8,
+        y: -60,
+        x: '90%',
         opacity: 1,
         zIndex: 20
       };
     } else {
       return {
-        scale: 0.9,
-        y: -50,
+        scale: 0.8,
+        y: -60,
         x: '0%',
         opacity: 0,
         zIndex: 10
