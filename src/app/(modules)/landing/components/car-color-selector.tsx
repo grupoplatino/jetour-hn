@@ -112,9 +112,6 @@ export function CarColorSelector({ carModels }: CarColorSelectorProps) {
       <div className="relative h-[450px] flex items-center justify-center overflow-visible">
         {carModels.map((car, index) => {
           const posStyles = getPositionStyles(index);
-          const isVisible = index === selectedIndex || index === prevIndex || index === nextIndex;
-
-          if (!isVisible) return null;
 
           return (
             <motion.div
