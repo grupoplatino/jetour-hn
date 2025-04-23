@@ -99,7 +99,7 @@ export function CarColorSelector({ carModels }: CarColorSelectorProps) {
       return {
         scale: 0.8,
         y: -60,
-        x: '0%',
+        x: '-85%',
         opacity: 0,
         zIndex: 10
       };
@@ -122,7 +122,7 @@ export function CarColorSelector({ carModels }: CarColorSelectorProps) {
               className="absolute cursor-pointer"
               animate={posStyles}
               transition={{
-                duration: 0.4,
+                duration: 0.6,
                 ease: 'easeInOut'
               }}
               onClick={() => {
