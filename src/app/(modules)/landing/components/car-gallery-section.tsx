@@ -23,6 +23,7 @@ const CarGallerySection: React.FC<CarGallerySectionProps> = ({ images, title }) 
             className="overflow-hidden shadow-md h-48 sm:h-56 md:h-64 lg:h-72"
           >
             <Image
+            placeholder="blur"
               src={image}
               width={800}
               height={600}
