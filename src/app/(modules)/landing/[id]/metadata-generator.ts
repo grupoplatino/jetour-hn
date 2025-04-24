@@ -44,7 +44,7 @@ export async function generateVehicleMetadata(id: string): Promise<Metadata> {
         }
       ],
       locale: 'es_HN',
-      type: 'product'
+      type: 'website'
     },
     twitter: {
       card: 'summary_large_image',
