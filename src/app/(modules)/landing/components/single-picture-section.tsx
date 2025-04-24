@@ -13,7 +13,7 @@ const SinglePictureSection: React.FC<SinglePictureSectionProps> = ({ title, imag
     <section className="relative lg:min-h-screen w-full flex flex-col justify-start lg:py-16 items-center lg:px-0 px-12">
       <h1 className="font-bold text-4xl uppercase text-center mb-8">{title}</h1>
       <div className="w-full lg:w-[60%] h-full">
-        <Image className="w-full h-auto object-cover" src={image} alt={altText} priority width={512} height={512} />
+        <Image className="w-full h-auto object-cover" src={image} alt={altText} width={512} height={512} />
       </div>
     </section>
   );

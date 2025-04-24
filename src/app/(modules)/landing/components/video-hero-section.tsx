@@ -90,7 +90,6 @@ export default function VideoHeroCarousel({
           <Image
             className={cn('object-contain w-full h-full md:-ml-[400px] lg:-ml-[600px]', currentSection.imageLeftExtraClassName)}
             src={currentSection.backgroundImage}
-            priority
             fill
             alt="Background"
           />
