@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function VehicleDetailRoute({ params }: { params: Promise<{ id: string }> }) {
   const res = await params;
-  const { id } = await res;
+  const { id } =  res;
 
   const carData = getVehicleById(id);
 
