@@ -36,7 +36,7 @@ const CarHero: React.FC<CarHeroProps> = ({ backgroundImage, carLogo, tagline, ca
             />
             {displayJetourLogo && (
               <Image
-                src={jetourLogo}
+                src={'/landing/jetour_logo_white_drive_your_future.png'}
                 alt="Jetour Logo"
                 width={250}
                 height={250}

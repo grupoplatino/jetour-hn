@@ -24,17 +24,18 @@ export default function VehicleDetailPage({ carData, showTestDriveButton = true 
 
       {showTestDriveButton && <TestDriveButton carTheme={carTheme} />}
       <CarHero
-        backgroundImageUrl={carData.hero.backgroundImage.src}
+        backgroundImageUrl={carData.hero.backgroundImage as string}
         backgroundImage={carData.hero.backgroundImage}
         carLogo={carData.hero.logo}
         tagline={carData.tagline}
         carTheme={carTheme}
         displayJetourLogo={carData.hero.jetourLogo ? true : false}
       />
-      <CarFeaturesShowcase carModels={carData.colorModels} features={carData.features} carTheme="orange" />
-      <VideoSection videoUrl={carData.video.url} thumbnailUrl={carData.video.thumbnail} />
 
-      {carData.splitSections.map((section, index) => (
+      {/* <CarFeaturesShowcase carModels={carData.colorModels} features={carData.features} carTheme="orange" /> */}
+      {/* <VideoSection videoUrl={carData.video.url} thumbnailUrl={carData.video.thumbnail} /> */}
+
+      {/* {carData.splitSections.map((section, index) => (
         <SplitImageSection
           key={index}
           image1={section.image1}
@@ -52,17 +53,17 @@ export default function VehicleDetailPage({ carData, showTestDriveButton = true 
           imageContainRight={section.imageContainRight ? true : false}
           leftImageClassName={section.leftImageClassName}
         />
-      ))}
+      ))} */}
 
-      <FeaturesSection carTheme={carTheme} features={carData.featuresSections.items} title={carData.featuresSections.title} />
+      {/* <FeaturesSection carTheme={carTheme} features={carData.featuresSections.items} title={carData.featuresSections.title} /> */}
 
-      <SinglePictureSection title={carData.singlePictureSection.title} image={carData.singlePictureSection.image} />
+      {/* <SinglePictureSection title={carData.singlePictureSection.title} image={carData.singlePictureSection.image} /> */}
 
-      <CarGallerySection images={carData.gallery} />
+      {/* <CarGallerySection images={carData.gallery} /> */}
 
-      <SpecsSection specs={carData.specs} themeKey={carTheme} />
+      {/* <SpecsSection specs={carData.specs} themeKey={carTheme} /> */}
 
-      <section className="p-6 pb-12">
+      {/* <section className="p-6 pb-12">
         <VehicleVisualizer
           title={carData.visualizer.title}
           basePath={carData.visualizer.basePath}
@@ -73,9 +74,9 @@ export default function VehicleDetailPage({ carData, showTestDriveButton = true 
           themeKey={carTheme}
           defaultColorIndex={0}
         />
-      </section>
+      </section> */}
 
-      <ContactForm themeKey={carTheme} />
+      {/* <ContactForm themeKey={carTheme} /> */}
     </>
   );
 }

@@ -39,7 +39,7 @@ const ExteriorView: React.FC<ExteriorViewProps & { themeKey: string }> = ({
       {isLoading && <LoadingIndicator progress={loadingProgress} themeKey={themeKey as keyof typeof carThemes} />}
 
       <div className="w-full lg:w-[80%] h-full">
-        <Image src={background360} height={300} width={300} alt="Background" className="w-full h-full absolute top-0 left-0" />
+        <Image src={'/landing/360_background.jpg'} height={300} width={300} alt="Background" className="w-full h-full absolute top-0 left-0" />
         <ReactImageTurntable
           className={clsx(
             'w-full h-full img-turntable',

@@ -192,8 +192,8 @@ export const vehiclesData: Record<string, VehicleData> = {
     tagline: 'AVENTURAS SIN LÍMITES',
     theme: 'orange',
     hero: {
-      backgroundImage: t2Image,
-      logo: t2Logo,
+      backgroundImage: '/t2/car_hero_background.jpg',
+      logo: '/t2/car_logo_white.png',
       jetourLogo: true
     },
     colorModels: [
