@@ -6,7 +6,6 @@ import { StaticImageData } from 'next/image';
 // Importaciones para T2
 
 // Convertir importaciones a strings
-const t2NeutralImage = '/img/T2/car.0022.webp';
 const t2BlueImage = '/img/T2/car blue 0022.webp';
 const dashingImageSection = '/img/DASHING/15.8 in. Digital screen.webp';
 const dashingSingleImageSection = '/img/DASHING/DISEÑO EXCEPCIONAL Y DEPORTIVO.webp';
@@ -164,7 +163,7 @@ export interface VehicleData {
 // Definición de datos de vehículos
 export const vehiclesData: Record<string, VehicleData> = {
   t2: {
-    carSelecctorImage: t2NeutralImage,
+    carSelecctorImage: '/landing/t2_car_selector.png',
     id: 't2',
     modelName: 'T2',
     tagline: 'AVENTURAS SIN LÍMITES',
