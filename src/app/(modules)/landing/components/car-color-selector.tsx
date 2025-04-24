@@ -136,7 +136,6 @@ export function CarColorSelector({ carModels }: CarColorSelectorProps) {
                 width={600}
                 height={350}
                 className={`object-contain transition-shadow ${index === selectedIndex ? 'drop-shadow-2xl' : ''}`}
-                priority={index === selectedIndex}
               />
             </motion.div>
           );

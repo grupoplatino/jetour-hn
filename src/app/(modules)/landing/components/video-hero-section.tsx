@@ -4,6 +4,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import Image, { StaticImageData } from 'next/image';
 import { cn } from '@/lib/utils';
 import { CarThemeKey, carThemes, ThemeCars } from '../data/theme-definitions';
+import AppVideoComponent, { defaultEndpointImageKit } from './app-image-component';
 
 // Define the interface for a single section
 interface SectionData {
@@ -87,11 +88,18 @@ export default function VideoHeroCarousel({
             opacity: 1 // You could add more sophisticated transition if needed
           }}
         >
-          <Image
+          {/* <Image
             className={cn('object-contain w-full h-full md:-ml-[400px] lg:-ml-[600px]', currentSection.imageLeftExtraClassName)}
             src={currentSection.backgroundImage}
             fill
             alt="Background"
+          /> */}
+
+          <AppVideoComponent
+            endpoint={defaultEndpointImageKit}
+            src={currentSection.backgroundImage as string}
+            alt="Background"
+            className={cn('object-contain w-full h-full md:-ml-[400px] lg:-ml-[600px]', currentSection.imageLeftExtraClassName)}
           />
         </div>
 

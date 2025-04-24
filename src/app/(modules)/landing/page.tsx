@@ -15,10 +15,10 @@ import VehicleDetailPage from './components/vehicle-deatail-page';
 const VideoHeroSection = dynamic(() => import('./components/video-hero-section'));
 
 import Image from 'next/image';
-import homeImage from '@root/public/img/landing/Home Jetour.jpg';
 import jetourLogo from '@root/public/img/JetourLogo.png';
 
 import { Metadata } from 'next';
+import { AppImageComponent, defaultEndpointImageKit } from './components/app-image-component';
 
 export const metadata: Metadata = {
   title: 'Jetour Honduras | SUVs de Lujo y Alta Tecnología',
@@ -71,7 +71,16 @@ export default function LandingPage() {
       <TestDriveButton carTheme={carTheme} />
 
       <section className="mt-[10px] relative">
-        <Image className="w-full" alt="Logo home jetour" height={512} width={512} src={homeImage} />
+        {/* <Image className="w-full" alt="Logo home jetour" height={512} width={512} src={homeImage} /> */}
+
+        <AppImageComponent
+          className="w-full"
+          endpoint={defaultEndpointImageKit}
+          src="/jetourHn/landing/home_page.jpg"
+          alt="Landing page hero"
+          height={512}
+          width={512}
+        />
 
         <div className="flex flex-col absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[18rem] ">
           <div className="flex flex-col">
@@ -86,7 +95,7 @@ export default function LandingPage() {
         extraClassName=""
         sections={[
           {
-            backgroundImage: t2LandingBackground,
+            backgroundImage: '/jetourHn/landing/landing_videosection1_background1.webp',
             logo: t2LandingLogo,
             title: 'PIENSA EN LA AVENTURA',
             subtitle: '',
