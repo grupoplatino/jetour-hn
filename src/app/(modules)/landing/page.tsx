@@ -3,20 +3,11 @@ import dynamic from 'next/dynamic';
 import WhatsAppButton from './components/whats-app-button';
 import TestDriveButton from './components/test-drive-button';
 
-import t2LandingBackground from '@root/public/img/landing/T2/Fashion Blocks 2.webp';
-import t2LandingLogo from '@root/public/img/T2/Logo.png';
-
-import dashingLandingBackground from '@root/public/img/landing/DASHING/Dashing Portada.jpg';
-import dashingLandingLogo from '@root/public/img/DASHING/Logo.png';
-import CarModelsGallery from './components/car-model-gallery';
 import { getVehicleById, vehiclesData } from './data/vehicles-constant';
-import VehicleDetailPage from './components/vehicle-deatail-page';
 
 const VideoHeroSection = dynamic(() => import('./components/video-hero-section'));
 
 import Image from 'next/image';
-import homeImage from '@root/public/img/landing/Home Jetour.jpg';
-import jetourLogo from '@root/public/img/JetourLogo.png';
 
 import { Metadata } from 'next';
 
@@ -68,15 +59,21 @@ export default function LandingPage() {
   return (
     <>
       <WhatsAppButton />
-      <TestDriveButton carTheme={carTheme} />
+      {/* <TestDriveButton carTheme={carTheme} /> */}
 
       <section className="mt-[10px] relative">
-        <Image className="w-full" alt="Logo home jetour" height={512} width={512} src={homeImage} />
+        <Image className="w-full" alt="Logo home jetour" height={512} width={512} src={'/landing/main_hero_background.jpg'} />
 
         <div className="flex flex-col absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[18rem] ">
           <div className="flex flex-col">
             <h1 className="font-bold text-6xl text-center text-white">Bienvenido a</h1>
-            <Image className="w-auto h-[140px] object-contain -mt-8" alt="Logo jetour" height={512} width={512} src={jetourLogo} />
+            <Image
+              className="w-auto h-[140px] object-contain -mt-8"
+              alt="Logo jetour"
+              height={512}
+              width={512}
+              src={'/landing/jetour_logo_white_drive_your_future.png'}
+            />
           </div>
           <h2 className="font-semibold text-3xl text-center text-white -mt-5">Diseñado para moverte, creado para inspirarte</h2>
         </div>
@@ -86,34 +83,34 @@ export default function LandingPage() {
         extraClassName=""
         sections={[
           {
-            backgroundImage: t2LandingBackground,
-            logo: t2LandingLogo,
+            backgroundImage: '/landing/videosection1_background.jpg',
+            logo: '/landing/videosection1_car_logo.png',
             title: 'PIENSA EN LA AVENTURA',
             subtitle: '',
             themeKey: 'orange',
             videos: {
-              rightVideo: '/img/landing/T2/9X16-40S - Trim.mp4',
-              leftVideo: '/img/landing/T2/T2 TVC-30s-4K.mp4'
+              leftVideo: '/landing/videosection1_mainvideo.mp4'
             }
           },
           {
             imageLeftExtraClassName: 'md:-ml-[0] lg:-ml-[400px]',
-            backgroundImage: dashingLandingBackground,
-            logo: dashingLandingLogo,
+            backgroundImage: '/landing/videosection2_background.jpg',
+            logo: '/landing/videosection2_car_logo.png',
             title: 'DISEÑADA PARA SATISFACER A LOS MAS EXIGENTES',
             subtitle: '',
             themeKey: 'turquoise',
             videos: {
-              leftVideo: '/img/landing/DASHING/1 days to go.mp4',
-              rightVideo: '/video/Video-Dashing/Product CG Video.mp4'
+              leftVideo: '/landing/videosection2_mainvideo.mp4'
             }
           }
         ]}
       />
 
+      {/*
+
       <CarModelsGallery models={Object.values(vehiclesData)} themeKey="orange" />
 
-      <VehicleDetailPage showTestDriveButton={false} carData={landingCar} />
+      <VehicleDetailPage showTestDriveButton={false} carData={landingCar} /> */}
     </>
   );
 }

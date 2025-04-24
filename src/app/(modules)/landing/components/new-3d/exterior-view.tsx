@@ -8,7 +8,6 @@ import { useVehicleImages } from './use-vehicleImages';
 import LoadingIndicator from './loading-indicator';
 import ColorSelector from './color-selector';
 import { carThemes } from '../../data/theme-definitions';
-import background360 from '@root/public/img/Fondo para el 360.jpg';
 import Image from 'next/image';
 
 const ExteriorView: React.FC<ExteriorViewProps & { themeKey: string }> = ({

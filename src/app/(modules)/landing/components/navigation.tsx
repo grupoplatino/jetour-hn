@@ -6,12 +6,6 @@ import Image from 'next/image';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import clsx from 'clsx';
 
-import jetourLogo from '@root/public/img/JetourLogo.png';
-import autosAliadosLogo from '@root/public/img/AutosAliados.png';
-import { useParams } from 'next/navigation';
-import { getVehicleById } from '../data/vehicles-constant';
-import { carThemes } from '../data/theme-definitions';
-
 interface NavbarProps {
   disableTransparent?: boolean;
   primaryColor?: string;
@@ -21,14 +15,7 @@ export function Navbar({ disableTransparent = false, primaryColor = '#FF7A00' }:
   const [toggledNav, setToggledNav] = useState<boolean>(false);
   const [dropdownOpen, setDropdownOpen] = useState<boolean>(false);
   const [scrollPosition, setScrollPosition] = useState(0);
-
-  const params = useParams();
-
-  const carData = getVehicleById(params.id as string);
-
-  const carTheme = carData ? carThemes?.[carData.theme]?.colors : null;
-
-  useEffect(() => {}, [params]);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   const handleScroll = () => {
     const position = window.pageYOffset;
@@ -37,6 +24,9 @@ export function Navbar({ disableTransparent = false, primaryColor = '#FF7A00' }:
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll, { passive: true });
+    // Marcar como cargado después de que los componentes se monten
+    setIsLoaded(true);
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -63,16 +53,23 @@ export function Navbar({ disableTransparent = false, primaryColor = '#FF7A00' }:
   return (
     <nav
       className={clsx(
-        'transition flex flex-col fixed w-full z-40 lg:max-h-[100px] lg:h-[100px]',
-        scrollPosition > 0 && !disableTransparent ? 'bg-black text-white' : disableTransparent ? 'bg-black text-white' : 'bg-transparent text-white'
+        'transition flex flex-col fixed w-full z-40 lg:h-[100px]',
+        scrollPosition > 0 && !disableTransparent ? 'bg-black text-white' : disableTransparent ? 'bg-black text-white' : 'bg-transparent text-white',
+        // Importante: altura fija para evitar layout shift
+        'h-[100px]'
       )}
     >
-      <section className="flex flex-row px-4 md:px-16 py-2 justify-between items-center">
-        <figure className="flex flex-row items-center gap-4 md:gap-10 text-white">
-          <Link href="/" className="w-fit h-fit">
-            <Image src={jetourLogo} alt="Logo Jetour" width={512} height={512} className="w-28 md:w-36" />
-          </Link>
-          <Image src={autosAliadosLogo} alt="Logo Auto Aliados" width={512} height={512} className="w-28 md:w-32" />
+      <section className="flex flex-row px-4 md:px-16 py-2 justify-between items-center h-[calc(100%-8px)]">
+        {/* Contenedor con ancho fijo para los logos */}
+        <figure className="flex flex-row items-center gap-4 md:gap-10 text-white w-[250px] md:w-[350px] h-16">
+          {isLoaded && (
+            <>
+              <Link href="/" className="w-fit h-fit">
+                <Image src={'/landing/jetour_logo_white_drive_your_future.png'} alt="Logo Jetour" width={512} height={300} className="w-28 md:w-36" priority />
+              </Link>
+              <Image src={'/landing/autos_aliados_logo_white.png'} alt="Logo Auto Aliados" width={512} height={300} className="w-28 md:w-32" priority />
+            </>
+          )}
         </figure>
 
         {/* Desktop Navigation */}
@@ -104,25 +101,25 @@ export function Navbar({ disableTransparent = false, primaryColor = '#FF7A00' }:
           ))}
         </div>
 
-        {/* Mobile Menu Toggle */}
-        <Menu
-          onClick={() => {
-            setToggledNav(!toggledNav);
-          }}
-          className="transition-all block lg:hidden text-white hover:scale-125 cursor-pointer"
-        />
+        {/* Mobile Menu Toggle - Fijo en posición */}
+        <div className="block lg:hidden text-white">
+          <Menu
+            onClick={() => {
+              setToggledNav(!toggledNav);
+            }}
+            className="transition-all hover:scale-125 cursor-pointer"
+          />
+        </div>
       </section>
 
-      {scrollPosition > 0 && !disableTransparent ? (
-        <div className="h-2" style={{ backgroundColor: carTheme ? carTheme.primary : primaryColor }} />
-      ) : (
-        <div className="h-2" style={{ backgroundColor: carTheme ? carTheme.primary : primaryColor }} />
-      )}
+      {/* Línea de color principal */}
+      <div className="h-2" style={{ backgroundColor: primaryColor }} />
 
       {/* Mobile Menu */}
       {toggledNav && (
         <div className="fixed lg:hidden top-0 left-0 w-full h-full bg-black bg-opacity-90 z-50 flex flex-col items-center justify-center text-white">
           <X className="absolute top-5 right-5 text-white text-3xl cursor-pointer" onClick={() => setToggledNav(false)} />
+
           <div className="flex flex-col gap-6 text-xl text-center">
             {navLinks.map((link, index) => (
               <div key={index} className="relative">
@@ -163,3 +160,5 @@ export function Navbar({ disableTransparent = false, primaryColor = '#FF7A00' }:
     </nav>
   );
 }
+
+export default Navbar;

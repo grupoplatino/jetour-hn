@@ -1,4 +1,3 @@
-import certificateLogo from '@root/public/img/Certificado.png';
 import Image from 'next/image';
 
 interface WarrantyBadgeProps {

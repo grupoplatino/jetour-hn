@@ -1,7 +1,6 @@
 import { StaticImageData } from 'next/image';
 import { CarThemeKey, carThemes } from '../data/theme-definitions';
 import WarrantyBadge from './warrabty-badge';
-import jetourLogo from '@root/public/img/JetourLogo.png';
 import Image from 'next/image';
 
 interface CarHeroProps {

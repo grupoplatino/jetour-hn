@@ -10,11 +10,11 @@ export default function LandingLayout({
 }>) {
   return (
     <LandingProviders>
-      <Navbar  disableTransparent={true} />
+      <Navbar disableTransparent={true} />
       <main suppressHydrationWarning={true} className="md:gap-y-0 flex flex-col w-full max-w-full grow h-fit">
         {children}
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </LandingProviders>
   );
 }
