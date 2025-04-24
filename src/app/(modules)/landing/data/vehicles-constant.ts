@@ -8,7 +8,6 @@ import { StaticImageData } from 'next/image';
 // Convertir importaciones a strings
 const t2NeutralImage = '/img/T2/car.0022.webp';
 const t2BlueImage = '/img/T2/car blue 0022.webp';
-const dashingGrayImage = '/img/DASHING/JETOUR_gris_cam360_out.0003.webp';
 const dashingImageSection = '/img/DASHING/15.8 in. Digital screen.webp';
 const dashingSingleImageSection = '/img/DASHING/DISEÑO EXCEPCIONAL Y DEPORTIVO.webp';
 const dashingImage01 = '/img/DASHING/Foto 01.webp';
@@ -16,7 +15,6 @@ const dashingImage02 = '/img/DASHING/Foto 02.webp';
 const dashingImage03 = '/img/DASHING/Foto 03.webp';
 const dashingImage04 = '/img/DASHING/Foto 04.webp';
 const x70PlusBlue = '/img/X70 Plus/X70 Plus 45 degree Blue.webp';
-const x70PlusBlack = '/img/X70 Plus/45 degree front left angle Black.webp';
 const X70PlusSingleImage = '/img/X70 Plus/Estabilidad y Seguridad.jpg';
 const x70FeatureImage1 = '/img/X70 Plus/Modelado Palanca.webp';
 const x70FeatureImage2 = '/img/X70 Plus/Techo Corredizo.webp';
@@ -54,9 +52,6 @@ const x70FirstSplitImage2 = '/img/X70 Plus/First Split Image - Image 2.png';
 const x70SecondSplitImage1 = '/img/X70 Plus/Second Split Image - Image 1.png';
 const x70SecondSplitImage2 = '/img/X70 Plus/Second Split Image - Image 2.png';
 
-const x50WhiteImage = '/img/X50/x50-360BAI_00005.webp';
-const x50BlackImage = '/img/X50/x50-360HEI_00005.webp';
-const x50BlueImage = '/img/X50/x50-BLUE.webp';
 const x50SplitSection1Image2 = '/img/X50/Console.webp';
 const x50SplitSectionImage1 = '/img/X50/First Split Section - Image 1.png';
 const x50SplitSectionImage2 = '/img/X50/First Split Section - Image 2.png';
@@ -580,13 +575,13 @@ export const vehiclesData: Record<string, VehicleData> = {
         hexColor: '#2E3A5F'
       },
       {
-        carImage: x70PlusBlack,
+        carImage: '/x70plus/car_black_carousel.webp',
         color: 'Black',
         colorName: 'Negro',
         hexColor: '#000000'
       },
       {
-        carImage: x50WhiteImage,
+        carImage: '/x70plus/car_white_carousel.webp',
         color: 'white',
         colorName: 'Blanco',
         hexColor: '#FFFFFF'
@@ -739,19 +734,19 @@ export const vehiclesData: Record<string, VehicleData> = {
     // Datos parciales - completar con información real
     colorModels: [
       {
-        carImage: x50BlackImage,
+        carImage: '/x50/car_black_carousel.webp',
         color: 'Black',
         colorName: 'Negro',
         hexColor: '#000000'
       },
       {
-        carImage: x50WhiteImage,
+        carImage: '/x50/car_white_carousel.webp',
         color: 'white',
         colorName: 'Blanco',
         hexColor: '#FFFFFF'
       },
       {
-        carImage: x50BlueImage,
+        carImage: '/x50/car_blue_carousel.webp',
         color: 'Blue',
         colorName: 'Azul',
         hexColor: '#9AC7E5'
