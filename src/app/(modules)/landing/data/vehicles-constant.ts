@@ -104,7 +104,7 @@ interface CarFeature {
 
 interface SplitImageSection {
   image1: StaticImageData | string;
-  image2: StaticImageData | string
+  image2: StaticImageData | string;
   title: string;
   text: string;
   brochureUrl?: string;
@@ -118,7 +118,7 @@ interface SplitImageSection {
 }
 
 interface FeatureItem {
-  image: StaticImageData | string
+  image: StaticImageData | string;
   label: string;
 }
 
@@ -154,7 +154,7 @@ export interface VehicleData {
   theme: CarThemeKey;
   hero: {
     backgroundImage: StaticImageData | string;
-    logo: StaticImageData | string
+    logo: StaticImageData | string;
     jetourLogo?: boolean;
   };
   colorModels: {
@@ -210,7 +210,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         hexColor: '#ffffff'
       },
       {
-        carImage: t2NeutralImage,
+        carImage: '/landing/t2_car_selector.png',
         color: 'neutralColor',
         colorName: 'Color Neutral',
         hexColor: '#d8cbb1'
@@ -406,7 +406,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         hexColor: '#FFFFFF'
       },
       {
-        carImage: dashingSelectorImage,
+        carImage: '/landing/dashing_car_selector.png',
         color: 'blue',
         colorName: 'Azul',
         hexColor: '#9AC7E5'
@@ -579,7 +579,7 @@ export const vehiclesData: Record<string, VehicleData> = {
   },
 
   x70plus: {
-    carSelecctorImage: x70CarSelectorImage,
+    carSelecctorImage: '/landing/x70plust_car_selector.png',
     id: 'x70plus',
     modelName: 'X70 Plus',
     tagline: 'INNOVACIÓN Y AMPLITUD REDEFINIDAS',
@@ -744,7 +744,7 @@ export const vehiclesData: Record<string, VehicleData> = {
     }
   },
   x50: {
-    carSelecctorImage: x50BlackImage,
+    carSelecctorImage: '/landing/x50_car_selector.png',
     id: 'x50',
     modelName: 'X50',
     tagline: 'DISFRUTA EL VIAJE DE TU VIDA',

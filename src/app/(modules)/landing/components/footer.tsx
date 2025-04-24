@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { Instagram, Facebook, Youtube, MessageCircle } from 'lucide-react';
 
 import jetourLogoBlack from '@root/public/img/JetourLogoBlack.png';
-import autoAliadosBlack from '@root/public/img/AutoAliadosBlack.png';
 import { useParams } from 'next/navigation';
 import { getVehicleById } from '../data/vehicles-constant';
 import { carThemes } from '../data/theme-definitions';
@@ -35,8 +34,8 @@ export function Footer({ primaryColor = '#FF7A00' }: FooterProps) {
             {/* Columna 1: Logos y descripción */}
             <div className="flex flex-col gap-4">
               <div className="flex flex-col gap-4">
-                <Image src={jetourLogoBlack} alt="Jetour Logo" width={180} height={60} className="object-contain" />
-                <Image src={autoAliadosBlack} alt="Autos Aliados Logo" width={180} height={60} className="object-contain" />
+                <Image src={'/landing/jetour_logo_black_drive_your_future.png'} alt="Jetour Logo" width={180} height={60} className="object-contain" />
+                <Image src={'/landing/autos_aliados_logo_black.png'} alt="Autos Aliados Logo" width={180} height={60} className="object-contain" />
               </div>
               <p className="text-sm mt-2">
                 Innovación y excelencia en cada uno de nuestros vehículos, diseñados para hacer de tu experiencia de manejo algo extraordinario.
