@@ -6,16 +6,9 @@ import { StaticImageData } from 'next/image';
 // Importaciones para T2
 
 // Convertir importaciones a strings
-const t2Image = '/img/T2/T2 Jetour (2).webp';
-const t2Logo = '/img/T2/Logo.png';
-const t2BlackImage = '/img/T2/car black 0022 (1).webp';
-const t2WhiteImage = '/img/T2/car white 0022.webp';
 const t2NeutralImage = '/img/T2/car.0022.webp';
-const t2SilverImage = '/img/T2/car.silver 0022.png';
 const t2BlueImage = '/img/T2/car blue 0022.webp';
-const dashingWhiteImage = '/img/DASHING/JETOUR_blanco_cam360_out.0003.webp';
 const dashingGrayImage = '/img/DASHING/JETOUR_gris_cam360_out.0003.webp';
-const dashingBlackImage = '/img/DASHING/JETOUR_negro_cam360_out.0003.webp';
 const dashingImageSection = '/img/DASHING/15.8 in. Digital screen.webp';
 const dashingSingleImageSection = '/img/DASHING/DISEÑO EXCEPCIONAL Y DEPORTIVO.webp';
 const dashingImage01 = '/img/DASHING/Foto 01.webp';
@@ -43,18 +36,12 @@ const multilevelModel = '/img/T2/Modelado tridimensional multinivel.webp';
 const superLargeAxisDistance = '/img/T2/Distancia entre ejes súper larga.webp';
 
 // Importaciones para Dashing (convertidas a strings)
-const dashingImage = '/img/DASHING/Dashing Jetour.webp';
-const dashingLogo = '/img/DASHING/Logo.png';
 const backtruckWhite = '/img/DASHING/JETOUR_JX65_cam010 white.webp';
 const surroundHifi = '/img/DASHING/Surround Hi-fi 8 speaker.webp';
 
 // Importaciones para X50 (convertidas a strings)
-const x50Image = '/img/X50/X50 Jetour.webp';
-const x50Logo = '/img/X50/Logo.png';
 
 // Importaciones para X70 (convertidas a strings)
-const x70Image = '/img/X70 Plus/X70 Jetour.webp';
-const x70Logo = '/img/X70 Plus/Logo.webp';
 // Mantener esta importación ya que no es una imagen
 import { CarThemeKey } from './theme-definitions';
 
@@ -66,10 +53,6 @@ const x70FirstSplitImage1 = '/img/X70 Plus/First Split Image - Image 1.png';
 const x70FirstSplitImage2 = '/img/X70 Plus/First Split Image - Image 2.png';
 const x70SecondSplitImage1 = '/img/X70 Plus/Second Split Image - Image 1.png';
 const x70SecondSplitImage2 = '/img/X70 Plus/Second Split Image - Image 2.png';
-
-const x70CarSelectorImage = '/img/X70 Plus/X70 Plus 45 degree Blue.webp';
-
-const dashingSelectorImage = '/img/DASHING/JETOUR_azul_cam360_out.0003.webp';
 
 const x50WhiteImage = '/img/X50/x50-360BAI_00005.webp';
 const x50BlackImage = '/img/X50/x50-360HEI_00005.webp';
@@ -198,25 +181,25 @@ export const vehiclesData: Record<string, VehicleData> = {
     },
     colorModels: [
       {
-        carImage: t2BlackImage,
+        carImage: '/t2/car_black_carousel.webp',
         color: 'nightBlack',
         colorName: 'Negro',
         hexColor: '#030304'
       },
       {
-        carImage: t2WhiteImage,
+        carImage: '/t2/car_white_carousel.webp',
         color: 'white',
         colorName: 'Blanco',
         hexColor: '#ffffff'
       },
       {
-        carImage: '/landing/t2_car_selector.png',
+        carImage: '/t2/car_neutral_carousel.png',
         color: 'neutralColor',
         colorName: 'Color Neutral',
         hexColor: '#d8cbb1'
       },
       {
-        carImage: t2SilverImage,
+        carImage: '/t2/car_silver_carousel.png',
         color: 'Silver Snow',
         colorName: 'Plateado',
         hexColor: '#8592a2'
@@ -383,36 +366,36 @@ export const vehiclesData: Record<string, VehicleData> = {
     }
   },
   dashing: {
-    carSelecctorImage: dashingSelectorImage,
+    carSelecctorImage: '/landing/dashing_car_selector.png',
     id: 'dashing',
     modelName: 'Dashing',
     tagline: 'EXPERIMENTA LA TECNOLOGÍA DE VANGUARDIA',
     theme: 'turquoise',
     hero: {
-      backgroundImage: dashingImage,
-      logo: dashingLogo
+      backgroundImage: '/dashing/car_hero_background.webp',
+      logo: '/dashing/car_logo_white.png'
     },
     colorModels: [
       {
-        carImage: dashingBlackImage,
+        carImage: '/dashing/car_black_carousel.webp',
         color: 'Black',
         colorName: 'Negro',
         hexColor: '#000000'
       },
       {
-        carImage: dashingWhiteImage,
+        carImage: '/dashing/car_white_carousel.webp',
         color: 'white',
         colorName: 'Blanco',
         hexColor: '#FFFFFF'
       },
       {
-        carImage: '/landing/dashing_car_selector.png',
+        carImage: '/dashing/car_blue_carousel.webp',
         color: 'blue',
         colorName: 'Azul',
         hexColor: '#9AC7E5'
       },
       {
-        carImage: dashingGrayImage,
+        carImage: '/dashing/car_gray_carousel.webp',
         color: 'gray',
         colorName: 'Gris',
         hexColor: '#808080'
@@ -585,8 +568,8 @@ export const vehiclesData: Record<string, VehicleData> = {
     tagline: 'INNOVACIÓN Y AMPLITUD REDEFINIDAS',
     theme: 'turquoise',
     hero: {
-      backgroundImage: x70Image,
-      logo: x70Logo
+      backgroundImage: '/x70plus/car_hero_background.jpg',
+      logo: '/x70plus/car_logo_white.png'
     },
     // Datos parciales - completar con información real
     colorModels: [
@@ -750,8 +733,8 @@ export const vehiclesData: Record<string, VehicleData> = {
     tagline: 'DISFRUTA EL VIAJE DE TU VIDA',
     theme: 'orange',
     hero: {
-      backgroundImage: x50Image,
-      logo: x50Logo
+      backgroundImage: '/x50/car_hero_background.png',
+      logo: '/x50/car_logo_white.png'
     },
     // Datos parciales - completar con información real
     colorModels: [

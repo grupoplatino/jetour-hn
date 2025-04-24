@@ -7,7 +7,9 @@ interface PageProps {
   params: { id: string };
 }
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  return generateVehicleMetadata(params.id);
+  const res = await params;
+  const { id } = res;
+  return generateVehicleMetadata(id);
 }
 
 export default async function VehicleDetailRoute({ params }: { params: Promise<{ id: string }> }) {

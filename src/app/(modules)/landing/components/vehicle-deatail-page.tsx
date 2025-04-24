@@ -32,7 +32,7 @@ export default function VehicleDetailPage({ carData, showTestDriveButton = true 
         displayJetourLogo={carData.hero.jetourLogo ? true : false}
       />
 
-      {/* <CarFeaturesShowcase carModels={carData.colorModels} features={carData.features} carTheme="orange" /> */}
+      <CarFeaturesShowcase carModels={carData.colorModels} features={carData.features} carTheme="orange" />
       {/* <VideoSection videoUrl={carData.video.url} thumbnailUrl={carData.video.thumbnail} /> */}
 
       {/* {carData.splitSections.map((section, index) => (
