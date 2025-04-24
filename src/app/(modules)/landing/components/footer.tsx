@@ -4,7 +4,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Instagram, Facebook, Youtube, MessageCircle } from 'lucide-react';
 
-import jetourLogoBlack from '@root/public/img/JetourLogoBlack.png';
 import { useParams } from 'next/navigation';
 import { getVehicleById } from '../data/vehicles-constant';
 import { carThemes } from '../data/theme-definitions';
