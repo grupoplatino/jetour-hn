@@ -13,7 +13,7 @@ export default function AboutUsPage() {
 
       {/* Hero Banner */}
       <div className="relative w-full h-[400px] md:h-[500px]">
-        <Image src={fachadaImage} alt="JETOUR Concesionaria" fill priority className="object-cover object-center" />
+        <Image width={512} height={512} src={fachadaImage} alt="JETOUR Concesionaria" fill priority className="object-cover object-center" />
         <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-white">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Nosotros</h1>
           <div className="h-1 w-20 bg-[#FF7A00]"></div>
@@ -43,7 +43,7 @@ export default function AboutUsPage() {
             </Link>
           </div>
           <div className="relative h-[400px] rounded-xl overflow-hidden shadow-xl">
-            <Image src={fachadaImage} alt="Concesionaria JETOUR Honduras" fill className="object-cover" />
+            <Image width={512} height={512} src={fachadaImage} alt="Concesionaria JETOUR Honduras" fill className="object-cover" />
           </div>
         </div>
       </section>
@@ -205,7 +205,7 @@ export default function AboutUsPage() {
             {/* Ejemplo: */}
             <div className="bg-zinc-900 rounded-xl overflow-hidden shadow-md">
               <div className="h-64 relative">
-                <Image src="/img/team/member1.jpg" alt="Nombre del Miembro" fill className="object-cover" />
+                <Image width={512} height={512} src="/img/team/member1.jpg" alt="Nombre del Miembro" fill className="object-cover" />
               </div>
               <div className="p-6 text-center">
                 <h3 className="text-xl font-bold text-white">Nombre del Ejecutivo</h3>
@@ -242,7 +242,7 @@ export default function AboutUsPage() {
             <p className="text-gray-700 italic mb-6 pt-4"></p>
             <div className="flex items-center">
               <div className="w-12 h-12 rounded-full overflow-hidden mr-4 bg-gray-200">
-                <Image src="/img/testimonials/client1.jpg" alt="Cliente" width={48} height={48} className="object-cover" />
+                <Image  src="/img/testimonials/client1.jpg" alt="Cliente" width={48} height={48} className="object-cover" />
               </div>
               <div>
                 <h4 className="font-bold">Ana Martínez</h4>

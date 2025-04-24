@@ -56,17 +56,12 @@ export default function SplitImageSection({
               {/* {image1 !== image2 && (
                 <div className="absolute inset-0 bg-black/30 z-10"></div>
               )} */}
-              <Image
-                className={cn(`w-[60%] h-full ${imageContainLeft ? 'object-cover' : 'object-cover'}`, leftImageClassName)}
-                src={image1}
-                alt="Car View 1"
-                placeholder="blur"
-              />
+              <Image width={512} height={512} className={cn(`w-[60%] h-full ${imageContainLeft ? 'object-cover' : 'object-cover'}`, leftImageClassName)} src={image1} alt="Car View 1" />
             </div>
 
             {/* Imagen derecha */}
             <div className="absolute top-0 !right-0 w-[60%] h-full overflow-hidden">
-              <Image className={`w-full h-full ${imageContainRight ? 'object-cover' : 'object-cover'}`} src={image2} alt="Car View 2" placeholder="blur" />
+              <Image width={512} height={512} className={`w-full h-full ${imageContainRight ? 'object-cover' : 'object-cover'}`} src={image2} alt="Car View 2"  />
             </div>
 
             {/* Texto de la sección */}
@@ -113,7 +108,7 @@ export default function SplitImageSection({
       ) : (
         <>
           <figure className="h-[900px] relative mx-auto w-full">
-            <Image placeholder="blur" src={image1} alt="Image Section" width={512} height={512} className="w-full mx-auto" />
+            <Image src={image1} alt="Image Section" width={512} height={512} className="w-full mx-auto" />
             {/* Texto de la sección */}
             <div
               className={`absolute top-2 ${textLeft ? 'left-8 md:left-16 lg:left-24 text-start' : 'right-4'} text-right ${

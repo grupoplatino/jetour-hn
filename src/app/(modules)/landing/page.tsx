@@ -71,12 +71,12 @@ export default function LandingPage() {
       <TestDriveButton carTheme={carTheme} />
 
       <section className="mt-[10px] relative">
-        <Image className="w-full" alt="Logo home jetour" height={512} width={512} src={homeImage} placeholder="blur" />
+        <Image className="w-full" alt="Logo home jetour" height={512} width={512} src={homeImage} />
 
         <div className="flex flex-col absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[18rem] ">
           <div className="flex flex-col">
             <h1 className="font-bold text-6xl text-center text-white">Bienvenido a</h1>
-            <Image className="w-auto h-[140px] object-contain -mt-8" alt="Logo jetour" height={512} width={512} src={jetourLogo} placeholder="blur" />
+            <Image className="w-auto h-[140px] object-contain -mt-8" alt="Logo jetour" height={512} width={512} src={jetourLogo} />
           </div>
           <h2 className="font-semibold text-3xl text-center text-white -mt-5">Diseñado para moverte, creado para inspirarte</h2>
         </div>

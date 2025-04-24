@@ -5,90 +5,92 @@ import { StaticImageData } from 'next/image';
 
 // Importaciones para T2
 
-import t2Image from '@root/public/img/T2/T2 Jetour (2).webp';
-import t2Logo from '@root/public/img/T2/Logo.png';
-import t2BlackImage from '@root/public/img/T2/car black 0022 (1).webp';
-import t2WhiteImage from '@root/public/img/T2/car white 0022.webp';
-import t2NeutralImage from '@root/public/img/T2/car.0022.webp';
-import t2SilverImage from '@root/public/img/T2/car.silver 0022.png';
-import t2BlueImage from '@root/public/img/T2/car blue 0022.webp';
-import dashingWhiteImage from '@root/public/img/DASHING/JETOUR_blanco_cam360_out.0003.webp';
-import dashingGrayImage from '@root/public/img/DASHING/JETOUR_gris_cam360_out.0003.webp';
-import dashingBlackImage from '@root/public/img/DASHING/JETOUR_negro_cam360_out.0003.webp';
-import dashingImageSection from '@root/public/img/DASHING/15.8 in. Digital screen.webp';
-import dashingSingleImageSection from '@root/public/img/DASHING/DISEÑO EXCEPCIONAL Y DEPORTIVO.webp';
-import dashingImage01 from '@root/public/img/DASHING/Foto 01.webp';
-import dashingImage02 from '@root/public/img/DASHING/Foto 02.webp';
-import dashingImage03 from '@root/public/img/DASHING/Foto 03.webp';
-import dashingImage04 from '@root/public/img/DASHING/Foto 04.webp';
-import x70PlusBlue from '@root/public/img/X70 Plus/X70 Plus 45 degree Blue.webp';
-import x70PlusBlack from '@root/public/img/X70 Plus/45 degree front left angle Black.webp';
-import X70PlusSingleImage from '@root/public/img/X70 Plus/Estabilidad y Seguridad.jpg';
-import x70FeatureImage1 from '@root/public/img/X70 Plus/Modelado Palanca.webp';
-import x70FeatureImage2 from '@root/public/img/X70 Plus/Techo Corredizo.webp';
-import x70FeatureImage3 from '@root/public/img/X70 Plus/Distancia Ejes.webp';
-import rubikKey from '@root/public/img/DASHING/Rubik_s cube key.webp';
-import headAcoustics from '@root/public/img/DASHING/Head acoustics(optional).webp';
-import wirelessCharging from '@root/public/img/DASHING/40 watts of wireless charging.webp';
-import t2ImageSection from '@root/public/img/T2/Approach and departure angles.webp';
-import t2ImageSection2 from '@root/public/img/T2/Magic Electric Door.webp';
-import extraStorageT2 from '@root/public/img/T2/Extra Large Storage Space.webp';
-import screenT2 from '@root/public/img/T2/15.6_high-resolution color touchscreen.webp';
-import t2SkeletonImage from '@root/public/img/T2/Steel skeletonized body.webp';
-import t2TopSkeletonImage from '@root/public/img/T2/Matrix protected roof.webp';
-import t2SecondSeatsRowImage from '@root/public/img/T2/Second row seats faced down.webp';
-import t2ProximityImage from '@root/public/img/T2/Forward-collision warning system copia.webp';
-import multilevelModel from '@root/public/img/T2/Modelado tridimensional multinivel.webp';
-import superLargeAxisDistance from '@root/public/img/T2/Distancia entre ejes súper larga.webp';
+// Convertir importaciones a strings
+const t2Image = '/img/T2/T2 Jetour (2).webp';
+const t2Logo = '/img/T2/Logo.png';
+const t2BlackImage = '/img/T2/car black 0022 (1).webp';
+const t2WhiteImage = '/img/T2/car white 0022.webp';
+const t2NeutralImage = '/img/T2/car.0022.webp';
+const t2SilverImage = '/img/T2/car.silver 0022.png';
+const t2BlueImage = '/img/T2/car blue 0022.webp';
+const dashingWhiteImage = '/img/DASHING/JETOUR_blanco_cam360_out.0003.webp';
+const dashingGrayImage = '/img/DASHING/JETOUR_gris_cam360_out.0003.webp';
+const dashingBlackImage = '/img/DASHING/JETOUR_negro_cam360_out.0003.webp';
+const dashingImageSection = '/img/DASHING/15.8 in. Digital screen.webp';
+const dashingSingleImageSection = '/img/DASHING/DISEÑO EXCEPCIONAL Y DEPORTIVO.webp';
+const dashingImage01 = '/img/DASHING/Foto 01.webp';
+const dashingImage02 = '/img/DASHING/Foto 02.webp';
+const dashingImage03 = '/img/DASHING/Foto 03.webp';
+const dashingImage04 = '/img/DASHING/Foto 04.webp';
+const x70PlusBlue = '/img/X70 Plus/X70 Plus 45 degree Blue.webp';
+const x70PlusBlack = '/img/X70 Plus/45 degree front left angle Black.webp';
+const X70PlusSingleImage = '/img/X70 Plus/Estabilidad y Seguridad.jpg';
+const x70FeatureImage1 = '/img/X70 Plus/Modelado Palanca.webp';
+const x70FeatureImage2 = '/img/X70 Plus/Techo Corredizo.webp';
+const x70FeatureImage3 = '/img/X70 Plus/Distancia Ejes.webp';
+const rubikKey = '/img/DASHING/Rubik_s cube key.webp';
+const headAcoustics = '/img/DASHING/Head acoustics(optional).webp';
+const wirelessCharging = '/img/DASHING/40 watts of wireless charging.webp';
+const t2ImageSection = '/img/T2/Approach and departure angles.webp';
+const t2ImageSection2 = '/img/T2/Magic Electric Door.webp';
+const extraStorageT2 = '/img/T2/Extra Large Storage Space.webp';
+const screenT2 = '/img/T2/15.6_high-resolution color touchscreen.webp';
+const t2SkeletonImage = '/img/T2/Steel skeletonized body.webp';
+const t2TopSkeletonImage = '/img/T2/Matrix protected roof.webp';
+const t2SecondSeatsRowImage = '/img/T2/Second row seats faced down.webp';
+const t2ProximityImage = '/img/T2/Forward-collision warning system copia.webp';
+const multilevelModel = '/img/T2/Modelado tridimensional multinivel.webp';
+const superLargeAxisDistance = '/img/T2/Distancia entre ejes súper larga.webp';
 
-// Importaciones para Dashing (ejemplo)
-import dashingImage from '@root/public/img/DASHING/Dashing Jetour.webp';
-import dashingLogo from '@root/public/img/DASHING/Logo.png';
-import backtruckWhite from '@root/public/img/DASHING/JETOUR_JX65_cam010 white.webp';
-import surroundHifi from '@root/public/img/DASHING/Surround Hi-fi 8 speaker.webp';
+// Importaciones para Dashing (convertidas a strings)
+const dashingImage = '/img/DASHING/Dashing Jetour.webp';
+const dashingLogo = '/img/DASHING/Logo.png';
+const backtruckWhite = '/img/DASHING/JETOUR_JX65_cam010 white.webp';
+const surroundHifi = '/img/DASHING/Surround Hi-fi 8 speaker.webp';
 
-// Importaciones para X50 (ejemplo)
-import x50Image from '@root/public/img/X50/X50 Jetour.webp';
-import x50Logo from '@root/public/img/X50/Logo.png';
+// Importaciones para X50 (convertidas a strings)
+const x50Image = '/img/X50/X50 Jetour.webp';
+const x50Logo = '/img/X50/Logo.png';
 
-// Importaciones para X70 (ejemplo)
-import x70Image from '@root/public/img/X70 Plus/X70 Jetour.webp';
-import x70Logo from '@root/public/img/X70 Plus/Logo.webp';
+// Importaciones para X70 (convertidas a strings)
+const x70Image = '/img/X70 Plus/X70 Jetour.webp';
+const x70Logo = '/img/X70 Plus/Logo.webp';
+// Mantener esta importación ya que no es una imagen
 import { CarThemeKey } from './theme-definitions';
 
-import x70gallery1 from '@root/public/img/X70 Plus/Foto 01.webp';
-import x70gallery2 from '@root/public/img/X70 Plus/Foto 02.webp';
-import x70gallery3 from '@root/public/img/X70 Plus/Foto 03.webp';
-import x70gallery4 from '@root/public/img/X70 Plus/Foto 04.webp';
-import x70FirstSplitImage1 from '@root/public/img/X70 Plus/First Split Image - Image 1.png';
-import x70FirstSplitImage2 from '@root/public/img/X70 Plus/First Split Image - Image 2.png';
-import x70SecondSplitImage1 from '@root/public/img/X70 Plus/Second Split Image - Image 1.png';
-import x70SecondSplitImage2 from '@root/public/img/X70 Plus/Second Split Image - Image 2.png';
+const x70gallery1 = '/img/X70 Plus/Foto 01.webp';
+const x70gallery2 = '/img/X70 Plus/Foto 02.webp';
+const x70gallery3 = '/img/X70 Plus/Foto 03.webp';
+const x70gallery4 = '/img/X70 Plus/Foto 04.webp';
+const x70FirstSplitImage1 = '/img/X70 Plus/First Split Image - Image 1.png';
+const x70FirstSplitImage2 = '/img/X70 Plus/First Split Image - Image 2.png';
+const x70SecondSplitImage1 = '/img/X70 Plus/Second Split Image - Image 1.png';
+const x70SecondSplitImage2 = '/img/X70 Plus/Second Split Image - Image 2.png';
 
-import x70CarSelectorImage from '@root/public/img/X70 Plus/X70 Plus 45 degree Blue.webp';
+const x70CarSelectorImage = '/img/X70 Plus/X70 Plus 45 degree Blue.webp';
 
-import dashingSelectorImage from '@root/public/img/DASHING/JETOUR_azul_cam360_out.0003.webp';
+const dashingSelectorImage = '/img/DASHING/JETOUR_azul_cam360_out.0003.webp';
 
-import x50WhiteImage from '@root/public/img/X50/x50-360BAI_00005.webp';
-import x50BlackImage from '@root/public/img/X50/x50-360HEI_00005.webp';
-import x50BlueImage from '@root/public/img/X50/x50-BLUE.webp';
-import x50SplitSection1Image2 from '@root/public/img/X50/Console.webp';
-import x50SplitSectionImage1 from '@root/public/img/X50/First Split Section - Image 1.png';
-import x50SplitSectionImage2 from '@root/public/img/X50/First Split Section - Image 2.png';
-import x50SplitSection2Image2 from '@root/public/img/X50/Second Split Section - Image 2.png';
+const x50WhiteImage = '/img/X50/x50-360BAI_00005.webp';
+const x50BlackImage = '/img/X50/x50-360HEI_00005.webp';
+const x50BlueImage = '/img/X50/x50-BLUE.webp';
+const x50SplitSection1Image2 = '/img/X50/Console.webp';
+const x50SplitSectionImage1 = '/img/X50/First Split Section - Image 1.png';
+const x50SplitSectionImage2 = '/img/X50/First Split Section - Image 2.png';
+const x50SplitSection2Image2 = '/img/X50/Second Split Section - Image 2.png';
 
-import x50FirstSpecImage from '@root/public/img/X50/Blue&grey.webp';
-import x50SinglePictureSection from '@root/public/img/X50/Seguridad & Respaldo.jpg';
+const x50FirstSpecImage = '/img/X50/Blue&grey.webp';
+const x50SinglePictureSection = '/img/X50/Seguridad & Respaldo.jpg';
 
-import x50FirstGalleryImage from '@root/public/img/X50/Left 45 degree angle view.jpg';
-import x50SecondGalleryImage from '@root/public/img/X50/Dual Screen.jpg';
-import x50FourthGalleryImage from '@root/public/img/X50/60 drgee front right angle.png';
+const x50FirstGalleryImage = '/img/X50/Left 45 degree angle view.jpg';
+const x50SecondGalleryImage = '/img/X50/Dual Screen.jpg';
+const x50FourthGalleryImage = '/img/X50/60 drgee front right angle.png';
 
-import x50SplitSection2Image1 from '@root/public/img/X50/360° Panoramic Reversing Camera&180° Transparent Chassis.jpg';
-import x50Feature1 from '@root/public/img/X50/Feature 1.png';
-import x50Feature2 from '@root/public/img/X50/Feature 2.png';
+const x50SplitSection2Image1 = '/img/X50/360° Panoramic Reversing Camera&180° Transparent Chassis.jpg';
+const x50Feature1 = '/img/X50/Feature 1.png';
+const x50Feature2 = '/img/X50/Feature 2.png';
 
-import t2NewSinglePictureImage from '@root/public/img/T2/Seguridad y Respaldo.jpg';
+const t2NewSinglePictureImage = '/img/T2/Seguridad y Respaldo.jpg';
 
 // Importación de datos de especificaciones
 
@@ -101,8 +103,8 @@ interface CarFeature {
 }
 
 interface SplitImageSection {
-  image1: StaticImageData;
-  image2: StaticImageData;
+  image1: StaticImageData | string;
+  image2: StaticImageData | string
   title: string;
   text: string;
   brochureUrl?: string;
@@ -116,7 +118,7 @@ interface SplitImageSection {
 }
 
 interface FeatureItem {
-  image: StaticImageData;
+  image: StaticImageData | string
   label: string;
 }
 
@@ -146,17 +148,17 @@ interface Visualizer {
 // Estructura principal de datos del vehículo
 export interface VehicleData {
   id: string;
-  carSelecctorImage: StaticImageData;
+  carSelecctorImage: StaticImageData | string;
   modelName: string;
   tagline: string;
   theme: CarThemeKey;
   hero: {
-    backgroundImage: StaticImageData;
-    logo: StaticImageData;
+    backgroundImage: StaticImageData | string;
+    logo: StaticImageData | string
     jetourLogo?: boolean;
   };
   colorModels: {
-    carImage: StaticImageData;
+    carImage: StaticImageData | string;
     color: string;
     colorName: string;
     hexColor: string;
@@ -174,9 +176,9 @@ export interface VehicleData {
   };
   singlePictureSection: {
     title: string;
-    image: StaticImageData;
+    image: StaticImageData | string;
   };
-  gallery: StaticImageData[];
+  gallery: StaticImageData[] | string[];
   specs: Record<string, Record<string, string>>;
   visualizer: Visualizer;
 }

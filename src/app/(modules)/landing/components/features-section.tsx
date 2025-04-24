@@ -30,7 +30,6 @@ export default function FeaturesSection({ title, features }: FeaturesSectionProp
                 alt={feature.label}
                 fill
                 className="object-cover"
-                placeholder="blur"
                 style={{
                   objectPosition: '50%',
                   transformOrigin: 'left center'

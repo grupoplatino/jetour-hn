@@ -54,7 +54,6 @@ export default function CarModelsGallery({ title = 'Nuestros Modelos', models, c
                 width={512}
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-contain transition-transform duration-700 ease-in-out group-hover:scale-105"
-                placeholder="blur"
               />
             </div>
 
