@@ -4,7 +4,6 @@ import Link from 'next/link';
 import { Calendar, Medal, Users, TrendingUp, Target, Globe } from 'lucide-react';
 import WhatsAppButton from '../components/whats-app-button';
 import TestDriveButton from '../components/test-drive-button';
-import fachadaImage from '@root/public/img/Fachada Jetour.webp';
 
 export default function AboutUsPage() {
   return (
@@ -13,7 +12,7 @@ export default function AboutUsPage() {
 
       {/* Hero Banner */}
       <div className="relative w-full h-[400px] md:h-[500px]">
-        <Image width={512} height={512} src={fachadaImage} alt="JETOUR Concesionaria" fill className="object-cover object-center" />
+        <Image src={'/nosotros/hero_background.webp'} alt="JETOUR Concesionaria" fill className="object-cover object-center" />
         <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-white">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Nosotros</h1>
           <div className="h-1 w-20 bg-[#FF7A00]"></div>
@@ -43,7 +42,7 @@ export default function AboutUsPage() {
             </Link>
           </div>
           <div className="relative h-[400px] rounded-xl overflow-hidden shadow-xl">
-            <Image width={512} height={512} src={fachadaImage} alt="Concesionaria JETOUR Honduras" fill className="object-cover" />
+            <Image src={'/nosotros/hero_background.webp'} alt="Concesionaria JETOUR Honduras" fill className="object-cover" />
           </div>
         </div>
       </section>
@@ -205,7 +204,7 @@ export default function AboutUsPage() {
             {/* Ejemplo: */}
             <div className="bg-zinc-900 rounded-xl overflow-hidden shadow-md">
               <div className="h-64 relative">
-                <Image width={512} height={512} src="/img/team/member1.jpg" alt="Nombre del Miembro" fill className="object-cover" />
+                <Image src="/nosotros/team_member1.png" alt="Nombre del Miembro" fill className="object-cover" />
               </div>
               <div className="p-6 text-center">
                 <h3 className="text-xl font-bold text-white">Nombre del Ejecutivo</h3>

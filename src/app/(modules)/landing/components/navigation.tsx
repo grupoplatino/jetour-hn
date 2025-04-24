@@ -5,6 +5,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import clsx from 'clsx';
+import { useParams } from 'next/navigation';
+import { getVehicleById } from '../data/vehicles-constant';
+import { set } from 'react-hook-form';
 
 interface NavbarProps {
   disableTransparent?: boolean;
@@ -16,6 +19,17 @@ export function Navbar({ disableTransparent = false, primaryColor = '#FF7A00' }:
   const [dropdownOpen, setDropdownOpen] = useState<boolean>(false);
   const [scrollPosition, setScrollPosition] = useState(0);
   const [isLoaded, setIsLoaded] = useState(false);
+  const [primaryColorState, setPrimaryColorState] = useState(primaryColor);
+
+  const params = useParams();
+
+  useEffect(() => {
+    const selectedVehicleData = getVehicleById(params.id as string);
+    if (selectedVehicleData) {
+      const selectedVehicleTheme = selectedVehicleData.theme;
+      setPrimaryColorState(selectedVehicleTheme);
+    }
+  }, [params]);
 
   const handleScroll = () => {
     const position = window.pageYOffset;
@@ -113,7 +127,7 @@ export function Navbar({ disableTransparent = false, primaryColor = '#FF7A00' }:
       </section>
 
       {/* Línea de color principal */}
-      <div className="h-2" style={{ backgroundColor: primaryColor }} />
+      <div className="h-2" style={{ backgroundColor: primaryColorState }} />
 
       {/* Mobile Menu */}
       {toggledNav && (

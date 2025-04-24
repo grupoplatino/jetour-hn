@@ -2,7 +2,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Timer, Clock, Wrench, ShieldCheck, Calendar, Truck } from 'lucide-react';
-import heroImage from '@root/public/img/DASHING/Foto 01.jpg';
 import WhatsAppButton from '../components/whats-app-button';
 import TestDriveButton from '../components/test-drive-button';
 
@@ -13,7 +12,7 @@ export default function PostVentaPage() {
 
       {/* Hero Banner */}
       <div className="relative w-full h-[300px] md:h-[400px] lg:h-[600px] overflow-hidden">
-        <Image width={512} height={512} src={heroImage} alt="Servicio Postventa JETOUR" fill className="object-cover brightness-50 mt-[90px]" />
+        <Image src={'/postventa/hero_background.jpg'} alt="Servicio Postventa JETOUR" fill className="object-cover brightness-50 mt-[90px]" />
         <div className="absolute inset-0 flex flex-col justify-center items-center text-white">
           <h1 className="text-3xl md:text-5xl font-bold mb-4">Servicio Postventa</h1>
           <div className="h-1 w-20 bg-[#FF7A00]"></div>
