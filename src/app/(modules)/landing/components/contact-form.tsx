@@ -8,7 +8,7 @@ interface CotizacionProps {
   themeKey: CarThemeKey;
 }
 
-export default function ContactForm({ backgroundImage = '/img/Fondo Cotización.jpg', themeKey }: CotizacionProps) {
+export default function ContactForm({ backgroundImage = '/landing/form_background.jpg', themeKey }: CotizacionProps) {
   const theme = carThemes[themeKey];
   const textColor = theme.colors.sectionText;
 
@@ -27,7 +27,7 @@ export default function ContactForm({ backgroundImage = '/img/Fondo Cotización.
           <div className="hidden md:flex md:items-end md:justify-start relative">
             {/* Badge de garantía */}
             <div className="absolute bottom-4 left-4">
-              <Image src={'/landing//landing/certficate_logo.png'} width={180} height={240} alt="Certificado de Garantía" className="w-auto h-auto" />
+              <Image src={'/landing/certficate_logo.png'} width={180} height={240} alt="Certificado de Garantía" className="w-auto h-auto" />
             </div>
           </div>
 
@@ -40,7 +40,7 @@ export default function ContactForm({ backgroundImage = '/img/Fondo Cotización.
 
         {/* Badge de garantía en móvil */}
         <div className="md:hidden absolute bottom-4 left-4">
-          <Image src={'/landing//landing/certficate_logo.png'} width={120} height={160} alt="Certificado de Garantía" className="w-auto h-auto" />
+          <Image src={'/landing/certficate_logo.png'} width={120} height={160} alt="Certificado de Garantía" className="w-auto h-auto" />
         </div>
       </div>
     </section>
