@@ -852,7 +852,7 @@ export const vehiclesData: Record<string, VehicleData> = {
     },
     visualizer: {
       title: 'VISUALIZADOR 3D',
-      basePath: '/img/X50/Exterior 360_',
+      basePath: '/x50/3d/exterior',
       filePattern: 'X50-EXT-{index}.png',
       imageCount: 71,
       colors: [
