@@ -34,9 +34,6 @@ const surroundHifi = '/img/DASHING/Surround Hi-fi 8 speaker.webp';
 // Mantener esta importación ya que no es una imagen
 import { CarThemeKey } from './theme-definitions';
 
-const x70gallery2 = '/img/X70 Plus/Foto 02.webp';
-const x70gallery3 = '/img/X70 Plus/Foto 03.webp';
-const x70gallery4 = '/img/X70 Plus/Foto 04.webp';
 const x70FirstSplitImage1 = '/img/X70 Plus/First Split Image - Image 1.png';
 const x70FirstSplitImage2 = '/img/X70 Plus/First Split Image - Image 2.png';
 const x70SecondSplitImage1 = '/img/X70 Plus/Second Split Image - Image 1.png';
@@ -633,7 +630,7 @@ export const vehiclesData: Record<string, VehicleData> = {
       title: 'SEGURIDAD Y RESPALDO',
       image: X70PlusSingleImage
     },
-    gallery: ['/x70Plus/car_gallery_image1.jpg', x70gallery2, x70gallery3, x70gallery4],
+    gallery: ['/x70Plus/car_gallery_image1.jpg', '/x70Plus/car_gallery_image2.jpg', '/x70Plus/car_gallery_image3.jpg', '/x70Plus/car_gallery_image4.jpg'],
     specs: {
       'Diseño y estilo': {
         Capacidad: 'Asientos: 3 filas, 7 pasajeros',
