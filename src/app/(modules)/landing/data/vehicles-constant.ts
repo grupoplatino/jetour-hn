@@ -23,8 +23,6 @@ const t2ImageSection = '/img/T2/Approach and departure angles.webp';
 const t2ImageSection2 = '/img/T2/Magic Electric Door.webp';
 const extraStorageT2 = '/img/T2/Extra Large Storage Space.webp';
 const screenT2 = '/img/T2/15.6_high-resolution color touchscreen.webp';
-const t2TopSkeletonImage = '/img/T2/Matrix protected roof.webp';
-const t2SecondSeatsRowImage = '/img/T2/Second row seats faced down.webp';
 const t2ProximityImage = '/img/T2/Forward-collision warning system copia.webp';
 const multilevelModel = '/img/T2/Modelado tridimensional multinivel.webp';
 const superLargeAxisDistance = '/img/T2/Distancia entre ejes súper larga.webp';
@@ -256,7 +254,7 @@ export const vehiclesData: Record<string, VehicleData> = {
       title: 'SEGURIDAD Y RESPALDO',
       image: t2NewSinglePictureImage
     },
-    gallery: ['/t2/car_gallery_image1.jpg', t2TopSkeletonImage, t2SecondSeatsRowImage, t2ProximityImage],
+    gallery: ['/t2/car_gallery_image1.jpg', '/t2/car_gallery_image2.jpg', '/t2/car_gallery_image3.jpg', '/t2/car_gallery_image4.jpg'],
     specs: {
       'Parámetros básicos': {
         'Dimensiones (mm)': '4785 x 2006 x 1880',
