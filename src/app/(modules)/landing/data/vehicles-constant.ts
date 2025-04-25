@@ -695,7 +695,7 @@ export const vehiclesData: Record<string, VehicleData> = {
       ],
       interiorImagePath: [
         {
-          path: '/img/X70 Plus/X70PLUS_360/INT/X70PLUS-INT.webp',
+          path: '/x70Plus/3d/interior/red.webp',
           colorName: 'black',
           hexColor: '#000000'
         }
