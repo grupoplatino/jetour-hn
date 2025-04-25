@@ -61,7 +61,7 @@ export default function VehicleDetailPage({ carData, showTestDriveButton = true 
 
       <CarGallerySection images={carData.gallery} />
 
-      {/* <SpecsSection specs={carData.specs} themeKey={carTheme} /> */}
+      <SpecsSection specs={carData.specs} themeKey={carTheme} />
 
       {/* <section className="p-6 pb-12">
         <VehicleVisualizer
