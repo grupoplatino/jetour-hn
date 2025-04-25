@@ -6,7 +6,6 @@ import { StaticImageData } from 'next/image';
 // Importaciones para T2
 
 // Convertir importaciones a strings
-const t2BlueImage = '/img/T2/car blue 0022.webp';
 const dashingImageSection = '/img/DASHING/15.8 in. Digital screen.webp';
 const dashingSingleImageSection = '/img/DASHING/DISEÑO EXCEPCIONAL Y DEPORTIVO.webp';
 const dashingImage01 = '/img/DASHING/Foto 01.webp';
@@ -198,7 +197,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         hexColor: '#8592a2'
       },
       {
-        carImage: t2BlueImage,
+        carImage: '/t2/car_blue_carousel.webp',
         color: 'Misty Cyan',
         colorName: 'Cyan',
         hexColor: '#336caf'
