@@ -292,7 +292,7 @@ export const vehiclesData: Record<string, VehicleData> = {
     },
     visualizer: {
       title: 'VISUALIZADOR 3D',
-      basePath: '/img/T2/T2 360_',
+      basePath: '/t2/3d/exterior',
       filePattern: 'T2-EXT-{index}.png',
       imageCount: 36,
       colors: [
