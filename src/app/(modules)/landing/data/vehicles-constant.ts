@@ -8,7 +8,6 @@ import { StaticImageData } from 'next/image';
 // Convertir importaciones a strings
 const dashingImageSection = '/img/DASHING/15.8 in. Digital screen.webp';
 const dashingSingleImageSection = '/img/DASHING/DISEÑO EXCEPCIONAL Y DEPORTIVO.webp';
-const dashingImage01 = '/img/DASHING/Foto 01.webp';
 const dashingImage02 = '/img/DASHING/Foto 02.webp';
 const dashingImage03 = '/img/DASHING/Foto 03.webp';
 const dashingImage04 = '/img/DASHING/Foto 04.webp';
@@ -23,7 +22,6 @@ const t2ImageSection = '/img/T2/Approach and departure angles.webp';
 const t2ImageSection2 = '/img/T2/Magic Electric Door.webp';
 const extraStorageT2 = '/img/T2/Extra Large Storage Space.webp';
 const screenT2 = '/img/T2/15.6_high-resolution color touchscreen.webp';
-const t2ProximityImage = '/img/T2/Forward-collision warning system copia.webp';
 const multilevelModel = '/img/T2/Modelado tridimensional multinivel.webp';
 const superLargeAxisDistance = '/img/T2/Distancia entre ejes súper larga.webp';
 
@@ -449,7 +447,7 @@ export const vehiclesData: Record<string, VehicleData> = {
     },
     gallery: [
       // Placeholder para Dashing
-      dashingImage01,
+      '/dashing/car_gallery_image1.jpg',
       dashingImage02,
       dashingImage03,
       dashingImage04
