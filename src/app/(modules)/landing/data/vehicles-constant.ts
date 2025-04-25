@@ -524,12 +524,12 @@ export const vehiclesData: Record<string, VehicleData> = {
       ],
       interiorImagePath: [
         {
-          path: '/img/DASHING/Dashing 360_/IN/Grey&white/Grey&white.webp',
+          path: '/dashing/3d/interior/grey_white.webp',
           colorName: 'Gris',
           hexColor: '#808080'
         },
         {
-          path: '/img/DASHING/Dashing 360_/IN/Black&red/Black&red.webp',
+          path: '/dashing/3d/interior/black_red.webp',
           colorName: 'Negro',
           hexColor: '#000000'
         }
