@@ -13,7 +13,6 @@ const dashingImage01 = '/img/DASHING/Foto 01.webp';
 const dashingImage02 = '/img/DASHING/Foto 02.webp';
 const dashingImage03 = '/img/DASHING/Foto 03.webp';
 const dashingImage04 = '/img/DASHING/Foto 04.webp';
-const x70PlusBlue = '/img/X70 Plus/X70 Plus 45 degree Blue.webp';
 const X70PlusSingleImage = '/img/X70 Plus/Estabilidad y Seguridad.jpg';
 const x70FeatureImage1 = '/img/X70 Plus/Modelado Palanca.webp';
 const x70FeatureImage2 = '/img/X70 Plus/Techo Corredizo.webp';
@@ -568,7 +567,7 @@ export const vehiclesData: Record<string, VehicleData> = {
     // Datos parciales - completar con información real
     colorModels: [
       {
-        carImage: x70PlusBlue,
+        carImage: '/x70plus/car_blue_carousel.webp',
         color: 'Blue',
         colorName: 'Azul',
         hexColor: '#2E3A5F'
