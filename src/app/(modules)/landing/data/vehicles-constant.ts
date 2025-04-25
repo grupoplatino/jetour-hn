@@ -43,15 +43,12 @@ const x70FirstSplitImage2 = '/img/X70 Plus/First Split Image - Image 2.png';
 const x70SecondSplitImage1 = '/img/X70 Plus/Second Split Image - Image 1.png';
 const x70SecondSplitImage2 = '/img/X70 Plus/Second Split Image - Image 2.png';
 
-const x50SplitSection1Image2 = '/img/X50/Console.webp';
 const x50SplitSectionImage1 = '/img/X50/First Split Section - Image 1.png';
 const x50SplitSectionImage2 = '/img/X50/First Split Section - Image 2.png';
 const x50SplitSection2Image2 = '/img/X50/Second Split Section - Image 2.png';
 
 const x50FirstSpecImage = '/img/X50/Blue&grey.webp';
 const x50SinglePictureSection = '/img/X50/Seguridad & Respaldo.jpg';
-
-const x50FourthGalleryImage = '/img/X50/60 drgee front right angle.png';
 
 const x50SplitSection2Image1 = '/img/X50/360° Panoramic Reversing Camera&180° Transparent Chassis.jpg';
 const x50Feature1 = '/img/X50/Feature 1.png';
@@ -804,7 +801,7 @@ export const vehiclesData: Record<string, VehicleData> = {
       title: 'SEGURIDAD Y RESPALDO',
       image: x50SinglePictureSection
     },
-    gallery: ['/x50/car_gallery_image1.jpg', '/x50/car_gallery_image2.jpg', x50SplitSection1Image2, x50FourthGalleryImage],
+    gallery: ['/x50/car_gallery_image1.jpg', '/x50/car_gallery_image2.jpg', '/x50/car_gallery_image3.jpg', '/x50/car_gallery_image4.png'],
     specs: {
       'Características principales': {
         Motor: 'Motor 1.5 L turbo',
