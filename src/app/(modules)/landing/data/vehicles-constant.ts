@@ -329,12 +329,12 @@ export const vehiclesData: Record<string, VehicleData> = {
       ],
       interiorImagePath: [
         {
-          path: '/img/T2/Interior/Forward-collision warning system copia (2).webp',
+          path: '/t2/3d/interior/black.webp',
           colorName: 'Negro',
           hexColor: '#000000'
         },
         {
-          path: '/img/T2/Interior/brown.webp',
+          path: '/t2/3d/interior/brown.webp',
           colorName: 'Cafe',
           hexColor: '#654321'
         }
