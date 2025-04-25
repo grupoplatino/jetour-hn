@@ -200,7 +200,7 @@ export const vehiclesData: Record<string, VehicleData> = {
       { name: 'DESPLAZAMIENTO (ML)', value: 1998, position: 'bottomright' }
     ],
     video: {
-      url: '/video/Video-T2/T2 TVC-15s-4K.mp4',
+      url: '/t2/single_video_section_video.mp4',
       thumbnail: '/img/T2/T2 Jetour.jpg'
     },
     splitSections: [
@@ -390,7 +390,7 @@ export const vehiclesData: Record<string, VehicleData> = {
       { name: 'DESPLAZAMIENTO (ML)', value: 1598, position: 'bottomright' }
     ],
     video: {
-      url: '/video/Video-Dashing/Product CG Video.mp4',
+      url: '/dashing/single_video_section_video.mp4',
       thumbnail: '/img/DASHING/Dashing Jetour.webp'
     },
     splitSections: [
@@ -581,7 +581,7 @@ export const vehiclesData: Record<string, VehicleData> = {
       { name: 'DESPLAZAMIENTO (ML)', value: 1598, position: 'bottomright' }
     ],
     video: {
-      url: '/video/Videos-X70-Plus-Web/Video X70 Plus.mp4',
+      url: '/x70plus/single_video_section_video.mp4',
       thumbnail: '/img/X70 Plus/0Y6H8571_1final.jpg'
     },
     splitSections: [
@@ -746,7 +746,7 @@ export const vehiclesData: Record<string, VehicleData> = {
       { name: 'DESPLAZAMIENTO (ML)', value: 1499, position: 'bottomright' }
     ],
     video: {
-      url: '/video/Video-X50/No Subtitle(1).mp4',
+      url: '/x50/single_video_section_video.mp4',
       thumbnail: '/img/X50/X50 Jetour.webp'
     },
     splitSections: [
