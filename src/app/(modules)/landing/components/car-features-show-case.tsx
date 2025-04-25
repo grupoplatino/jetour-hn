@@ -1,20 +1,14 @@
 // car-features-showcase.tsx
-import { StaticImageData } from "next/image";
-import { CarFeatureStats } from "./car-feature-stats";
-import { CarColorSelector } from "./car-color-selector";
-import { CarThemeKey } from "../data/theme-definitions";
+import { StaticImageData } from 'next/image';
+import { CarFeatureStats } from './car-feature-stats';
+import { CarColorSelector } from './car-color-selector';
+import { CarThemeKey } from '../data/theme-definitions';
 
 // Definición de tipos
 export interface CarFeature {
   name: string;
   value: string | number;
-  position:
-    | "topleft"
-    | "topright"
-    | "topcenter"
-    | "bottomleft"
-    | "bottomright"
-    | "bottomcenter";
+  position: 'topleft' | 'topright' | 'topcenter' | 'bottomleft' | 'bottomright' | 'bottomcenter';
 }
 
 export interface CarColorModel {
@@ -32,39 +26,19 @@ interface CarFeaturesShowcaseProps {
 }
 
 // Este es el componente principal renderizado por el servidor
-export default function CarFeaturesShowcase({
-  carModels,
-  features,
-  carTheme,
-}: CarFeaturesShowcaseProps) {
+export default function CarFeaturesShowcase({ carModels, features, carTheme }: CarFeaturesShowcaseProps) {
   if (!carModels.length) return null;
 
   // Filtrar características por posición para mostrarlas en la parte superior o inferior
-  const topFeatures = features.filter(
-    (f) =>
-      f.position === "topleft" ||
-      f.position === "topright" ||
-      f.position === "topcenter"
-  );
+  const topFeatures = features.filter((f) => f.position === 'topleft' || f.position === 'topright' || f.position === 'topcenter');
 
-  const bottomFeatures = features.filter(
-    (f) =>
-      f.position === "bottomleft" ||
-      f.position === "bottomright" ||
-      f.position === "bottomcenter"
-  );
+  const bottomFeatures = features.filter((f) => f.position === 'bottomleft' || f.position === 'bottomright' || f.position === 'bottomcenter');
 
   return (
     <section className="relative w-full py-4 overflow-hidden">
-      <div className="grid grid-cols-1 text-center md:flex md:justify-around gap-4 px-4 w-full">
+      <div className="grid grid-cols-1 text-center md:flex md:justify-around gap-4 px-4 w-full pt-10">
         {topFeatures.map((feature, index) => (
-          <CarFeatureStats
-            key={index}
-            name={feature.name}
-            value={feature.value}
-            position={feature.position}
-            carTheme={carTheme}
-          />
+          <CarFeatureStats key={index} name={feature.name} value={feature.value} position={feature.position} carTheme={carTheme} />
         ))}
       </div>
 
@@ -72,13 +46,7 @@ export default function CarFeaturesShowcase({
 
       <div className="grid grid-cols-1 text-center md:flex md:justify-around gap-4 mt-6 px-4 w-ful">
         {bottomFeatures.map((feature, index) => (
-          <CarFeatureStats
-            key={index}
-            name={feature.name}
-            value={feature.value}
-            position={feature.position}
-            carTheme={carTheme}
-          />
+          <CarFeatureStats key={index} name={feature.name} value={feature.value} position={feature.position} carTheme={carTheme} />
         ))}
       </div>
     </section>
