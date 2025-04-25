@@ -493,7 +493,7 @@ export const vehiclesData: Record<string, VehicleData> = {
     }, // Reemplazar con los datos correctos
     visualizer: {
       title: 'VISUALIZADOR 3D',
-      basePath: '/img/DASHING/Dashing 360_/360 OUT',
+      basePath: '/dashing/3d/exterior',
       filePattern: 'DASHING-EXT-{index}.png',
       imageCount: 36,
       colors: [
