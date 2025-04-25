@@ -11,6 +11,7 @@ import Image from 'next/image';
 
 import { Metadata } from 'next';
 import CarModelsGallery from './components/car-model-gallery';
+import VehicleDetailPage from './components/vehicle-deatail-page';
 
 export const metadata: Metadata = {
   title: 'Jetour Honduras | SUVs de Lujo y Alta Tecnología',
@@ -109,9 +110,7 @@ export default function LandingPage() {
 
       <CarModelsGallery models={Object.values(vehiclesData)} themeKey="orange" />
 
-      {/*
-
-      <VehicleDetailPage showTestDriveButton={false} carData={landingCar} /> */}
+      <VehicleDetailPage showTestDriveButton={false} carData={landingCar} />
     </>
   );
 }
