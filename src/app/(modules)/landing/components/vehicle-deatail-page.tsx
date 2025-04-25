@@ -76,7 +76,7 @@ export default function VehicleDetailPage({ carData, showTestDriveButton = true 
         />
       </section> */}
 
-      {/* <ContactForm themeKey={carTheme} /> */}
+      <ContactForm themeKey={carTheme} />
     </>
   );
 }
