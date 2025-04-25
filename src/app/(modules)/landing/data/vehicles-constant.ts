@@ -806,13 +806,7 @@ export const vehiclesData: Record<string, VehicleData> = {
       title: 'SEGURIDAD Y RESPALDO',
       image: x50SinglePictureSection
     },
-    gallery: [
-      // Placeholder para Dashing
-      x50FirstGalleryImage,
-      x50SecondGalleryImage,
-      x50SplitSection1Image2,
-      x50FourthGalleryImage
-    ],
+    gallery: ['/x50/car_gallery_image1.jpg', x50SecondGalleryImage, x50SplitSection1Image2, x50FourthGalleryImage],
     specs: {
       'Características principales': {
         Motor: 'Motor 1.5 L turbo',
