@@ -676,7 +676,7 @@ export const vehiclesData: Record<string, VehicleData> = {
     },
     visualizer: {
       title: 'VISUALIZADOR 3D',
-      basePath: '/img/X70 Plus/X70PLUS_360',
+      basePath: '/x70Plus/3d/exterior',
       filePattern: 'X70PLUS-EXT-{index}.png',
       imageCount: 36,
       colors: [
