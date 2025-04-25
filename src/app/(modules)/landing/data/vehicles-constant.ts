@@ -877,12 +877,12 @@ export const vehiclesData: Record<string, VehicleData> = {
       ],
       interiorImagePath: [
         {
-          path: '/img/X50/Interior-2/Blue&grey/Blue&grey (1).webp',
+          path: '/x50/3d/interior/blue.webp',
           colorName: 'blue',
           hexColor: '#2E3A5F'
         },
         {
-          path: '/img/X50/Interior-2/Black&Red/Black&Red.jpg',
+          path: '/x50/3d/interior/black.jpg',
           colorName: 'black',
           hexColor: '#000000'
         }
