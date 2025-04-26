@@ -7,9 +7,6 @@ import { StaticImageData } from 'next/image';
 
 // Convertir importaciones a strings
 const dashingImageSection = '/img/DASHING/15.8 in. Digital screen.webp';
-const rubikKey = '/img/DASHING/Rubik_s cube key.webp';
-const headAcoustics = '/img/DASHING/Head acoustics(optional).webp';
-const wirelessCharging = '/img/DASHING/40 watts of wireless charging.webp';
 const t2ImageSection = '/img/T2/Approach and departure angles.webp';
 const t2ImageSection2 = '/img/T2/Magic Electric Door.webp';
 const extraStorageT2 = '/img/T2/Extra Large Storage Space.webp';
@@ -402,15 +399,15 @@ export const vehiclesData: Record<string, VehicleData> = {
       items: [
         // Placeholder para Dashing
         {
-          image: rubikKey,
+          image: '/dashing/spec_first_image.jpg',
           label: 'ARRANQUE REMOTO Y ENCENDIDO SIN LLAVE'
         },
         {
-          image: headAcoustics,
+          image: '/dashing/spec_second_image.jpg',
           label: 'HEAD ACOUSTICS'
         },
         {
-          image: wirelessCharging,
+          image: '/dashing/spec_third_image.jpg',
           label: 'ALMOHADILLA DE CARGA INALÁMBRICA DE 40 W'
         }
       ]
