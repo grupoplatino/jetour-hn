@@ -350,14 +350,14 @@ export const vehiclesData: Record<string, VehicleData> = {
         image1: '/dashing/car_split_image_1.webp',
         image2: '/dashing/car_split_image_1.webp',
         title: 'MINIMALISMO Y TECNOLOGÍA',
-        text: `El estilo interior minimalista de la Dashing se destaca por su pantalla LCD de 15.6" con un pandel de instrumentos LCD.`,
+        text: `El estilo interior minimalista de la Dashing se destaca por su pantalla LCD de 15.6" con un panel de instrumentos.`,
         whiteText: true
       },
       {
         image1: '/dashing/car_split_image_2.webp',
         image2: '/dashing/car_split_image_3.webp',
         title: 'VANGUARDIA AL SERVICIO DEL DISEÑO',
-        text: `La carrocería de la Dashing de líneas suaves y recetas, se destaca por su diseño deportivo coupé en 3D y su asa inteligente de detección invisible, lo que le otorga una sensación de tecnología futurista.`,
+        text: `La carrocería de la Dashing de líneas suaves, se destaca por su diseño deportivo coupé en 3D y su asa inteligente de detección invisible, lo que le otorga una sensación de tecnología futurista.`,
         brochureUrl: 'https://platinosoftware.blob.core.windows.net/auto-aliados/Ficha_tecnica_dashing.pdf',
         leftSpacing: '-20rem',
         rightSpacing: '16rem',
