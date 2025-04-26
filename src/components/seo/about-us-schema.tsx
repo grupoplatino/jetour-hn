@@ -20,7 +20,7 @@ export default function AboutPageSchema() {
       description:
         'En JETOUR Honduras, nos enorgullece ofrecer vehículos de clase mundial que combinan innovación, rendimiento y diseño excepcional. Somos el distribuidor oficial de la marca JETOUR en Honduras, comprometidos con brindar a nuestros clientes una experiencia de conducción inigualable.',
       slogan: 'Drive Your Future',
-      image: 'https://www.jetourhn.com/img/Fachada-Jetour.jpg',
+      image: 'https://www.jetourhn.com/contactnos/hero_background.webp',
       award: ['Concesionario oficial Jetour en Honduras'],
       brand: {
         '@type': 'Brand',

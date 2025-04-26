@@ -7,7 +7,7 @@ export default function OrganizationSchema() {
     name: 'Jetour Honduras - Autos Aliados',
     legalName: 'Autos Aliados S.A.',
     url: 'https://www.jetourhn.com',
-    logo: 'https://www.jetourhn.com/img/JetourLogo.png',
+    logo: 'https://www.jetourhn.com/landing/jetour_logo_white_drive_your_future.png',
     foundingDate: '2023',
     founders: [
       {

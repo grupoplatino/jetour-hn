@@ -5,11 +5,16 @@ import { MapPin, Phone, MessageSquare, Clock } from 'lucide-react';
 import ContactForm from '../components/contact-form';
 import WhatsAppButton from '../components/whats-app-button';
 import TestDriveButton from '../components/test-drive-button';
+import { ContactPageSEO, generateContactMetadata } from '@/components/seo/contact-page.seo';
+
+export const metadata = generateContactMetadata();
 
 export default function ContactPage() {
   return (
     <div className="min-h-screen">
       <TestDriveButton carTheme={'orange'} />
+
+      <ContactPageSEO />
 
       {/* Hero Banner */}
       <div className="relative w-full h-[300px] md:h-[400px] lg:h-[600px] overflow-hidden">
