@@ -3,16 +3,6 @@
 
 import { StaticImageData } from 'next/image';
 
-// Convertir importaciones a strings
-const dashingImageSection = '/img/DASHING/15.8 in. Digital screen.webp';
-
-// Importaciones para Dashing (convertidas a strings)
-const backtruckWhite = '/img/DASHING/JETOUR_JX65_cam010 white.webp';
-const surroundHifi = '/img/DASHING/Surround Hi-fi 8 speaker.webp';
-
-// Importaciones para X50 (convertidas a strings)
-
-// Importaciones para X70 (convertidas a strings)
 // Mantener esta importación ya que no es una imagen
 import { CarThemeKey } from './theme-definitions';
 
@@ -371,15 +361,15 @@ export const vehiclesData: Record<string, VehicleData> = {
     splitSections: [
       // Placeholder para Dashing
       {
-        image1: dashingImageSection,
-        image2: dashingImageSection,
+        image1: '/dashing/car_split_image_1.jpg',
+        image2: '/dashing/car_split_image_1.jpg',
         title: 'MINIMALISMO Y TECNOLOGÍA',
         text: `El estilo interior minimalista de la Dashing se destaca por su pantalla LCD de 15.6" con un pandel de instrumentos LCD.`,
         whiteText: true
       },
       {
-        image1: backtruckWhite,
-        image2: surroundHifi,
+        image1: '/dashing/car_split_image_2.jpg',
+        image2: '/dashing/car_split_image_3.jpg',
         title: 'VANGUARDIA AL SERVICIO DEL DISEÑO',
         text: `La carrocería de la Dashing de líneas suaves y recetas, se destaca por su diseño deportivo coupé en 3D y su asa inteligente de detección invisible, lo que le otorga una sensación de tecnología futurista.`,
         brochureUrl: 'https://platinosoftware.blob.core.windows.net/auto-aliados/Ficha_tecnica_dashing.pdf',
