@@ -581,7 +581,10 @@ export const vehiclesData: Record<string, VehicleData> = {
       title: 'SEGURIDAD Y RESPALDO',
       image: '/x70plus/single_picture_image.jpg'
     },
-    gallery: ['/x70Plus/car_gallery_image1.jpg', '/x70Plus/car_gallery_image2.jpg', '/x70Plus/car_gallery_image3.jpg', '/x70Plus/car_gallery_image4.jpg'],
+    gallery: ['/x70Plus/car_gallery_image1.jpg',
+       '/x70Plus/car_gallery_image2.jpg', 
+       '/x70Plus/car_gallery_image3.jpg', 
+       '/x70Plus/car_gallery_image4.jpg'],
     specs: {
       'Diseño y estilo': {
         Capacidad: 'Asientos: 3 filas, 7 pasajeros',
