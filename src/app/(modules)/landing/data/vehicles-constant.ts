@@ -210,7 +210,8 @@ export const vehiclesData: Record<string, VehicleData> = {
       "Parámetros básicos": {
         "Dimensiones (mm)": "4785 x 2006 x 1880",
         Capacidad: "5 pasajeros",
-        "Colores exteriores": "Blanco, gris claro, negro, arena, cyan",
+        "Colores exteriores":
+          "Sand (arena), silver snow (gris), white, black, misty cyan (azul)",
       },
       Motor: {
         Tipo: "2.0 Turbo",
@@ -269,13 +270,13 @@ export const vehiclesData: Record<string, VehicleData> = {
         {
           name: "nightBlack",
           hex: "#1d1d1b",
-          folderName: "Night Black",
+          folderName: "Black",
           class: "bg-[#030304]",
         },
         {
           name: "sand",
           hex: "#827058",
-          folderName: "Sand",
+          folderName: "Sand (Arena)",
           class: "bg-[#827058]",
         },
         {
@@ -287,7 +288,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         {
           name: "mistyCyan",
           hex: "#336caf",
-          folderName: "Misty Cyan",
+          folderName: "Misty Cyan (Azul)",
           class: "bg-[#336caf]",
         },
       ],
@@ -319,26 +320,26 @@ export const vehiclesData: Record<string, VehicleData> = {
     colorModels: [
       {
         carImage: "/dashing/car_black_carousel.webp",
-        color: "Black",
-        colorName: "Negro",
+        color: "black",
+        colorName: "Black",
         hexColor: "#000000",
       },
       {
         carImage: "/dashing/car_white_carousel.webp",
         color: "white",
-        colorName: "Blanco",
+        colorName: "White",
         hexColor: "#FFFFFF",
       },
       {
         carImage: "/dashing/car_blue_carousel.webp",
         color: "blue",
-        colorName: "Azul",
+        colorName: "Blue",
         hexColor: "#9AC7E5",
       },
       {
         carImage: "/dashing/car_gray_carousel.webp",
         color: "gray",
-        colorName: "Gris",
+        colorName: "Shadow Gray",
         hexColor: "#808080",
       },
     ],
@@ -363,14 +364,14 @@ export const vehiclesData: Record<string, VehicleData> = {
         image1: "/dashing/car_split_image_1.webp",
         image2: "/dashing/car_split_image_1.webp",
         title: "MINIMALISMO Y TECNOLOGÍA",
-        text: `El estilo interior minimalista de la Dashing se destaca por su pantalla LCD de 15.6" con un pandel de instrumentos LCD.`,
+        text: `El estilo interior minimalista de la Dashing se destaca por su pantalla LCD de 15.6" con un panel de instrumentos.`,
         whiteText: true,
       },
       {
         image1: "/dashing/car_split_image_2.webp",
         image2: "/dashing/car_split_image_3.webp",
         title: "VANGUARDIA AL SERVICIO DEL DISEÑO",
-        text: `La carrocería de la Dashing de líneas suaves y recetas, se destaca por su diseño deportivo coupé en 3D y su asa inteligente de detección invisible, lo que le otorga una sensación de tecnología futurista.`,
+        text: `La carrocería de la Dashing de líneas suaves, se destaca por su diseño deportivo coupé en 3D y su asa inteligente de detección invisible, lo que le otorga una sensación de tecnología futurista.`,
         brochureUrl:
           "https://platinosoftware.blob.core.windows.net/auto-aliados/Ficha_tecnica_dashing.pdf",
         leftSpacing: "-20rem",
@@ -421,11 +422,11 @@ export const vehiclesData: Record<string, VehicleData> = {
       "Diseño exterior": {
         Rines: 'Rines de lujo de 20"',
         Llanta: "Llanta de repuesto",
-        Luces: "DRL (Luces Diurnas), Luces delanteras LED",
+        Luces: "DRL (Luces Diurnas), Luces delanteras LED, Luces traseras",
         Espejos: "Espejos retrovisores con ajuste eléctrico y desempañables",
         Techo: "Techo Panorámico y Sunroof",
         Sensores: "Sensor de Lluvia",
-        "Colores disponibles": "Blanco, gris, azul, negro",
+        "Colores disponibles": "Black, white, blue, shadow gray",
       },
       "Confort y comodidad": {
         Llave: "Llave de entrada a distancia",
@@ -523,19 +524,19 @@ export const vehiclesData: Record<string, VehicleData> = {
       {
         carImage: "/x70plus/car_blue_carousel.webp",
         color: "Blue",
-        colorName: "Azul",
+        colorName: "Blue",
         hexColor: "#2E3A5F",
       },
       {
         carImage: "/x70plus/car_black_carousel.webp",
         color: "Black",
-        colorName: "Negro",
+        colorName: "Black",
         hexColor: "#000000",
       },
       {
         carImage: "/x70plus/car_white_carousel.webp",
         color: "white",
-        colorName: "Blanco",
+        colorName: "White",
         hexColor: "#FFFFFF",
       },
     ],
@@ -646,13 +647,13 @@ export const vehiclesData: Record<string, VehicleData> = {
         "Asientos ajustables": "Asientos del conductor: ajuste eléctrico",
       },
       Colores: {
-        Exteriores: "Negro, blanco, azul",
-        Interiores: "Negro, rojo",
+        Exteriores: "White, black, blue",
+        Interiores: "Black, red",
       },
     },
     visualizer: {
       title: "VISUALIZADOR 3D",
-      basePath: "/x70Plus/3d/exterior",
+      basePath: "/x70plus/3d/exterior",
       filePattern: "X70PLUS-EXT-{index}.webp",
       imageCount: 36,
       colors: [
@@ -671,7 +672,7 @@ export const vehiclesData: Record<string, VehicleData> = {
       ],
       interiorImagePath: [
         {
-          path: "/x70Plus/3d/interior/red.webp",
+          path: "/x70plus/3d/interior/red.webp",
           colorName: "black",
           hexColor: "#000000",
         },
@@ -694,19 +695,19 @@ export const vehiclesData: Record<string, VehicleData> = {
       {
         carImage: "/x50/car_black_carousel.webp",
         color: "Black",
-        colorName: "Negro",
+        colorName: "Black",
         hexColor: "#000000",
       },
       {
         carImage: "/x50/car_white_carousel.webp",
         color: "white",
-        colorName: "Blanco",
+        colorName: "White",
         hexColor: "#FFFFFF",
       },
       {
         carImage: "/x50/car_blue_carousel.webp",
         color: "Blue",
-        colorName: "Azul",
+        colorName: "Blue",
         hexColor: "#9AC7E5",
       },
     ],
@@ -728,6 +729,12 @@ export const vehiclesData: Record<string, VehicleData> = {
     splitSections: [
       // Placeholder para Dashing
       {
+        image1: "/x50/car_split_image_1.webp",
+        image2: "/x50/car_split_image_2.webp",
+        title: "TAMAÑO Y DISEÑO",
+        text: "El X50 se destaca por su interior, al igual que por sus dimensiones exteriores, con un diseño estilizado y detalles de alta calidad. Un espacio muy bien aprovechado, ideal para tí quien piensa en la seguridad y es amante a la tecnología.",
+        leftSpacing: "-40rem",
+        rightSpacing: "20rem",
         image1: "/x50/car_split_image_1.webp",
         image2: "/x50/car_split_image_1.webp",
         title: "TAMAÑO Y DISEÑO",
@@ -822,7 +829,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         Altura: "1664 mm",
       },
       Colores: {
-        Exteriores: "Negro, blanco",
+        Exteriores: "White, black",
         Interiores: "Negro, azul",
       },
     },
@@ -833,19 +840,19 @@ export const vehiclesData: Record<string, VehicleData> = {
       imageCount: 71,
       colors: [
         {
-          name: "white",
+          name: "White",
           hex: "#FFFFFF",
           folderName: "white",
           class: "bg-white",
         },
         {
-          name: "black",
+          name: "Black",
           hex: "#000000",
           folderName: "black",
           class: "bg-[#000000]",
         },
         {
-          name: "blue",
+          name: "Blue",
           hex: "#8399B7",
           folderName: "blue",
           class: "bg-[#8399B7]",
