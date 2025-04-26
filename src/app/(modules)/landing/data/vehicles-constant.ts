@@ -542,8 +542,8 @@ export const vehiclesData: Record<string, VehicleData> = {
     },
     splitSections: [
       {
-        image1: x70FirstSplitImage1,
-        image2: x70FirstSplitImage2,
+        image1: '/x70plus/car_split_image_1.png',
+        image2: '/x70plus/car_split_image_2.png',
         title: 'SEGURIDAD ANTE TODO',
         text: 'La X70 Plus cuenta con cuatro airbags (frontales y laterales), ISOFIX, sistema de control de tracción y estabilidad, sistema de frenado AUTOHOLD, sistema de monitoreo de puntos ciegos, entre otros equipos que hacen de esta una SUV segura y confiable.',
         whiteText: true,
@@ -553,8 +553,8 @@ export const vehiclesData: Record<string, VehicleData> = {
         imageContainRight: true
       },
       {
-        image1: x70SecondSplitImage1,
-        image2: x70SecondSplitImage2,
+        image1: '/x70plus/car_split_image_3.png',
+        image2: '/x70plus/car_split_image_4.png',
         title: 'Tecnología espacial',
         text: 'La X70 PLUS está equipada con sistema de visión 360, asientos forrados, un excelente sistema de infoentretenimiento con pantalla de 10.25” y cargador inalámbrico para teléfonos.',
         whiteText: true,
