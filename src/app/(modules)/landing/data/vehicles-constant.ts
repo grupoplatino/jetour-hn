@@ -156,8 +156,8 @@ export const vehiclesData: Record<string, VehicleData> = {
     },
     splitSections: [
       {
-				image1: "/t2/car_split_image_1.jpg",
-				image2: "/t2/car_split_image_2.jpg",
+        image1: '/t2/car_split_image_1.jpg',
+        image2: '/t2/car_split_image_2.jpg',
         title: 'T2 FUE CREADA PARA LA AVENTURA',
         text: 'Tiene un sistema de tracción en las 4 ruedas que la hace perfecta para cualquier terreno, cuenta con 7 modos de conducción que te permitirán personalizar la conducción.',
         textLeft: true
@@ -581,10 +581,7 @@ export const vehiclesData: Record<string, VehicleData> = {
       title: 'SEGURIDAD Y RESPALDO',
       image: '/x70plus/single_picture_image.jpg'
     },
-    gallery: ['/x70Plus/car_gallery_image1.jpg',
-       '/x70Plus/car_gallery_image2.jpg', 
-       '/x70Plus/car_gallery_image3.jpg', 
-       '/x70Plus/car_gallery_image4.jpg'],
+    gallery: ['/x70plus/car_gallery_image1.jpg', '/x70plus/car_gallery_image2.jpg', '/x70plus/car_gallery_image3.jpg', '/x70plus/car_gallery_image4.jpg'],
     specs: {
       'Diseño y estilo': {
         Capacidad: 'Asientos: 3 filas, 7 pasajeros',
