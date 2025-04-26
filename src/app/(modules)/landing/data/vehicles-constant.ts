@@ -771,11 +771,11 @@ export const vehiclesData: Record<string, VehicleData> = {
       items: [
         // Placeholder para Dashing
         {
-          image: x50Feature1,
+          image: '/x50/spec_first_image.png',
           label: 'CAMBIO PRECISO, CONTROL ABSOLUTO'
         },
         {
-          image: x50FirstSpecImage,
+          image: '/x50/spec_second_image.jpg',
           label: 'PANTALLA CENTRAL DE 10.3'
         },
         {
