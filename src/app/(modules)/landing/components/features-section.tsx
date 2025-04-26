@@ -31,7 +31,6 @@ export default function FeaturesSection({ title, features }: FeaturesSectionProp
                 height={512}
                 width={512}
                 unoptimized
-                className="object-cover"
                 style={{
                   objectPosition: '50%',
                   transformOrigin: 'left center'
