@@ -57,7 +57,7 @@ export default function VehicleDetailPage({ carData, showTestDriveButton = true 
 
       {/* <FeaturesSection carTheme={carTheme} features={carData.featuresSections.items} title={carData.featuresSections.title} /> */}
 
-      {/* <SinglePictureSection title={carData.singlePictureSection.title} image={carData.singlePictureSection.image} /> */}
+      <SinglePictureSection title={carData.singlePictureSection.title} image={carData.singlePictureSection.image} />
 
       <CarGallerySection images={carData.gallery} />
 

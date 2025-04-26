@@ -109,8 +109,6 @@ export default function LandingPage() {
       />
 
       <CarModelsGallery models={Object.values(vehiclesData)} themeKey="orange" />
-
-      <VehicleDetailPage showTestDriveButton={false} carData={landingCar} />
     </>
   );
 }
