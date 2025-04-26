@@ -256,13 +256,13 @@ export const vehiclesData: Record<string, VehicleData> = {
         {
           name: 'nightBlack',
           hex: '#1d1d1b',
-          folderName: 'Night Black',
+          folderName: 'Black',
           class: 'bg-[#030304]'
         },
         {
           name: 'sand',
           hex: '#827058',
-          folderName: 'Sand',
+          folderName: 'Sand (Arena)',
           class: 'bg-[#827058]'
         },
         {
@@ -274,7 +274,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         {
           name: 'mistyCyan',
           hex: '#336caf',
-          folderName: 'Misty Cyan',
+          folderName: 'Misty Cyan (Azul)',
           class: 'bg-[#336caf]'
         }
       ],
@@ -306,26 +306,26 @@ export const vehiclesData: Record<string, VehicleData> = {
     colorModels: [
       {
         carImage: '/dashing/car_black_carousel.webp',
-        color: 'Black',
-        colorName: 'Negro',
+        color: 'black',
+        colorName: 'Black',
         hexColor: '#000000'
       },
       {
         carImage: '/dashing/car_white_carousel.webp',
         color: 'white',
-        colorName: 'Blanco',
+        colorName: 'White',
         hexColor: '#FFFFFF'
       },
       {
         carImage: '/dashing/car_blue_carousel.webp',
         color: 'blue',
-        colorName: 'Azul',
+        colorName: 'Blue',
         hexColor: '#9AC7E5'
       },
       {
         carImage: '/dashing/car_gray_carousel.webp',
         color: 'gray',
-        colorName: 'Gris',
+        colorName: 'Shadow Gray',
         hexColor: '#808080'
       }
     ],
@@ -407,7 +407,7 @@ export const vehiclesData: Record<string, VehicleData> = {
       'Diseño exterior': {
         Rines: 'Rines de lujo de 20"',
         Llanta: 'Llanta de repuesto',
-        Luces: 'DRL (Luces Diurnas), Luces delanteras LED',
+        Luces: 'DRL (Luces Diurnas), Luces delanteras LED, Luces traseras',
         Espejos: 'Espejos retrovisores con ajuste eléctrico y desempañables',
         Techo: 'Techo Panorámico y Sunroof',
         Sensores: 'Sensor de Lluvia',
@@ -504,19 +504,19 @@ export const vehiclesData: Record<string, VehicleData> = {
       {
         carImage: '/x70plus/car_blue_carousel.webp',
         color: 'Blue',
-        colorName: 'Azul',
+        colorName: 'Blue',
         hexColor: '#2E3A5F'
       },
       {
         carImage: '/x70plus/car_black_carousel.webp',
         color: 'Black',
-        colorName: 'Negro',
+        colorName: 'Black',
         hexColor: '#000000'
       },
       {
         carImage: '/x70plus/car_white_carousel.webp',
         color: 'white',
-        colorName: 'Blanco',
+        colorName: 'White',
         hexColor: '#FFFFFF'
       }
     ],
@@ -622,7 +622,7 @@ export const vehiclesData: Record<string, VehicleData> = {
       },
       Colores: {
         Exteriores: 'White, black, blue',
-        Interiores: 'Negro, rojo'
+        Interiores: 'Black, red'
       }
     },
     visualizer: {
@@ -669,19 +669,19 @@ export const vehiclesData: Record<string, VehicleData> = {
       {
         carImage: '/x50/car_black_carousel.webp',
         color: 'Black',
-        colorName: 'Negro',
+        colorName: 'Black',
         hexColor: '#000000'
       },
       {
         carImage: '/x50/car_white_carousel.webp',
         color: 'white',
-        colorName: 'Blanco',
+        colorName: 'White',
         hexColor: '#FFFFFF'
       },
       {
         carImage: '/x50/car_blue_carousel.webp',
         color: 'Blue',
-        colorName: 'Azul',
+        colorName: 'Blue',
         hexColor: '#9AC7E5'
       }
     ],
@@ -808,19 +808,19 @@ export const vehiclesData: Record<string, VehicleData> = {
       imageCount: 71,
       colors: [
         {
-          name: 'white',
+          name: 'White',
           hex: '#FFFFFF',
           folderName: 'white',
           class: 'bg-white'
         },
         {
-          name: 'black',
+          name: 'Black',
           hex: '#000000',
           folderName: 'black',
           class: 'bg-[#000000]'
         },
         {
-          name: 'blue',
+          name: 'Blue',
           hex: '#8399B7',
           folderName: 'blue',
           class: 'bg-[#8399B7]'
