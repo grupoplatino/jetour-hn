@@ -11,16 +11,7 @@ const x70FirstSplitImage2 = '/img/X70 Plus/First Split Image - Image 2.png';
 const x70SecondSplitImage1 = '/img/X70 Plus/Second Split Image - Image 1.png';
 const x70SecondSplitImage2 = '/img/X70 Plus/Second Split Image - Image 2.png';
 
-const x50SplitSectionImage1 = '/img/X50/First Split Section - Image 1.png';
-const x50SplitSectionImage2 = '/img/X50/First Split Section - Image 2.png';
-const x50SplitSection2Image2 = '/img/X50/Second Split Section - Image 2.png';
-
-const x50SplitSection2Image1 = '/img/X50/360° Panoramic Reversing Camera&180° Transparent Chassis.jpg';
-
-// Importación de datos de especificaciones
-
 // Tipos
-
 interface CarFeature {
   name: string;
   value: number;
