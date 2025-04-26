@@ -1,21 +1,27 @@
-import dynamic from 'next/dynamic';
+import dynamic from "next/dynamic";
 
-const CarFeaturesShowcase = dynamic(() => import('./car-features-show-case'));
-const CarGallerySection = dynamic(() => import('./car-gallery-section'));
-const CarHero = dynamic(() => import('./car-hero'));
-const VideoSection = dynamic(() => import('./car-video-section'));
-const ContactForm = dynamic(() => import('./contact-form'));
-const FeaturesSection = dynamic(() => import('./features-section'));
-const VehicleVisualizer = dynamic(() => import('./new-3d/vehicle-visualiser'));
-const SinglePictureSection = dynamic(() => import('./single-picture-section'));
-const SpecsSection = dynamic(() => import('./specs-section'));
-const SplitImageSection = dynamic(() => import('./split-image-section'));
-const TestDriveButton = dynamic(() => import('./test-drive-button'));
-const WhatsAppButton = dynamic(() => import('./whats-app-button'));
+const CarFeaturesShowcase = dynamic(() => import("./car-features-show-case"));
+const CarGallerySection = dynamic(() => import("./car-gallery-section"));
+const CarHero = dynamic(() => import("./car-hero"));
+const VideoSection = dynamic(() => import("./car-video-section"));
+const ContactForm = dynamic(() => import("./contact-form"));
+const FeaturesSection = dynamic(() => import("./features-section"));
+const VehicleVisualizer = dynamic(() => import("./new-3d/vehicle-visualiser"));
+const SinglePictureSection = dynamic(() => import("./single-picture-section"));
+const SpecsSection = dynamic(() => import("./specs-section"));
+const SplitImageSection = dynamic(() => import("./split-image-section"));
+const TestDriveButton = dynamic(() => import("./test-drive-button"));
+const WhatsAppButton = dynamic(() => import("./whats-app-button"));
 
-import { VehicleData } from '../data/vehicles-constant';
+import { VehicleData } from "../data/vehicles-constant";
 
-export default function VehicleDetailPage({ carData, showTestDriveButton = true }: { carData: VehicleData; showTestDriveButton?: boolean }) {
+export default function VehicleDetailPage({
+  carData,
+  showTestDriveButton = true,
+}: {
+  carData: VehicleData;
+  showTestDriveButton?: boolean;
+}) {
   const carTheme = carData.theme;
 
   return (
@@ -32,8 +38,15 @@ export default function VehicleDetailPage({ carData, showTestDriveButton = true 
         displayJetourLogo={carData.hero.jetourLogo ? true : false}
       />
 
-      <CarFeaturesShowcase carModels={carData.colorModels} features={carData.features} carTheme="orange" />
-      <VideoSection videoUrl={carData.video.url} thumbnailUrl={carData.video.thumbnail} />
+      <CarFeaturesShowcase
+        carModels={carData.colorModels}
+        features={carData.features}
+        carTheme="orange"
+      />
+      <VideoSection
+        videoUrl={carData.video.url}
+        thumbnailUrl={carData.video.thumbnail}
+      />
 
       {carData.splitSections.map((section, index) => (
         <SplitImageSection
@@ -55,15 +68,22 @@ export default function VehicleDetailPage({ carData, showTestDriveButton = true 
         />
       ))}
 
-      <FeaturesSection carTheme={carTheme} features={carData.featuresSections.items} title={carData.featuresSections.title} />
+      <FeaturesSection
+        carTheme={carTheme}
+        features={carData.featuresSections.items}
+        title={carData.featuresSections.title}
+      />
 
-      <SinglePictureSection title={carData.singlePictureSection.title} image={carData.singlePictureSection.image} />
+      <SinglePictureSection
+        title={carData.singlePictureSection.title}
+        image={carData.singlePictureSection.image}
+      />
 
       <CarGallerySection images={carData.gallery} />
 
       <SpecsSection specs={carData.specs} themeKey={carTheme} />
 
-      {/* <section className="p-6 pb-12">
+      <section className="p-6 pb-12">
         <VehicleVisualizer
           title={carData.visualizer.title}
           basePath={carData.visualizer.basePath}
@@ -74,7 +94,7 @@ export default function VehicleDetailPage({ carData, showTestDriveButton = true 
           themeKey={carTheme}
           defaultColorIndex={0}
         />
-      </section> */}
+      </section>
 
       <ContactForm themeKey={carTheme} />
     </>
