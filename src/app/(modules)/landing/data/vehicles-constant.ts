@@ -515,8 +515,8 @@ export const vehiclesData: Record<string, VehicleData> = {
     tagline: "INNOVACIÓN Y AMPLITUD REDEFINIDAS",
     theme: "turquoise",
     hero: {
-      backgroundImage: "/x70plus/car_hero_background.jpg",
-      logo: "/x70plus/car_logo_white.png",
+      backgroundImage: "/x70plus/car_hero_background.webp",
+      logo: "/x70plus/car_logo_white.webp",
     },
     // Datos parciales - completar con información real
     colorModels: [
@@ -556,8 +556,8 @@ export const vehiclesData: Record<string, VehicleData> = {
     },
     splitSections: [
       {
-        image1: "/x70plus/car_split_image_1.png",
-        image2: "/x70plus/car_split_image_2.png",
+        image1: "/x70plus/car_split_image_1.webp",
+        image2: "/x70plus/car_split_image_2.webp",
         title: "SEGURIDAD ANTE TODO",
         text: "La X70 Plus cuenta con cuatro airbags (frontales y laterales), ISOFIX, sistema de control de tracción y estabilidad, sistema de frenado AUTOHOLD, sistema de monitoreo de puntos ciegos, entre otros equipos que hacen de esta una SUV segura y confiable.",
         whiteText: true,
@@ -567,8 +567,8 @@ export const vehiclesData: Record<string, VehicleData> = {
         imageContainRight: true,
       },
       {
-        image1: "/x70plus/car_split_image_3.png",
-        image2: "/x70plus/car_split_image_4.png",
+        image1: "/x70plus/car_split_image_3.webp",
+        image2: "/x70plus/car_split_image_4.webp",
         title: "Tecnología espacial",
         text: "La X70 PLUS está equipada con sistema de visión 360, asientos forrados, un excelente sistema de infoentretenimiento con pantalla de 10.25” y cargador inalámbrico para teléfonos.",
         whiteText: true,
@@ -599,13 +599,13 @@ export const vehiclesData: Record<string, VehicleData> = {
     },
     singlePictureSection: {
       title: "SEGURIDAD Y RESPALDO",
-      image: "/x70plus/single_picture_image.jpg",
+      image: "/x70plus/single_picture_image.webp",
     },
     gallery: [
-      "/x70plus/car_gallery_image1.jpg",
-      "/x70plus/car_gallery_image2.jpg",
-      "/x70plus/car_gallery_image3.jpg",
-      "/x70plus/car_gallery_image4.jpg",
+      "/x70plus/car_gallery_image1.webp",
+      "/x70plus/car_gallery_image2.webp",
+      "/x70plus/car_gallery_image3.webp",
+      "/x70plus/car_gallery_image4.webp",
     ],
     specs: {
       "Diseño y estilo": {
@@ -686,8 +686,8 @@ export const vehiclesData: Record<string, VehicleData> = {
     tagline: "DISFRUTA EL VIAJE DE TU VIDA",
     theme: "orange",
     hero: {
-      backgroundImage: "/x50/car_hero_background.png",
-      logo: "/x50/car_logo_white.png",
+      backgroundImage: "/x50/car_hero_background.webp",
+      logo: "/x50/car_logo_white.webp",
     },
     // Datos parciales - completar con información real
     colorModels: [
@@ -728,8 +728,8 @@ export const vehiclesData: Record<string, VehicleData> = {
     splitSections: [
       // Placeholder para Dashing
       {
-        image1: "/x50/car_split_image_1.png",
-        image2: "/x50/car_split_image_2.png",
+        image1: "/x50/car_split_image_1.webp",
+        image2: "/x50/car_split_image_2.webp",
         title: "TAMAÑO Y DISEÑO",
         text: "El X50 se destaca por su interior, al igual que por sus dimensiones exteriores, con un diseño estilizado y detalles de alta calidad. Un espacio muy bien aprovechado, ideal para tí quien piensa en la seguridad y es amante a la tecnología.",
         leftSpacing: "-40rem",
@@ -739,8 +739,8 @@ export const vehiclesData: Record<string, VehicleData> = {
         leftImageClassName: "!h-auto -mt-28",
       },
       {
-        image1: "/x50/car_split_image_3.jpg",
-        image2: "/x50/car_split_image_4.png",
+        image1: "/x50/car_split_image_3.webp",
+        image2: "/x50/car_split_image_4.webp",
         title: "DISFRUTA SUS DETALLES",
         text: "El Jetour X50 ofrece comodidad con asientos revestidos en cuero sintético, y una amplia fila de asientos. Este auto es perfecto para salir y disfrutar del día y la noche, junto a tu familia o amigos.",
         leftSpacing: "-35rem",
@@ -757,28 +757,28 @@ export const vehiclesData: Record<string, VehicleData> = {
       items: [
         // Placeholder para Dashing
         {
-          image: "/x50/spec_first_image.png",
+          image: "/x50/spec_first_image.webp",
           label: "CAMBIO PRECISO, CONTROL ABSOLUTO",
         },
         {
-          image: "/x50/spec_second_image.jpg",
+          image: "/x50/spec_second_image.webp",
           label: "PANTALLA CENTRAL DE 10.3",
         },
         {
-          image: "/x50/spec_third_image.png",
+          image: "/x50/spec_third_image.webp",
           label: "DISTANCIA ENTRE EJES EXTENDIDA",
         },
       ],
     },
     singlePictureSection: {
       title: "SEGURIDAD Y RESPALDO",
-      image: "/x50/single_picture_image.jpg",
+      image: "/x50/single_picture_image.webp",
     },
     gallery: [
-      "/x50/car_gallery_image1.jpg",
-      "/x50/car_gallery_image2.jpg",
-      "/x50/car_gallery_image3.jpg",
-      "/x50/car_gallery_image4.png",
+      "/x50/car_gallery_image1.webp",
+      "/x50/car_gallery_image2.webp",
+      "/x50/car_gallery_image3.webp",
+      "/x50/car_gallery_image4.webp",
     ],
     specs: {
       "Características principales": {
