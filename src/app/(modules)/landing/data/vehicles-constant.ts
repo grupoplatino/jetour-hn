@@ -109,8 +109,8 @@ export const vehiclesData: Record<string, VehicleData> = {
     tagline: "AVENTURAS SIN LÍMITES",
     theme: "orange",
     hero: {
-      backgroundImage: "/t2/car_hero_background.jpg",
-      logo: "/t2/car_logo_white.png",
+      backgroundImage: "/t2/car_hero_background.webp",
+      logo: "/t2/car_logo_white.webp",
       jetourLogo: true,
     },
     colorModels: [
@@ -127,13 +127,13 @@ export const vehiclesData: Record<string, VehicleData> = {
         hexColor: "#ffffff",
       },
       {
-        carImage: "/t2/car_neutral_carousel.png",
+        carImage: "/t2/car_neutral_carousel.webp",
         color: "neutralColor",
         colorName: "Arena",
         hexColor: "#d8cbb1",
       },
       {
-        carImage: "/t2/car_silver_carousel.png",
+        carImage: "/t2/car_silver_carousel.webp",
         color: "Silver Snow",
         colorName: "Gris",
         hexColor: "#8592a2",
@@ -162,15 +162,15 @@ export const vehiclesData: Record<string, VehicleData> = {
     },
     splitSections: [
       {
-        image1: "/t2/car_split_image_1.jpg",
-        image2: "/t2/car_split_image_2.jpg",
+        image1: "/t2/car_split_image_1.webp",
+        image2: "/t2/car_split_image_2.webp",
         title: "T2 FUE CREADA PARA LA AVENTURA",
         text: "Tiene un sistema de tracción en las 4 ruedas que la hace perfecta para cualquier terreno, cuenta con 7 modos de conducción que te permitirán personalizar la conducción.",
         textLeft: true,
       },
       {
-        image1: "/t2/car_split_image_3.jpg",
-        image2: "/t2/car_split_image_4.jpg",
+        image1: "/t2/car_split_image_3.webp",
+        image2: "/t2/car_split_image_4.webp",
         title: "ESTILO POR FUERA Y POR DENTRO",
         text: "La T2 tiene un impresionante tablero, volante multifunción, pantalla touchscreen de 15 pulgadas, parlantes SONY, cargador inalámbrico, interior de lujo con asientos ventilados, luces atmosféricas.",
         brochureUrl:
@@ -183,28 +183,28 @@ export const vehiclesData: Record<string, VehicleData> = {
       title: "COMODIDAD DESDE DONDE LA VEAS",
       items: [
         {
-          image: "/t2/spec_first_image.jpg",
+          image: "/t2/spec_first_image.webp",
           label: "MODELADO TRIDIMENSIONAL MULTINIVEL",
         },
         {
-          image: "/t2/spec_second_image.jpg",
+          image: "/t2/spec_second_image.webp",
           label: 'PANTALLA CENTRAL DE 15.6"',
         },
         {
-          image: "/t2/spec_third_image.jpg",
+          image: "/t2/spec_third_image.webp",
           label: "DISTANCIA ENTRE EJES SÚPER LARGA",
         },
       ],
     },
     singlePictureSection: {
       title: "SEGURIDAD Y RESPALDO",
-      image: "/t2/single_picture_image.jpg",
+      image: "/t2/single_picture_image.webp",
     },
     gallery: [
-      "/t2/car_gallery_image1.jpg",
-      "/t2/car_gallery_image2.jpg",
-      "/t2/car_gallery_image3.jpg",
-      "/t2/car_gallery_image4.jpg",
+      "/t2/car_gallery_image1.webp",
+      "/t2/car_gallery_image2.webp",
+      "/t2/car_gallery_image3.webp",
+      "/t2/car_gallery_image4.webp",
     ],
     specs: {
       "Parámetros básicos": {
