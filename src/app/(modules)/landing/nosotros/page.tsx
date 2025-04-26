@@ -4,11 +4,16 @@ import Link from 'next/link';
 import { Calendar, Medal, Users, TrendingUp, Target, Globe } from 'lucide-react';
 import WhatsAppButton from '../components/whats-app-button';
 import TestDriveButton from '../components/test-drive-button';
+import { AboutPageSEO, generateAboutMetadata } from '@/components/seo/about-us-seo';
+
+export const metadata = generateAboutMetadata();
 
 export default function AboutUsPage() {
   return (
     <div className="min-h-screen bg-white text-black">
       <TestDriveButton carTheme="orange" />
+
+      <AboutPageSEO />
 
       {/* Hero Banner */}
       <div className="relative w-full h-[400px] md:h-[500px]">
