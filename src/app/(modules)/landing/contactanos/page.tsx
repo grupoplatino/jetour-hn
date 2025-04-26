@@ -138,7 +138,7 @@ export default function ContactPage() {
           <h2 className="text-2xl md:text-3xl font-bold mb-4">¿Interesado en nuestros vehículos?</h2>
           <p className="text-lg mb-6 max-w-2xl mx-auto">Descubre la mejor experiencia de manejo con JETOUR. Agenda una prueba de manejo hoy mismo.</p>
           <div className="inline-block">
-            <Link href="/test-drive" className="bg-white text-[#FF7A00] px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
+            <Link href="/landing#cotizacion" className="bg-white text-[#FF7A00] px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
               AGENDA TU TEST DRIVE
             </Link>
           </div>
