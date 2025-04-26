@@ -7,9 +7,6 @@ import { StaticImageData } from 'next/image';
 
 // Convertir importaciones a strings
 const dashingImageSection = '/img/DASHING/15.8 in. Digital screen.webp';
-const X70PlusSingleImage = '/img/X70 Plus/Estabilidad y Seguridad.jpg';
-const x70FeatureImage1 = '/img/X70 Plus/Modelado Palanca.webp';
-const x70FeatureImage2 = '/img/X70 Plus/Techo Corredizo.webp';
 const x70FeatureImage3 = '/img/X70 Plus/Distancia Ejes.webp';
 const rubikKey = '/img/DASHING/Rubik_s cube key.webp';
 const headAcoustics = '/img/DASHING/Head acoustics(optional).webp';
@@ -41,13 +38,10 @@ const x50SplitSectionImage2 = '/img/X50/First Split Section - Image 2.png';
 const x50SplitSection2Image2 = '/img/X50/Second Split Section - Image 2.png';
 
 const x50FirstSpecImage = '/img/X50/Blue&grey.webp';
-const x50SinglePictureSection = '/img/X50/Seguridad & Respaldo.jpg';
 
 const x50SplitSection2Image1 = '/img/X50/360° Panoramic Reversing Camera&180° Transparent Chassis.jpg';
 const x50Feature1 = '/img/X50/Feature 1.png';
 const x50Feature2 = '/img/X50/Feature 2.png';
-
-const t2NewSinglePictureImage = '/img/T2/Seguridad y Respaldo.jpg';
 
 // Importación de datos de especificaciones
 
