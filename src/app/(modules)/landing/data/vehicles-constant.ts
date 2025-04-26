@@ -717,8 +717,8 @@ export const vehiclesData: Record<string, VehicleData> = {
     splitSections: [
       // Placeholder para Dashing
       {
-        image1: x50SplitSectionImage1,
-        image2: x50SplitSectionImage2,
+        image1: '/x50/car_split_image_1.png',
+        image2: '/x50/car_split_image_2.png',
         title: 'TAMAÑO Y DISEÑO',
         text: 'El X50 se destaca por su interior, al igual que por sus dimensiones exteriores, con un diseño estilizado y detalles de alta calidad. Un espacio muy bien aprovechado, ideal para tí quien piensa en la seguridad y es amante a la tecnología.',
         leftSpacing: '-40rem',
@@ -728,8 +728,8 @@ export const vehiclesData: Record<string, VehicleData> = {
         leftImageClassName: '!h-auto -mt-28'
       },
       {
-        image1: x50SplitSection2Image1,
-        image2: x50SplitSection2Image2,
+        image1: '/x50/car_split_image_3.jpg',
+        image2: '/x50/car_split_image_4.png',
         title: 'DISFRUTA SUS DETALLES',
         text: 'El Jetour X50 ofrece comodidad con asientos revestidos en cuero sintético, y una amplia fila de asientos. Este auto es perfecto para salir y disfrutar del día y la noche, junto a tu familia o amigos.',
         leftSpacing: '-35rem',
