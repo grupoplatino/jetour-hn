@@ -123,13 +123,13 @@ export const vehiclesData: Record<string, VehicleData> = {
       {
         carImage: '/t2/car_neutral_carousel.png',
         color: 'neutralColor',
-        colorName: 'Color Neutral',
+        colorName: 'Arena',
         hexColor: '#d8cbb1'
       },
       {
         carImage: '/t2/car_silver_carousel.png',
         color: 'Silver Snow',
-        colorName: 'Plateado',
+        colorName: 'Gris',
         hexColor: '#8592a2'
       },
       {
