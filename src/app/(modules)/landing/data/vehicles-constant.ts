@@ -7,9 +7,6 @@ import { StaticImageData } from 'next/image';
 
 // Convertir importaciones a strings
 const dashingImageSection = '/img/DASHING/15.8 in. Digital screen.webp';
-const dashingSingleImageSection = '/img/DASHING/DISEÑO EXCEPCIONAL Y DEPORTIVO.webp';
-const dashingImage03 = '/img/DASHING/Foto 03.webp';
-const dashingImage04 = '/img/DASHING/Foto 04.webp';
 const X70PlusSingleImage = '/img/X70 Plus/Estabilidad y Seguridad.jpg';
 const x70FeatureImage1 = '/img/X70 Plus/Modelado Palanca.webp';
 const x70FeatureImage2 = '/img/X70 Plus/Techo Corredizo.webp';
@@ -433,7 +430,7 @@ export const vehiclesData: Record<string, VehicleData> = {
     },
     singlePictureSection: {
       title: 'DISEÑO EXCEPCIONAL Y DEPORTIVO',
-      image: dashingSingleImageSection
+      image: '/dashing/single_picture_image.jpg'
     },
     gallery: [
       // Placeholder para Dashing
