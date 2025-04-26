@@ -35,7 +35,7 @@ export default function VehicleDetailPage({ carData, showTestDriveButton = true 
       <CarFeaturesShowcase carModels={carData.colorModels} features={carData.features} carTheme="orange" />
       <VideoSection videoUrl={carData.video.url} thumbnailUrl={carData.video.thumbnail} />
 
-      {/* {carData.splitSections.map((section, index) => (
+      {carData.splitSections.map((section, index) => (
         <SplitImageSection
           key={index}
           image1={section.image1}
@@ -53,7 +53,7 @@ export default function VehicleDetailPage({ carData, showTestDriveButton = true 
           imageContainRight={section.imageContainRight ? true : false}
           leftImageClassName={section.leftImageClassName}
         />
-      ))} */}
+      ))}
 
       <FeaturesSection carTheme={carTheme} features={carData.featuresSections.items} title={carData.featuresSections.title} />
 

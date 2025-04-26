@@ -3,14 +3,8 @@
 
 import { StaticImageData } from 'next/image';
 
-// Importaciones para T2
-
 // Convertir importaciones a strings
 const dashingImageSection = '/img/DASHING/15.8 in. Digital screen.webp';
-const t2ImageSection = '/img/T2/Approach and departure angles.webp';
-const t2ImageSection2 = '/img/T2/Magic Electric Door.webp';
-const extraStorageT2 = '/img/T2/Extra Large Storage Space.webp';
-const screenT2 = '/img/T2/15.6_high-resolution color touchscreen.webp';
 
 // Importaciones para Dashing (convertidas a strings)
 const backtruckWhite = '/img/DASHING/JETOUR_JX65_cam010 white.webp';
@@ -186,15 +180,15 @@ export const vehiclesData: Record<string, VehicleData> = {
     },
     splitSections: [
       {
-        image1: t2ImageSection,
-        image2: t2ImageSection2,
+				image1: "/t2/car_split_image_1.jpg",
+				image2: "/t2/car_split_image_2.jpg",
         title: 'T2 FUE CREADA PARA LA AVENTURA',
         text: 'Tiene un sistema de tracción en las 4 ruedas que la hace perfecta para cualquier terreno, cuenta con 7 modos de conducción que te permitirán personalizar la conducción.',
         textLeft: true
       },
       {
-        image1: screenT2,
-        image2: extraStorageT2,
+        image1: '/t2/car_split_image_3.jpg',
+        image2: '/t2/car_split_image_4.jpg',
         title: 'ESTILO POR FUERA Y POR DENTRO',
         text: 'La T2 tiene un impresionante tablero, volante multifunción, pantalla touchscreen de 15 pulgadas, parlantes Sony, cargador inalámbrico, interior de lujo con asientos ventilados, luces atmosféricas.',
         brochureUrl: 'https://platinosoftware.blob.core.windows.net/auto-aliados/Ficha_tecnica_t2_v2.pdf',
