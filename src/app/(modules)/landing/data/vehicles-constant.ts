@@ -612,7 +612,7 @@ export const vehiclesData: Record<string, VehicleData> = {
           label: 'TECHO CORREDIZO PANORÁMICO'
         },
         {
-          image: x70FeatureImage3,
+          image: '/x70plus/spec_third_image.webp',
           label: 'DISTANCIA ENTRE EJES SUPER LARGA'
         }
       ]
