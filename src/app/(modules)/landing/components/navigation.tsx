@@ -5,9 +5,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import clsx from 'clsx';
-import { useParams } from 'next/navigation';
+import { useParams, usePathname } from 'next/navigation';
 import { getVehicleById } from '../data/vehicles-constant';
-import { set } from 'react-hook-form';
 
 interface NavbarProps {
   disableTransparent?: boolean;
@@ -22,6 +21,7 @@ export function Navbar({ disableTransparent = false, primaryColor = '#FF7A00' }:
   const [primaryColorState, setPrimaryColorState] = useState(primaryColor);
 
   const params = useParams();
+  const pathName = usePathname();
 
   useEffect(() => {
     const selectedVehicleData = getVehicleById(params.id as string);
@@ -29,7 +29,7 @@ export function Navbar({ disableTransparent = false, primaryColor = '#FF7A00' }:
       const selectedVehicleTheme = selectedVehicleData.theme;
       setPrimaryColorState(selectedVehicleTheme);
     }
-  }, [params]);
+  }, [params, pathName]);
 
   const handleScroll = () => {
     const position = window.pageYOffset;
