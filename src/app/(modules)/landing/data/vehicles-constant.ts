@@ -14,8 +14,6 @@ const t2ImageSection = '/img/T2/Approach and departure angles.webp';
 const t2ImageSection2 = '/img/T2/Magic Electric Door.webp';
 const extraStorageT2 = '/img/T2/Extra Large Storage Space.webp';
 const screenT2 = '/img/T2/15.6_high-resolution color touchscreen.webp';
-const multilevelModel = '/img/T2/Modelado tridimensional multinivel.webp';
-const superLargeAxisDistance = '/img/T2/Distancia entre ejes súper larga.webp';
 
 // Importaciones para Dashing (convertidas a strings)
 const backtruckWhite = '/img/DASHING/JETOUR_JX65_cam010 white.webp';
@@ -37,7 +35,6 @@ const x50SplitSectionImage2 = '/img/X50/First Split Section - Image 2.png';
 const x50SplitSection2Image2 = '/img/X50/Second Split Section - Image 2.png';
 
 const x50SplitSection2Image1 = '/img/X50/360° Panoramic Reversing Camera&180° Transparent Chassis.jpg';
-const x50Feature2 = '/img/X50/Feature 2.png';
 
 // Importación de datos de especificaciones
 
@@ -216,11 +213,11 @@ export const vehiclesData: Record<string, VehicleData> = {
           label: 'MODELADO TRIDIMENSIONAL MULTINIVEL'
         },
         {
-          image: screenT2,
+          image: '/t2/spec_second_image.jpg',
           label: 'PANTALLA CENTRAL DE 15.6"'
         },
         {
-          image: superLargeAxisDistance,
+          image: '/t2/spec_third_image.jpg',
           label: 'DISTANCIA ENTRE EJES SÚPER LARGA'
         }
       ]
