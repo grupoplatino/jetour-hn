@@ -1,14 +1,14 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 // src/components/VehicleVisualizer/ExteriorView.tsx
-import React, { useState } from 'react';
-import { ReactImageTurntable } from 'react-image-turntable';
-import { ExteriorViewProps } from './types';
-import clsx from 'clsx';
-import { useVehicleImages } from './use-vehicleImages';
-import LoadingIndicator from './loading-indicator';
-import ColorSelector from './color-selector';
-import { carThemes } from '../../data/theme-definitions';
-import Image from 'next/image';
+import React, { useState } from "react";
+import { ReactImageTurntable } from "react-image-turntable";
+import { ExteriorViewProps } from "./types";
+import clsx from "clsx";
+import { useVehicleImages } from "./use-vehicleImages";
+import LoadingIndicator from "./loading-indicator";
+import ColorSelector from "./color-selector";
+import { carThemes } from "../../data/theme-definitions";
+import Image from "next/image";
 
 const ExteriorView: React.FC<ExteriorViewProps & { themeKey: string }> = ({
   colors,
@@ -18,17 +18,18 @@ const ExteriorView: React.FC<ExteriorViewProps & { themeKey: string }> = ({
   filePattern,
   imageCount,
   fileExtension,
-  themeKey
+  themeKey,
 }) => {
   const [isGrabbing, setIsGrabbing] = useState(false);
 
-  const { imagePaths, isLoading, loadingProgress, loadingError } = useVehicleImages({
-    basePath,
-    filePattern,
-    selectedColor,
-    imageCount,
-    fileExtension
-  });
+  const { imagePaths, isLoading, loadingProgress, loadingError } =
+    useVehicleImages({
+      basePath,
+      filePattern,
+      selectedColor,
+      imageCount,
+      fileExtension,
+    });
 
   if (loadingError) {
     console.error(loadingError);
@@ -36,15 +37,28 @@ const ExteriorView: React.FC<ExteriorViewProps & { themeKey: string }> = ({
 
   return (
     <div className="w-full h-full flex flex-col items-center justify-center relative">
-      {isLoading && <LoadingIndicator progress={loadingProgress} themeKey={themeKey as keyof typeof carThemes} />}
+      {isLoading && (
+        <LoadingIndicator
+          progress={loadingProgress}
+          themeKey={themeKey as keyof typeof carThemes}
+        />
+      )}
 
       <div className="w-full lg:w-[80%] h-full">
-        <Image src={'/landing/360_background.jpg'} height={300} width={300} alt="Background" className="w-full h-full absolute top-0 left-0" />
+        <Image
+          src={"/landing/360_background.webp"}
+          height={300}
+          width={300}
+          alt="Background"
+          className="w-full h-full absolute top-0 left-0"
+        />
         <ReactImageTurntable
           className={clsx(
-            'w-full h-full img-turntable',
-            isGrabbing ? 'cursor-grabbing' : 'cursor-grab',
-            isLoading ? 'opacity-0' : 'opacity-100 transition-opacity duration-500'
+            "w-full h-full img-turntable",
+            isGrabbing ? "cursor-grabbing" : "cursor-grab",
+            isLoading
+              ? "opacity-0"
+              : "opacity-100 transition-opacity duration-500"
           )}
           images={imagePaths}
           autoRotate={{ disabled: true }}
@@ -56,7 +70,12 @@ const ExteriorView: React.FC<ExteriorViewProps & { themeKey: string }> = ({
       </div>
 
       <div className="absolute -bottom-16 left-0 right-0">
-        <ColorSelector colors={colors} selectedColor={selectedColor} onColorChange={onColorChange} themeKey={themeKey as any} />
+        <ColorSelector
+          colors={colors}
+          selectedColor={selectedColor}
+          onColorChange={onColorChange}
+          themeKey={themeKey as any}
+        />
       </div>
     </div>
   );

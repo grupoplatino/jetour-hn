@@ -103,7 +103,7 @@ export interface VehicleData {
 // Definición de datos de vehículos
 export const vehiclesData: Record<string, VehicleData> = {
   t2: {
-    carSelecctorImage: "/landing/t2_car_selector.png",
+    carSelecctorImage: "/landing/t2_car_selector.webp",
     id: "t2",
     modelName: "T2",
     tagline: "AVENTURAS SIN LÍMITES",
@@ -307,14 +307,14 @@ export const vehiclesData: Record<string, VehicleData> = {
     },
   },
   dashing: {
-    carSelecctorImage: "/landing/dashing_car_selector.png",
+    carSelecctorImage: "/landing/dashing_car_selector.webp",
     id: "dashing",
     modelName: "Dashing",
     tagline: "EXPERIMENTA LA TECNOLOGÍA DE VANGUARDIA",
     theme: "turquoise",
     hero: {
       backgroundImage: "/dashing/car_hero_background.webp",
-      logo: "/dashing/car_logo_white.png",
+      logo: "/dashing/car_logo_white.webp",
     },
     colorModels: [
       {
@@ -360,15 +360,15 @@ export const vehiclesData: Record<string, VehicleData> = {
     splitSections: [
       // Placeholder para Dashing
       {
-        image1: "/dashing/car_split_image_1.jpg",
-        image2: "/dashing/car_split_image_1.jpg",
+        image1: "/dashing/car_split_image_1.webp",
+        image2: "/dashing/car_split_image_1.webp",
         title: "MINIMALISMO Y TECNOLOGÍA",
         text: `El estilo interior minimalista de la Dashing se destaca por su pantalla LCD de 15.6" con un pandel de instrumentos LCD.`,
         whiteText: true,
       },
       {
-        image1: "/dashing/car_split_image_2.jpg",
-        image2: "/dashing/car_split_image_3.jpg",
+        image1: "/dashing/car_split_image_2.webp",
+        image2: "/dashing/car_split_image_3.webp",
         title: "VANGUARDIA AL SERVICIO DEL DISEÑO",
         text: `La carrocería de la Dashing de líneas suaves y recetas, se destaca por su diseño deportivo coupé en 3D y su asa inteligente de detección invisible, lo que le otorga una sensación de tecnología futurista.`,
         brochureUrl:
@@ -383,29 +383,29 @@ export const vehiclesData: Record<string, VehicleData> = {
       items: [
         // Placeholder para Dashing
         {
-          image: "/dashing/spec_first_image.jpg",
+          image: "/dashing/spec_first_image.webp",
           label: "ARRANQUE REMOTO Y ENCENDIDO SIN LLAVE",
         },
         {
-          image: "/dashing/spec_second_image.jpg",
+          image: "/dashing/spec_second_image.webp",
           label: "HEAD ACOUSTICS",
         },
         {
-          image: "/dashing/spec_third_image.jpg",
+          image: "/dashing/spec_third_image.webp",
           label: "ALMOHADILLA DE CARGA INALÁMBRICA DE 40 W",
         },
       ],
     },
     singlePictureSection: {
       title: "DISEÑO EXCEPCIONAL Y DEPORTIVO",
-      image: "/dashing/single_picture_image.jpg",
+      image: "/dashing/single_picture_image.webp",
     },
     gallery: [
       // Placeholder para Dashing
-      "/dashing/car_gallery_image1.jpg",
-      "/dashing/car_gallery_image2.jpg",
-      "/dashing/car_gallery_image3.jpg",
-      "/dashing/car_gallery_image4.jpg",
+      "/dashing/car_gallery_image1.webp",
+      "/dashing/car_gallery_image2.webp",
+      "/dashing/car_gallery_image3.webp",
+      "/dashing/car_gallery_image4.webp",
     ],
     specs: {
       "Motor y rendimiento": {
@@ -509,7 +509,7 @@ export const vehiclesData: Record<string, VehicleData> = {
   },
 
   x70plus: {
-    carSelecctorImage: "/landing/x70plust_car_selector.png",
+    carSelecctorImage: "/landing/x70plust_car_selector.webp",
     id: "x70plus",
     modelName: "X70 Plus",
     tagline: "INNOVACIÓN Y AMPLITUD REDEFINIDAS",
@@ -680,7 +680,7 @@ export const vehiclesData: Record<string, VehicleData> = {
     },
   },
   x50: {
-    carSelecctorImage: "/landing/x50_car_selector.png",
+    carSelecctorImage: "/landing/x50_car_selector.webp",
     id: "x50",
     modelName: "X50",
     tagline: "DISFRUTA EL VIAJE DE TU VIDA",
