@@ -610,11 +610,11 @@ export const vehiclesData: Record<string, VehicleData> = {
       title: 'COMODIDAD DESDE DONDE LO VEAS',
       items: [
         {
-          image: x70FeatureImage1,
+          image: '/x70plus/spec_first_image.webp',
           label: 'MODELADO TRIDIMENSIONAL MULTINIVEL'
         },
         {
-          image: x70FeatureImage2,
+          image: '/x70plus/spec_second_image.webp',
           label: 'TECHO CORREDIZO PANORÁMICO'
         },
         {

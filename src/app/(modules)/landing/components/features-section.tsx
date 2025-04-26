@@ -28,7 +28,9 @@ export default function FeaturesSection({ title, features }: FeaturesSectionProp
               <Image
                 src={feature.image}
                 alt={feature.label}
-                fill
+                height={512}
+                width={512}
+                unoptimized
                 className="object-cover"
                 style={{
                   objectPosition: '50%',
