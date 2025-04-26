@@ -82,8 +82,8 @@ export default function ContactPage() {
                   <div className="ml-4">
                     <h3 className="text-xl font-semibold">Horario de Atención</h3>
                     <div className="mt-1 space-y-1">
-                      <p className="text-lg">Lunes a Viernes: 8:00 AM - 6:00 PM</p>
-                      <p className="text-lg">Sábado: 8:00 AM - 4:00 PM</p>
+                      <p className="text-lg">Lunes a Viernes: 8:00 AM - 5:00 PM</p>
+                      <p className="text-lg">Sábado: 8:00 AM - 12:00 PM</p>
                       <p className="text-lg">Domingo: Cerrado</p>
                     </div>
                   </div>
