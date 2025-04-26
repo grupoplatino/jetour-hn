@@ -6,11 +6,6 @@ import { StaticImageData } from 'next/image';
 // Mantener esta importación ya que no es una imagen
 import { CarThemeKey } from './theme-definitions';
 
-const x70FirstSplitImage1 = '/img/X70 Plus/First Split Image - Image 1.png';
-const x70FirstSplitImage2 = '/img/X70 Plus/First Split Image - Image 2.png';
-const x70SecondSplitImage1 = '/img/X70 Plus/Second Split Image - Image 1.png';
-const x70SecondSplitImage2 = '/img/X70 Plus/Second Split Image - Image 2.png';
-
 // Tipos
 interface CarFeature {
   name: string;
