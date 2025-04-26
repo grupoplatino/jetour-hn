@@ -22,7 +22,7 @@ const CarHero: React.FC<CarHeroProps> = ({ backgroundImage, carLogo, tagline, ca
 
       {/* Imagen de fondo */}
       <div className="w-full h-full relative max-w-full">
-        <Image src={backgroundImage} alt="Background" fill className="object-cover object-center max-w-full" priority />
+        <Image src={backgroundImage} alt="Background" fill unoptimized className="object-cover object-center max-w-full" priority />
 
         {/* Contenido del hero */}
         <div className="absolute bottom-32 left-16 z-20 flex flex-col max-w-full">

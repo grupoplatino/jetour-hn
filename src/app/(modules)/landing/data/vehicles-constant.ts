@@ -237,7 +237,7 @@ export const vehiclesData: Record<string, VehicleData> = {
     },
     singlePictureSection: {
       title: 'SEGURIDAD Y RESPALDO',
-      image: t2NewSinglePictureImage
+      image: '/t2/single_picture_image.jpg'
     },
     gallery: ['/t2/car_gallery_image1.jpg', '/t2/car_gallery_image2.jpg', '/t2/car_gallery_image3.jpg', '/t2/car_gallery_image4.jpg'],
     specs: {
