@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     countryName: 'Honduras',
     images: [
       {
-        url: '/img/JetourLogo.png',
+        url: 'https://www.jetourhn.com/landing/jetour_logo_white_drive_your_future.png',
         width: 800,
         height: 600,
         alt: 'Jetour Honduras'

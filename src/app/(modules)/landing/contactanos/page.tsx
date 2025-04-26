@@ -5,11 +5,16 @@ import { MapPin, Phone, MessageSquare, Clock } from 'lucide-react';
 import ContactForm from '../components/contact-form';
 import WhatsAppButton from '../components/whats-app-button';
 import TestDriveButton from '../components/test-drive-button';
+import { ContactPageSEO, generateContactMetadata } from '@/components/seo/contact-page.seo';
+
+export const metadata = generateContactMetadata();
 
 export default function ContactPage() {
   return (
     <div className="min-h-screen">
       <TestDriveButton carTheme={'orange'} />
+
+      <ContactPageSEO />
 
       {/* Hero Banner */}
       <div className="relative w-full h-[300px] md:h-[400px] lg:h-[600px] overflow-hidden">
@@ -138,7 +143,7 @@ export default function ContactPage() {
           <h2 className="text-2xl md:text-3xl font-bold mb-4">¿Interesado en nuestros vehículos?</h2>
           <p className="text-lg mb-6 max-w-2xl mx-auto">Descubre la mejor experiencia de manejo con JETOUR. Agenda una prueba de manejo hoy mismo.</p>
           <div className="inline-block">
-            <Link href="/test-drive" className="bg-white text-[#FF7A00] px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
+            <Link href="/landing#cotizacion" className="bg-white text-[#FF7A00] px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
               AGENDA TU TEST DRIVE
             </Link>
           </div>

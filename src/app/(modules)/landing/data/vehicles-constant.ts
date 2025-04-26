@@ -129,13 +129,13 @@ export const vehiclesData: Record<string, VehicleData> = {
       {
         carImage: "/t2/car_neutral_carousel.png",
         color: "neutralColor",
-        colorName: "Color Neutral",
+        colorName: "Arena",
         hexColor: "#d8cbb1",
       },
       {
         carImage: "/t2/car_silver_carousel.png",
         color: "Silver Snow",
-        colorName: "Plateado",
+        colorName: "Gris",
         hexColor: "#8592a2",
       },
       {
@@ -172,7 +172,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         image1: "/t2/car_split_image_3.jpg",
         image2: "/t2/car_split_image_4.jpg",
         title: "ESTILO POR FUERA Y POR DENTRO",
-        text: "La T2 tiene un impresionante tablero, volante multifunción, pantalla touchscreen de 15 pulgadas, parlantes Sony, cargador inalámbrico, interior de lujo con asientos ventilados, luces atmosféricas.",
+        text: "La T2 tiene un impresionante tablero, volante multifunción, pantalla touchscreen de 15 pulgadas, parlantes SONY, cargador inalámbrico, interior de lujo con asientos ventilados, luces atmosféricas.",
         brochureUrl:
           "https://platinosoftware.blob.core.windows.net/auto-aliados/Ficha_tecnica_t2_v2.pdf",
         whiteText: true,
@@ -226,7 +226,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         Ajustes: "Asientos delanteros con ajuste eléctrico",
         Climatización: "Asientos delanteros con calefacción y enfriamiento",
         Iluminación: "Luces de ambiente interior",
-        "Colores interiores": "Color café, negro",
+        "Colores interiores": "café, negro",
       },
       "Funcionalidad y tecnología": {
         Techo: "Panorámico y sunroof",
@@ -238,7 +238,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         Cargador: "Inalámbrico",
       },
       "Sonido y entretenimiento": {
-        "Sistema de audio": "12 bocinas sony y subwoofer",
+        "Sistema de audio": "12 bocinas SONY y subwoofer",
       },
       "Seguridad y tecnología XWD": {
         "Sistema de ruedas": "Sistema antibloqueo de ruedas",
@@ -602,10 +602,10 @@ export const vehiclesData: Record<string, VehicleData> = {
       image: "/x70plus/single_picture_image.jpg",
     },
     gallery: [
-      "/x70Plus/car_gallery_image1.jpg",
-      "/x70Plus/car_gallery_image2.jpg",
-      "/x70Plus/car_gallery_image3.jpg",
-      "/x70Plus/car_gallery_image4.jpg",
+      "/x70plus/car_gallery_image1.jpg",
+      "/x70plus/car_gallery_image2.jpg",
+      "/x70plus/car_gallery_image3.jpg",
+      "/x70plus/car_gallery_image4.jpg",
     ],
     specs: {
       "Diseño y estilo": {
@@ -647,7 +647,7 @@ export const vehiclesData: Record<string, VehicleData> = {
       },
       Colores: {
         Exteriores: "Negro, blanco, azul",
-        Interiores: "Color negro, rojo",
+        Interiores: "Negro, rojo",
       },
     },
     visualizer: {
@@ -828,8 +828,8 @@ export const vehiclesData: Record<string, VehicleData> = {
         Altura: "1664 mm",
       },
       Colores: {
-        Exteriores: "Negro, Blanco",
-        Interiores: "Negro, Azul",
+        Exteriores: "Negro, blanco",
+        Interiores: "Negro, azul",
       },
     },
     visualizer: {

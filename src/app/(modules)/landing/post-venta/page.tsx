@@ -4,11 +4,16 @@ import Link from 'next/link';
 import { Timer, Clock, Wrench, ShieldCheck, Calendar, Truck } from 'lucide-react';
 import WhatsAppButton from '../components/whats-app-button';
 import TestDriveButton from '../components/test-drive-button';
+import { generateServiceMetadata, ServicePageSEO } from '@/components/seo/service-page.seo';
+
+export const metadata = generateServiceMetadata();
 
 export default function PostVentaPage() {
   return (
     <div className="min-h-screen">
       <TestDriveButton carTheme="orange" />
+
+      <ServicePageSEO />
 
       {/* Hero Banner */}
       <div className="relative w-full h-[300px] md:h-[400px] lg:h-[600px] overflow-hidden">
