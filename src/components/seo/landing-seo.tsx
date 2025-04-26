@@ -26,7 +26,7 @@ export function generateLandingMetadata(): Metadata {
       url: 'https://www.jetourhn.com/landing',
       images: [
         {
-          url: 'https://www.jetourhn.com/landing/jetour_logo_white_drive_your_future.png',
+          url: 'https://www.jetourhn.com/landing/jetour_logo_black_drive_your_future.png',
           width: 1200,
           height: 630,
           alt: 'Jetour Honduras - SUVs Premium'
