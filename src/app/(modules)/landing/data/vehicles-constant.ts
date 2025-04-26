@@ -166,7 +166,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         image1: '/t2/car_split_image_3.jpg',
         image2: '/t2/car_split_image_4.jpg',
         title: 'ESTILO POR FUERA Y POR DENTRO',
-        text: 'La T2 tiene un impresionante tablero, volante multifunción, pantalla touchscreen de 15 pulgadas, parlantes Sony, cargador inalámbrico, interior de lujo con asientos ventilados, luces atmosféricas.',
+        text: 'La T2 tiene un impresionante tablero, volante multifunción, pantalla touchscreen de 15 pulgadas, parlantes SONY, cargador inalámbrico, interior de lujo con asientos ventilados, luces atmosféricas.',
         brochureUrl: 'https://platinosoftware.blob.core.windows.net/auto-aliados/Ficha_tecnica_t2_v2.pdf',
         whiteText: true,
         textLeft: true
@@ -226,7 +226,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         Cargador: 'Inalámbrico'
       },
       'Sonido y entretenimiento': {
-        'Sistema de audio': '12 bocinas sony y subwoofer'
+        'Sistema de audio': '12 bocinas SONY y subwoofer'
       },
       'Seguridad y tecnología XWD': {
         'Sistema de ruedas': 'Sistema antibloqueo de ruedas',
