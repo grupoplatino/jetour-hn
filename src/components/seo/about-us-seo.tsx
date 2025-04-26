@@ -27,7 +27,7 @@ export function generateAboutMetadata(): Metadata {
       url: 'https://www.jetourhn.com/landing/nosotros',
       images: [
         {
-          url: '/contactnos/hero_background.webp',
+          url: 'https://www.jetourhn.com/nosotros/hero_background.webp',
           width: 1200,
           height: 630,
           alt: 'Concesionario Jetour Honduras'
