@@ -622,7 +622,7 @@ export const vehiclesData: Record<string, VehicleData> = {
       },
       Colores: {
         Exteriores: 'Negro, blanco, azul',
-        Interiores: 'Color negro, rojo'
+        Interiores: 'Negro, rojo'
       }
     },
     visualizer: {
@@ -797,8 +797,8 @@ export const vehiclesData: Record<string, VehicleData> = {
         Altura: '1664 mm'
       },
       Colores: {
-        Exteriores: 'Negro, Blanco',
-        Interiores: 'Negro, Azul'
+        Exteriores: 'Negro, blanco',
+        Interiores: 'Negro, azul'
       }
     },
     visualizer: {
