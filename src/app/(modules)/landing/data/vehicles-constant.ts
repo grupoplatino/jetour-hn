@@ -7,7 +7,6 @@ import { StaticImageData } from 'next/image';
 
 // Convertir importaciones a strings
 const dashingImageSection = '/img/DASHING/15.8 in. Digital screen.webp';
-const x70FeatureImage3 = '/img/X70 Plus/Distancia Ejes.webp';
 const rubikKey = '/img/DASHING/Rubik_s cube key.webp';
 const headAcoustics = '/img/DASHING/Head acoustics(optional).webp';
 const wirelessCharging = '/img/DASHING/40 watts of wireless charging.webp';
@@ -37,10 +36,7 @@ const x50SplitSectionImage1 = '/img/X50/First Split Section - Image 1.png';
 const x50SplitSectionImage2 = '/img/X50/First Split Section - Image 2.png';
 const x50SplitSection2Image2 = '/img/X50/Second Split Section - Image 2.png';
 
-const x50FirstSpecImage = '/img/X50/Blue&grey.webp';
-
 const x50SplitSection2Image1 = '/img/X50/360° Panoramic Reversing Camera&180° Transparent Chassis.jpg';
-const x50Feature1 = '/img/X50/Feature 1.png';
 const x50Feature2 = '/img/X50/Feature 2.png';
 
 // Importación de datos de especificaciones
@@ -216,7 +212,7 @@ export const vehiclesData: Record<string, VehicleData> = {
       title: 'COMODIDAD DESDE DONDE LA VEAS',
       items: [
         {
-          image: multilevelModel,
+          image: '/t2/spec_first_image.jpg',
           label: 'MODELADO TRIDIMENSIONAL MULTINIVEL'
         },
         {
@@ -779,7 +775,7 @@ export const vehiclesData: Record<string, VehicleData> = {
           label: 'PANTALLA CENTRAL DE 10.3'
         },
         {
-          image: x50Feature2,
+          image: '/x50/spec_third_image.png',
           label: 'DISTANCIA ENTRE EJES EXTENDIDA'
         }
       ]
