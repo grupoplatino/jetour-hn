@@ -63,7 +63,7 @@ export default function VehicleDetailPage({ carData, showTestDriveButton = true 
 
       <SpecsSection specs={carData.specs} themeKey={carTheme} />
 
-      <section className="p-6 pb-12">
+      {/* <section className="p-6 pb-12">
         <VehicleVisualizer
           title={carData.visualizer.title}
           basePath={carData.visualizer.basePath}
@@ -74,7 +74,7 @@ export default function VehicleDetailPage({ carData, showTestDriveButton = true 
           themeKey={carTheme}
           defaultColorIndex={0}
         />
-      </section>
+      </section> */}
 
       <ContactForm themeKey={carTheme} />
     </>
