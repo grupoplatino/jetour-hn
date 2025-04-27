@@ -270,13 +270,13 @@ export const vehiclesData: Record<string, VehicleData> = {
         {
           name: "nightBlack",
           hex: "#1d1d1b",
-          folderName: "Black",
+          folderName: "Night Black",
           class: "bg-[#030304]",
         },
         {
           name: "sand",
           hex: "#827058",
-          folderName: "Sand (Arena)",
+          folderName: "Sand",
           class: "bg-[#827058]",
         },
         {
@@ -288,7 +288,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         {
           name: "mistyCyan",
           hex: "#336caf",
-          folderName: "Misty Cyan (Azul)",
+          folderName: "Misty Cyan",
           class: "bg-[#336caf]",
         },
       ],
@@ -729,12 +729,6 @@ export const vehiclesData: Record<string, VehicleData> = {
     splitSections: [
       // Placeholder para Dashing
       {
-        image1: "/x50/car_split_image_1.webp",
-        image2: "/x50/car_split_image_2.webp",
-        title: "TAMAÑO Y DISEÑO",
-        text: "El X50 se destaca por su interior, al igual que por sus dimensiones exteriores, con un diseño estilizado y detalles de alta calidad. Un espacio muy bien aprovechado, ideal para tí quien piensa en la seguridad y es amante a la tecnología.",
-        leftSpacing: "-40rem",
-        rightSpacing: "20rem",
         image1: "/x50/car_split_image_1.webp",
         image2: "/x50/car_split_image_1.webp",
         title: "TAMAÑO Y DISEÑO",
