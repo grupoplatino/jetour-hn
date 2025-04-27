@@ -730,21 +730,27 @@ export const vehiclesData: Record<string, VehicleData> = {
       // Placeholder para Dashing
       {
         image1: "/x50/car_split_image_1.webp",
-        image2: "/x50/car_split_image_1.webp",
+        image2: "/x50/car_split_image_2.webp",
         title: "TAMAÑO Y DISEÑO",
-        text: "",
+        text: "El X50 se destaca por su interior, al igual que por sus dimensiones exteriores, con un diseño estilizado y detalles de alta calidad. Un espacio muy bien aprovechado, ideal para tí quien piensa en la seguridad y es amante a la tecnología.",
+        leftSpacing: "-40rem",
+        rightSpacing: "20rem",
         whiteText: true,
         imageContainRight: true,
+        leftImageClassName: "!h-auto -mt-28",
       },
       {
-        image1: "/x50/car_split_image_2.webp",
-        image2: "/x50/car_split_image_2.webp",
+        image1: "/x50/car_split_image_3.webp",
+        image2: "/x50/car_split_image_4.webp",
         title: "DISFRUTA SUS DETALLES",
-        text: "",
+        text: "El Jetour X50 ofrece comodidad con asientos revestidos en cuero sintético, y una amplia fila de asientos. Este auto es perfecto para salir y disfrutar del día y la noche, junto a tu familia o amigos.",
+        leftSpacing: "-35rem",
+        rightSpacing: "20rem",
         brochureUrl:
           "https://platinosoftware.blob.core.windows.net/auto-aliados/Ficha_tecnica_x50.pdf",
         whiteText: true,
         imageContainRight: true,
+        leftImageClassName: "h-[800px] -mt-16 -ml-14",
       },
     ],
     featuresSections: {
