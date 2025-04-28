@@ -68,7 +68,7 @@ const CarHero: React.FC<CarHeroProps> = ({
         </div>
       </div>
 
-      <WarrantyBadge className="absolute bottom-28 max-w-full" />
+      <WarrantyBadge className="absolute bottom-32 max-w-full" />
     </section>
   );
 };
