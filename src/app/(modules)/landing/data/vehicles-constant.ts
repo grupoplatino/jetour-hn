@@ -770,7 +770,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         },
         {
           image: "/x50/spec_second_image.webp",
-          label: "PANTALLA CENTRAL DE 10.3",
+          label: 'PANTALLA CENTRAL DE 10.3"',
         },
         {
           image: "/x50/spec_third_image.webp",
@@ -791,7 +791,6 @@ export const vehiclesData: Record<string, VehicleData> = {
     specs: {
       "Características principales": {
         Motor: "Motor 1.5 L turbo",
-        Pantalla: "Pantalla central dual de 20.5 pulgadas",
         Cámara: "Cámara de visión 360°",
         Seguridad: "6 bolsas de aire",
       },
@@ -809,7 +808,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         Climatización: "Aire acondicionado con control de velocidad",
       },
       "Tecnología y conectividad": {
-        Pantalla: 'Pantalla digital de 10.25"',
+        Pantalla: 'Pantalla digital de 10.3"',
         Radio: "Radio AM/FM/Bluetooth",
         Compatibilidad: "CarPlay y Android Auto",
         Controles: "Botones multifunción en el timón",
