@@ -217,7 +217,7 @@ export default function VideoHeroSection({
                   >
                     <Image
                       className={cn(
-                        "object-cover w-full h-full md:-ml-[400px] lg:-ml-[600px]",
+                        "object-contain w-full h-full md:-ml-[400px] lg:-ml-[600px]",
                         section.imageLeftExtraClassName
                       )}
                       src={section.backgroundImage}
