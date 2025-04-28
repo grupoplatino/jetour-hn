@@ -29,10 +29,10 @@ export default function ContactForm({
           {/* Columna izquierda - puede contener información adicional o estar vacía para dar espacio */}
           <div className="hidden md:flex md:items-end md:justify-start relative">
             {/* Badge de garantía */}
-            <div className="absolute -bottom-16 -left-28">
+            <div className="absolute -bottom-16 md:-left-0 lg:-left-32">
               <Image
                 src={"/landing/certficate_logo.webp"}
-                width={240}
+                width={280}
                 height={300}
                 alt="Certificado de Garantía"
                 className="w-7rem h-auto"
