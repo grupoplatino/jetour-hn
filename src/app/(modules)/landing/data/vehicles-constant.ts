@@ -117,25 +117,25 @@ export const vehiclesData: Record<string, VehicleData> = {
       {
         carImage: "/t2/car_black_carousel.webp",
         color: "nightBlack",
-        colorName: "Negro",
+        colorName: "Black",
         hexColor: "#030304",
       },
       {
         carImage: "/t2/car_white_carousel.webp",
         color: "white",
-        colorName: "Blanco",
+        colorName: "White",
         hexColor: "#ffffff",
       },
       {
         carImage: "/t2/car_neutral_carousel.webp",
         color: "neutralColor",
-        colorName: "Arena",
+        colorName: "Sand",
         hexColor: "#d8cbb1",
       },
       {
         carImage: "/t2/car_silver_carousel.webp",
         color: "Silver Snow",
-        colorName: "Gris",
+        colorName: "Silver",
         hexColor: "#8592a2",
       },
       {
