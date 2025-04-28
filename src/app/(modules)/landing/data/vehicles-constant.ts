@@ -140,6 +140,7 @@ export const vehiclesData: Record<string, VehicleData> = {
       },
       {
         carImage: "/t2/car_blue_carousel.webp",
+        scaleCar: 0.8,
         color: "Misty Cyan",
         colorName: "Cyan",
         hexColor: "#336caf",
@@ -669,6 +670,12 @@ export const vehiclesData: Record<string, VehicleData> = {
           folderName: "black",
           class: "bg-[#000000]",
         },
+        {
+          name: "white",
+          hex: "#FFFFFF",
+          folderName: "white",
+          class: "bg-white",
+        },
       ],
       interiorImagePath: [
         {
@@ -733,11 +740,10 @@ export const vehiclesData: Record<string, VehicleData> = {
         image2: "/x50/car_split_image_2.webp",
         title: "TAMAÑO Y DISEÑO",
         text: "El X50 se destaca por su interior, al igual que por sus dimensiones exteriores, con un diseño estilizado y detalles de alta calidad. Un espacio muy bien aprovechado, ideal para tí quien piensa en la seguridad y es amante a la tecnología.",
-        leftSpacing: "-40rem",
+        leftSpacing: "-20rem",
         rightSpacing: "20rem",
         whiteText: true,
         imageContainRight: true,
-        leftImageClassName: "!h-auto -mt-28",
       },
       {
         image1: "/x50/car_split_image_3.webp",
@@ -749,8 +755,9 @@ export const vehiclesData: Record<string, VehicleData> = {
         brochureUrl:
           "https://platinosoftware.blob.core.windows.net/auto-aliados/Ficha_tecnica_x50.pdf",
         whiteText: true,
+        imageContainLeft: true,
         imageContainRight: true,
-        leftImageClassName: "h-[800px] -mt-16 -ml-14",
+        leftImageClassName: "h-[800px] -mt-28 -ml-14",
       },
     ],
     featuresSections: {

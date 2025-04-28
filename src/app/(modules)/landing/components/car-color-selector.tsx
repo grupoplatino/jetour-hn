@@ -1,14 +1,15 @@
-'use client';
+"use client";
 
-import { useState, useCallback, useEffect } from 'react';
-import Image from 'next/image';
-import useEmblaCarousel from 'embla-carousel-react';
-import { motion } from 'framer-motion';
+import { useState, useCallback, useEffect } from "react";
+import Image from "next/image";
+import useEmblaCarousel from "embla-carousel-react";
+import { motion } from "framer-motion";
 
 interface CarColorModel {
   colorName: string;
   hexColor: string;
   carImage: string;
+  scaleCar?: number;
 }
 
 interface CarColorSelectorProps {
@@ -21,10 +22,10 @@ export function CarColorSelector({ carModels }: CarColorSelectorProps) {
   const [nextIndex, setNextIndex] = useState(1);
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
-    align: 'center',
+    align: "center",
     slidesToScroll: 1,
-    containScroll: 'keepSnaps',
-    dragFree: false
+    containScroll: "keepSnaps",
+    dragFree: false,
   });
 
   const onColorSelect = useCallback(
@@ -58,10 +59,10 @@ export function CarColorSelector({ carModels }: CarColorSelectorProps) {
     if (!emblaApi) return;
 
     onSelect();
-    emblaApi.on('select', onSelect);
+    emblaApi.on("select", onSelect);
 
     return () => {
-      emblaApi.off('select', onSelect);
+      emblaApi.off("select", onSelect);
     };
   }, [emblaApi, onSelect]);
 
@@ -75,33 +76,33 @@ export function CarColorSelector({ carModels }: CarColorSelectorProps) {
       return {
         scale: 1,
         y: 0,
-        x: '0%',
+        x: "-5%",
         opacity: 1,
-        zIndex: 30
+        zIndex: 30,
       };
     } else if (index === prevIndex) {
       return {
         scale: 0.8,
         y: -60,
-        x: '-80%',
+        x: "-85%",
         opacity: 1,
-        zIndex: 20
+        zIndex: 20,
       };
     } else if (index === nextIndex) {
       return {
         scale: 0.8,
         y: -60,
-        x: '90%',
+        x: "80%",
         opacity: 1,
-        zIndex: 20
+        zIndex: 20,
       };
     } else {
       return {
         scale: 0.8,
         y: -60,
-        x: '-85%',
+        x: "-85%",
         opacity: 0,
-        zIndex: 10
+        zIndex: 10,
       };
     }
   };
@@ -120,7 +121,7 @@ export function CarColorSelector({ carModels }: CarColorSelectorProps) {
               animate={posStyles}
               transition={{
                 duration: 0.6,
-                ease: 'easeInOut'
+                ease: "easeInOut",
               }}
               onClick={() => {
                 if (index === prevIndex) {
@@ -135,8 +136,11 @@ export function CarColorSelector({ carModels }: CarColorSelectorProps) {
                 alt={`${car.colorName} model`}
                 width={600}
                 height={350}
-                className={`object-contain transition-shadow ${index === selectedIndex ? 'drop-shadow-2xl' : ''}`}
+                className={`object-contain transition-shadow ${
+                  index === selectedIndex ? "drop-shadow-2xl" : ""
+                }`}
                 priority={index === selectedIndex}
+                style={car.scaleCar !== null ? { scale: car.scaleCar } : {}}
               />
             </motion.div>
           );
@@ -144,10 +148,16 @@ export function CarColorSelector({ carModels }: CarColorSelectorProps) {
       </div>
 
       {/* Hidden Embla carousel for handling gestures and navigation */}
-      <div className="absolute opacity-0 pointer-events-auto h-[1px]" ref={emblaRef}>
+      <div
+        className="absolute opacity-0 pointer-events-auto h-[1px]"
+        ref={emblaRef}
+      >
         <div className="flex">
           {carModels.map((car) => (
-            <div key={`carousel-${car.colorName}`} className="min-w-0 flex-shrink-0 basis-full" />
+            <div
+              key={`carousel-${car.colorName}`}
+              className="min-w-0 flex-shrink-0 basis-full"
+            />
           ))}
         </div>
       </div>
@@ -160,21 +170,29 @@ export function CarColorSelector({ carModels }: CarColorSelectorProps) {
               onClick={() => onColorSelect(index)}
               className={`
                 w-8 h-8 rounded-full transition-all
-                ${index === selectedIndex ? 'scale-110 border-[3px]' : 'border-2 hover:border-gray-500'}
-                ${car.hexColor === '#ffffff' ? 'border-gray-300' : 'border-gray-400'}
+                ${
+                  index === selectedIndex
+                    ? "scale-110 border-[3px]"
+                    : "border-2 hover:border-gray-500"
+                }
+                ${
+                  car.hexColor === "#ffffff"
+                    ? "border-gray-300"
+                    : "border-gray-400"
+                }
               `}
               style={{
                 backgroundColor: car.hexColor,
                 borderColor:
                   index === selectedIndex
-                    ? car.hexColor === '#ffffff'
-                      ? '#333333'
-                      : car.hexColor === '#000000'
-                      ? '#555555'
-                      : 'gray'
-                    : car.hexColor === '#ffffff'
-                    ? '#cccccc'
-                    : '#a0a0a0'
+                    ? car.hexColor === "#ffffff"
+                      ? "#333333"
+                      : car.hexColor === "#000000"
+                      ? "#555555"
+                      : "gray"
+                    : car.hexColor === "#ffffff"
+                    ? "#cccccc"
+                    : "#a0a0a0",
               }}
               aria-label={`Select ${car.colorName} color`}
             />
