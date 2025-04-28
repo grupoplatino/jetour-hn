@@ -27,7 +27,7 @@ export function generateServiceMetadata(): Metadata {
       url: 'https://www.jetourhn.com/landing/post-venta',
       images: [
         {
-          url: 'https://www.jetourhn.com/postventa/hero_background.jpg',
+          url: 'https://www.jetourhn.com/postventa/hero_background.webp',
           width: 1200,
           height: 630,
           alt: 'Servicio Técnico Jetour Honduras'
