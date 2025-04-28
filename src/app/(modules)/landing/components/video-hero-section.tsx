@@ -118,7 +118,10 @@ export default function VideoHeroSection({
 
   return (
     <section
-      className={cn("relative w-full h-screen overflow-hidden", extraClassName)}
+    style={{
+      height: 'calc(100vh - 60px)',
+    }}
+      className={cn("relative w-full overflow-hidden", extraClassName)}
     >
       <div className="absolute inset-0 z-10 pointer-events-none">
         {/* Progress bar at top */}
@@ -296,7 +299,7 @@ export default function VideoHeroSection({
                       loop
                       muted
                       playsInline
-                      className="w-full h-full object-cover"
+                      className="w-full absolute left-60 h-full object-cover"
                       src={section.videos.leftVideo}
                     />
                   </div>
