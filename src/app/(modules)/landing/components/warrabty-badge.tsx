@@ -12,7 +12,7 @@ const WarrantyBadge: React.FC<WarrantyBadgeProps> = ({ className }) => {
         alt="5 años de garantía"
         width={200}
         height={150}
-        className="object-contain"
+        className="object-contain h-28 w-auto"
       />
     </div>
   );
