@@ -193,7 +193,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         },
         {
           image: "/t2/spec_third_image.webp",
-          label: "DISTANCIA ENTRE EJES SÚPER LARGA",
+          label: "DISTANCIA ENTRE EJES 2800 mm",
         },
       ],
     },
