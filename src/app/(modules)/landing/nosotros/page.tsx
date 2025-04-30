@@ -241,7 +241,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* Team Section (Opcional) */}
-      <section className="bg-black text-white py-16 md:py-24">
+      {/* <section className="bg-black text-white py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-4 text-center">
             Nuestro Equipo
@@ -250,12 +250,12 @@ export default function AboutUsPage() {
             Contamos con un equipo de profesionales dedicados y apasionados,
             comprometidos con brindar el mejor servicio y asesoramiento a
             nuestros clientes.
-          </p>
+          </p> */}
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Aquí podrías agregar tarjetas de miembros del equipo si lo deseas */}
-            {/* Ejemplo: */}
-            <div className="bg-zinc-900 rounded-xl overflow-hidden shadow-md">
+      {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"> */}
+      {/* Aquí podrías agregar tarjetas de miembros del equipo si lo deseas */}
+      {/* Ejemplo: */}
+      {/* <div className="bg-zinc-900 rounded-xl overflow-hidden shadow-md">
               <div className="h-64 relative">
                 <Image
                   src="/nosotros/team_member1.webp"
@@ -273,15 +273,15 @@ export default function AboutUsPage() {
                   Breve descripción o frase del miembro del equipo.
                 </p>
               </div>
-            </div>
+            </div> */}
 
-            {/* Puedes agregar más miembros aquí */}
-          </div>
+      {/* Puedes agregar más miembros aquí */}
+      {/* </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Testimonials */}
-      <section className="max-w-7xl mx-auto px-4 py-16 md:py-24 bg-white">
+      {/* <section className="max-w-7xl mx-auto px-4 py-16 md:py-24 bg-white">
         <h2 className="text-3xl font-bold mb-4 text-center">
           Lo Que Dicen Nuestros Clientes
         </h2>
@@ -291,9 +291,9 @@ export default function AboutUsPage() {
           JETOUR.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Testimonial 1 */}
-          <div className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow relative border border-gray-200">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"> */}
+      {/* Testimonial 1 */}
+      {/* <div className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow relative border border-gray-200">
             <div className="absolute -top-5 left-8">
               <div className="w-10 h-10 bg-[#FF7A00] rounded-full flex items-center justify-center">
                 <svg
@@ -326,10 +326,10 @@ export default function AboutUsPage() {
                 <p className="text-sm text-gray-600">San Pedro Sula</p>
               </div>
             </div>
-          </div>
+          </div> */}
 
-          {/* Testimonial 2 */}
-          <div className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow relative border border-gray-200">
+      {/* Testimonial 2 */}
+      {/* <div className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow relative border border-gray-200">
             <div className="absolute -top-5 left-8">
               <div className="w-10 h-10 bg-[#FF7A00] rounded-full flex items-center justify-center">
                 <svg
@@ -362,10 +362,10 @@ export default function AboutUsPage() {
                 <p className="text-sm text-gray-600">Tegucigalpa</p>
               </div>
             </div>
-          </div>
+          </div> */}
 
-          {/* Testimonial 3 */}
-          <div className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow relative border border-gray-200">
+      {/* Testimonial 3 */}
+      {/* <div className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow relative border border-gray-200">
             <div className="absolute -top-5 left-8">
               <div className="w-10 h-10 bg-[#FF7A00] rounded-full flex items-center justify-center">
                 <svg
@@ -399,8 +399,8 @@ export default function AboutUsPage() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </div> */}
+      {/* </section> */}
 
       {/* CTA Section */}
       <section className="bg-[#FF7A00] py-16">

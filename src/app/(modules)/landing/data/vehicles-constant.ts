@@ -193,7 +193,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         },
         {
           image: "/t2/spec_third_image.webp",
-          label: "DISTANCIA ENTRE EJES 2800 mm",
+          label: "DISTANCIA ENTRE EJES 2,800 MM",
         },
       ],
     },
@@ -595,7 +595,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         },
         {
           image: "/x70plus/spec_third_image.webp",
-          label: "DISTANCIA ENTRE EJES SUPER LARGA",
+          label: "DISTANCIA ENTRE EJES 2,745 MM",
         },
       ],
     },
@@ -774,7 +774,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         },
         {
           image: "/x50/spec_third_image.webp",
-          label: "DISTANCIA ENTRE EJES EXTENDIDA",
+          label: "DISTANCIA ENTRE EJES 2,601 MM",
         },
       ],
     },

@@ -214,7 +214,7 @@ export default function PostVentaPage() {
                     </li>
                     <li className="flex items-start">
                       <span className="text-[#FF7A00] mr-2">✓</span>
-                      <span>Cambio de filtro de aire</span>
+                      <span>Cambio de filtro de aire de motor y AC</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-[#FF7A00] mr-2">✓</span>
@@ -223,6 +223,10 @@ export default function PostVentaPage() {
                     <li className="flex items-start">
                       <span className="text-[#FF7A00] mr-2">✓</span>
                       <span>Revisión del sistema de frenos</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-[#FF7A00] mr-2">✓</span>
+                      <span>Alineamiento y balanceo</span>
                     </li>
                   </ul>
                 </div>
@@ -253,6 +257,10 @@ export default function PostVentaPage() {
                     <li className="flex items-start">
                       <span className="text-[#FF7A00] mr-2">✓</span>
                       <span>Limpieza del sistema de inyección</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-[#FF7A00] mr-2">✓</span>
+                      <span>Escaner General</span>
                     </li>
                   </ul>
                 </div>
