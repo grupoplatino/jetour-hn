@@ -28,7 +28,7 @@ export default function AboutUsPage() {
       {/* Hero Banner */}
       <div className="relative w-full h-[400px] md:h-[500px]">
         <Image
-          src={"/nosotros/hero_background.webp"}
+          src={"/nosotros/hero_background-2.webp"}
           alt="JETOUR Concesionaria"
           fill
           className="object-cover object-center"
