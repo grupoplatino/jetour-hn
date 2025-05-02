@@ -67,7 +67,7 @@ export default function AboutUsPage() {
           </div>
           <div className="relative h-[400px] rounded-xl overflow-hidden shadow-xl">
             <Image
-              src={"/nosotros/hero_background.webp"}
+              src={"/nosotros/hero_background-3.webp"}
               alt="Concesionaria JETOUR Honduras"
               fill
               className="object-cover"
