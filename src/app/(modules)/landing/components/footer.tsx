@@ -94,14 +94,6 @@ export function Footer({ primaryColor = "#FF7A00" }: FooterProps) {
                     X70 Plus
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    href="/"
-                    className="hover:text-gray-600 transition-colors"
-                  >
-                    Cotizaciones
-                  </Link>
-                </li>
               </ul>
             </div>
 
@@ -119,14 +111,6 @@ export function Footer({ primaryColor = "#FF7A00" }: FooterProps) {
                 </li>
                 <li>
                   <Link
-                    href="/"
-                    className="hover:text-gray-600 transition-colors"
-                  >
-                    Preguntas Frecuentes
-                  </Link>
-                </li>
-                <li>
-                  <Link
                     href="/landing/post-venta"
                     className="hover:text-gray-600 transition-colors"
                   >
@@ -134,10 +118,7 @@ export function Footer({ primaryColor = "#FF7A00" }: FooterProps) {
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href="/"
-                    className="hover:text-gray-600 transition-colors"
-                  >
+                  <Link href="https://jetourglobal.com/" target="_blank" className="hover:text-gray-600 transition-colors">
                     Socios Globales
                   </Link>
                 </li>
