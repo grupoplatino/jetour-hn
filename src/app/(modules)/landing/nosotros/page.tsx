@@ -1,38 +1,23 @@
 // src/app/(modules)/landing/nosotros/page.tsx
-import Image from "next/image";
-import Link from "next/link";
-import {
-  Calendar,
-  Medal,
-  Users,
-  TrendingUp,
-  Target,
-  Globe,
-} from "lucide-react";
-import WhatsAppButton from "../components/whats-app-button";
-import TestDriveButton from "../components/test-drive-button";
-import {
-  AboutPageSEO,
-  generateAboutMetadata,
-} from "@/components/seo/about-us-seo";
+import Image from 'next/image';
+import Link from 'next/link';
+import { Calendar, Medal, Users, TrendingUp, Target, Globe } from 'lucide-react';
+import WhatsAppButton from '../components/whats-app-button';
+import TestDriveButton from '../components/test-drive-button';
+import { AboutPageSEO, generateAboutMetadata } from '@/components/seo/about-us-seo';
 
 export const metadata = generateAboutMetadata();
 
 export default function AboutUsPage() {
   return (
-    <div className="min-h-screen bg-white text-black">
+    <div className="min-h-screen bg-white text-black w-full max-w-[1920px] mx-auto">
       <TestDriveButton carTheme="orange" />
 
       <AboutPageSEO />
 
       {/* Hero Banner */}
       <div className="relative w-full h-[400px] md:h-[500px]">
-        <Image
-          src={"/nosotros/hero_background-2.webp"}
-          alt="JETOUR Concesionaria"
-          fill
-          className="object-cover object-center"
-        />
+        <Image unoptimized src={'/nosotros/hero_background-2.webp'} alt="JETOUR Concesionaria" fill className="object-cover object-center" />
         <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-white">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Nosotros</h1>
           <div className="h-1 w-20 bg-[#FF7A00]"></div>
@@ -47,16 +32,12 @@ export default function AboutUsPage() {
               Descubre <span className="text-[#FF7A00]">JETOUR</span> Honduras
             </h2>
             <p className="text-lg mb-6 leading-relaxed text-gray-800">
-              En JETOUR Honduras, nos enorgullece ofrecer vehículos de clase
-              mundial que combinan innovación, rendimiento y diseño excepcional.
-              Somos el distribuidor oficial de la marca JETOUR en Honduras,
-              comprometidos con brindar a nuestros clientes una experiencia de
-              conducción inigualable.
+              En JETOUR Honduras, nos enorgullece ofrecer vehículos de clase mundial que combinan innovación, rendimiento y diseño excepcional. Somos el
+              distribuidor oficial de la marca JETOUR en Honduras, comprometidos con brindar a nuestros clientes una experiencia de conducción inigualable.
             </p>
             <p className="text-lg mb-8 leading-relaxed text-gray-800">
-              Respaldados por Auto Aliados, contamos con el conocimiento y la
-              infraestructura para garantizar un servicio de primera calidad,
-              desde la asesoría en la compra hasta el mantenimiento postventa.
+              Respaldados por Auto Aliados, contamos con el conocimiento y la infraestructura para garantizar un servicio de primera calidad, desde la asesoría
+              en la compra hasta el mantenimiento postventa.
             </p>
             <Link
               href="/landing/contactanos"
@@ -66,12 +47,7 @@ export default function AboutUsPage() {
             </Link>
           </div>
           <div className="relative h-[400px] rounded-xl overflow-hidden shadow-xl">
-            <Image
-              src={"/nosotros/hero_background-3.webp"}
-              alt="Concesionaria JETOUR Honduras"
-              fill
-              className="object-cover"
-            />
+            <Image unoptimized src={'/nosotros/hero_background-3.webp'} alt="Concesionaria JETOUR Honduras" fill className="object-cover" />
           </div>
         </div>
       </section>
@@ -79,9 +55,7 @@ export default function AboutUsPage() {
       {/* Brand Story Section */}
       <section className="bg-black text-white py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center">
-            Nuestra Historia
-          </h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">Nuestra Historia</h2>
 
           <div className="relative">
             {/* Timeline Line */}
@@ -97,9 +71,8 @@ export default function AboutUsPage() {
                     <Calendar className="text-[#FF7A00]" />
                   </h3>
                   <p className="text-gray-300">
-                    JETOUR se estableció como una marca independiente del Grupo
-                    Chery en 2018, con la visión de crear vehículos SUV de alta
-                    calidad para familias y aventureros.
+                    JETOUR se estableció como una marca independiente del Grupo Chery en 2018, con la visión de crear vehículos SUV de alta calidad para
+                    familias y aventureros.
                   </p>
                 </div>
                 {/* Timeline Point */}
@@ -114,9 +87,8 @@ export default function AboutUsPage() {
                     <span>Expansión Global</span>
                   </h3>
                   <p className="text-gray-300">
-                    Tras su éxito inicial en China, JETOUR comenzó su expansión
-                    internacional, llegando a más de 30 países en Asia, Oriente
-                    Medio, África y América Latina.
+                    Tras su éxito inicial en China, JETOUR comenzó su expansión internacional, llegando a más de 30 países en Asia, Oriente Medio, África y
+                    América Latina.
                   </p>
                 </div>
                 {/* Timeline Point */}
@@ -131,9 +103,8 @@ export default function AboutUsPage() {
                     <Calendar className="text-[#FF7A00]" />
                   </h3>
                   <p className="text-gray-300">
-                    En 2023, JETOUR llega oficialmente a Honduras de la mano de
-                    Auto Aliados, trayendo al mercado nacional vehículos
-                    innovadores y de alta tecnología.
+                    En 2023, JETOUR llega oficialmente a Honduras de la mano de Auto Aliados, trayendo al mercado nacional vehículos innovadores y de alta
+                    tecnología.
                   </p>
                 </div>
                 {/* Timeline Point */}
@@ -148,9 +119,8 @@ export default function AboutUsPage() {
                     <span>Presente y Futuro</span>
                   </h3>
                   <p className="text-gray-300">
-                    Actualmente, JETOUR continúa innovando con modelos como el
-                    Dashing, T2, X70 Plus y X50, combinando tecnología avanzada,
-                    diseño sofisticado y rendimiento excepcional.
+                    Actualmente, JETOUR continúa innovando con modelos como el Dashing, T2, X70 Plus y X50, combinando tecnología avanzada, diseño sofisticado y
+                    rendimiento excepcional.
                   </p>
                 </div>
                 {/* Timeline Point */}
@@ -163,13 +133,10 @@ export default function AboutUsPage() {
 
       {/* Values Section */}
       <section className="max-w-7xl mx-auto px-4 py-16 md:py-24 bg-white">
-        <h2 className="text-3xl font-bold mb-4 text-center">
-          Nuestros Valores
-        </h2>
+        <h2 className="text-3xl font-bold mb-4 text-center">Nuestros Valores</h2>
         <p className="text-lg text-center max-w-3xl mx-auto mb-16 text-gray-800">
-          En JETOUR Honduras, nuestros valores fundamentales definen quiénes
-          somos y cómo operamos. Estos principios guían cada interacción con
-          nuestros clientes y socios.
+          En JETOUR Honduras, nuestros valores fundamentales definen quiénes somos y cómo operamos. Estos principios guían cada interacción con nuestros
+          clientes y socios.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -180,9 +147,8 @@ export default function AboutUsPage() {
             </div>
             <h3 className="text-xl font-bold mb-3">Excelencia</h3>
             <p className="text-gray-700">
-              Nos esforzamos por la excelencia en todo lo que hacemos, desde la
-              calidad de nuestros vehículos hasta el servicio que brindamos a
-              nuestros clientes.
+              Nos esforzamos por la excelencia en todo lo que hacemos, desde la calidad de nuestros vehículos hasta el servicio que brindamos a nuestros
+              clientes.
             </p>
           </div>
 
@@ -191,13 +157,8 @@ export default function AboutUsPage() {
             <div className="w-16 h-16 bg-[#FF7A00] rounded-full flex items-center justify-center mb-6">
               <Users className="h-8 w-8 text-white" />
             </div>
-            <h3 className="text-xl font-bold mb-3">
-              Compromiso con el Cliente
-            </h3>
-            <p className="text-gray-700">
-              Nuestros clientes son nuestra prioridad. Nos dedicamos a entender
-              sus necesidades y superar sus expectativas.
-            </p>
+            <h3 className="text-xl font-bold mb-3">Compromiso con el Cliente</h3>
+            <p className="text-gray-700">Nuestros clientes son nuestra prioridad. Nos dedicamos a entender sus necesidades y superar sus expectativas.</p>
           </div>
 
           {/* Value 3 */}
@@ -207,9 +168,7 @@ export default function AboutUsPage() {
             </div>
             <h3 className="text-xl font-bold mb-3">Innovación</h3>
             <p className="text-gray-700">
-              Buscamos constantemente nuevas formas de mejorar nuestros
-              productos y servicios, adoptando tecnologías avanzadas y
-              soluciones creativas.
+              Buscamos constantemente nuevas formas de mejorar nuestros productos y servicios, adoptando tecnologías avanzadas y soluciones creativas.
             </p>
           </div>
 
@@ -220,8 +179,7 @@ export default function AboutUsPage() {
             </div>
             <h3 className="text-xl font-bold mb-3">Responsabilidad</h3>
             <p className="text-gray-700">
-              Asumimos la responsabilidad de nuestras acciones y decisiones,
-              operando con integridad y transparencia en todo momento.
+              Asumimos la responsabilidad de nuestras acciones y decisiones, operando con integridad y transparencia en todo momento.
             </p>
           </div>
 
@@ -232,9 +190,7 @@ export default function AboutUsPage() {
             </div>
             <h3 className="text-xl font-bold mb-3">Compromiso Social</h3>
             <p className="text-gray-700">
-              Estamos comprometidos con el desarrollo de Honduras, apoyando
-              iniciativas que contribuyan al bienestar de las comunidades donde
-              operamos.
+              Estamos comprometidos con el desarrollo de Honduras, apoyando iniciativas que contribuyan al bienestar de las comunidades donde operamos.
             </p>
           </div>
         </div>
@@ -405,19 +361,13 @@ export default function AboutUsPage() {
       {/* CTA Section */}
       <section className="bg-[#FF7A00] py-16">
         <div className="max-w-7xl mx-auto px-4 text-center text-white">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Descubre la Experiencia JETOUR
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Descubre la Experiencia JETOUR</h2>
           <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
-            Visita nuestra concesionaria o agenda una prueba de manejo para
-            conocer de primera mano la calidad, el confort y la tecnología de
-            nuestros vehículos.
+            Visita nuestra concesionaria o agenda una prueba de manejo para conocer de primera mano la calidad, el confort y la tecnología de nuestros
+            vehículos.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Link
-              href="/landing/contactanos"
-              className="bg-white text-[#FF7A00] px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors"
-            >
+            <Link href="/landing/contactanos" className="bg-white text-[#FF7A00] px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
               Contáctanos
             </Link>
             <Link

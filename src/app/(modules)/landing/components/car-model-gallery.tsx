@@ -25,7 +25,7 @@ export default function CarModelsGallery({ title = 'Nuestros Modelos', models, c
   const theme = carThemes[themeKey];
 
   return (
-    <section className={cn('w-full py-16 px-6 md:px-10 lg:px-16 overflow-hidden', className)}>
+    <section className={cn('w-full py-16 px-6 md:px-10 lg:px-16 overflow-hidden bg-white max-w-[1920px] mx-auto', className)}>
       {/* Título con efecto de entrada */}
       <h2 className="text-3xl md:text-4xl font-bold mb-12 relative before:content-[''] before:absolute before:h-1 before:w-16 before:-bottom-4 before:bg-orange-500 animate-fade-right animate-once animate-duration-700">
         {title}

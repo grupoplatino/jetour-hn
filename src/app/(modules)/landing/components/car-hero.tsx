@@ -16,7 +16,7 @@ const CarHero: React.FC<CarHeroProps> = ({ backgroundImage, carLogo, tagline, ca
   const theme = carThemes[carTheme].colors;
 
   return (
-    <section className="relative w-full h-screen">
+    <section className="relative w-full h-screen  max-w-[1920px] mx-auto">
       {/* Línea superior en el color del tema */}
       {/* <div className="absolute top-0 left-0 right-0 h-1.5 z-10 max-w-full" style={{ backgroundColor: theme.primary }} /> */}
 

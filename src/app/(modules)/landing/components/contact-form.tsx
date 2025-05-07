@@ -13,7 +13,7 @@ export default function ContactForm({ backgroundImage = '/landing/form_backgroun
   const textColor = theme.colors.sectionText;
 
   return (
-    <section id="cotizacion" className="relative w-full py-20 min-h-screen flex items-center overflow-hidden">
+    <section id="cotizacion" className="relative py-20 min-h-screen flex items-center overflow-hidden w-full max-w-[1920px] mx-auto">
       {/* Background Image using Next.js Image component */}
       <div className="absolute inset-0 w-full h-full z-0">
         <Image src={backgroundImage} alt="Form Background" fill priority unoptimized className="object-cover" />

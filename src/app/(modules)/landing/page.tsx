@@ -30,7 +30,7 @@ export default function LandingPage() {
       <WhatsAppButton />
       {/* <TestDriveButton carTheme={carTheme} /> */}
 
-      <section className="mt-[90px] lg:mt-[10px] relative">
+      <section className="mt-[90px] lg:mt-[10px] relative w-full max-w-[1920px] mx-auto">
         <Image className="w-full" alt="Logo home jetour" height={800} width={800} unoptimized src={'/landing/main_hero_background.webp'} />
 
         {/* <div className="flex flex-col absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[18rem] ">
@@ -48,7 +48,7 @@ export default function LandingPage() {
       </section>
 
       <VideoHeroSection
-        extraClassName=""
+        extraClassName="w-full max-w-[1920px] mx-auto"
         sections={[
           {
             backgroundImage: '/landing/videosection1_background.webp',

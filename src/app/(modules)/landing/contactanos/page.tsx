@@ -11,7 +11,7 @@ export const metadata = generateContactMetadata();
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen max-w-[1920px] mx-auto bg-white">
       <TestDriveButton carTheme={'orange'} />
 
       <ContactPageSEO />
