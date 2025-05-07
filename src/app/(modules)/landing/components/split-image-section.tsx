@@ -39,7 +39,7 @@ export default function SplitImageSection({
   const theme = carThemes[carTheme];
 
   return (
-    <section className="relative w-full flex flex-col gap-y-8 justify-center items-center px-4 sm:px-8 md:px-16 py-10">
+    <section className="relative w-full flex flex-col gap-y-8 justify-center items-center px-4 sm:px-8 md:px-16 py-10 xl:pt-32">
       {/* Título de la sección */}
       <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold uppercase mr-auto" style={{ color: theme.colors.primary }}>
         {sectionTitle}
