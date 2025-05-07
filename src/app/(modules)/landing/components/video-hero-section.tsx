@@ -1,10 +1,10 @@
-"use client";
-import React, { useState, useRef, useEffect } from "react";
-import Image, { StaticImageData } from "next/image";
-import { cn } from "@/lib/utils";
-import { CarThemeKey, carThemes, ThemeCars } from "../data/theme-definitions";
-import useEmblaCarousel from "embla-carousel-react";
-import { motion, AnimatePresence } from "framer-motion";
+'use client';
+import React, { useState, useRef, useEffect } from 'react';
+import Image, { StaticImageData } from 'next/image';
+import { cn } from '@/lib/utils';
+import { CarThemeKey, carThemes, ThemeCars } from '../data/theme-definitions';
+import useEmblaCarousel from 'embla-carousel-react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 // Define the interface for a single section
 interface SectionData {
@@ -29,16 +29,16 @@ interface VideoHeroSectionProps {
 export default function VideoHeroSection({
   sections,
   extraClassName,
-  autoSwipeInterval = 10000, // Default: 10 seconds for auto-swipe
+  autoSwipeInterval = 10000 // Default: 10 seconds for auto-swipe
 }: VideoHeroSectionProps) {
   // Ensure we have at least one section
   if (sections.length === 0) {
-    throw new Error("At least one section is required");
+    throw new Error('At least one section is required');
   }
 
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
-    skipSnaps: false,
+    skipSnaps: false
   });
   const [currentIndex, setCurrentIndex] = useState(0);
   const [prevIndex, setPrevIndex] = useState(0);
@@ -60,13 +60,13 @@ export default function VideoHeroSection({
         if (idx === newIndex && video) {
           video.currentTime = 0;
           video.play().catch(() => {
-            console.log("Video autoplay prevented by browser");
+            console.log('Video autoplay prevented by browser');
           });
         }
       });
     };
 
-    emblaApi.on("select", onSelect);
+    emblaApi.on('select', onSelect);
 
     // Setup auto-slide if interval provided
     let intervalId: NodeJS.Timeout | null = null;
@@ -81,7 +81,7 @@ export default function VideoHeroSection({
     }
 
     return () => {
-      emblaApi.off("select", onSelect);
+      emblaApi.off('select', onSelect);
       if (intervalId) clearInterval(intervalId);
     };
   }, [emblaApi, autoSwipeInterval, sections.length, currentIndex]);
@@ -99,7 +99,7 @@ export default function VideoHeroSection({
         (videoRef as any).msRequestFullscreen();
       }
     } catch (error) {
-      console.error("Fullscreen request failed:", error);
+      console.error('Fullscreen request failed:', error);
     }
   };
 
@@ -118,10 +118,10 @@ export default function VideoHeroSection({
 
   return (
     <section
-    style={{
-      height: 'calc(100vh - 60px)',
-    }}
-      className={cn("relative w-full overflow-hidden", extraClassName)}
+      style={{
+        height: 'calc(100vh - 60px)'
+      }}
+      className={cn('relative w-full overflow-hidden', extraClassName)}
     >
       <div className="absolute inset-0 z-10 pointer-events-none">
         {/* Progress bar at top */}
@@ -130,7 +130,7 @@ export default function VideoHeroSection({
             className="h-full transition-all duration-300 ease-linear"
             style={{
               width: `${(currentIndex + 1) * (100 / sections.length)}%`,
-              backgroundColor: theme.colors.primary || "#000",
+              backgroundColor: theme.colors.primary || '#000'
             }}
           />
         </div>
@@ -143,10 +143,7 @@ export default function VideoHeroSection({
             const isActive = index === currentIndex;
 
             return (
-              <div
-                key={index}
-                className="embla__slide relative w-full h-full flex-shrink-0 overflow-hidden"
-              >
+              <div key={index} className="embla__slide relative w-full h-full flex-shrink-0 overflow-hidden">
                 {/* Mobile view - simplified version for smaller screens */}
                 <div className="block md:hidden relative w-full h-full">
                   <div className="absolute inset-0 bg-black/40 z-10" />
@@ -162,14 +159,8 @@ export default function VideoHeroSection({
                   <div className="absolute top-[60px] left-6 right-6 z-20">
                     <Image
                       src={section.logo}
-                      width={
-                        sectionTheme?.colors?.landingVideoSectionLogiSizes
-                          ?.width || 170
-                      }
-                      height={
-                        sectionTheme?.colors?.landingVideoSectionLogiSizes
-                          ?.height || 170
-                      }
+                      width={sectionTheme?.colors?.landingVideoSectionLogiSizes?.width || 170}
+                      height={sectionTheme?.colors?.landingVideoSectionLogiSizes?.height || 170}
                       alt="Logo"
                       className="h-auto mb-4"
                     />
@@ -177,15 +168,12 @@ export default function VideoHeroSection({
                       initial={{ opacity: 0, y: 20 }}
                       animate={{
                         opacity: isActive ? 1 : 0,
-                        y: isActive ? 0 : 20,
+                        y: isActive ? 0 : 20
                       }}
                       transition={{ duration: 0.5 }}
                       className={cn(
-                        "text-white text-2xl font-bold uppercase max-w-full",
-                        sectionTheme.colors.landingVideoSectionTextColor ===
-                          "white"
-                          ? "text-white"
-                          : "text-black",
+                        'text-white text-2xl font-bold uppercase max-w-full',
+                        sectionTheme.colors.landingVideoSectionTextColor === 'white' ? 'text-white' : 'text-black',
                         sectionTheme?.colors?.landingVideoTitleClass
                       )}
                     >
@@ -195,7 +183,7 @@ export default function VideoHeroSection({
                       initial={{ opacity: 0, y: 20 }}
                       animate={{
                         opacity: isActive ? 1 : 0,
-                        y: isActive ? 0 : 20,
+                        y: isActive ? 0 : 20
                       }}
                       transition={{ duration: 0.5, delay: 0.1 }}
                       className="text-white mt-2 font-medium uppercase"
@@ -211,15 +199,13 @@ export default function VideoHeroSection({
                   <div
                     className="absolute top-0 left-0 w-full h-full transition-opacity duration-500"
                     style={{
-                      clipPath: "polygon(0% 0%, 45% 0%, 35% 100%, 0% 100%)",
-                      opacity: isActive ? 1 : 0,
+                      clipPath: 'polygon(0% 0%, 45% 0%, 35% 100%, 0% 100%)',
+                      opacity: isActive ? 1 : 0
                     }}
                   >
                     <Image
-                      className={cn(
-                        "object-contain w-full h-full md:-ml-[400px] lg:-ml-[600px]",
-                        section.imageLeftExtraClassName
-                      )}
+                      unoptimized
+                      className={cn('object-contain w-full h-full md:-ml-[400px] lg:-ml-[600px]', section.imageLeftExtraClassName)}
                       src={section.backgroundImage}
                       fill
                       alt="Background"
@@ -232,21 +218,15 @@ export default function VideoHeroSection({
                     initial={{ opacity: 0, x: -20 }}
                     animate={{
                       opacity: isActive ? 1 : 0,
-                      x: isActive ? 0 : -20,
+                      x: isActive ? 0 : -20
                     }}
                     transition={{ duration: 0.5 }}
                     className="absolute overflow-visible top-[60px] left-6 z-20"
                   >
                     <Image
                       src={section.logo}
-                      width={
-                        sectionTheme?.colors?.landingVideoSectionLogiSizes
-                          ?.width || 170
-                      }
-                      height={
-                        sectionTheme?.colors?.landingVideoSectionLogiSizes
-                          ?.height || 170
-                      }
+                      width={sectionTheme?.colors?.landingVideoSectionLogiSizes?.width || 170}
+                      height={sectionTheme?.colors?.landingVideoSectionLogiSizes?.height || 170}
                       alt="Logo"
                       className="h-auto"
                     />
@@ -254,15 +234,12 @@ export default function VideoHeroSection({
                       initial={{ opacity: 0, y: 20 }}
                       animate={{
                         opacity: isActive ? 1 : 0,
-                        y: isActive ? 0 : 20,
+                        y: isActive ? 0 : 20
                       }}
                       transition={{ duration: 0.5, delay: 0.2 }}
                       className={cn(
-                        "text-white text-2xl md:text-3xl font-bold uppercase max-w-[600px]",
-                        sectionTheme.colors.landingVideoSectionTextColor ===
-                          "white"
-                          ? "text-white"
-                          : "text-black",
+                        'text-white text-2xl md:text-3xl font-bold uppercase max-w-[600px]',
+                        sectionTheme.colors.landingVideoSectionTextColor === 'white' ? 'text-white' : 'text-black',
                         sectionTheme?.colors?.landingVideoTitleClass
                       )}
                     >
@@ -272,7 +249,7 @@ export default function VideoHeroSection({
                       initial={{ opacity: 0, y: 20 }}
                       animate={{
                         opacity: isActive ? 1 : 0,
-                        y: isActive ? 0 : 20,
+                        y: isActive ? 0 : 20
                       }}
                       transition={{ duration: 0.5, delay: 0.3 }}
                       className="text-white mt-2 font-medium uppercase"
@@ -285,12 +262,10 @@ export default function VideoHeroSection({
                   <div
                     className="absolute top-0 left-0 w-full h-full cursor-pointer transition-opacity duration-500"
                     style={{
-                      clipPath: "polygon(45% 0%, 100% 0%, 100% 100%, 35% 100%)",
-                      opacity: isActive ? 1 : 0,
+                      clipPath: 'polygon(45% 0%, 100% 0%, 100% 100%, 35% 100%)',
+                      opacity: isActive ? 1 : 0
                     }}
-                    onDoubleClick={() =>
-                      handleFullscreen(videoRefs.current[index])
-                    }
+                    onDoubleClick={() => handleFullscreen(videoRefs.current[index])}
                   >
                     <video
                       key={`main-${section.videos.leftVideo}`}
@@ -309,9 +284,8 @@ export default function VideoHeroSection({
                     <div
                       className="absolute bottom-0 left-[20%] w-[25%] h-[60%] z-10 cursor-pointer transition-opacity duration-500"
                       style={{
-                        clipPath:
-                          "polygon(45% 0%, 100% 0%, 70% 100%, 10% 100%)",
-                        opacity: isActive ? 1 : 0,
+                        clipPath: 'polygon(45% 0%, 100% 0%, 70% 100%, 10% 100%)',
+                        opacity: isActive ? 1 : 0
                       }}
                     >
                       <video
@@ -340,10 +314,8 @@ export default function VideoHeroSection({
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
             className={cn(
-              "w-12 h-12 rounded-full flex items-center justify-center font-bold transition-all cursor-pointer",
-              currentIndex === index
-                ? "bg-white text-black"
-                : "bg-black/40 text-white hover:bg-black/60"
+              'w-12 h-12 rounded-full flex items-center justify-center font-bold transition-all cursor-pointer',
+              currentIndex === index ? 'bg-white text-black' : 'bg-black/40 text-white hover:bg-black/60'
             )}
             onClick={() => !isTransitioning && changeSection(index)}
           >

@@ -48,6 +48,7 @@ export default function CarModelsGallery({ title = 'Nuestros Modelos', models, c
               }}
             >
               <Image
+                unoptimized
                 src={model.carSelecctorImage}
                 alt={`${model.id} model`}
                 height={512}
