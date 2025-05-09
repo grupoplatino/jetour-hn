@@ -36,7 +36,7 @@ const VehicleVisualizer: React.FC<VehicleVisualizerProps> = ({
   };
 
   return (
-    <section className="relative min-h-screen w-full flex flex-col justify-start py-10 items-center">
+    <section className="relative w-full flex flex-col justify-start py-10 items-center max-w-[1920px] mx-auto">
       <div className="h-full w-full flex flex-col items-center lg:flex-row lg:justify-between">
         <h1 className="font-bold text-4xl text-center mb-8 lg:mb-0">{title}</h1>
         <ViewToggle

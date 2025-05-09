@@ -14,7 +14,7 @@ export const metadata = generateContactMetadata();
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen max-w-[1920px] mx-auto bg-white">
       <TestDriveButton carTheme={"orange"} />
 
       <ContactPageSEO />
@@ -22,6 +22,7 @@ export default function ContactPage() {
       {/* Hero Banner */}
       <div className="relative w-full h-[300px] md:h-[400px] lg:h-[600px] overflow-hidden">
         <Image
+          unoptimized
           src={"/contactanos/hero_background.webp"}
           alt="JETOUR Concesionaria"
           fill

@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Instagram, Facebook, Youtube, MessageCircle } from "lucide-react";
+import { Instagram, Facebook, MessageCircle } from "lucide-react";
 
 import { useParams } from "next/navigation";
 import { getVehicleById } from "../data/vehicles-constant";
@@ -101,14 +101,6 @@ export function Footer({ primaryColor = "#FF7A00" }: FooterProps) {
                     X70 Plus
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    href="/"
-                    className="hover:text-gray-600 transition-colors"
-                  >
-                    Cotizaciones
-                  </Link>
-                </li>
               </ul>
             </div>
 
@@ -126,14 +118,6 @@ export function Footer({ primaryColor = "#FF7A00" }: FooterProps) {
                 </li>
                 <li>
                   <Link
-                    href="/"
-                    className="hover:text-gray-600 transition-colors"
-                  >
-                    Preguntas Frecuentes
-                  </Link>
-                </li>
-                <li>
-                  <Link
                     href="/landing/post-venta"
                     className="hover:text-gray-600 transition-colors"
                   >
@@ -142,7 +126,8 @@ export function Footer({ primaryColor = "#FF7A00" }: FooterProps) {
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="https://jetourglobal.com/"
+                    target="_blank"
                     className="hover:text-gray-600 transition-colors"
                   >
                     Socios Globales
@@ -202,9 +187,8 @@ export function Footer({ primaryColor = "#FF7A00" }: FooterProps) {
                 <h4 className="font-semibold mb-2">Visítanos</h4>
                 <p className="text-sm">
                   Barrio La Guardia, entre 28 y 29 calle en el Bulevar del Sur,
-                  contiguo a Tropigas, San Pedro Sula, Cortes, Honduras.
+                  contiguo a Tropigas, SPS, Cortés, Honduras.
                 </p>
-                <br />
                 <p className="text-sm">Lunes a Viernes: 8:00 AM - 5:00 PM</p>
                 <p className="text-sm">Sábados: 8:00 AM - 12:00 PM</p>
                 <p className="text-sm">Domingo: Cerrado</p>

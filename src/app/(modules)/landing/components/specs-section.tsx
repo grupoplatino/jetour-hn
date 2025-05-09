@@ -9,7 +9,7 @@ interface SpecsSectionProps {
 
 const SpecsSection = ({ specs, themeKey }: SpecsSectionProps) => {
   return (
-    <section className="w-full flex flex-col justify-center items-center px-8 lg:px-[8rem] pb-12 pt-12">
+    <section className="w-full flex flex-col justify-center items-center px-8 lg:px-[8rem] pb-12 pt-12 max-w-[1920px] mx-auto">
       <h1 className="font-bold text-4xl mb-16">ESPECIFICACIONES</h1>
       <SpecsSectionContent specs={specs} themeKey={themeKey} />
     </section>

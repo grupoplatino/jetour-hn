@@ -20,7 +20,7 @@ export const metadata = generateAboutMetadata();
 
 export default function AboutUsPage() {
   return (
-    <div className="min-h-screen bg-white text-black">
+    <div className="min-h-screen bg-white text-black w-full max-w-[1920px] mx-auto">
       <TestDriveButton carTheme="orange" />
 
       <AboutPageSEO />
@@ -28,7 +28,8 @@ export default function AboutUsPage() {
       {/* Hero Banner */}
       <div className="relative w-full h-[400px] md:h-[500px]">
         <Image
-          src={"/nosotros/hero_background.webp"}
+          unoptimized
+          src={"/nosotros/hero_background-2.webp"}
           alt="JETOUR Concesionaria"
           fill
           className="object-cover object-center"
@@ -67,7 +68,8 @@ export default function AboutUsPage() {
           </div>
           <div className="relative h-[400px] rounded-xl overflow-hidden shadow-xl">
             <Image
-              src={"/nosotros/hero_background.webp"}
+              unoptimized
+              src={"/nosotros/hero_background-3.webp"}
               alt="Concesionaria JETOUR Honduras"
               fill
               className="object-cover"

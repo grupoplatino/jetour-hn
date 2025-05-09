@@ -81,7 +81,7 @@ export function Navbar({
         "h-[100px]"
       )}
     >
-      <section className="flex flex-row px-4 md:px-16 py-2 justify-between items-center h-[calc(100%-8px)]">
+      <section className="flex flex-row px-4 md:px-16 py-2 justify-between items-center h-[calc(100%-8px)] w-full max-w-[1920px] mx-auto">
         {/* Contenedor con ancho fijo para los logos */}
         <figure className="flex flex-row items-center gap-4 md:gap-10 text-white w-[250px] md:w-[350px] h-16">
           {isLoaded && (
