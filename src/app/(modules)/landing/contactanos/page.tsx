@@ -118,17 +118,6 @@ export default function ContactPage() {
                     </svg>
                   </a>
                   <a
-                    href="https://youtube.com/jejourhonduras"
-                    className="h-12 w-12 rounded-full bg-[#FF7A00] flex items-center justify-center text-white hover:bg-[#E06800] transition-colors"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="YouTube"
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" className="h-6 w-6">
-                      <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-                    </svg>
-                  </a>
-                  <a
                     href="https://wa.me/50412345678"
                     className="h-12 w-12 rounded-full bg-[#FF7A00] flex items-center justify-center text-white hover:bg-[#E06800] transition-colors"
                     target="_blank"
@@ -157,7 +146,7 @@ export default function ContactPage() {
             {/* Map */}
             <div className="h-[400px] lg:h-auto bg-gray-200 rounded-xl overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3844.3822111059624!2d-88.02699378514716!3d15.499673389252204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTXCsDI5JzU4LjgiTiA4OMKwMDEnMzAuMSJX!5e0!3m2!1ses!2shn!4v1617980271043!5m2!1ses!2shn"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5437.737115602767!2d-88.03290736034046!3d15.481162058935507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f665d04f9d935ef%3A0x565bba667ef47ce!2sAutos%20Aliados!5e0!3m2!1ses-419!2shn!4v1746765592772!5m2!1ses-419!2shn"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

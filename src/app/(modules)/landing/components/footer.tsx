@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Instagram, Facebook, Youtube, MessageCircle } from "lucide-react";
+import { Instagram, Facebook, MessageCircle } from "lucide-react";
 
 import { useParams } from "next/navigation";
 import { getVehicleById } from "../data/vehicles-constant";
@@ -46,6 +46,13 @@ export function Footer({ primaryColor = "#FF7A00" }: FooterProps) {
                 <Image
                   src={"/landing/autos_aliados_logo_black.webp"}
                   alt="Autos Aliados Logo"
+                  width={180}
+                  height={60}
+                  className="object-contain"
+                />
+                <Image
+                  src={"/landing/grupo_platino_logo.webp"}
+                  alt="Grupo Platino Logo"
                   width={180}
                   height={60}
                   className="object-contain"
@@ -154,14 +161,6 @@ export function Footer({ primaryColor = "#FF7A00" }: FooterProps) {
                   <Facebook size={20} />
                 </a>
                 <a
-                  href="https://youtube.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full flex items-center justify-center border border-gray-300 hover:bg-gray-200 transition-colors"
-                >
-                  <Youtube size={20} />
-                </a>
-                <a
                   href="https://wa.me/1234567890"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -181,7 +180,9 @@ export function Footer({ primaryColor = "#FF7A00" }: FooterProps) {
 
               <div>
                 <h4 className="font-semibold mb-2">Visítanos</h4>
-                <p className="text-sm">San Pedro Sula, Honduras</p>
+                <p className="text-sm">
+                  Barrio La Guardia, entre 28 y 29 calle en el Bulevar del Sur, contiguo a Tropigas, SPS, Cortés, Honduras.
+                </p>
                 <p className="text-sm">Lunes a Viernes: 8:00 AM - 5:00 PM</p>
                 <p className="text-sm">Sábados: 8:00 AM - 12:00 PM</p>
                 <p className="text-sm">Domingo: Cerrado</p>
