@@ -131,7 +131,7 @@ export default function AboutUsPage() {
                     <Calendar className="text-[#FF7A00]" />
                   </h3>
                   <p className="text-gray-300">
-                    En 2023, JETOUR llega oficialmente a Honduras de la mano de
+                    En 2025, JETOUR llega oficialmente a Honduras de la mano de
                     Auto Aliados, trayendo al mercado nacional vehículos
                     innovadores y de alta tecnología.
                   </p>

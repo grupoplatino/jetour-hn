@@ -50,6 +50,13 @@ export function Footer({ primaryColor = "#FF7A00" }: FooterProps) {
                   height={60}
                   className="object-contain"
                 />
+                <Image
+                  src={"/landing/Logo Platino.webp"}
+                  alt="Autos Aliados Logo"
+                  width={180}
+                  height={60}
+                  className="object-contain"
+                />
               </div>
               <p className="text-sm mt-2">
                 Innovación y excelencia en cada uno de nuestros vehículos,
@@ -172,14 +179,7 @@ export function Footer({ primaryColor = "#FF7A00" }: FooterProps) {
                 >
                   <Facebook size={20} />
                 </a>
-                <a
-                  href="https://youtube.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full flex items-center justify-center border border-gray-300 hover:bg-gray-200 transition-colors"
-                >
-                  <Youtube size={20} />
-                </a>
+
                 <a
                   href="https://wa.me/1234567890"
                   target="_blank"
@@ -200,7 +200,11 @@ export function Footer({ primaryColor = "#FF7A00" }: FooterProps) {
 
               <div>
                 <h4 className="font-semibold mb-2">Visítanos</h4>
-                <p className="text-sm">San Pedro Sula, Honduras</p>
+                <p className="text-sm">
+                  Barrio La Guardia, entre 28 y 29 calle en el Bulevar del Sur,
+                  contiguo a Tropigas, San Pedro Sula, Cortes, Honduras.
+                </p>
+                <br />
                 <p className="text-sm">Lunes a Viernes: 8:00 AM - 5:00 PM</p>
                 <p className="text-sm">Sábados: 8:00 AM - 12:00 PM</p>
                 <p className="text-sm">Domingo: Cerrado</p>

@@ -62,6 +62,7 @@ export function Navbar({
       ],
     },
     { label: "SOLICITA UNA COTIZACIÓN", href: "/landing#cotizacion" },
+    { label: "FICHAS TÉCNICA", href: "/landing/" },
     { label: "POSTVENTA", href: "/landing/post-venta" },
     { label: "NOSOTROS", href: "/landing/nosotros" },
     { label: "CONTÁCTANOS", href: "/landing/contactanos" },
