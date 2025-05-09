@@ -151,6 +151,9 @@ export function Navbar({
                           <a
                             key={idx}
                             href={item.href}
+                            onClick={() => {
+                              setOpenDropdownIndex(null);
+                            }}
                             download
                             className="px-4 py-2 hover:bg-gray-800"
                           >
@@ -160,6 +163,9 @@ export function Navbar({
                           <Link
                             key={idx}
                             href={item.href}
+                            onClick={() => {
+                              setOpenDropdownIndex(null);
+                            }}
                             className="px-4 py-2 hover:bg-gray-800"
                           >
                             {item.label}
@@ -172,6 +178,9 @@ export function Navbar({
               ) : (
                 <Link
                   href={link.href}
+                  onClick={() => {
+                    setOpenDropdownIndex(null);
+                  }}
                   className="hover:text-gray-300 font-medium"
                 >
                   {link.label}
@@ -255,7 +264,10 @@ export function Navbar({
                 ) : (
                   <Link
                     href={link.href}
-                    onClick={() => setToggledNav(false)}
+                    onClick={() => {
+                      setToggledNav(false);
+                      setOpenDropdownIndex(null);
+                    }}
                     className="hover:text-gray-300"
                   >
                     {link.label}
