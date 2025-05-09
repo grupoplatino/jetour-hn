@@ -29,7 +29,7 @@ export default function AboutUsPage() {
       <div className="relative w-full h-[400px] md:h-[500px]">
         <Image
           unoptimized
-          src={"/nosotros/hero_background-2.webp"}
+          src={"/nosotros/hero_background.webp"}
           alt="JETOUR Concesionaria"
           fill
           className="object-cover object-center"
