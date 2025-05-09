@@ -18,7 +18,9 @@ export function Navbar({
   primaryColor = "#FF7A00",
 }: NavbarProps) {
   const [toggledNav, setToggledNav] = useState<boolean>(false);
-  const [dropdownOpen, setDropdownOpen] = useState<boolean>(false);
+  const [openDropdownIndex, setOpenDropdownIndex] = useState<number | null>(
+    null
+  );
   const [scrollPosition, setScrollPosition] = useState(0);
   const [isLoaded, setIsLoaded] = useState(false);
   const [primaryColorState, setPrimaryColorState] = useState(primaryColor);
@@ -62,7 +64,24 @@ export function Navbar({
       ],
     },
     { label: "SOLICITA UNA COTIZACIÓN", href: "/landing#cotizacion" },
-    { label: "FICHAS TÉCNICA", href: "/landing/" },
+    {
+      label: "FICHAS TÉCNICA",
+      href: "/landing/",
+      hasDropdown: true,
+      hasDownloads: true,
+      dropdownItems: [
+        {
+          label: "Ficha Dashing",
+          href: "/fichas-tecnicas/Ficha_tecnica_dashing.pdf",
+        },
+        { label: "Ficha T2", href: "/fichas-tecnicas/Ficha_tecnica_t2_v2.pdf" },
+        { label: "Ficha X50", href: "/fichas-tecnicas/Ficha_tecnica_x50.pdf" },
+        {
+          label: "Ficha X70 PLUS",
+          href: "/fichas-tecnicas/Ficha_tecnica_x70plus.pdf",
+        },
+      ],
+    },
     { label: "POSTVENTA", href: "/landing/post-venta" },
     { label: "NOSOTROS", href: "/landing/nosotros" },
     { label: "CONTÁCTANOS", href: "/landing/contactanos" },
@@ -116,23 +135,37 @@ export function Navbar({
                 <>
                   <button
                     className="flex items-center gap-1 hover:text-gray-300"
-                    onClick={() => setDropdownOpen(!dropdownOpen)}
+                    onClick={() =>
+                      setOpenDropdownIndex(
+                        openDropdownIndex === index ? null : index
+                      )
+                    }
                   >
                     {link.label}
                     <ChevronDown size={16} />
                   </button>
-                  {dropdownOpen && (
+                  {openDropdownIndex === index && (
                     <div className="absolute top-full left-0 mt-2 w-48 bg-black text-white shadow-lg rounded-lg flex flex-col z-50">
-                      {link.dropdownItems?.map((item, idx) => (
-                        <Link
-                          href={item.href}
-                          key={idx}
-                          className="p-2 hover:bg-gray-700 font-medium"
-                          onClick={() => setDropdownOpen(false)}
-                        >
-                          {item.label}
-                        </Link>
-                      ))}
+                      {link.dropdownItems?.map((item, idx) =>
+                        link.hasDownloads ? (
+                          <a
+                            key={idx}
+                            href={item.href}
+                            download
+                            className="px-4 py-2 hover:bg-gray-800"
+                          >
+                            {item.label}
+                          </a>
+                        ) : (
+                          <Link
+                            key={idx}
+                            href={item.href}
+                            className="px-4 py-2 hover:bg-gray-800"
+                          >
+                            {item.label}
+                          </Link>
+                        )
+                      )}
                     </div>
                   )}
                 </>
@@ -177,31 +210,54 @@ export function Navbar({
                   <>
                     <button
                       className="flex items-center gap-1 justify-center"
-                      onClick={() => setDropdownOpen(!dropdownOpen)}
+                      onClick={() =>
+                        setOpenDropdownIndex(
+                          openDropdownIndex === index ? null : index
+                        )
+                      }
                     >
                       {link.label}
                       <ChevronDown size={20} />
                     </button>
-                    {dropdownOpen && (
+                    {openDropdownIndex === index && (
                       <div className="mt-2 flex flex-col bg-black text-white rounded-lg">
-                        {link.dropdownItems?.map((item, idx) => (
-                          <Link
-                            href={item.href}
-                            key={idx}
-                            onClick={() => {
-                              setDropdownOpen(false);
-                              setToggledNav(false);
-                            }}
-                            className="p-2 hover:bg-gray-700"
-                          >
-                            {item.label}
-                          </Link>
-                        ))}
+                        {link.dropdownItems?.map((item, idx) =>
+                          link.hasDownloads ? (
+                            <a
+                              key={idx}
+                              href={item.href}
+                              download
+                              onClick={() => {
+                                setOpenDropdownIndex(null);
+                                setToggledNav(false);
+                              }}
+                              className="p-2 hover:bg-gray-700"
+                            >
+                              {item.label}
+                            </a>
+                          ) : (
+                            <Link
+                              href={item.href}
+                              key={idx}
+                              onClick={() => {
+                                setOpenDropdownIndex(null);
+                                setToggledNav(false);
+                              }}
+                              className="p-2 hover:bg-gray-700"
+                            >
+                              {item.label}
+                            </Link>
+                          )
+                        )}
                       </div>
                     )}
                   </>
                 ) : (
-                  <Link href={link.href} onClick={() => setToggledNav(false)}>
+                  <Link
+                    href={link.href}
+                    onClick={() => setToggledNav(false)}
+                    className="hover:text-gray-300"
+                  >
                     {link.label}
                   </Link>
                 )}
