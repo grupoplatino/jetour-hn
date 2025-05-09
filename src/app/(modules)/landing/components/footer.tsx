@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Instagram, Facebook, Youtube, MessageCircle } from "lucide-react";
+import { Instagram, Facebook, MessageCircle } from "lucide-react";
 
 import { useParams } from "next/navigation";
 import { getVehicleById } from "../data/vehicles-constant";
@@ -171,14 +171,6 @@ export function Footer({ primaryColor = "#FF7A00" }: FooterProps) {
                   className="w-10 h-10 rounded-full flex items-center justify-center border border-gray-300 hover:bg-gray-200 transition-colors"
                 >
                   <Facebook size={20} />
-                </a>
-                <a
-                  href="https://youtube.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full flex items-center justify-center border border-gray-300 hover:bg-gray-200 transition-colors"
-                >
-                  <Youtube size={20} />
                 </a>
                 <a
                   href="https://wa.me/1234567890"
