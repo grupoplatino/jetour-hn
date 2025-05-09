@@ -199,7 +199,9 @@ export function Footer({ primaryColor = "#FF7A00" }: FooterProps) {
 
               <div>
                 <h4 className="font-semibold mb-2">Visítanos</h4>
-                <p className="text-sm">San Pedro Sula, Honduras</p>
+                <p className="text-sm">
+                  Barrio La Guardia, entre 28 y 29 calle en el Bulevar del Sur, contiguo a Tropigas, SPS, Cortés, Honduras.
+                </p>
                 <p className="text-sm">Lunes a Viernes: 8:00 AM - 5:00 PM</p>
                 <p className="text-sm">Sábados: 8:00 AM - 12:00 PM</p>
                 <p className="text-sm">Domingo: Cerrado</p>
