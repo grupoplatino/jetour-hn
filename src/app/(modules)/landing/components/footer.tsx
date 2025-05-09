@@ -50,6 +50,13 @@ export function Footer({ primaryColor = "#FF7A00" }: FooterProps) {
                   height={60}
                   className="object-contain"
                 />
+                <Image
+                  src={"/landing/grupo_platino_logo.webp"}
+                  alt="Grupo Platino Logo"
+                  width={180}
+                  height={60}
+                  className="object-contain"
+                />
               </div>
               <p className="text-sm mt-2">
                 Innovación y excelencia en cada uno de nuestros vehículos,
