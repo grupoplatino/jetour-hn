@@ -235,7 +235,7 @@ export default function ContactPage() {
           </p>
           <div className="inline-block">
             <Link
-              href="/landing#cotizacion"
+              href="/#cotizacion"
               className="bg-white text-[#FF7A00] px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors"
             >
               AGENDA TU TEST DRIVE

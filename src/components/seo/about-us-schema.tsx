@@ -6,7 +6,7 @@ export default function AboutPageSchema() {
     '@type': 'AboutPage',
     name: 'Nosotros - Jetour Honduras',
     description: 'Conozca más sobre Jetour Honduras, el concesionario oficial de la marca Jetour en Honduras, respaldado por Auto Aliados.',
-    url: 'https://www.jetourhn.com/landing/nosotros',
+    url: 'https://www.jetourhn.com/nosotros',
     mainEntity: {
       '@type': 'Organization',
       name: 'Jetour Honduras - Autos Aliados',

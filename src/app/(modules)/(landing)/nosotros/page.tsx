@@ -60,7 +60,7 @@ export default function AboutUsPage() {
               desde la asesoría en la compra hasta el mantenimiento postventa.
             </p>
             <Link
-              href="/landing/contactanos"
+              href="/contactanos"
               className="inline-block bg-[#FF7A00] text-white px-8 py-3 rounded-lg font-bold hover:bg-[#E06800] transition-colors"
             >
               Contáctanos
@@ -417,13 +417,13 @@ export default function AboutUsPage() {
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
             <Link
-              href="/landing/contactanos"
+              href="/contactanos"
               className="bg-white text-[#FF7A00] px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors"
             >
               Contáctanos
             </Link>
             <Link
-              href="/landing/contactanos"
+              href="/contactanos"
               className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white/10 transition-colors"
             >
               Agenda tu Test Drive

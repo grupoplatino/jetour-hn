@@ -54,7 +54,7 @@ export default function ServicePageSchema() {
     },
     availableChannel: {
       '@type': 'ServiceChannel',
-      serviceUrl: 'https://www.jetourhn.com/landing/post-venta',
+      serviceUrl: 'https://www.jetourhn.com/post-venta',
       servicePhone: '+5043182071',
       serviceSmsNumber: '+5043182071'
     },

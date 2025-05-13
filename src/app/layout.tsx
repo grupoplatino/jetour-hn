@@ -3,6 +3,9 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 
 import './globals.css';
+import { Footer } from './(modules)/(landing)/components/footer';
+import LandingProviders from '@/modules/landing/presentation/providers/landing-provider/landing-provider';
+import Navbar from './(modules)/(landing)/components/navigation';
 // import { Toaster } from "@/components/ui/sonner";
 // import { GoogleAnalytics } from "@next/third-parties/google";
 
@@ -137,7 +140,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+         <LandingProviders>
+              <Navbar disableTransparent={true} />
+              <main suppressHydrationWarning={true} className="md:gap-y-0 flex flex-col w-full max-w-full grow h-fit bg-white">
+                {children}
+              </main>
+              <Footer />
+            </LandingProviders>
+      </body>
     </html>
   );
 }

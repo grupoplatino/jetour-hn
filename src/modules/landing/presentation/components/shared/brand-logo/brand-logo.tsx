@@ -1,5 +1,4 @@
 'use client';
-import { cn } from '@/lib/utils';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { useLandingNavStore } from '../../../stores/nav-bar.store';
@@ -35,7 +34,7 @@ export default function BrandLogo(props: BrandLogoProps) {
 
   return (
     <Link
-      href={pathname === '/landing' ? '#' : '/landing'}
+      href={pathname === '/' ? '#' : '/'}
       onClick={(event) => {
         setIsOpenMobileMenu(false);
       }}

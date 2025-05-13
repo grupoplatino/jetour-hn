@@ -17,10 +17,10 @@ export default function NavbarItem({ navBarItem, className }: NavbarItemProps) {
   return (
     <Link
       href={
-        pathName === "/landing" && !!navBarItem.isScrollToId
+        pathName === "/" && !!navBarItem.isScrollToId
           ? `#${navBarItem.idSection}`
           : !!navBarItem.isScrollToId
-          ? `/landing#${navBarItem.idSection}`
+          ? `/#${navBarItem.idSection}`
           : navBarItem.href
       }
       className={cn("cursor-pointer hover:underline", {

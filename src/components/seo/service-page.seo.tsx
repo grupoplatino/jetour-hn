@@ -18,13 +18,13 @@ export function generateServiceMetadata(): Metadata {
       'Servicio técnico especializado para vehículos Jetour en Honduras. Mantenimiento preventivo, correctivo, repuestos originales y garantía extendida para tu SUV Jetour.',
     keywords: ['servicio técnico Jetour', 'mantenimiento SUV Jetour', 'repuestos originales Jetour', 'taller autorizado Jetour', 'garantía Jetour Honduras'],
     alternates: {
-      canonical: 'https://www.jetourhn.com/landing/post-venta'
+      canonical: 'https://www.jetourhn.com/post-venta'
     },
     openGraph: {
       title: 'Servicio Postventa | Jetour Honduras',
       description:
         'Servicio técnico especializado para vehículos Jetour en Honduras. Mantenimiento preventivo, correctivo, repuestos originales y garantía extendida para tu SUV Jetour.',
-      url: 'https://www.jetourhn.com/landing/post-venta',
+      url: 'https://www.jetourhn.com/post-venta',
       images: [
         {
           url: 'https://www.jetourhn.com/postventa/hero_background.webp',

@@ -1,4 +1,4 @@
-import { VehicleData } from '@/app/(modules)/landing/data/vehicles-constant';
+import { VehicleData } from '@/app/(modules)/(landing)/data/vehicles-constant';
 import JsonLd from './json-ld';
 
 interface VehicleSchemaProps {
@@ -93,7 +93,7 @@ export default function VehicleSchema({ vehicleData }: VehicleSchemaProps) {
       unitText: 'mm'
     },
     image: `https://www.jetourhn.com/img/${vehicleData.modelName}/${vehicleData.modelName}.webp`,
-    url: `https://www.jetourhn.com/landing/${vehicleData.id}`,
+    url: `https://www.jetourhn.com/${vehicleData.id}`,
     offers: {
       '@type': 'Offer',
       availability: 'https://schema.org/InStock',

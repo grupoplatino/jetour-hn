@@ -71,7 +71,7 @@ export function Footer({ primaryColor = "#FF7A00" }: FooterProps) {
               <ul className="space-y-2">
                 <li>
                   <Link
-                    href="/landing/dashing"
+                    href="/dashing"
                     className="hover:text-gray-600 transition-colors"
                   >
                     Dashing
@@ -79,7 +79,7 @@ export function Footer({ primaryColor = "#FF7A00" }: FooterProps) {
                 </li>
                 <li>
                   <Link
-                    href="/landing/t2"
+                    href="/t2"
                     className="hover:text-gray-600 transition-colors"
                   >
                     T2
@@ -87,7 +87,7 @@ export function Footer({ primaryColor = "#FF7A00" }: FooterProps) {
                 </li>
                 <li>
                   <Link
-                    href="/landing/x50"
+                    href="/x50"
                     className="hover:text-gray-600 transition-colors"
                   >
                     X50
@@ -95,7 +95,7 @@ export function Footer({ primaryColor = "#FF7A00" }: FooterProps) {
                 </li>
                 <li>
                   <Link
-                    href="/landing/x70plus"
+                    href="/x70plus"
                     className="hover:text-gray-600 transition-colors"
                   >
                     X70 Plus
@@ -110,7 +110,7 @@ export function Footer({ primaryColor = "#FF7A00" }: FooterProps) {
               <ul className="space-y-2">
                 <li>
                   <Link
-                    href="/landing/nosotros"
+                    href="/nosotros"
                     className="hover:text-gray-600 transition-colors"
                   >
                     Sobre Nosotros
@@ -118,7 +118,7 @@ export function Footer({ primaryColor = "#FF7A00" }: FooterProps) {
                 </li>
                 <li>
                   <Link
-                    href="/landing/post-venta"
+                    href="/post-venta"
                     className="hover:text-gray-600 transition-colors"
                   >
                     Servicio Postventa
@@ -135,7 +135,7 @@ export function Footer({ primaryColor = "#FF7A00" }: FooterProps) {
                 </li>
                 <li>
                   <Link
-                    href="/landing/contactanos"
+                    href="/contactanos"
                     className="hover:text-gray-600 transition-colors"
                   >
                     Contáctanos

@@ -33,7 +33,7 @@ export async function generateVehicleMetadata(id: string): Promise<Metadata> {
     openGraph: {
       title: `Jetour ${vehicle.modelName} | SUV Premium Honduras`,
       description: `Descubre el SUV Jetour ${vehicle.modelName} en Honduras. ${vehicle.tagline}`,
-      url: `https://www.jetourhn.com/landing/${id}`,
+      url: `https://www.jetourhn.com/${id}`,
       siteName: 'Jetour Honduras',
       images: [
         {
@@ -53,7 +53,7 @@ export async function generateVehicleMetadata(id: string): Promise<Metadata> {
       images: [vehicle.hero.backgroundImage as string],
     },
     alternates: {
-      canonical: `https://www.jetourhn.com/landing/${id}`
+      canonical: `https://www.jetourhn.com/${id}`
     }
   };
 }

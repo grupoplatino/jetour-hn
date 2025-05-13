@@ -7,7 +7,7 @@ export default function ContactPageSchema() {
     name: 'Contacto - Jetour Honduras',
     description:
       'Ponte en contacto con el concesionario oficial de Jetour en Honduras. Estamos aquí para ayudarte con cualquier consulta sobre nuestros vehículos.',
-    url: 'https://www.jetourhn.com/landing/contactanos',
+    url: 'https://www.jetourhn.com/contactanos',
     mainEntity: {
       '@type': 'Organization',
       name: 'Jetour Honduras - Autos Aliados',

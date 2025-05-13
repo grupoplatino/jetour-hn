@@ -57,16 +57,16 @@ export function Navbar({
       href: "#",
       hasDropdown: true,
       dropdownItems: [
-        { label: "Dashing", href: "/landing/dashing" },
-        { label: "T2", href: "/landing/t2" },
-        { label: "X50", href: "/landing/x50" },
-        { label: "X70 PLUS", href: "/landing/x70plus" },
+        { label: "Dashing", href: "/dashing" },
+        { label: "T2", href: "/t2" },
+        { label: "X50", href: "/x50" },
+        { label: "X70 PLUS", href: "/x70plus" },
       ],
     },
-    { label: "SOLICITA UNA COTIZACIÓN", href: "/landing#cotizacion" },
+    { label: "SOLICITA UNA COTIZACIÓN", href: "/#cotizacion" },
     {
       label: "FICHAS TÉCNICA",
-      href: "/landing/",
+      href: "/",
       hasDropdown: true,
       hasDownloads: true,
       dropdownItems: [
@@ -82,9 +82,9 @@ export function Navbar({
         },
       ],
     },
-    { label: "POSTVENTA", href: "/landing/post-venta" },
-    { label: "NOSOTROS", href: "/landing/nosotros" },
-    { label: "CONTÁCTANOS", href: "/landing/contactanos" },
+    { label: "POSTVENTA", href: "/post-venta" },
+    { label: "NOSOTROS", href: "/nosotros" },
+    { label: "CONTÁCTANOS", href: "/contactanos" },
   ];
 
   return (

@@ -214,7 +214,7 @@ export default function PostVentaPage() {
                 <p className="text-lg font-medium">Para cotizaciones y detalles completos sobre nuestros planes de mantenimiento, contáctanos directamente.</p>
                 <div className="mt-4">
                   <Link
-                    href="#contact-form"
+                    href="/contactanos"
                     className="inline-block bg-[#FF7A00] text-white font-bold py-3 px-6 rounded-lg hover:bg-[#008a99] transition-colors"
                   >
                     Solicitar Información

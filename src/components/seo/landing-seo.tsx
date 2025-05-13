@@ -17,13 +17,13 @@ export function generateLandingMetadata(): Metadata {
     description:
       'Descubre la línea de vehículos SUV premium de Jetour en Honduras. Modelos T2, Dashing, X50 y X70 Plus con tecnología de vanguardia y diseño excepcional.',
     alternates: {
-      canonical: 'https://www.jetourhn.com/landing'
+      canonical: 'https://www.jetourhn.com'
     },
     openGraph: {
       title: 'Jetour Honduras | Vehículos SUV de Lujo y Tecnología Avanzada',
       description:
         'Descubre la línea de vehículos SUV premium de Jetour en Honduras. Modelos T2, Dashing, X50 y X70 Plus con tecnología de vanguardia y diseño excepcional.',
-      url: 'https://www.jetourhn.com/landing',
+      url: 'https://www.jetourhn.com',
       images: [
         {
           url: 'https://www.jetourhn.com/landing/jetour_logo_black_drive_your_future.webp',

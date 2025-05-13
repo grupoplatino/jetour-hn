@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
-import { VehicleData } from '@/app/(modules)/landing/data/vehicles-constant';
 import OrganizationSchema from './organization-schema';
 import VehicleSchema from './vehicle-schema';
+import { VehicleData } from '@/app/(modules)/(landing)/data/vehicles-constant';
 
 interface VehiclePageSEOProps {
   vehicleData: VehicleData;
@@ -48,12 +48,12 @@ export function generateVehicleMetadata(vehicleData: VehicleData): Metadata {
       'vehículos de lujo'
     ],
     alternates: {
-      canonical: `https://www.jetourhn.com/landing/${vehicleData.id}`
+      canonical: `https://www.jetourhn.com/${vehicleData.id}`
     },
     openGraph: {
       title: `Jetour ${vehicleData.modelName} | ${vehicleData.tagline}`,
       description,
-      url: `https://www.jetourhn.com/landing/${vehicleData.id}`,
+      url: `https://www.jetourhn.com/${vehicleData.id}`,
       type: 'website',
       images: [
         {
