@@ -808,7 +808,7 @@ export const vehiclesData: Record<string, VehicleData> = {
         Climatización: "Aire acondicionado con control de velocidad",
       },
       "Tecnología y conectividad": {
-        Pantalla: 'Pantalla digital de 10.3"',
+        Pantalla: 'Pantalla digital de 20.5"',
         Radio: "Radio AM/FM/Bluetooth",
         Compatibilidad: "CarPlay y Android Auto inalámbrico",
         Controles: "Botones multifunción en el timón",
