@@ -59,12 +59,12 @@ export default function ContactPage() {
                     </h3>
                     <p className="mt-1">
                       <a
-                        href="https://wa.me/50431820711"
+                        href="https://wa.me/50433620335"
                         className="text-lg hover:text-[#FF7A00] transition-colors"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        (+504) 3182-0711
+                        (+504) 3362-0335
                       </a>
                     </p>
                   </div>
@@ -167,7 +167,7 @@ export default function ContactPage() {
                   </a>
 
                   <a
-                    href="https://wa.me/50412345678"
+                    href="https://wa.me/50433620335"
                     className="h-12 w-12 rounded-full bg-[#FF7A00] flex items-center justify-center text-white hover:bg-[#E06800] transition-colors"
                     target="_blank"
                     rel="noopener noreferrer"

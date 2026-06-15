@@ -17,7 +17,7 @@ export default function ServicePageSchema() {
         postalCode: '21101',
         addressCountry: 'HN'
       },
-      telephone: '+5043182071'
+      telephone: '+50433620335'
     },
     areaServed: {
       '@type': 'Country',
@@ -55,8 +55,8 @@ export default function ServicePageSchema() {
     availableChannel: {
       '@type': 'ServiceChannel',
       serviceUrl: 'https://www.jetourhn.com/post-venta',
-      servicePhone: '+5043182071',
-      serviceSmsNumber: '+5043182071'
+      servicePhone: '+50433620335',
+      serviceSmsNumber: '+50433620335'
     },
     termsOfService: 'Todos los servicios de mantenimiento cuentan con garantía.',
     hoursAvailable: [

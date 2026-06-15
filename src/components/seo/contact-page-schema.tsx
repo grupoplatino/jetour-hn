@@ -11,7 +11,7 @@ export default function ContactPageSchema() {
     mainEntity: {
       '@type': 'Organization',
       name: 'Jetour Honduras - Autos Aliados',
-      telephone: '+5043182071',
+      telephone: '+50433620335',
       email: 'info@jetourhn.com',
       address: {
         '@type': 'PostalAddress',
@@ -24,7 +24,7 @@ export default function ContactPageSchema() {
       contactPoint: {
         '@type': 'ContactPoint',
         contactType: 'customer service',
-        telephone: '+5043182071',
+        telephone: '+50433620335',
         email: 'info@jetourhn.com',
         availableLanguage: {
           '@type': 'Language',

@@ -24,7 +24,7 @@ export default function HomePageSchema() {
     image: 'https://www.jetourhn.com/contactanos/hero_background.jpg',
     '@id': 'https://www.jetourhn.com',
     url: 'https://www.jetourhn.com',
-    telephone: '+5043182071',
+    telephone: '+50433620335',
     priceRange: '$$',
     address: {
       '@type': 'PostalAddress',
