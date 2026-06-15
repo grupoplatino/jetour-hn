@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import clsx from 'clsx';
 import { CarThemeKey, carThemes } from '../data/theme-definitions';
 import { X } from 'lucide-react';
@@ -52,15 +53,15 @@ const TestDriveButton: React.FC<TestDriveButtonProps> = ({ carTheme, fixed = tru
     setIsVisible(!isHidden);
   }, []);
 
-  // Función para abrir WhatsApp con mensaje predefinido
-  const openWhatsApp = () => {
-    const phoneNumber = '50431820711'; // Número de WhatsApp
-    const message = `¡Hola! Estoy interesado en agendar un test drive para el modelo ${carModel}. ¿Podría proporcionarme más información?`;
-    const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+  const router = useRouter();
 
-    // Abrir en nueva pestaña
-    window.open(whatsappUrl, '_blank');
+  // Navegar a la página de agendamiento de test drive (preselecciona el modelo si viene de una landing)
+  const goToTestDrive = () => {
+    const query =
+      carModel && carModel !== 'Jetour'
+        ? `?modelo=${encodeURIComponent(carModel)}`
+        : '';
+    router.push(`/agenda-tu-prueba${query}`);
   };
 
   if (!isVisible) {
@@ -92,7 +93,7 @@ const TestDriveButton: React.FC<TestDriveButtonProps> = ({ carTheme, fixed = tru
 
       {/* Botón principal */}
       <div
-        onClick={openWhatsApp}
+        onClick={goToTestDrive}
         className={clsx(
           'relative flex flex-row justify-center items-center px-5 py-3 md:py-0 md:px-8 rounded-lg md:rounded-none shadow-md md:shadow-none cursor-pointer',
           isSmallScreen ? 'ml-0' : 'ml-[-8px] md:ml-[-3px]'
