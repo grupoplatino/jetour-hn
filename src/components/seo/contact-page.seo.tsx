@@ -15,7 +15,7 @@ export function generateContactMetadata(): Metadata {
   return {
     title: 'Contáctanos | Jetour Honduras',
     description:
-      'Ponte en contacto con el concesionario oficial de Jetour en Honduras. Visítanos en San Pedro Sula o llámanos al +504 3182-0711 para más información sobre nuestros vehículos.',
+      'Ponte en contacto con el concesionario oficial de Jetour en Honduras. Visítanos en San Pedro Sula o llámanos al +504 3362-0335 para más información sobre nuestros vehículos.',
     keywords: ['contacto Jetour Honduras', 'concesionario Jetour', 'Jetour San Pedro Sula', 'venta de SUVs Jetour', 'servicio técnico Jetour'],
     alternates: {
       canonical: 'https://www.jetourhn.com/contactanos'
@@ -23,7 +23,7 @@ export function generateContactMetadata(): Metadata {
     openGraph: {
       title: 'Contáctanos | Jetour Honduras',
       description:
-        'Ponte en contacto con el concesionario oficial de Jetour en Honduras. Visítanos en San Pedro Sula o llámanos al +504 3182-0711 para más información sobre nuestros vehículos.',
+        'Ponte en contacto con el concesionario oficial de Jetour en Honduras. Visítanos en San Pedro Sula o llámanos al +504 3362-0335 para más información sobre nuestros vehículos.',
       url: 'https://www.jetourhn.com/contactanos',
       images: [
         {

@@ -26,7 +26,7 @@ export default function OrganizationSchema() {
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'customer service',
-      telephone: '[+504-3182-0711]',
+      telephone: '[+504-3362-0335]',
       email: 'info@jetourhn.com'
     },
     sameAs: ['https://www.facebook.com/jetourhonduras', 'https://www.instagram.com/jetourhonduras'],

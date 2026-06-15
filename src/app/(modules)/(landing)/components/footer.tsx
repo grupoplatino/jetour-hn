@@ -166,7 +166,7 @@ export function Footer({ primaryColor = "#FF7A00" }: FooterProps) {
                 </a>
 
                 <a
-                  href="https://wa.me/1234567890"
+                  href="https://wa.me/50433620335"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full flex items-center justify-center border border-gray-300 hover:bg-gray-200 transition-colors"

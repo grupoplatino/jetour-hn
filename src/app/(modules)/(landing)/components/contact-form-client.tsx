@@ -68,7 +68,7 @@ export default function CotizacionForm({ themeKey }: CotizacionFormProps) {
     const encodedMessage = encodeURIComponent(text);
 
     // Redirigir a WhatsApp
-    const whatsappUrl = `https://wa.me/50431820711?text=${encodedMessage}`;
+    const whatsappUrl = `https://wa.me/50433620335?text=${encodedMessage}`;
     window.open(whatsappUrl, "_blank");
   };
 

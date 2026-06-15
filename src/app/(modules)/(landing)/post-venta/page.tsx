@@ -138,12 +138,12 @@ export default function PostVentaPage() {
                       </p>
                       <p className="text-lg font-medium">
                         <a
-                          href="https://wa.me/50431820711"
+                          href="https://wa.me/50433620335"
                           className="hover:text-[#FF7A00] transition-colors"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          (+504) 3182-0711
+                          (+504) 3362-0335
                         </a>
                       </p>
                     </div>
@@ -354,7 +354,7 @@ export default function PostVentaPage() {
           </p>
           <div className="inline-block">
             <a
-              href="https://wa.me/50431820711"
+              href="https://wa.me/50433620335"
               className="bg-white text-[#FF7A00] px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors inline-flex items-center"
               target="_blank"
               rel="noopener noreferrer"
