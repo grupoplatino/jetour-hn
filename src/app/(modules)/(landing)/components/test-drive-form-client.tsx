@@ -226,12 +226,17 @@ export default function TestDriveFormClient({ initialModel }: Props) {
     <div className="w-full max-w-[470px] mx-auto">
       {/* Encabezado */}
       <div className="text-center mb-7">
-        <div className="inline-flex items-center gap-3 mb-2">
-          <span className="w-1 h-7 bg-white rounded-sm" />
-          <span className="text-2xl font-bold tracking-[0.35em] text-white">JETOUR</span>
-        </div>
-        <p className="text-[10px] tracking-[0.35em] text-neutral-500 font-medium">
-          PIENSA EN LA AVENTURA
+        <Image
+          src="/landing/jetour_logo_white_drive_your_future.webp"
+          alt="Jetour — Drive Your Future"
+          width={320}
+          height={98}
+          priority
+          unoptimized
+          className="mx-auto mb-3 h-auto w-[160px]"
+        />
+        <p className="text-[13px] text-neutral-400 max-w-[300px] mx-auto leading-snug">
+          Agenda tu prueba de manejo en 3 simples pasos
         </p>
       </div>
 
