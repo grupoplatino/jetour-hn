@@ -148,7 +148,7 @@ export default function ContactPage() {
                     </svg>
                   </a>
                   <a
-                    href="https://instagram.com/jejourhonduras"
+                    href="https://www.instagram.com/jetour.honduras/"
                     className="h-12 w-12 rounded-full bg-[#FF7A00] flex items-center justify-center text-white hover:bg-[#E06800] transition-colors"
                     target="_blank"
                     rel="noopener noreferrer"

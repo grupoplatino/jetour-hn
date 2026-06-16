@@ -59,7 +59,7 @@ export default function HomePageSchema() {
         closes: '00:00'
       }
     ],
-    sameAs: ['https://www.facebook.com/jetourhonduras', 'https://www.instagram.com/jetourhonduras']
+    sameAs: ['https://www.facebook.com/jetourhonduras', 'https://www.instagram.com/jetour.honduras/']
   };
 
   return (
