@@ -29,7 +29,7 @@ export default function OrganizationSchema() {
       telephone: '[+504-3362-0335]',
       email: 'info@jetourhn.com'
     },
-    sameAs: ['https://www.facebook.com/jetourhonduras', 'https://www.instagram.com/jetourhonduras'],
+    sameAs: ['https://www.facebook.com/jetourhonduras', 'https://www.instagram.com/jetour.honduras/'],
     openingHoursSpecification: [
       {
         '@type': 'OpeningHoursSpecification',

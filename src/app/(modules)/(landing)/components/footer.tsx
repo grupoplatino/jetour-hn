@@ -149,7 +149,7 @@ export function Footer({ primaryColor = "#FF7A00" }: FooterProps) {
               <h3 className="text-lg font-bold mb-4">Síguenos</h3>
               <div className="flex space-x-4 mb-6">
                 <a
-                  href="https://www.instagram.com/p/DHZk14Ezyqb/?igsh=YXR4cGVhbnJsbnd3"
+                  href="https://www.instagram.com/jetour.honduras/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full flex items-center justify-center border border-gray-300 hover:bg-gray-200 transition-colors"
